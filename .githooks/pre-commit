@@ -1,0 +1,42 @@
+#!/bin/sh
+set -eu
+
+# GitHub rejects normal Git blobs at 100 MiB and above. Use the safer boundary
+# so a file exactly 100 MiB is also routed through Git LFS.
+LFS_LIMIT_BYTES=104857600
+ATTR_FILE=".gitattributes"
+
+if ! git lfs version >/dev/null 2>&1; then
+    echo "Git LFS is required for files at or above 100 MiB." >&2
+    echo "Install Git LFS, then run: git lfs install --local" >&2
+    exit 1
+fi
+
+found_large_file=0
+
+# The standard Unity project path set is normally free of newlines. Reading
+# one staged path per line also keeps this hook compatible with Git Bash and
+# Windows PowerShell-managed repositories.
+git diff --cached --name-only --diff-filter=ACMR | while IFS= read -r path; do
+    [ -n "$path" ] || continue
+    [ -f "$path" ] || continue
+
+    size=$(wc -c < "$path" | tr -d '[:space:]')
+    if [ "$size" -ge "$LFS_LIMIT_BYTES" ]; then
+        found_large_file=1
+        echo "Git LFS: tracking $path ($size bytes)"
+        git lfs track --filename "$path" >/dev/null
+
+        # Re-stage after writing .gitattributes so the large file is stored as
+        # an LFS pointer in this commit rather than as a regular Git blob.
+        git add -- "$path"
+    fi
+done
+
+# git lfs track may have changed the attributes file even when the large-file
+# loop ran in a subshell, so stage it explicitly if it is part of this commit.
+if [ -f "$ATTR_FILE" ]; then
+    git add -- "$ATTR_FILE"
+fi
+
+exit 0

@@ -1,0 +1,11 @@
+#!/bin/sh
+set -eu
+
+# Upload Git LFS objects as part of every push. This hook is versioned so it
+# remains active when the repository is cloned on another machine.
+if ! git lfs version >/dev/null 2>&1; then
+    echo "Git LFS is required to push this repository." >&2
+    exit 1
+fi
+
+git lfs pre-push "$@"
