@@ -1,0 +1,7 @@
+from pathlib import Path
+r=Path('C:/XR Horizon/Projects/Under Water')
+p=r/'Assets/Ocean/ReefAtmosphere.cs';s=p.read_text().replace('public Texture2D caustics;','public Material waterBackground;public Texture2D caustics;').replace('RenderSettings.skybox=null;','RenderSettings.skybox=waterBackground;').replace('camera.clearFlags=CameraClearFlags.SolidColor;','camera.clearFlags=waterBackground?CameraClearFlags.Skybox:CameraClearFlags.SolidColor;').replace('(1.5f,.025f','(1.65f,.025f');p.write_text(s)
+p=r/'Assets/Ocean/ReefOptics.cs';s=p.read_text().replace('exposure=.95f','exposure=1.05f');p.write_text(s)
+p=r/'Assets/UnderwaterArt/Shaders/ReefSurface.shader';s=p.read_text().replace('tissue*(.55+luminance*1.4)','tissue*(.2+luminance*1.8)').replace('smoothstep(.51,.63,mask)*_Encrustation','smoothstep(.51,.63,mask)*smoothstep(.22,.5,reefNoise(p*39))*_Encrustation');p.write_text(s)
+p=r/'Assets/UnderwaterArt/Shaders/WaterCeiling.shader';s=p.read_text().replace('float wave(float2 p,float t){return','float wave(float2 p,float t){p+=float2(sin(p.y*.33+t)*2.1,sin(p.x*.28-t)*2.4);return');p.write_text(s)
+p=r/'Assets/Ocean/Editor/RealisticReefBuilder.cs';s=p.read_text().replace('atmosphere.sunlight=light;','atmosphere.waterBackground=Save(new Material(Shader.Find("Underwater/Blue Water Column")),Art+"Materials/Blue water background.mat");atmosphere.sunlight=light;').replace('new(.78f,.55f,.25f),new(.57f,.34f,.44f)','new(.9f,.6f,.25f),new(.7f,.33f,.44f)').replace('new(.46f,.35f,.56f)','new(.57f,.38f,.66f)');p.write_text(s)

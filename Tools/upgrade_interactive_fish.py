@@ -1,0 +1,21 @@
+from pathlib import Path
+p=Path('Assets/Ocean/SeaLife.cs');s=p.read_text().replace(' Vector3 origin,scale;',' public bool IsHeld=>hand;\n Vector3 origin,scale;').replace('transform.localScale=scale*(1+.04f*Mathf.Sin(Time.time*30));','transform.localScale=scale;');p.write_text(s)
+p=Path('Assets/UnderwaterArt/Shaders/FishSkin.shader');s=p.read_text().replace('_TailPhase("Tail phase"','_Pattern("Reef species markings",Float)=0\n  _TailPhase("Tail phase"').replace('float _TailPhase,','float _Pattern;float _TailPhase,').replace('float3 viewDir;','float3 viewDir;float3 bodyPosition;').replace('void vert(inout appdata_full v){','void vert(inout appdata_full v,out Input o){UNITY_INITIALIZE_OUTPUT(Input,o);o.bodyPosition=v.vertex.xyz;').replace('o.Albedo=c.rgb*_Color.rgb;','o.Albedo=c.rgb*_Color.rgb;\n  if(_Pattern>.5){float z=IN.bodyPosition.z;float bands=_Pattern<1.5?min(abs(z-.24),min(abs(z+.02),abs(z+.33))):abs(frac(z*8+.2)-.5)*.15;float white=1-smoothstep(.022,.038,bands);float black=1-smoothstep(.04,.052,bands);float3 marking=lerp(_Color.rgb,float3(.009,.012,.014),black);marking=lerp(marking,float3(.8,.82,.77),white);float detail=dot(c.rgb,float3(.2126,.7152,.0722));o.Albedo=marking*lerp(.3,1.1,saturate(detail*2));if(detail<.035)o.Albedo=c.rgb*.7;}');p.write_text(s)
+p=Path('Assets/Ocean/Editor/RealisticReefBuilder.cs');s=p.read_text();a=s.index('\n var f=Model("',s.index(' static GameObject Fish(')) if '\n var f=Model("' in s[s.index(' static GameObject Fish('):] else s.index('\n var f=Model(name',s.index(' static GameObject Fish('));b=s.index(' static Mesh CanonicalFish()',a)
+s=s[:a]+'''
+ var materialPath=Art+"Materials/Species "+name+".mat";var skin=AssetDatabase.LoadAssetAtPath<Material>(materialPath);
+ if(!skin){skin=new Material(fishPalette[0]);skin.color=name=="Clownfish"?new Color(.95f,.27f,.035f):name=="Lionfish"?new Color(.35f,.17f,.085f):name=="Lumen"?new Color(.32f,.63f,.72f):new Color(.22f,.3f,.32f);skin.SetFloat("_Pattern",name=="Clownfish"?1:name=="Lionfish"?2:0);skin=Save(skin,materialPath);}
+ var speciesMesh=Mesh("Detailed "+name,()=>{var m=UnityEngine.Object.Instantiate(Mesh("PhotographicFishCanonical",CanonicalFish));var v=m.vertices;for(int i=0;i<v.Length;i++){v[i].y*=name=="Clownfish"?1.35f:name=="Anglerfish"?1.6f:1;v[i].x*=name=="Anglerfish"?1.4f:1;v[i].z*=name=="Clownfish"?.85f:name=="Anglerfish"?.8f:1;}m.vertices=v;m.RecalculateNormals();m.RecalculateTangents();m.bounds=new Bounds(Vector3.zero,new Vector3(.7f,.9f,1.2f));return m;});
+ var f=Model(name,speciesMesh,skin,p,Vector3.one*scale,parent);f.AddComponent<FishBodyMotion>();return f;
+ }
+'''+s[b:]
+# Ensure imported source data can be transformed into canonical meshes.
+s=s.replace('imp.importAnimation=false;','imp.importAnimation=false;imp.isReadable=path.EndsWith("PhotographicFish.fbx");')
+# Stable spacing at spawn and no starts inside the seabed/outcrops.
+s=s.replace('Vector3 spawn=p+new Vector3(Random.Range(-radius,radius),Random.Range(-radius*.18f,radius*.18f),Random.Range(-radius*.6f,radius*.6f));','''Vector3 spawn=p;Physics.SyncTransforms();
+   for(int attempt=0;attempt<60;attempt++){spawn=p+new Vector3(Random.Range(-radius,radius),Random.Range(-radius*.18f,radius*.18f)+attempt*.015f,Random.Range(-radius*.6f,radius*.6f));bool clear=!Physics.CheckSphere(spawn,size*.6f,Physics.DefaultRaycastLayers,QueryTriggerInteraction.Ignore);foreach(Transform other in root.transform)if(Vector3.Distance(spawn,other.position)<size*1.5f)clear=false;if(clear)break;}''')
+s=s.replace('public static void CreateAndRender(){Create();Render();}','public static void CreateAndRender(){Create();FishMotionValidation.Run();Render();}')
+s=s.replace('var cam=Camera.main;var atmosphere=','var cam=Camera.main;var atmosphere=')
+s=s.replace('  foreach(var particles in UnityEngine.Object.FindObjectsByType<ParticleSystem>', '  foreach(var school in UnityEngine.Object.FindObjectsByType<FishSchool>(FindObjectsSortMode.None)){school.Initialize();for(int f=0;f<60;f++)school.Simulate(1f/30);}\n  foreach(var particles in UnityEngine.Object.FindObjectsByType<ParticleSystem>')
+s=s.replace('  Debug.Log("REEF_RENDER_COMPLETE");','  Capture(cam,atmosphere,"07_Fish_Detail",new Vector3(-.5f,-.2f,-2),new Vector3(0,-.2f,2));\n  Debug.Log("REEF_RENDER_COMPLETE");')
+p.write_text(s)
