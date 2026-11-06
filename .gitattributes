@@ -1,0 +1,8 @@
+# Git LFS is applied automatically by .githooks/pre-commit to staged files
+# at or above 100 MiB. Other files remain ordinary Git blobs.
+#
+# Git LFS is path-based: once a path crosses the threshold, future revisions
+# of that path stay in LFS. This keeps the current commit checkoutable.
+
+# BEGIN AUTO-LFS
+# END AUTO-LFS
