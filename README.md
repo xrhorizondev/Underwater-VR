@@ -1,6 +1,6 @@
 # Underwater Exploration
 
-Open this project in **Unity 6000.0.52f1**, open `Assets/Scenes/Underwater_Realistic.unity`, and press Play. Choose Start in the opening menu. The saved scene contains editable geometry, materials, lighting, creatures, and eight connected habitats. The earlier prototype remains in `Assets/Scenes/UnderwaterExploration.unity`.
+Open this project in **Unity 6000.4.5f1**, open `Assets/Scenes/Underwater_Realistic.unity`, and press Play. Choose Start in the opening menu. The saved scene contains editable geometry, materials, lighting, creatures, and eight connected habitats. The earlier prototype remains in `Assets/Scenes/UnderwaterExploration.unity`.
 
 Windows player: `Builds/RealisticWindows/Underwater Exploration.exe`. Keep the executable and its accompanying folders together.
 

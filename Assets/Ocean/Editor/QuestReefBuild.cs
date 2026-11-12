@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.XR.OpenXR;
 using UnityEngine.XR.OpenXR.Features.MetaQuestSupport;
 namespace Underwater.Editor {
-[BuildCallbackVersion(6)]
+[BuildCallbackVersion(8)]
 public class QuestReefBuild : IProcessSceneWithReport {
  public int callbackOrder=>100;
  public void OnProcessScene(Scene scene,BuildReport report){if(report!=null&&report.summary.platform==BuildTarget.Android)OptimizeScene();}
@@ -72,6 +72,28 @@ public class QuestReefBuild : IProcessSceneWithReport {
    foreach(var m in r.sharedMaterials)if(m)m.enableInstancing=true;
   }
   Debug.Log($"CORAL_DISTANCE_TRIANGLES full={fullTriangles} distant={distanceTriangles}");
+  // Serialize the mobile materials in the built scene, preserving source assets.
+  var mobileShader=Resources.Load<Shader>("QuestReef");
+  if(!mobileShader)throw new Exception("Missing Quest reef shader");
+  var mobileMaterials=new System.Collections.Generic.Dictionary<(Material,bool),Material>();
+  foreach(var renderer in UnityEngine.Object.FindObjectsByType<Renderer>(FindObjectsSortMode.None)){
+   var materials=renderer.sharedMaterials;bool changed=false;
+   for(int i=0;i<materials.Length;i++){
+    var source=materials[i];if(!source||source.shader.name!="Underwater/Reef Surface")continue;
+    bool closed=renderer.name=="Porous reef outcrop"||renderer.name=="Eroded arch voussoir"||renderer.name.StartsWith("Continuous seabed");
+    for(var parent=renderer.transform;parent;parent=parent.parent)if(parent.name.StartsWith("Scanned ")||parent.name.StartsWith("Photogrammetry | weathered reef bed"))closed=true;
+    var key=(source,closed);
+    if(!mobileMaterials.TryGetValue(key,out var mobile)){
+     mobile=new Material(source){shader=mobileShader,name=source.name+(closed?" Quest solid":" Quest two-sided"),enableInstancing=true};
+     mobile.SetFloat("_Cull",closed?2:0);
+     if(source.HasProperty("_WorldMapping")&&source.GetFloat("_WorldMapping")>.5f)mobile.EnableKeyword("REEF_WORLD_MAPPING");else mobile.DisableKeyword("REEF_WORLD_MAPPING");
+     mobileMaterials.Add(key,mobile);
+    }
+    materials[i]=mobile;changed=true;
+   }
+   if(changed)renderer.sharedMaterials=materials;
+  }
+  Debug.Log("QUEST_MATERIALS_BAKED count="+mobileMaterials.Count);
   foreach(var light in UnityEngine.Object.FindObjectsByType<Light>(FindObjectsSortMode.None)){light.shadows=light==RenderSettings.sun?LightShadows.Hard:LightShadows.None;if(light.type!=LightType.Directional)light.renderMode=LightRenderMode.ForceVertex;}
   foreach(var ps in UnityEngine.Object.FindObjectsByType<ParticleSystem>(FindObjectsSortMode.None)){var main=ps.main;main.cullingMode=ParticleSystemCullingMode.Pause;main.maxParticles=Mathf.Min(main.maxParticles,45);var emission=ps.emission;emission.rateOverTime=2;}
   if(!UnityEngine.Object.FindFirstObjectByType<QuestReefPerformance>())new GameObject("Quest 3 performance profile").AddComponent<QuestReefPerformance>();

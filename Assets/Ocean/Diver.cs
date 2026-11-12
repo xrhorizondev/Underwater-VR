@@ -63,15 +63,7 @@ public class Diver:MonoBehaviour {
  public void Hurt(AudioClip clip){if(!consequences)return;flash=.65f;Say("Whoa.",clip);InputDevices.GetDeviceAtXRNode(XRNode.RightHand).SendHapticImpulse(0,.25f,.12f);}
  void TeleportRay(){if(Physics.Raycast(Head.position,Head.forward,out RaycastHit hit,12)&&hit.collider.GetComponent<TeleportShell>()){if(motor.TryTeleport(hit.point+Vector3.up*.15f)){velocity=Vector3.zero;GetComponent<ReefSoundscape>()?.Cue(true);}else Say("That landing spot is obstructed.",null);}}
  void CreateAmbience(){
-  const int rate=22050;var clip=AudioClip.Create("Underwater regulator breathing",rate*8,1,rate,false);float[] samples=new float[rate*8];var rng=new System.Random(48);float low=0;
-  for(int i=0;i<samples.Length;i++){
-   float t=(float)i/rate,phase=t%4;float exhale=phase<1.8f?Mathf.Sin(phase/1.8f*Mathf.PI):0;float inhale=phase>2.1f?Mathf.Sin((phase-2.1f)/1.9f*Mathf.PI):0;
-   low=Mathf.Lerp(low,(float)rng.NextDouble()*2-1,.055f);float bubble=0;
-   // Short resonant transients within the same exhalation interval as the mesh bubbles.
-   for(int j=0;j<9;j++){float age=phase-(.12f+j*.17f);if(age>0&&age<.11f){float frequency=340+j*47;bubble+=Mathf.Sin(2*Mathf.PI*frequency*age*(1+age*.8f))*Mathf.Exp(-age*62)*.025f;}}
-   samples[i]=low*(.035f+.14f*exhale+.06f*inhale)+bubble*exhale+Mathf.Sin(t*2*Mathf.PI*42)*.002f;
-  }
-  clip.SetData(samples,0);var sound=new GameObject("Regulator breathing and water ambience");sound.transform.SetParent(Head,false);var a=sound.AddComponent<AudioSource>();a.clip=clip;a.loop=true;a.volume=.45f;a.spatialBlend=0;var filter=sound.AddComponent<AudioLowPassFilter>();filter.cutoffFrequency=1100;a.Play();
+  var clip=Resources.Load<AudioClip>("ReefBreathing");if(!clip){Debug.LogError("Missing baked ReefBreathing audio. Run Underwater/Apply side boundaries and bake startup audio.");return;}var sound=new GameObject("Regulator breathing and water ambience");sound.transform.SetParent(Head,false);var a=sound.AddComponent<AudioSource>();a.clip=clip;a.loop=true;a.volume=.45f;a.spatialBlend=0;var filter=sound.AddComponent<AudioLowPassFilter>();filter.cutoffFrequency=1100;a.Play();
  }
  void OnGUI(){if(flash>0){GUI.color=new Color(1,0,0,flash);GUI.DrawTexture(new Rect(0,0,Screen.width,20),Texture2D.whiteTexture);GUI.DrawTexture(new Rect(0,Screen.height-20,Screen.width,20),Texture2D.whiteTexture);GUI.DrawTexture(new Rect(0,0,20,Screen.height),Texture2D.whiteTexture);GUI.DrawTexture(new Rect(Screen.width-20,0,20,Screen.height),Texture2D.whiteTexture);GUI.color=Color.white;}
  if(Time.time<captionUntil)GUI.Box(new Rect(Screen.width/2-230,Screen.height-95,460,42),caption);

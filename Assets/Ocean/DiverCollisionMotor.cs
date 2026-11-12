@@ -2,7 +2,7 @@ using UnityEngine;
 namespace Underwater {
 [RequireComponent(typeof(CharacterController))]
 public class DiverCollisionMotor:MonoBehaviour {
- public float maximumHeadHeight=6.5f; CharacterController controller;Transform head;Vector3 previousLocal;
+ public float maximumHeadHeight=6.5f; public ReefDiveBounds diveBounds; CharacterController controller;Transform head;Vector3 previousLocal;
  public void Initialize(){controller=GetComponent<CharacterController>();head=transform.Find("Head");controller.radius=.28f;controller.skinWidth=.025f;controller.stepOffset=0;controller.minMoveDistance=0;controller.slopeLimit=90;Fit();previousLocal=head.localPosition;}
  void Fit(){float height=Mathf.Clamp(head.localPosition.y+.18f,.65f,2.4f);controller.height=height;controller.center=new Vector3(head.localPosition.x,height*.5f,head.localPosition.z);}
  public void TrackHead(){
@@ -21,7 +21,9 @@ public class DiverCollisionMotor:MonoBehaviour {
  public bool TryTeleport(Vector3 feet){
   if(!controller)Initialize();Fit();
   Vector3 offset=transform.TransformVector(new Vector3(head.localPosition.x,0,head.localPosition.z));
-  Vector3 root=feet-offset;if(root.y+head.localPosition.y>maximumHeadHeight)return false;Vector3 center=root+transform.TransformVector(controller.center);float extent=controller.height*.5f-controller.radius;
+  Vector3 root=feet-offset;if(root.y+head.localPosition.y>maximumHeadHeight)return false;
+  if(diveBounds&&!diveBounds.Contains(root+transform.TransformVector(head.localPosition),controller.radius+.03f))return false;
+  Vector3 center=root+transform.TransformVector(controller.center);float extent=controller.height*.5f-controller.radius;
   if(Physics.CheckCapsule(center+Vector3.up*extent,center-Vector3.up*extent,controller.radius+.03f,ReefSphereBody.SolidMask,QueryTriggerInteraction.Ignore))return false;
   controller.enabled=false;transform.position=root;controller.enabled=true;previousLocal=head.localPosition;return true;
  }
