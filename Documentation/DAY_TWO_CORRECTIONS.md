@@ -39,3 +39,8 @@ Use Underwater.Editor.ReefCorrections.Apply in an isolated project for authoring
 
 ### Palm fit adjustment after wearer feedback
 The wearer still saw a small gap in b89bc32. Lowered the held fish another 12 mm: the belly now seats 10 mm into the cupped glove reference surface instead of floating 2 mm above it. Both-hand seating validation and existing movement/contact checks passed (Unity exit 0). This is a visual fit adjustment; wearer confirmation remains required.
+
+### Underwater music and audio investigation
+Added an original 48-second stereo ambient score with overlapping slow chords and soft bell tones. It is baked offline as ReefOceanMusic.wav, using PCM/decompress-on-load so no synthesis runs on Quest. Music fades to .38 source volume and ducks to .12 while diver voice plays; playback is checked on focus/resume. The original score remains a fallback.
+Music bake validation exited 0: stereo, 48 seconds, RMS .0743, peak .2520, one enabled scene listener. AudioManager has audio enabled and master volume 1.
+Quest media volume was 15/15 and speaker routed. Android reported PLAY_AUDIO ignore and the Unity stream muted by appOps. Restoring allow and relaunching did not persist: a later check again reported ignore with the headset asleep. Actual audible playback must be checked while worn, in the focused app; this device-level mute is separate from the music asset. Awaiting wearer confirmation of Home audio and in-app music.

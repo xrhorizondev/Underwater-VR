@@ -10,6 +10,7 @@ public class Diver:MonoBehaviour {
  public Vector3 RightPalm=>rightGlove?rightGlove.PalmPosition:transform.position;
  public Vector3 LeftFingertip=>leftGlove?leftGlove.FingertipPosition:LeftPalm;
  public Vector3 RightFingertip=>rightGlove?rightGlove.FingertipPosition:RightPalm;
+ public bool VoicePlaying=>voice&&voice.isPlaying;
  public bool currentAssist=true,consequences=true;Transform left,right;Vector3 velocity,previousLeft,previousRight;float idle,captionUntil;string caption="";int menuZone;float nextMenuStep;bool previousBack,previousMenuSelect;bool menu=true,previousMenu,previousTeleport,xrStarted;float yaw,pitch;AudioSource voice;Camera cam;TextMesh headsetCaption;
  void Start(){lifeCache=FindObjectsByType<SeaLife>(FindObjectsSortMode.None);atmosphereCache=FindFirstObjectByType<ReefAtmosphere>();Instance=this;Head=transform.Find("Head");motor=GetComponent<DiverCollisionMotor>();if(!motor)motor=gameObject.AddComponent<DiverCollisionMotor>();motor.Initialize();cam=Head.GetComponent<Camera>();voice=Head.gameObject.AddComponent<AudioSource>();voice.spatialBlend=0;
  leftGlove=ScubaGlove.Create(transform,true);rightGlove=ScubaGlove.Create(transform,false);left=leftGlove.transform;right=rightGlove.transform;
