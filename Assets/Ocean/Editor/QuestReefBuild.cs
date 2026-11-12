@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.XR.OpenXR;
 using UnityEngine.XR.OpenXR.Features.MetaQuestSupport;
 namespace Underwater.Editor {
-[BuildCallbackVersion(11)]
+[BuildCallbackVersion(12)]
 public class QuestReefBuild : IProcessSceneWithReport {
  public int callbackOrder=>100;
  public void OnProcessScene(Scene scene,BuildReport report){if(report!=null&&report.summary.platform==BuildTarget.Android)OptimizeScene();}
@@ -81,7 +81,7 @@ public class QuestReefBuild : IProcessSceneWithReport {
    var materials=renderer.sharedMaterials;bool changed=false;
    for(int i=0;i<materials.Length;i++){
     var source=materials[i];if(!source||source.shader.name!="Underwater/Reef Surface")continue;
-    bool closed=renderer.name=="Porous reef outcrop"||renderer.name=="Eroded arch voussoir"||renderer.name.StartsWith("Continuous seabed");
+    bool closed=renderer.name=="Porous reef outcrop"||renderer.name=="Eroded arch voussoir"||renderer.name=="Reef foundation stone"||renderer.name.StartsWith("Continuous seabed");
     for(var parent=renderer.transform;parent;parent=parent.parent)if(parent.name.StartsWith("Scanned ")||parent.name.StartsWith("Photogrammetry | weathered reef bed"))closed=true;
     var key=(source,closed);
     if(!mobileMaterials.TryGetValue(key,out var mobile)){
@@ -127,7 +127,7 @@ public class QuestReefBuild : IProcessSceneWithReport {
   var hand=new GameObject("Grab test hand").transform;
   var fish=Array.FindAll(UnityEngine.Object.FindObjectsByType<SeaLife>(FindObjectsSortMode.None),f=>f.grabbable);
   if(fish.Length<2)throw new Exception("Expected clownfish colony");
-  for(int i=0;i<fish.Length;i++)fish[i].transform.position=hand.position+Vector3.right*(.4f-i*.04f);
+  for(int i=0;i<fish.Length;i++){fish[i].transform.position=hand.position+Vector3.right*(.2f-i*.025f);var touch=fish[i].GetComponent<FishTouchBody>();if(touch)touch.touchCollider.enabled=true;}Physics.SyncTransforms();
   diver.UpdateGrab(true,hand,fish);
   var nearest=fish[fish.Length-1];
   if(!nearest.IsHeld||Array.FindAll(fish,f=>f.IsHeld).Length!=1)throw new Exception("Grip failed to select one nearest fish");

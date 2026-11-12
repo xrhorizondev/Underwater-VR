@@ -20,6 +20,10 @@ namespace Underwater {
 
         static Vector3 Vector(BinaryReader reader) => new Vector3(reader.ReadSingle(),reader.ReadSingle(),reader.ReadSingle());
 
+        Transform palmSpace;Vector3 palmCenter;
+        public Vector3 PalmPosition=>palmSpace?palmSpace.TransformPoint(palmCenter):transform.position;
+        Transform gripAnchor;
+        public Transform GripAnchor=>gripAnchor?gripAnchor:transform;
         void Load(Transform visual,bool left) {
             var data=Resources.Load<TextAsset>(left ? "GloveLeft" : "GloveRight");
             using var reader=new BinaryReader(new MemoryStream(data.bytes));
@@ -39,6 +43,10 @@ namespace Underwater {
             }
             for(int i=0;i<indices.Length;i++) indices[i]=reader.ReadInt32();
             mesh=new Mesh {name="Fitted dive glove",vertices=vertices,normals=normals,uv=uv,colors=colors,triangles=indices};
+            mesh.RecalculateBounds();palmSpace=visual;palmCenter=mesh.bounds.center;
+            gripAnchor=new GameObject("Palm fish grip").transform;gripAnchor.SetParent(visual,false);
+            gripAnchor.localPosition=new Vector3(palmCenter.x,palmCenter.y-.025f,-.015f);
+            gripAnchor.localRotation=Quaternion.LookRotation(Vector3.forward,Vector3.down);
             mesh.AddBlendShapeFrame("Index trigger",100,trigger,null,null);
             mesh.AddBlendShapeFrame("Grip",100,grip,null,null);
             skin=visual.gameObject.AddComponent<SkinnedMeshRenderer>();
