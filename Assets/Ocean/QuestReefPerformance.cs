@@ -7,9 +7,9 @@ public class QuestReefPerformance:MonoBehaviour {
  void Awake(){
   UnityEngine.XR.XRSettings.eyeTextureResolutionScale=.78f;QualitySettings.antiAliasing=2;QualitySettings.shadows=ShadowQuality.Disable;QualitySettings.shadowResolution=ShadowResolution.Low;QualitySettings.shadowDistance=16;QualitySettings.shadowCascades=0;QualitySettings.pixelLightCount=1;QualitySettings.lodBias=.65f;QualitySettings.maximumLODLevel=0;QualitySettings.vSyncCount=0;QualitySettings.realtimeReflectionProbes=false;
   QualitySettings.streamingMipmapsActive=true;QualitySettings.streamingMipmapsMemoryBudget=256;
-  view=Camera.main;if(view){view.allowHDR=false;view.allowMSAA=true;view.farClipPlane=82;var optics=view.GetComponent<ReefOptics>();if(optics)optics.enabled=false;}
+  view=Camera.main;if(view){view.allowHDR=false;view.allowMSAA=true;view.farClipPlane=60;var optics=view.GetComponent<ReefOptics>();if(optics)optics.enabled=false;}
   var renderers=FindObjectsByType<Renderer>(FindObjectsSortMode.None);
-  var reefShader=Resources.Load<Shader>("QuestReef");var visited=new System.Collections.Generic.HashSet<Material>();foreach(var renderer in renderers){foreach(var mat in renderer.sharedMaterials){if(mat&&visited.Add(mat)&&mat.shader.name=="Underwater/Reef Surface")mat.shader=reefShader;}}
+  var reefShader=Resources.Load<Shader>("QuestReef");var visited=new System.Collections.Generic.HashSet<Material>();foreach(var renderer in renderers){foreach(var mat in renderer.sharedMaterials){if(reefShader&&mat&&visited.Add(mat)&&mat.shader.name=="Underwater/Reef Surface")mat.shader=reefShader;}}
   // Unity culls against the stereo camera frustum and far plane, including the first frame after a teleport.
   if (ShouldMeasureHabitatTravel()) StartCoroutine(MeasureHabitatTravel());
  }
@@ -47,6 +47,3 @@ public class QuestReefPerformance:MonoBehaviour {
  }
 }
 }
-
-
-

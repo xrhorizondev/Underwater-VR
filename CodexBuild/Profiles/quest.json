@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "name": "quest",
+  "displayName": "Meta Quest APK",
+  "buildTarget": "Android",
+  "artifactKind": "apk",
+  "artifactExtension": ".apk",
+  "applicationIdentifier": "",
+  "scenes": [
+    "Assets/Scenes/Underwater_Realistic.unity"
+  ],
+  "orientation": "auto",
+  "scriptingBackend": "IL2CPP",
+  "requiredArchitectures": [
+    "ARM64"
+  ],
+  "supportedUnityMajorVersions": [
+    2022,
+    6000
+  ],
+  "urp": {
+    "required": false,
+    "minRenderScale": 0.0,
+    "maxRenderScale": 1.0,
+    "requireHdrOff": false
+  },
+  "signing": {
+    "requireCustomKeystore": false,
+    "disallowDebugSigning": false
+  },
+  "obb": {
+    "enabled": false,
+    "required": false,
+    "expectedVersionCode": 0,
+    "packageIdentifier": ""
+  },
+  "validation": {
+    "requireArm64Library": true,
+    "requireAndroidManifest": true,
+    "requireNonEmptyArtifact": true
+  },
+  "developmentBuild": false
+}

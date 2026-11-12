@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "name": "desktop",
+  "displayName": "Windows Desktop",
+  "buildTarget": "StandaloneWindows64",
+  "artifactKind": "windows-executable",
+  "artifactExtension": ".exe",
+  "applicationIdentifier": "",
+  "scenes": [],
+  "orientation": "landscape",
+  "scriptingBackend": "IL2CPP",
+  "requiredArchitectures": [ "X86_64" ],
+  "supportedUnityMajorVersions": [ 2022, 6000 ],
+  "urp": {
+    "required": false,
+    "minRenderScale": 0.0,
+    "maxRenderScale": 1.5,
+    "requireHdrOff": false
+  },
+  "signing": {
+    "requireCustomKeystore": false,
+    "disallowDebugSigning": false
+  },
+  "obb": {
+    "enabled": false,
+    "required": false,
+    "expectedVersionCode": 0,
+    "packageIdentifier": ""
+  },
+  "validation": {
+    "requireArm64Library": false,
+    "requireAndroidManifest": false,
+    "requireNonEmptyArtifact": true
+  },
+  "developmentBuild": false
+}
