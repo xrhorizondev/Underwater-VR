@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.XR.OpenXR;
 using UnityEngine.XR.OpenXR.Features.MetaQuestSupport;
 namespace Underwater.Editor {
-[BuildCallbackVersion(8)]
+[BuildCallbackVersion(9)]
 public class QuestReefBuild : IProcessSceneWithReport {
  public int callbackOrder=>100;
  public void OnProcessScene(Scene scene,BuildReport report){if(report!=null&&report.summary.platform==BuildTarget.Android)OptimizeScene();}
@@ -29,7 +29,7 @@ public class QuestReefBuild : IProcessSceneWithReport {
   long before=Triangles();int colonies=0;
   foreach(var group in UnityEngine.Object.FindObjectsByType<LODGroup>(FindObjectsSortMode.None)){
    var lods=group.GetLODs();if(lods.Length<3)continue;
-   group.SetLODs(new[]{new LOD(.50f,lods[0].renderers),new LOD(.12f,lods[1].renderers),new LOD(.016f,lods[2].renderers)});group.fadeMode=LODFadeMode.None;group.RecalculateBounds();var coralLevels=group.GetLODs();coralLevels[2].screenRelativeTransitionHeight=Mathf.Min(.006f,group.size*.003f);group.SetLODs(coralLevels);colonies++;
+   group.SetLODs(new[]{new LOD(.50f,lods[0].renderers),new LOD(.18f,lods[1].renderers),new LOD(.016f,lods[2].renderers)});group.fadeMode=LODFadeMode.None;group.RecalculateBounds();var coralLevels=group.GetLODs();coralLevels[2].screenRelativeTransitionHeight=Mathf.Min(.006f,group.size*.003f);group.SetLODs(coralLevels);colonies++;
   }
   var rockMeshes=new System.Collections.Generic.Dictionary<Mesh,Mesh>();
   foreach(var filter in UnityEngine.Object.FindObjectsByType<MeshFilter>(FindObjectsSortMode.None)){
@@ -63,7 +63,8 @@ public class QuestReefBuild : IProcessSceneWithReport {
      var distant=child.AddComponent<MeshRenderer>();distant.sharedMaterial=r.sharedMaterial;
      distant.shadowCastingMode=ShadowCastingMode.Off;distant.reflectionProbeUsage=ReflectionProbeUsage.Off;
      float visibleSize=detail.size*Mathf.Max(Mathf.Abs(r.transform.lossyScale.x),Mathf.Abs(r.transform.lossyScale.z));
-     detail.SetLODs(new[]{new LOD(.075f,new Renderer[]{r}),new LOD(Mathf.Min(.012f,visibleSize*.006f),new Renderer[]{distant})});
+     // Keep touch-distance detail; use the same colony envelope sooner at mid range.
+     detail.SetLODs(new[]{new LOD(.14f,new Renderer[]{r}),new LOD(Mathf.Min(.012f,visibleSize*.006f),new Renderer[]{distant})});
      detail.RecalculateBounds();
      fullTriangles+=(long)full.GetIndexCount(0)/3;distanceTriangles+=(long)low.GetIndexCount(0)/3;
     }

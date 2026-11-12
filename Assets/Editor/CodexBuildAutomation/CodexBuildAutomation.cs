@@ -163,6 +163,12 @@ public static class CodexBuildAutomation
 
             EnsureOutputDirectory(outputPath);
             var buildOptions = BuildOptions.None;
+            // Editor-only scene optimization changes can otherwise reuse a stale
+            // incremental player scene. Opt in for performance comparison builds.
+            if (Environment.GetEnvironmentVariable("CODEX_UNITY_CLEAN_BUILD") == "1")
+            {
+                buildOptions |= BuildOptions.CleanBuildCache;
+            }
             if (profile.developmentBuild)
             {
                 buildOptions |= BuildOptions.Development;
