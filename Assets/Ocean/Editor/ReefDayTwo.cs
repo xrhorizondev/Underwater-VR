@@ -40,8 +40,9 @@ public static class ReefDayTwo {
    }
    if(surfaces.Count==0)throw new Exception("No hazard surface for "+life.kind);
    Physics.SyncTransforms();var outlines=new List<LineRenderer>();Bounds bounds=surfaces[0].bounds;
-   foreach(var surface in surfaces){outlines.Add(Outline(surface,root,glow));bounds.Encapsulate(surface.bounds);}
+   foreach(var surface in surfaces){if(life.kind!="Fire coral")outlines.Add(Outline(surface,root,glow));bounds.Encapsulate(surface.bounds);}
    zone.surfaces=surfaces.ToArray();zone.outlines=outlines.ToArray();
+   zone.glowTargets=life.kind=="Fire coral"?life.GetComponentsInChildren<MeshRenderer>():Array.Empty<Renderer>();
    var indicator=new GameObject("Caution indicator");indicator.transform.SetParent(root,false);
    indicator.transform.position=bounds.center+Vector3.up*(bounds.extents.y+.12f);
    float size=Mathf.Max(.001f,Mathf.Abs(root.lossyScale.x));indicator.transform.localScale=Vector3.one/size;
@@ -64,18 +65,22 @@ public static class ReefDayTwo {
  }
  static LineRenderer Outline(Collider surface,Transform root,Material material){
   var obj=new GameObject("Soft proximity outline");obj.transform.SetParent(surface.transform,false);
-  // Existing solid coral colliders must not acquire generated children outside
-  // the installer's own root, so put that outline in generated space instead.
-  bool existing=!surface.transform.IsChildOf(root);
-  if(existing){obj.transform.SetParent(root,false);obj.transform.SetPositionAndRotation(surface.transform.position,surface.transform.rotation);obj.transform.localScale=Vector3.one;}
   var line=obj.AddComponent<LineRenderer>();line.useWorldSpace=false;line.sharedMaterial=material;
   line.startWidth=line.endWidth=.012f;line.startColor=line.endColor=new Color(1,.055f,.025f,.6f);
   line.shadowCastingMode=UnityEngine.Rendering.ShadowCastingMode.Off;line.receiveShadows=false;
-  Bounds bounds=surface is BoxCollider box?new Bounds(box.center,box.size):((MeshCollider)surface).sharedMesh.bounds;
-  int[] route={0,1,3,2,0,4,5,1,5,7,3,7,6,2,6,4};var points=new Vector3[route.Length];
-  for(int i=0;i<points.Length;i++){int corner=route[i];var p=bounds.center+Vector3.Scale(bounds.extents,new Vector3((corner&1)==0?-1:1,(corner&2)==0?-1:1,(corner&4)==0?-1:1));points[i]=existing?obj.transform.InverseTransformPoint(surface.transform.TransformPoint(p)):p;}
+  Vector3[] points;
+  if(surface is MeshCollider spine){points=RingCenters(spine.sharedMesh.vertices,0,7,6);line.startWidth=.05f;line.endWidth=.008f;}
+  else if(surface.name.StartsWith("Pulsing bell")){
+   var box=(BoxCollider)surface;points=new Vector3[33];for(int i=0;i<points.Length;i++){float angle=i*Mathf.PI*2/32;points[i]=box.center+new Vector3(Mathf.Cos(angle)*box.size.x*.5f,-box.size.y*.5f+.02f,Mathf.Sin(angle)*box.size.z*.5f);}
+  }else if(surface.name.StartsWith("Trailing tentacle")){
+   var source=Array.Find(root.parent.GetComponentsInChildren<MeshFilter>(),m=>m.name=="Trailing tentacle"&&(m.transform.position-surface.transform.position).sqrMagnitude<.00001f);
+   if(!source)throw new Exception("Tentacle source missing");points=RingCenters(source.sharedMesh.vertices,0,6,5);for(int i=0;i<points.Length;i++)points[i]=surface.transform.InverseTransformPoint(source.transform.TransformPoint(points[i]));line.startWidth=.014f;line.endWidth=.004f;
+  }else{
+   var source=root.parent.parent.GetComponent<MeshFilter>();var vertices=source.sharedMesh.vertices;points=RingCenters(vertices,vertices.Length-27,9,8);for(int i=0;i<points.Length;i++)points[i]=surface.transform.InverseTransformPoint(source.transform.TransformPoint(points[i]));line.startWidth=.12f;line.endWidth=.012f;
+  }
   line.positionCount=points.Length;line.SetPositions(points);line.enabled=false;return line;
  }
+ static Vector3[] RingCenters(Vector3[] vertices,int first,int stride,int sides){var centers=new Vector3[(vertices.Length-first)/stride];for(int ring=0;ring<centers.Length;ring++){for(int side=0;side<sides;side++)centers[ring]+=vertices[first+ring*stride+side];centers[ring]/=sides;}return centers;}
  static void Stroke(Transform parent,Material material,Vector3[] points,float width){
   var obj=new GameObject("Warning stroke");obj.transform.SetParent(parent,false);var line=obj.AddComponent<LineRenderer>();line.useWorldSpace=false;line.sharedMaterial=material;
   line.startWidth=line.endWidth=width;line.startColor=line.endColor=new Color(1,.65f,.25f,.9f);line.positionCount=points.Length;line.SetPositions(points);line.shadowCastingMode=UnityEngine.Rendering.ShadowCastingMode.Off;line.receiveShadows=false;
@@ -83,7 +88,7 @@ public static class ReefDayTwo {
  public static void Validate(){
   EditorSceneManager.OpenScene(ScenePath);Physics.SyncTransforms();int total=0,tails=0,moon=0;
   foreach(var zone in UnityEngine.Object.FindObjectsByType<ReefDangerZone>(FindObjectsSortMode.None)){
-   Require(zone.owner&&zone.owner.danger&&zone.surfaces.Length>0&&zone.outlines.Length==zone.surfaces.Length,"Incomplete hazard");
+   Require(zone.owner&&zone.owner.danger&&zone.surfaces.Length>0&&(zone.outlines.Length==zone.surfaces.Length||zone.glowTargets.Length>0),"Incomplete hazard");
    Require(zone.cautionIndicator&&!zone.cautionIndicator.gameObject.activeSelf,"Indicator must start hidden");
    foreach(var line in zone.outlines)Require(line&&!line.enabled,"Outline must start hidden");
    foreach(var surface in zone.surfaces){Require(surface,"Missing hazard surface");if(surface.isTrigger)Require(surface.gameObject.layer==2,"Proxy affects solid collision");}

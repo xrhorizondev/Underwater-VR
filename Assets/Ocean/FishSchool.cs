@@ -27,7 +27,7 @@ public class FishSchool : MonoBehaviour {
    flocking[i]=neighbourSteer;}
    Vector3 steer=fish[i].transform.forward*.8f+(guide-positions[i]).normalized*.65f+flocking[i];
    Vector3 home=habitatCenter-positions[i];if(home.magnitude>habitatRadius)steer+=home.normalized*(home.magnitude-habitatRadius)*1.3f;
-   var diver=Diver.Instance;if(Application.isPlaying&&diver&&diver.Head){Vector3 away=positions[i]-diver.Head.position;float distance=away.magnitude;if(distance<1.3f)steer+=away.normalized*(1.3f-distance)*3;}
+   var diver=Diver.Instance;if(Application.isPlaying&&diver&&diver.Head){Vector3 away=positions[i]-diver.Head.position;float distance=away.magnitude;bool scooping=diver.GrabRequested&&fish[i].IsGrabbable&&(positions[i]-diver.RightPalm).sqrMagnitude<.5f*.5f;if(distance<1.3f&&!scooping)steer+=away.normalized*(1.3f-distance)*3;}
    fish[i].Step(dt,clock,steer);
   }
  }

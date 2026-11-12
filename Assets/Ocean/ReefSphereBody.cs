@@ -22,5 +22,12 @@ public class ReefSphereBody : MonoBehaviour {
   }
   return false;
  }
+ public Vector3 MoveSliding(Vector3 delta){
+  var start=transform.position;var moved=Move(delta);var remaining=delta-moved;
+  if(remaining.sqrMagnitude>.0000001f&&delta.sqrMagnitude>.0000001f&&Physics.SphereCast(start,radius,delta.normalized,out var hit,delta.magnitude+.025f,SolidMask,QueryTriggerInteraction.Ignore)){
+   var slide=Vector3.ProjectOnPlane(remaining,hit.normal);if(slide.sqrMagnitude>.0000001f)Move(slide);
+  }
+  return transform.position-start;
+ }
 }
 }

@@ -27,3 +27,12 @@ Initial device capture after launch: 115 steady one-second samples, mean 71.82 F
 Warning/reaction voices are short offline-generated English placeholders, not a recording of the wearer. Replace the assigned AudioClips with final diver narration later. Hazard surfaces are authored collider approximations, not exact animated-skin collision.
 The separate ProjectSettings/ProjectSettings.asset edit present at the start of this correction pass was preserved and is outside these changes. No foveation feature or input-backend change was made.
 Use Underwater.Editor.ReefCorrections.Apply in an isolated project for authoring/validation; do not regenerate the reef. Use Underwater.Editor.ReefCorrections.Validate for checks only. The source scene and generated correction assets have been returned to the main workspace.
+
+## Contact and ray follow-up
+- Fish now receive a gentle collision-safe nudge from palm or animated fingertip contact (about 8 cm, with a contact latch/cooldown). Held fish and intentional close scooping suppress the nudge. Fish still do not push the diver.
+- The grab anchor uses the visible palm surface, and fish support uses belly vertices rather than fin-padded bounds. Both hands measured a 2 mm support gap. Nearby grabbable fish stop fleeing the head while the wearer is actively scooping them.
+- Rectangular hazard outlines were replaced with jelly bell rims, curved tentacle lines, tapered lionfish spine/ray tail lines, and a soft fire-coral tint. Fingertips now participate in hazard contact detection.
+- Surface manta and all three stingrays use persistent obstacle escape headings and swept sliding movement, retaining wing animation. Each passed 360 seconds of simulation without stationary periods or reef penetration; manta travelled 151.2 m and each stingray 100.8 m.
+- Final isolated validation exited 0, including existing Day 1/2 regression checks. Unity Quest build exited 0; manifest, ARM64 payload and APK v2 signature passed. Existing obsolete-API warnings remain.
+- Installed and launched Builds/DayTwoContactFix/quest.apk on the connected Quest without clearing app data. Size 56,304,027 bytes; SHA-256 E9F3DD3D155F24D058D9435DF7733646B5745A1D101C2318DC884363098ABD88. Wearer confirmation and an awake-headset performance sample are pending; automated movement checks do not establish perceived smoothness.
+- Checkpoint 6087932 was pushed to feature/bug-fix before this follow-up. The separate ProjectSettings edit remains excluded.

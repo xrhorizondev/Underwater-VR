@@ -6,6 +6,7 @@ public class FishAgent : MonoBehaviour {
  public float bodyLength=.35f, cruiseSpeed=.5f, variation;
  public Vector3 Velocity { get; private set; }
  public float TailPhase { get; private set; }
+ public bool IsGrabbable=>interaction&&interaction.grabbable;
  ReefSphereBody body; SeaLife interaction;Renderer skin; MaterialPropertyBlock properties;
  float currentSpeed, bank, obstacleTimer; Vector3 avoidance;
  public void Initialize(int index) {

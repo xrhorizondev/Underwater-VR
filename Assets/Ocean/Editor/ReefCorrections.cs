@@ -42,9 +42,16 @@ public static class ReefCorrections {
    bool first=true;Bounds bounds=default;
    foreach(var filter in animal.GetComponentsInChildren<MeshFilter>())foreach(var vertex in filter.sharedMesh.vertices){var p=animal.InverseTransformPoint(filter.transform.TransformPoint(vertex));if(first){bounds=new Bounds(p,Vector3.zero);first=false;}else bounds.Encapsulate(p);}
    if(first)throw new Exception("No animal mesh for collider: "+animal.name);
-   touch.bodyBounds=bounds;touch.touchCollider=shape;shape.direction=2;shape.center=bounds.center;shape.radius=Mathf.Max(.02f,Mathf.Max(bounds.extents.x,bounds.extents.y));shape.height=Mathf.Max(bounds.size.z,shape.radius*2);shape.isTrigger=true;shape.enabled=false;
+   touch.bodyBounds=bounds;touch.bellySupportLocal=MeasureBelly(animal,bounds);touch.touchCollider=shape;shape.direction=2;shape.center=bounds.center;shape.radius=Mathf.Max(.02f,Mathf.Max(bounds.extents.x,bounds.extents.y));shape.height=Mathf.Max(bounds.size.z,shape.radius*2);shape.isTrigger=true;shape.enabled=false;
   }
   Debug.Log("FISH_TOUCH_COLLIDERS_INSTALLED count="+animals.Count+" triggerOnly=true distanceCulled=true");
+ }
+ static float MeasureBelly(Transform animal,Bounds bounds){
+  var values=new List<float>();foreach(var filter in animal.GetComponentsInChildren<MeshFilter>()){
+   var vertices=filter.sharedMesh.vertices;var normals=filter.sharedMesh.normals;if(normals.Length!=vertices.Length)continue;
+   for(int i=0;i<vertices.Length;i++){var p=animal.InverseTransformPoint(filter.transform.TransformPoint(vertices[i]));var n=animal.InverseTransformDirection(filter.transform.TransformDirection(normals[i]));if(Mathf.Abs(p.x-bounds.center.x)<bounds.extents.x*.6f&&Mathf.Abs(p.z)<bounds.extents.z*.4f&&n.y<-.45f)values.Add(p.y);}
+  }
+  if(values.Count==0)return Mathf.Max(.01f,-bounds.min.y);values.Sort();return Mathf.Max(.01f,-values[Mathf.Clamp(values.Count/10,0,values.Count-1)]);
  }
  static void AddFoundations(){
   var rock=Array.Find(UnityEngine.Object.FindObjectsByType<MeshRenderer>(FindObjectsSortMode.None),r=>r.name=="Porous reef outcrop");if(!rock)throw new Exception("No reef rock material");

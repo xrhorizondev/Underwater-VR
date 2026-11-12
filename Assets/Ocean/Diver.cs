@@ -5,8 +5,11 @@ public class Diver:MonoBehaviour {
  ScubaGlove leftGlove,rightGlove;SeaLife heldFish;bool gripDown,grabSpent;SeaLife[] lifeCache;ReefAtmosphere atmosphereCache;DiverCollisionMotor motor;public static Diver Instance;public Transform Head{get;private set;} public int Zone{get;private set;}
  ReefContactFeedback contactFeedback;float nextCaution,nextContact;
  public bool MenuOpen=>menu;
+ public bool GrabRequested {get;private set;}
  public Vector3 LeftPalm=>leftGlove?leftGlove.PalmPosition:transform.position;
  public Vector3 RightPalm=>rightGlove?rightGlove.PalmPosition:transform.position;
+ public Vector3 LeftFingertip=>leftGlove?leftGlove.FingertipPosition:LeftPalm;
+ public Vector3 RightFingertip=>rightGlove?rightGlove.FingertipPosition:RightPalm;
  public bool currentAssist=true,consequences=true;Transform left,right;Vector3 velocity,previousLeft,previousRight;float idle,captionUntil;string caption="";int menuZone;float nextMenuStep;bool previousBack,previousMenuSelect;bool menu=true,previousMenu,previousTeleport,xrStarted;float yaw,pitch;AudioSource voice;Camera cam;TextMesh headsetCaption;
  void Start(){lifeCache=FindObjectsByType<SeaLife>(FindObjectsSortMode.None);atmosphereCache=FindFirstObjectByType<ReefAtmosphere>();Instance=this;Head=transform.Find("Head");motor=GetComponent<DiverCollisionMotor>();if(!motor)motor=gameObject.AddComponent<DiverCollisionMotor>();motor.Initialize();cam=Head.GetComponent<Camera>();voice=Head.gameObject.AddComponent<AudioSource>();voice.spatialBlend=0;
  leftGlove=ScubaGlove.Create(transform,true);rightGlove=ScubaGlove.Create(transform,false);left=leftGlove.transform;right=rightGlove.transform;
@@ -37,7 +40,7 @@ public class Diver:MonoBehaviour {
  previousMenuSelect=teleportPressed;
  bool back=l.TryGetFeatureValue(CommonUsages.secondaryButton,out bool backDown)&&backDown;if(back&&!previousBack&&menu)SetMenu(false);previousBack=back;
  headsetCaption.text=xr&&menu?"HABITATS\n"+OceanWorld.Names[menuZone]+"\nRight stick: select | A: dive\nY / left menu: back":xr&&Time.time<captionUntil?caption:"";
- bool grab=!menu&&(Input.GetMouseButton(0)||r.TryGetFeatureValue(CommonUsages.gripButton,out bool grip)&&grip);UpdateGrab(grab,rightGlove.GripAnchor,lifeCache);
+ bool grab=!menu&&(Input.GetMouseButton(0)||r.TryGetFeatureValue(CommonUsages.gripButton,out bool grip)&&grip);GrabRequested=grab;UpdateGrab(grab,rightGlove.GripAnchor,lifeCache);
 
  }
  void SetMenu(bool open){menu=open;velocity=Vector3.zero;ReleaseGrab();GetComponent<ReefSoundscape>()?.Cue(false);}

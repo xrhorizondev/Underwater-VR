@@ -22,6 +22,8 @@ namespace Underwater {
 
         Transform palmSpace;Vector3 palmCenter;
         public Vector3 PalmPosition=>palmSpace?palmSpace.TransformPoint(palmCenter):transform.position;
+        Vector3 tipPoint,tipTrigger,tipGrip;float triggerPose,gripPose;
+        public Vector3 FingertipPosition=>palmSpace?palmSpace.TransformPoint(tipPoint+tipTrigger*triggerPose+tipGrip*gripPose):transform.position;
         Transform gripAnchor;
         public Transform GripAnchor=>gripAnchor?gripAnchor:transform;
         void Load(Transform visual,bool left) {
@@ -44,8 +46,11 @@ namespace Underwater {
             for(int i=0;i<indices.Length;i++) indices[i]=reader.ReadInt32();
             mesh=new Mesh {name="Fitted dive glove",vertices=vertices,normals=normals,uv=uv,colors=colors,triangles=indices};
             mesh.RecalculateBounds();palmSpace=visual;palmCenter=mesh.bounds.center;
+            int tip=0;for(int i=1;i<vertices.Length;i++)if(vertices[i].z>vertices[tip].z)tip=i;tipPoint=vertices[tip];tipTrigger=trigger[tip];tipGrip=grip[tip];
             gripAnchor=new GameObject("Palm fish grip").transform;gripAnchor.SetParent(visual,false);
-            gripAnchor.localPosition=new Vector3(palmCenter.x,palmCenter.y-.025f,-.015f);
+            var palmSamples=new System.Collections.Generic.List<float>();for(int i=0;i<vertices.Length;i++)if(Mathf.Abs(vertices[i].x-palmCenter.x)<.035f&&vertices[i].z>-.045f&&vertices[i].z<.02f&&normals[i].y<-.4f)palmSamples.Add(vertices[i].y);
+            palmSamples.Sort();float palmY=palmSamples.Count>0?palmSamples[palmSamples.Count/3]:palmCenter.y-.025f;
+            gripAnchor.localPosition=new Vector3(palmCenter.x,palmY,-.015f);
             gripAnchor.localRotation=Quaternion.LookRotation(Vector3.forward,Vector3.down);
             mesh.AddBlendShapeFrame("Index trigger",100,trigger,null,null);
             mesh.AddBlendShapeFrame("Grip",100,grip,null,null);
@@ -61,6 +66,7 @@ namespace Underwater {
         void SetPose(int index,float value,float dt) {
             float previous=skin.GetBlendShapeWeight(index);
             float next=Mathf.MoveTowards(previous,Mathf.Clamp01(value)*100,dt*700);
+            if(index==0)triggerPose=next*.01f;else gripPose=next*.01f;
             if(previous!=next)skin.SetBlendShapeWeight(index,next);
         }
         void OnDestroy(){if(mesh)Destroy(mesh);if(material)Destroy(material);}
