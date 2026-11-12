@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.XR.OpenXR;
 using UnityEngine.XR.OpenXR.Features.MetaQuestSupport;
 namespace Underwater.Editor {
-[BuildCallbackVersion(9)]
+[BuildCallbackVersion(11)]
 public class QuestReefBuild : IProcessSceneWithReport {
  public int callbackOrder=>100;
  public void OnProcessScene(Scene scene,BuildReport report){if(report!=null&&report.summary.platform==BuildTarget.Android)OptimizeScene();}
@@ -29,7 +29,7 @@ public class QuestReefBuild : IProcessSceneWithReport {
   long before=Triangles();int colonies=0;
   foreach(var group in UnityEngine.Object.FindObjectsByType<LODGroup>(FindObjectsSortMode.None)){
    var lods=group.GetLODs();if(lods.Length<3)continue;
-   group.SetLODs(new[]{new LOD(.50f,lods[0].renderers),new LOD(.18f,lods[1].renderers),new LOD(.016f,lods[2].renderers)});group.fadeMode=LODFadeMode.None;group.RecalculateBounds();var coralLevels=group.GetLODs();coralLevels[2].screenRelativeTransitionHeight=Mathf.Min(.006f,group.size*.003f);group.SetLODs(coralLevels);colonies++;
+   group.SetLODs(new[]{new LOD(.50f,lods[0].renderers),new LOD(.18f,lods[1].renderers),new LOD(.016f,lods[2].renderers)});group.fadeMode=LODFadeMode.None;group.RecalculateBounds();var coralLevels=group.GetLODs();var scale=group.transform.lossyScale;float visibleSize=group.size*Mathf.Max(Mathf.Abs(scale.x),Mathf.Abs(scale.y),Mathf.Abs(scale.z));coralLevels[2].screenRelativeTransitionHeight=Mathf.Min(.025f,visibleSize*.012f);group.SetLODs(coralLevels);colonies++;
   }
   var rockMeshes=new System.Collections.Generic.Dictionary<Mesh,Mesh>();
   foreach(var filter in UnityEngine.Object.FindObjectsByType<MeshFilter>(FindObjectsSortMode.None)){
@@ -64,7 +64,7 @@ public class QuestReefBuild : IProcessSceneWithReport {
      distant.shadowCastingMode=ShadowCastingMode.Off;distant.reflectionProbeUsage=ReflectionProbeUsage.Off;
      float visibleSize=detail.size*Mathf.Max(Mathf.Abs(r.transform.lossyScale.x),Mathf.Abs(r.transform.lossyScale.z));
      // Keep touch-distance detail; use the same colony envelope sooner at mid range.
-     detail.SetLODs(new[]{new LOD(.14f,new Renderer[]{r}),new LOD(Mathf.Min(.012f,visibleSize*.006f),new Renderer[]{distant})});
+     detail.SetLODs(new[]{new LOD(.14f,new Renderer[]{r}),new LOD(Mathf.Min(.025f,visibleSize*.012f),new Renderer[]{distant})});
      detail.RecalculateBounds();
      fullTriangles+=(long)full.GetIndexCount(0)/3;distanceTriangles+=(long)low.GetIndexCount(0)/3;
     }
@@ -96,7 +96,9 @@ public class QuestReefBuild : IProcessSceneWithReport {
   }
   Debug.Log("QUEST_MATERIALS_BAKED count="+mobileMaterials.Count);
   foreach(var light in UnityEngine.Object.FindObjectsByType<Light>(FindObjectsSortMode.None)){light.shadows=light==RenderSettings.sun?LightShadows.Hard:LightShadows.None;if(light.type!=LightType.Directional)light.renderMode=LightRenderMode.ForceVertex;}
-  foreach(var ps in UnityEngine.Object.FindObjectsByType<ParticleSystem>(FindObjectsSortMode.None)){var main=ps.main;main.cullingMode=ParticleSystemCullingMode.Pause;main.maxParticles=Mathf.Min(main.maxParticles,45);var emission=ps.emission;emission.rateOverTime=2;}
+  // The diver's nearby cloud is already seeded. Do not also fast-forward each
+  // 22-second environmental emitter on load or its first visible head turn.
+  foreach(var ps in UnityEngine.Object.FindObjectsByType<ParticleSystem>(FindObjectsSortMode.None)){var main=ps.main;main.prewarm=false;main.cullingMode=ParticleSystemCullingMode.Pause;main.maxParticles=Mathf.Min(main.maxParticles,45);var emission=ps.emission;emission.rateOverTime=2;}
   if(!UnityEngine.Object.FindFirstObjectByType<QuestReefPerformance>())new GameObject("Quest 3 performance profile").AddComponent<QuestReefPerformance>();
   Debug.Log($"QUEST_SCENE_OPTIMIZED colonies={colonies} meshTrianglesAllLODsBefore={before} after={Triangles()}");
  }

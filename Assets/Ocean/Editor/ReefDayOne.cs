@@ -78,11 +78,25 @@ public static class ReefDayOne {
    Camera.main.transform.localPosition-=directions[i]*3;motor.TrackHead();
   }
   motor.Move(Vector3.up*100);Require(Camera.main.transform.position.y<=6.501f,"Water ceiling failed");
-  FishMotionValidation.Run();QuestReefBuild.GrabCheck();
+  FishMotionValidation.Run();QuestReefBuild.GrabCheck();ValidateParticleStartup();
   foreach(string clip in new[]{"ReefBreathing","ReefScore","ReefClick","ReefTravel"})Require(Resources.Load<AudioClip>(clip),"Missing baked audio "+clip);
   Debug.Log("DAY_ONE_VALIDATED sides=4 outsideTeleports=rejected roomScale=passed menuDestinations=8 shells=24 ceiling=6.5 audio=baked");
  }
  static void Require(bool value,string message){if(!value)throw new Exception(message);}
+ static void ValidateParticleStartup(){
+  var cloud=new GameObject("Particle startup validation");
+  try{
+   cloud.AddComponent<DiverImmersion>().Initialize(Camera.main.transform);
+   var particles=cloud.GetComponentInChildren<ParticleSystem>();Require(particles&&particles.particleCount==96,"Expected settled particle cloud without simulation warm-up");
+   var seeded=new ParticleSystem.Particle[96];Require(particles.GetParticles(seeded)==96,"Missing initial particles");
+   foreach(var particle in seeded){
+    float distance=Vector3.Distance(particle.position,Camera.main.transform.position);
+    Require(distance>=.799f&&distance<=4.001f,"Particle outside initial water volume");
+    Require(particle.remainingLifetime>=5.249f&&particle.remainingLifetime<=14,"Invalid seeded particle age");
+   }
+   Debug.Log("PARTICLE_STARTUP_VALIDATED seeded=96 warmupSimulationSteps=0");
+  }finally{UnityEngine.Object.DestroyImmediate(cloud);}
+ }
  static void BakeAudio(){
   Write("ReefBreathing",8,null,true);
   Write("ReefScore",16,(i,rate)=>{float t=(float)i/rate,value=0;foreach(float f in new[]{130.8128f,196f,261.6256f,329.6276f})value+=Mathf.Sin(2*Mathf.PI*Mathf.Round(f*16)*t/16)*.12f;return value*(.7f+.3f*Mathf.Cos(2*Mathf.PI*t/16));});
