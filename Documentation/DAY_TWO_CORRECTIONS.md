@@ -36,3 +36,6 @@ Use Underwater.Editor.ReefCorrections.Apply in an isolated project for authoring
 - Final isolated validation exited 0, including existing Day 1/2 regression checks. Unity Quest build exited 0; manifest, ARM64 payload and APK v2 signature passed. Existing obsolete-API warnings remain.
 - Installed and launched Builds/DayTwoContactFix/quest.apk on the connected Quest without clearing app data. Size 56,304,027 bytes; SHA-256 E9F3DD3D155F24D058D9435DF7733646B5745A1D101C2318DC884363098ABD88. Wearer confirmation and an awake-headset performance sample are pending; automated movement checks do not establish perceived smoothness.
 - Checkpoint 6087932 was pushed to feature/bug-fix before this follow-up. The separate ProjectSettings edit remains excluded.
+
+### Palm fit adjustment after wearer feedback
+The wearer still saw a small gap in b89bc32. Lowered the held fish another 12 mm: the belly now seats 10 mm into the cupped glove reference surface instead of floating 2 mm above it. Both-hand seating validation and existing movement/contact checks passed (Unity exit 0). This is a visual fit adjustment; wearer confirmation remains required.

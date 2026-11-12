@@ -42,7 +42,7 @@ public static class ReefFollowupValidation {
   try{foreach(bool left in new[]{false,true}){
    var glove=ScubaGlove.Create(rig,left);glove.transform.localRotation=Quaternion.Euler(0,0,left?90:-90);glove.Animate(.2f,.55f,1);
    var fish=UnityEngine.Object.Instantiate(source.gameObject,glove.GripAnchor.position,glove.GripAnchor.rotation);var life=fish.GetComponent<SeaLife>();var touch=fish.GetComponent<FishTouchBody>();float now=Time.time;
-   try{life.Grab(glove.GripAnchor);for(int i=0;i<40;i++)life.StepHeld(1f/72,now+i/72f);float gap=Vector3.Dot(fish.transform.position-glove.GripAnchor.position,glove.GripAnchor.up)-touch.bellySupportLocal*Mathf.Abs(fish.transform.lossyScale.y);if(Mathf.Abs(gap)>.006f)throw new Exception("Fish belly floats above palm: "+gap);Debug.Log("PALM_SUPPORT_CHECK left="+left+" gapMetres="+gap.ToString("F4"));}
+   try{life.Grab(glove.GripAnchor);for(int i=0;i<40;i++)life.StepHeld(1f/72,now+i/72f);float gap=Vector3.Dot(fish.transform.position-glove.GripAnchor.position,glove.GripAnchor.up)-touch.bellySupportLocal*Mathf.Abs(fish.transform.lossyScale.y);if(gap>0||gap<-.014f)throw new Exception("Fish belly seating outside glove tolerance: "+gap);Debug.Log("PALM_SUPPORT_CHECK left="+left+" gapMetres="+gap.ToString("F4"));}
    finally{UnityEngine.Object.DestroyImmediate(fish);UnityEngine.Object.DestroyImmediate(glove.gameObject);}
   }}finally{UnityEngine.Object.DestroyImmediate(rig.gameObject);}
  }

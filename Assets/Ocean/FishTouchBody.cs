@@ -6,7 +6,8 @@ public sealed class FishTouchBody:MonoBehaviour {
  public Bounds bodyBounds;
  public float bellySupportLocal;
  SeaLife interaction;ReefSphereBody body;float nextCheck,nextTouch,contactReach;bool touching;Vector3 contactVelocity;
- public float PalmLift=>(bellySupportLocal>0?bellySupportLocal:-bodyBounds.min.y)*Mathf.Abs(transform.lossyScale.y)+.002f;
+ // Seat the soft belly slightly into the cupped glove so fins do not leave a visible air gap.
+ public float PalmLift=>Mathf.Max(0,(bellySupportLocal>0?bellySupportLocal:-bodyBounds.min.y)*Mathf.Abs(transform.lossyScale.y)-.010f);
  void Start(){interaction=GetComponent<SeaLife>();body=GetComponent<ReefSphereBody>();var scale=transform.lossyScale;contactReach=bodyBounds.extents.magnitude*Mathf.Max(Mathf.Abs(scale.x),Mathf.Abs(scale.y),Mathf.Abs(scale.z))+.10f;nextCheck=Time.time+(Mathf.Abs(transform.position.x*.31f+transform.position.z*.17f)%1)*.25f;}
  void Update(){
   if(!touchCollider||Time.time<nextCheck)return;nextCheck=Time.time+.25f;
