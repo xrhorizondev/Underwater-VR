@@ -1,56 +1,49 @@
-# Day 1 implementation and validation — 12 November 2026
+# Day 1 results — 12 November 2026
 
-## Changes
-- Added four invisible ReefSolid perimeter walls at X = ±44 and Z = -16/248, plus a safety floor below the seabed. DiverCollisionMotor rejects teleports outside the assigned dive volume. Existing water ceiling remains Y = 6.5.
-- Repaired only two pre-existing blocked teleport shells: wreck shell moved 0.8 m sideways; twilight shell moved 0.4 m sideways with a small floor-height adjustment. No rocks or coral were repositioned.
-- Replaced runtime breathing/music/cue sample generation with editor-baked PCM resources. Existing sounds, volumes and continuous music behavior are preserved for this checkpoint; ambience-first changes belong to the later audio pass.
-- Moved Quest reef material conversion from the first runtime Awake into the Android scene build callback. Shared source materials remain untouched by the new conversion; built mobile clones have instancing enabled.
-- Enabled back-face culling only on closed rock, seabed and scanned coral meshes in Android build materials. Open fans/plates/grass remain two-sided. Compiled UV and world-mapped mobile shader paths separately to avoid unused texture reads/varyings; resolution and draw distance remain unchanged.
-- Added fixed-size startup/head-turn metrics. Five-second logs include actual display refresh rate, frame intervals, turn intervals, main-thread timing and GPU data availability. The main-thread recorder includes pacing/wait time; it is not pure CPU workload. The XR provider's GPU value is logged raw because observed units disagree with the API documentation. Use VrApi for authoritative headset FPS/GPU correlation. Strict frame-interval budget counts are not dropped frames; small scheduling jitter is normal.
+## Outcome
+The wearer confirmed the final normal-play build is “smooth enough now” after checking the previously stuck forward reef view. Quest 2 telemetry recorded 53 steady one-second samples from 12:15:24–12:16:16 device log time: mean 71.96 FPS, minimum 69, maximum 73, against a 72 Hz display. This is a successful sampled test, not a guarantee of zero spikes across every location or long session. Earlier instrumented tests still showed occasional 22–25 ms frames.
 
-## Automated validation
-Unity 6000.4.5f1, isolated project copy under .utmp/DayOneProject. Unity validation exit 0.
-- Existing fish sweep, wall slide, blocked teleport, room-scale protection and seabed checks passed.
-- All four perimeter swim/head sweeps and outside-teleport rejection passed.
-- Eight habitat menu destinations and all 24 teleport shells clear.
-- Water ceiling passed at 6.5.
-- Fish regression: 227 fish, nine shoals, 20 simulated seconds; maximum step 0.0247 m, pitch 10 degrees, turn 51.42 degrees/second.
-- Clownfish nearest-grab, escape and release regression passed.
-- All four baked AudioClip resources load successfully.
+Day 1 collision work is complete and the major forward-view freeze is substantially improved. Day 2 remains separate: improve the three-stage danger system, surface-based distances, tail-only warnings and stereo feedback.
 
-## Build
-Toolkit installation check passed. ARM64 IL2CPP/Vulkan Quest build passed with the actual Unity process awaited; toolkit exit 0 and Unity report buildResult Succeeded. Output: Builds/DayOne/quest.apk. Local test signing; no store release.
-Manifest, ARM64 library and APK v2 signature verified. Toolkit launcher in scratch was corrected to wait for Unity's GUI executable on Windows. Source project settings/packages/XR assets were not changed.
+## Delivered changes
+- Four invisible ReefSolid perimeter walls at X = ±44, Z = -16/248, plus a safety floor below the seabed. Outside teleports are rejected. The tracked-head ceiling remains Y = 6.5.
+- Only two obstructed teleport shells were moved locally: one by 0.8 m, one by 0.4 m with a small floor-height correction. Surrounding rocks/coral were preserved.
+- Breathing, music and interaction cues are baked PCM resources instead of main-thread sample generation at startup. Existing sound levels and music behavior were preserved; ambience-first redesign belongs to the later audio pass.
+- Quest mobile materials are prepared in the Android scene build callback, using shared mobile clones rather than scanning renderers and swapping shaders on entry.
+- Back-face culling applies only to closed rocks, seabed and scanned coral. Open fans, plates and grass remain two-sided. Separate UV/world-mapped shader variants avoid unused texture reads and varyings.
+- Android coral LODs preserve close detail, use existing lower-detail meshes earlier, and cull tiny distant colonies sooner. Rocks/passages retain the 60 m camera range; eye scale remains .78. Source creature/colony placement and collision are preserved.
+- The nearby water cloud directly seeds 96 settled particles instead of running 70 simulation calls (8.75 simulated seconds) during initialization. Android environmental emitters no longer prewarm their 22-second lifetimes. Nearby particles remain present immediately.
+- Normal play has no per-frame Unity recorder, GPU query or periodic diagnostic log. Profiling is explicitly opt-in. Final app capture contained zero REEF_FRAMES periodic messages.
 
-Existing warnings: obsolete Unity discovery APIs; Android Active Input Handling = Both. Current scripts use legacy input APIs, so the backend was preserved pending a dedicated compatibility pass. The log filter also counts recoverable licensing notices as errors; the actual build report passed.
+## Validation
+Unity 6000.4.5f1 in an isolated project copy, preserving the open source editor.
+- Unity collision/particle regression exit 0.
+- Fish sweep, wall slide, blocked teleport, room-scale movement and seabed checks passed.
+- Four perimeter swim/head sweeps and outside-teleport rejection passed.
+- All eight habitat destinations and all 24 teleport shells clear; water ceiling passed at 6.5.
+- Fish regression: 227 fish, nine shoals, 20 simulated seconds; maximum step .0247 m, pitch 10 degrees, turn 51.42 degrees/second.
+- Nearest clownfish grab, escape and release passed.
+- Particle seed count, initial water volume and ages passed with zero warm-up simulation steps.
+- All four baked audio resources loaded.
+- Earlier eight-zone headset travel test completed, with 215–216 frames per three-second sample in habitats 1–7; habitat 0 exposed the dense forward-view problem subsequently addressed. The final normal-play sample focused on that starting reef.
 
-## Headset evidence
-Quest 2 connected and the locally signed APK installed successfully.
-- Prior installed build: visible reef samples around 56–61 FPS at 72 Hz, GPU utilization about 89–98%.
-- First startup-work optimization: a 59-second user-controlled sample showed 72/72 FPS, including turns. A later eye-level sample reproduced about 20 ms frame intervals, so the first sample did not establish a full fix. Camera paths were not matched; these are observed samples, not a controlled benchmark.
-- GPU pass: closed-surface culling and separate texture-mapping shader variants. All eight diagnostic teleports completed without errors. Habitat samples: 0 = 190 frames/3 s (worst 17.4 ms); 1 = 215 (17.3 ms); 2 = 216 (16.6 ms); 3 = 216 (15.4 ms); 4 = 216 (14.9 ms); 5 = 216 (15.0 ms); 6 = 216 (14.9 ms); 7 = 216 (17.7 ms). No zone sample exceeded two refresh intervals. Back in the dense reef, sustained turning still produced roughly 18–20 ms intervals, so refinement continued.
-- Latest startup boundary: first focused frame at 4.575 s with a 14.7 ms interval. An earlier run reported a 281.2 ms loading-boundary interval. Cold-start consistency still needs a larger sample; do not claim that every startup hitch is eliminated.
-- A headset screenshot confirmed textured geometry in both eyes. Exact framing varies with the wearer.
+## Final artifact
+Builds/QuestTest/quest.apk — 55,386,093 bytes, local test signing.
+Unity build report Succeeded; toolkit/actual awaited Unity exit 0. APK manifest, ARM64 payload and APK v2 signature verified. Installed on connected Quest 2 without clearing app data.
+SHA-256: E25DB005720558ACEEDFDBE6277AA6CC356A44BA94BF2EC1D571D63B16209BFA.
 
-## Final refinement
-Android-only LOD thresholds now switch existing scanned coral from middle to far detail at .18 screen fraction (previously .12), and procedural colonies from full to clustered detail at .14 (previously .075). Near touch-distance detail, colony positions, collision, eye scale .78 and the 60 m far plane are preserved.
-Unity unexpectedly reused the prior APK for an incremental build after this editor-only callback edit. Added opt-in CODEX_UNITY_CLEAN_BUILD=1 support to the local build entry point and rebuilt with BuildOptions.CleanBuildCache. Confirmed optimization callback execution and a different APK SHA-256.
-Final clean build: toolkit/Unity exit 0; manifest, ARM64 and APK v2 signature verified. APK size 55,378,429 bytes; SHA-256 1FA2C230CF828A50B4912021604F5E8820D730416E186D81890F329E444F025E. Installed and launched on Quest 2 in normal exploration mode. Final dense-reef headset comparison pending. Day 2 has not started.
+Prior APKs remain under Builds/DayOne and Builds/ReefViewTest for comparison. Builds/logs are ignored by Git; source and documentation checkpoints provide rollback history.
 
-## Reuse
-Use Underwater/Apply side boundaries and bake startup audio for the focused editor authoring pass (Underwater.Editor.ReefDayOne.Apply in batch). Validate without authoring via Underwater.Editor.ReefDayOne.Validate. Do not regenerate the full reef. If the source editor is open, run in an isolated copy and return only the intended scene/audio assets. QuestReefBuild now performs mobile material substitution at build time; ReefSoundscape now loads baked resources.
-For headset sampling, start the app with Android boolean extra reefTravelTest=true to run the existing eight-zone diagnostic and return to the starting location. Wear the headset and finish Guardian; asleep/system-only frames are not valid app performance data. Normal launches do not enable automated travel.
+## Rejected experiment and limits
+The user approved a moderate fixed-foveation test. Although the wearer found clarity acceptable, forward-view performance regressed badly in that test. The prior APK was restored, the experimental runtime/editor code was removed, and the isolated Android XR setting was reset. Source XR settings were never changed. Foveation is not part of this delivered change.
+Earlier cold runs showed 281–309 ms initial spikes. Particle pre-simulation and other startup work were removed, but normal-play telemetry does not establish a worst-case cold-start frame bound. Do not claim every startup hitch has been eliminated. No visual/scene regeneration was performed.
 
-## Follow-up after the clean reef test
-The user completed the clean-build starting-reef test. It still averaged about 63–66 FPS during eye-level turns, with a 309.3 ms initial spike. Therefore the LOD pass alone did not resolve the reported issue. Commit 804ce36 was explicitly approved and pushed to origin/feature/bug-fix.
+Existing warnings remain: deprecated Unity discovery APIs and Android Active Input Handling = Both. Current legacy input calls were preserved. Build log filtering also counts recoverable licensing notices as errors; rely on the actual build result/report and artifact verification.
 
-The user explicitly approved testing moderate fixed foveation on Quest. Prepared runtime level .5 with center resolution unchanged; isolated XR asset diff is only FoveatedRenderingFeature Android m_enabled: 0 -> 1. Source XR settings remain unchanged until headset evaluation.
-
-Additional startup work removed: DiverImmersion previously called Tick/Simulate 70 times, advancing 8.75 simulated seconds on initialization. It now directly seeds 96 settled particles, including positions, ages and sizes. Android build environmental emitters no longer prewarm their 22-second lifetimes; the nearby seeded cloud supplies immediate particles. Validation passed seeded count, volume and ages, plus collision, all 24 anchors, fish and grab regressions. Unity validation exit 0.
-
-Clean foveation/particle test build passed: toolkit/Unity exit 0; ARM64, manifest and APK v2 signature verified; installed successfully without clearing app data. Artifact: Builds/FoveationTest/quest.apk, 55,385,597 bytes. SHA-256: 3F00043C962A03991C9F3D936E70449590DCC83F39008B0F7A85EA6BED333FB9. Headset FPS/startup/clarity evaluation pending; no stable-FPS claim yet.
-
-Foveation test outcome: runtime reported fixedLevel=0.5, and the wearer found clarity acceptable, but telemetry regressed severely during forward-view turning (many 49–99 ms p95 intervals and a 526 ms initial spike). Cause was not isolated between the test changes; this is a failed performance test, not an accepted optimization. Restored the previous verified DayOne APK immediately. Removed the foveation runtime/editor test code and restored the original disabled Android XR feature in the isolated copy; source XR assets were never modified.
-The wearer explicitly confirmed the practical trigger: looking forward at the full reef feels stuck; looking back is smooth. Next comparison retains full nearby coral detail and the 60 m rocks/passages, but raises only tiny distant coral's culling threshold. Android build callback version 11; clean build required. Particle startup change remains under evaluation separately from foveation.
-
-Non-foveated forward-view test build: clean Unity/toolkit build exit 0; manifest, ARM64 and APK v2 signature passed. Installed Builds/ReefViewTest/quest.apk on Quest 2 (55,384,281 bytes), normal exploration mode. It combines the validated direct particle initialization with earlier small distant coral culling. Android XR settings match the original disabled-foveation asset. Near interaction LODs, collision, source creature positions, .78 eye scale and the 60 m camera far plane remain unchanged. Final wearer feedback and active-app telemetry are pending; do not call the forward-view stall fixed yet.
+## Reusable workflow
+- Focused authoring: Underwater/Apply side boundaries and bake startup audio, or batch Underwater.Editor.ReefDayOne.Apply. Validate only: Underwater.Editor.ReefDayOne.Validate. Do not regenerate the full reef.
+- Unity may reuse a stale player scene after editor-only optimization callback edits. Set CODEX_UNITY_CLEAN_BUILD=1 when such changes need a comparison; the local build entry point then uses BuildOptions.CleanBuildCache. Confirm callback logs and APK hash.
+- If Unity is open, build in an isolated copy and return only intended assets. The scratch toolkit launcher must await Unity's GUI process and inspect its actual exit code.
+- To enable the Unity frame logger for one launch, place a reef-frame-test marker in Application.persistentDataPath before starting the app; it is consumed on startup. The habitat-travel diagnostic also enables metrics. Normal launches perform neither automatic travel nor recording.
+- Habitat travel uses boolean intent extra reefTravelTest=true or a reef-travel-test marker. Remove the travel marker after testing. Wear the headset and finish Guardian; asleep/system-only data is not valid app performance evidence.
+- Main-thread recorder values include pacing/wait time. Strict interval-budget counts are not dropped-frame counts. This Quest/OpenXR provider reports raw GPU values with units inconsistent with the API documentation, so diagnostics keep that value raw; correlate against VrApi. Missing FrameTimingManager GPU data is never a pass.
