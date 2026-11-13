@@ -1,13 +1,21 @@
 using UnityEngine;
 namespace Underwater {
-// Samples are baked in the editor, so entering VR never synthesizes audio.
+// Ambience clips are baked offline. No music or runtime audio synthesis.
 public class ReefSoundscape:MonoBehaviour {
- AudioSource music,effects;AudioClip click,travel;bool ready;
- void Start(){music=gameObject.AddComponent<AudioSource>();effects=gameObject.AddComponent<AudioSource>();music.clip=Resources.Load<AudioClip>("ReefOceanMusic")??Resources.Load<AudioClip>("ReefScore");click=Resources.Load<AudioClip>("ReefClick");travel=Resources.Load<AudioClip>("ReefTravel");music.loop=true;music.volume=0;music.spatialBlend=0;music.priority=64;effects.spatialBlend=0;effects.volume=.24f;ready=true;if(music.clip)music.Play();else Debug.LogError("Underwater background music is missing.");Debug.Log($"REEF_AUDIO music={music.clip?.name} listenerVolume={AudioListener.volume} listenerPaused={AudioListener.pause} sampleRate={AudioSettings.outputSampleRate}");}
- void Update(){if(!ready)return;float target=Diver.Instance&&Diver.Instance.VoicePlaying?.12f:.38f;music.volume=Mathf.MoveTowards(music.volume,target,Time.unscaledDeltaTime*.3f);}
- void OnApplicationPause(bool paused){if(!paused)ResumeMusic();}
- void OnApplicationFocus(bool focused){if(focused)ResumeMusic();}
- void ResumeMusic(){if(ready&&music&&music.clip&&!music.isPlaying)music.Play();}
+ AudioSource water,effects,whale,reef;AudioClip click,travel;bool ready;
+ public void Initialize(){if(ready)return;water=Source("Underwater water bed",false);effects=Source("Travel cues",false);whale=Source("Distant whale calls",true);reef=Source("Reef fish clicks",true);
+  water.clip=Resources.Load<AudioClip>("ReefWaterAmbience");whale.clip=Resources.Load<AudioClip>("ReefWhaleCalls");reef.clip=Resources.Load<AudioClip>("ReefFishSounds");click=Resources.Load<AudioClip>("ReefClick");travel=Resources.Load<AudioClip>("ReefTravel");
+  foreach(var source in new[]{water,whale,reef}){source.loop=true;source.volume=0;if(source.clip)source.Play();else Debug.LogError("Missing underwater ambience clip for "+source.name);}effects.volume=.18f;ready=true;
+ }
+ AudioSource Source(string label,bool spatial){var go=new GameObject(label);go.transform.SetParent(transform,false);var a=go.AddComponent<AudioSource>();a.playOnAwake=false;a.spatialBlend=spatial?1:0;a.dopplerLevel=0;a.rolloffMode=AudioRolloffMode.Linear;a.minDistance=2;a.maxDistance=35;a.priority=spatial?160:96;return a;}
+ void Start(){Initialize();}
+ void Update(){if(!ready)return;var d=Diver.Instance;float duck=d&&d.VoicePlaying?.4f:1;float deep=d&&d.Head?Mathf.Clamp01((-d.Head.position.y-8)/38):0;
+  water.volume=Mathf.MoveTowards(water.volume,.46f*duck,Time.unscaledDeltaTime*.25f);whale.volume=Mathf.MoveTowards(whale.volume,Mathf.Lerp(.14f,.24f,deep)*duck,Time.unscaledDeltaTime*.15f);reef.volume=Mathf.MoveTowards(reef.volume,Mathf.Lerp(.26f,.07f,deep)*duck,Time.unscaledDeltaTime*.2f);
+  if(d&&d.Head){whale.transform.position=d.Head.position+new Vector3(-12,-4,16);reef.transform.position=d.Head.position+new Vector3(3,-1,4);}
+ }
+ void OnApplicationPause(bool paused){if(!paused)Resume();}
+ void OnApplicationFocus(bool focused){if(focused)Resume();}
+ void Resume(){if(!ready)return;foreach(var a in new[]{water,whale,reef})if(a&&a.clip&&!a.isPlaying)a.Play();}
  public void Cue(bool teleport){var clip=teleport?travel:click;if(effects&&clip)effects.PlayOneShot(clip);}
 }
 }

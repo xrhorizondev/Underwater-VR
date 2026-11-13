@@ -42,14 +42,15 @@ public static class ReefReviewCorrections {
  }
  static void RepairOctopus(){var e=GameObject.Find("Day 3 rocky octopus").GetComponent<ReefEncounter>();var body=e.GetComponent<ReefSphereBody>();body.radius=.23f;body.centerOffset=new Vector3(0,.15f,-.08f);Vector3 p=e.transform.position;p.y=Ground(p,2)+.1f;e.transform.position=p;Physics.SyncTransforms();if(!body.Clear(p))throw new Exception("Octopus substrate blocked");}
  static void InstallCruisers(){int count=0;
-  foreach(var f in UnityEngine.Object.FindObjectsByType<FishBodyMotion>(FindObjectsSortMode.None))if(!f.GetComponent<ReefEncounter>()&&!f.GetComponent<ReefCruiser>()){
+  foreach(var f in UnityEngine.Object.FindObjectsByType<FishBodyMotion>(FindObjectsSortMode.None))if(f.name!="Lumen"&&!f.GetComponent<ReefEncounter>()&&!f.GetComponent<ReefCruiser>()){
    var life=f.GetComponent<SeaLife>();if(life&&life.grabbable)continue;
    var mover=f.gameObject.AddComponent<ReefCruiser>();mover.speed=f.name=="Anglerfish"?.18f:.25f;mover.radius=2.4f;count++;
   }
-  var squid=GameObject.Find("Giant squid distant silhouette");var swim=squid.GetComponent<ReefCruiser>();if(!swim)swim=squid.AddComponent<ReefCruiser>();swim.squid=true;swim.speed=.5f;swim.radius=6;var body=squid.GetComponent<ReefSphereBody>();if(!body)body=squid.AddComponent<ReefSphereBody>();body.radius=2;body.centerOffset=Vector3.zero;var squidPosition=squid.transform.position;squidPosition.y=Ground(squidPosition,3)+7;squid.transform.position=squidPosition;
+  var squid=GameObject.Find("Giant squid distant silhouette");var fullBody=squid.GetComponent<SquidSwimmer>();
+  if(fullBody)fullBody.PlaceAboveSeabed();else {var swim=squid.GetComponent<ReefCruiser>();if(!swim)swim=squid.AddComponent<ReefCruiser>();swim.squid=true;swim.speed=.5f;swim.radius=6;var body=squid.GetComponent<ReefSphereBody>();if(!body)body=squid.AddComponent<ReefSphereBody>();body.radius=2;body.centerOffset=Vector3.zero;var squidPosition=squid.transform.position;squidPosition.y=Ground(squidPosition,3)+7;squid.transform.position=squidPosition;}
   var coat=Material("Squid moving skin",new Color(.27f,.39f,.4f));coat.shader=Shader.Find("Underwater/Squid Skin");squid.GetComponent<Renderer>().sharedMaterial=coat;
   var glow=Material("Visible angler lure",new Color(.2f,.9f,1));glow.shader=Shader.Find("Underwater/Visible Lure");glow.color=new Color(.3f,1.4f,1.8f);glow.SetColor("_EmissionColor",new Color(.3f,1.5f,2));EditorUtility.SetDirty(glow);
-  foreach(var f in UnityEngine.Object.FindObjectsByType<FishBodyMotion>(FindObjectsSortMode.None))if(f.name=="Anglerfish"||f.name=="Lumen"){
+  foreach(var f in UnityEngine.Object.FindObjectsByType<FishBodyMotion>(FindObjectsSortMode.None))if(f.name=="Anglerfish"){
    var old=f.transform.Find("Visible organic lure");if(old)UnityEngine.Object.DestroyImmediate(old.gameObject);
    var lure=new GameObject("Visible organic lure").transform;lure.SetParent(f.transform,false);
    Tube("Lure stalk",lure,new[]{new Vector3(0,.18f,.15f),new Vector3(0,.57f,.22f),new Vector3(0,.58f,.43f),new Vector3(0,.46f,.47f)},new[]{.018f,.014f,.01f,.008f},f.GetComponent<Renderer>().sharedMaterial,"LureStalk");

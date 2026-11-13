@@ -30,3 +30,6 @@ Preserve the current authored scene, geometry, controls and existing settings. M
 
 ## Working constraints
 Use concise updates and targeted reads to reduce tokens. Existing project skill records reusable workflow knowledge; model weights cannot be trained here. Hardware testing requires the target headset to be connected and Guardian/tracking ready. If a specific creature asset is unavailable, use a convincing lightweight existing/procedural representation and report the fidelity limit. Prioritize all eight zones and required behavior within the week.
+
+## Updated reference and Day 4 acceptance — 13 November
+Use EXPERIENCE_REFERENCE.md, transcribed from the user's complete brief, to guide remaining implementation. Day 4: one safe moray with mouth-open/retreat/recovery; one calm grouper near the wreck; a three-dolphin pod with individual swim animation and a smooth diver-centered curiosity loop; optional fading creature facts, name plus narration under 12 words; preserve stern/corridor access, all eight menu destinations and 24 shells. Validate earlier interactions and return a Quest test build. Record the reference's carryover details separately; do not treat current gentle manta rolling or the existing octopus color/escape as complete replacements for the more specific touch/startle behaviors.

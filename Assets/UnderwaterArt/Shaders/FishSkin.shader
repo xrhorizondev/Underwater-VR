@@ -7,16 +7,16 @@ Shader "Underwater/Living Fish Skin" {
   _Pattern("Reef species markings",Float)=0
   _TailPhase("Tail phase",Float)=0
   _TailAmplitude("Tail amplitude",Float)=.055
-  _TurnBend("Turn flexion",Float)=0
+  _TurnBend("Turn flexion",Float)=0 _Grouper("Grouper markings",Float)=0
  }
  SubShader { Tags {"RenderType"="Opaque"} Cull Off
  CGPROGRAM
  #pragma surface surf Standard fullforwardshadows vertex:vert addshadow
  #pragma target 3.0
  sampler2D _MainTex,_BumpMap;
- fixed4 _Color;float _ReefLight;float _Species;float _Pattern;float _TailPhase,_TailAmplitude,_TurnBend;
- struct Input {float2 uv_MainTex;float2 uv_BumpMap;float3 viewDir;float3 bodyPosition;};
- void vert(inout appdata_full v,out Input o){UNITY_INITIALIZE_OUTPUT(Input,o);o.bodyPosition=v.vertex.xyz;
+ fixed4 _Color;float _ReefLight;float _Species;float _Pattern;float _TailPhase,_TailAmplitude,_TurnBend,_Grouper;
+ struct Input {float2 uv_MainTex;float2 uv_BumpMap;float3 viewDir;float3 bodyPosition;float eyePart;};
+ void vert(inout appdata_full v,out Input o){UNITY_INITIALIZE_OUTPUT(Input,o);o.bodyPosition=v.vertex.xyz;o.eyePart=v.texcoord1.x;
   // Canonical mesh: head +Z, tail -Z, length 1 metre. Head and eyes remain stable.
   float tail=saturate((.28-v.vertex.z)/.78);
   float envelope=tail*tail;
@@ -47,7 +47,9 @@ Shader "Underwater/Living Fish Skin" {
    if(z>.2&&scaleDetail<.022)o.Albedo=c.rgb*.8;
   }
   o.Normal=UnpackScaleNormal(tex2D(_BumpMap,IN.uv_BumpMap),.45);
+  if(_Grouper>.5){float spots=sin(IN.bodyPosition.z*93+sin(IN.bodyPosition.y*83))*sin(IN.bodyPosition.y*91+IN.bodyPosition.z*29);float mask=smoothstep(.5,.85,spots);o.Albedo*=lerp(1,.36,mask);}
   o.Metallic=.035;o.Smoothness=.3;
+  if(IN.eyePart>.5){o.Albedo=IN.eyePart<1.5?float3(.18,.12,.045):float3(.003,.005,.007);o.Normal=float3(0,0,1);o.Smoothness=.82;o.Metallic=0;}
   // Art-directed bounced water light keeps coloration legible on the shaded side.
   o.Emission=o.Albedo*float3(.3,.34,.38)*_ReefLight;
   o.Occlusion=1;o.Alpha=1;

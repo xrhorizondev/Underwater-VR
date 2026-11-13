@@ -1,5 +1,13 @@
 # Asset credits
 
+## Current realism correction — 13 November 2026
+
+The current grouper uses the detailed Barramundi-derived mesh and photographic maps credited below, reshaped and given natural mottling. The Quaternius cartoon grouper is retained as source material but is no longer used in the scene.
+
+The three stingrays now use project-authored closed anatomical meshes, raised eyes, paired gills and procedural wing/tail deformation. G.lerf's source remains in the repository but is no longer the rendered ray.
+
+The Grab3D octopus is converted to canonical coordinates, subdivided and smoothed, fitted with physical eyes and 134 sucker rings, and assigned project-authored natural skin shading. Its CC0 provenance remains as documented below. Mesh-fitted fish and turtle eyes and the moray tooth rows are project-authored geometry.
+
 ## Poly Haven — CC0
 
 Powered by Poly Haven. Photographic maps and coastal rock scan:
@@ -40,3 +48,17 @@ Original generalized adult loggerhead study model, released by Innerscene under 
 ## Giant manta ray replacement
 Innerscene — Giant manta ray, CC0. https://www.innerscene.com/tools/library/3d-parts/giant-manta-ray-006f87da . Original generalized study model; not a scan. Converted to FBX, reduced to 16,655 triangles, source textures retained, and animated with a custom wing shader. Original GLB retained in Assets/UnderwaterArt/Scans/GiantManta.glb.
 Glove hand surfaces adapted from immersive-web/webxr-input-profiles, packages/assets/profiles/generic-hand. See WebXR-glove-license.md. Neoprene panels, cuff and grip/trigger poses authored for this project.
+
+## Blue-whale ambience
+NOAA/PMEL Acoustics Program, Northeast Pacific blue-whale call. Source and editing details: Tools/NaturalAudio/README.md. No NOAA endorsement is implied. Water, reef clicks and regulator bubbles are original sound design.
+
+## Day 4 wreck encounters
+Moray and dolphin geometry: original procedural project assets. Grouper: adaptation of the existing photographic fish mesh credited above. English fact narration: offline system speech placeholders. Fact source references and validation details: DAY_FOUR_RESULTS.md.
+# Creature polish assets — 13 November 2026
+
+- Low Poly Stingray, **G.lerf**, https://glerf.itch.io/low-poly-stingray — CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). FBX and swim animation; modified Unity scale, playback speed, eye materials, skin shader, animation bounds and tail warning attachment. Three instances. Original source texture retained.
+- Low Poly Octopus, **Grab3D**, https://grab3d.com/models/animals/low-poly-octopus/ — CC0 1.0. Publisher provenance: AI-assisted Meshy base, reduced and palette-textured in Blender. Original LICENSE.txt retained with the FBX. Modified scale and procedural arm/colour response; source is static, not a skeletal animation.
+- Coral Grouper, **Quaternius**, https://poly.pizza/m/Q2GNw9TRzF — CC0 1.0. Public GLB retained as source bytes; native mesh derived by Tools/ExportGrouper.ps1 and ReefCreaturePolish.InstallGrouper. 1,588 triangles, artist colours and eyes retained. Swim is driven by the project's GPU tail animation, rather than importing the source skeletal clips.
+- DolphinNearby.wav: original synthesized whistle-like proximity cue, generated offline by ReefCreaturePolish.BakeDolphin. Not a field recording. ReefFishSounds.wav remains the original sparse synthesized reef-click layer.
+
+The five user-supplied Sketchfab links are appearance/animation references. Their model files were not copied. MotionCow moray/ray and Etherion ray require suitable purchased source files for exact replacement; the supplied grouper is a dense unanimated scan. The moray remains project-authored geometry with the existing opening jaw/retreat behaviour.

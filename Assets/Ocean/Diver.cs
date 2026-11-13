@@ -11,7 +11,7 @@ public class Diver:MonoBehaviour {
  public Vector3 LeftFingertip=>leftGlove?leftGlove.FingertipPosition:LeftPalm;
  public Vector3 RightFingertip=>rightGlove?rightGlove.FingertipPosition:RightPalm;
  public bool VoicePlaying=>voice&&voice.isPlaying;
- public bool currentAssist=true,consequences=true;Transform left,right;Vector3 velocity,previousLeft,previousRight;float idle,captionUntil;string caption="";int menuZone;float nextMenuStep;bool previousBack,previousMenuSelect;bool menu=true,previousMenu,previousTeleport,xrStarted;float yaw,pitch;AudioSource voice;Camera cam;TextMesh headsetCaption;
+ public bool ShowCreatureFacts=true;bool previousFactToggle;public bool currentAssist=true,consequences=true;Transform left,right;Vector3 velocity,previousLeft,previousRight;float idle,captionUntil;string caption="";int menuZone;float nextMenuStep;bool previousBack,previousMenuSelect;bool menu=true,previousMenu,previousTeleport,xrStarted;float yaw,pitch;AudioSource voice;Camera cam;TextMesh headsetCaption;
  void Start(){lifeCache=FindObjectsByType<SeaLife>(FindObjectsSortMode.None);atmosphereCache=FindFirstObjectByType<ReefAtmosphere>();Instance=this;Head=transform.Find("Head");motor=GetComponent<DiverCollisionMotor>();if(!motor)motor=gameObject.AddComponent<DiverCollisionMotor>();motor.Initialize();cam=Head.GetComponent<Camera>();voice=Head.gameObject.AddComponent<AudioSource>();voice.spatialBlend=0;
  leftGlove=ScubaGlove.Create(transform,true);rightGlove=ScubaGlove.Create(transform,false);left=leftGlove.transform;right=rightGlove.transform;
  var text=new GameObject("Diver caution caption");text.transform.SetParent(Head,false);text.transform.localPosition=new(0,-.2f,1);headsetCaption=text.AddComponent<TextMesh>();headsetCaption.anchor=TextAnchor.MiddleCenter;headsetCaption.alignment=TextAlignment.Center;headsetCaption.characterSize=.012f;headsetCaption.fontSize=48;
@@ -39,8 +39,9 @@ public class Diver:MonoBehaviour {
  if(!menu&&(Input.GetKeyDown(KeyCode.T)||teleportPressed&&!previousTeleport))TeleportRay();previousTeleport=teleportPressed;
   if(xr&&menu){r.TryGetFeatureValue(CommonUsages.primary2DAxis,out Vector2 choice);if(Mathf.Abs(choice.y)>.65f&&Time.unscaledTime>nextMenuStep){menuZone=(menuZone+(choice.y<0?1:7))%8;nextMenuStep=Time.unscaledTime+.3f;}if(teleportPressed&&!previousMenuSelect){if(motor.TryTeleport(OceanWorld.Centers[menuZone]))SetMenu(false);else Say("That landing spot is obstructed.",null);}}
  previousMenuSelect=teleportPressed;
+ bool factToggle=r.TryGetFeatureValue(CommonUsages.secondaryButton,out bool factButton)&&factButton;if(menu&&(factToggle&&!previousFactToggle||Input.GetKeyDown(KeyCode.I)))ShowCreatureFacts=!ShowCreatureFacts;previousFactToggle=factToggle;
  bool back=l.TryGetFeatureValue(CommonUsages.secondaryButton,out bool backDown)&&backDown;if(back&&!previousBack&&menu)SetMenu(false);previousBack=back;
- headsetCaption.text=xr&&menu?"HABITATS\n"+OceanWorld.Names[menuZone]+"\nRight stick: select | A: dive\nY / left menu: back":xr&&Time.time<captionUntil?caption:"";
+ headsetCaption.text=xr&&menu?"HABITATS\n"+OceanWorld.Names[menuZone]+"\nRight stick: select | A: dive\nY / left menu: back\nB: creature facts "+(ShowCreatureFacts?"on":"off"):xr&&Time.time<captionUntil?caption:"";
  bool grab=!menu&&(Input.GetMouseButton(0)||r.TryGetFeatureValue(CommonUsages.gripButton,out bool grip)&&grip);GrabRequested=grab;UpdateGrab(grab,rightGlove.GripAnchor,lifeCache);
 
  }
@@ -76,7 +77,7 @@ public class Diver:MonoBehaviour {
  }
  void OnGUI(){
  if(Time.time<captionUntil)GUI.Box(new Rect(Screen.width/2-230,Screen.height-95,460,42),caption);
- if(!menu)return;GUILayout.BeginArea(new Rect(24,24,430,650),GUI.skin.box);GUILayout.Label("UNDERWATER EXPLORATION");GUILayout.Label(Namesafe());GUILayout.Space(10);GUILayout.Label("WASD swim • Q / E descend / ascend\nHold right mouse to look • Left mouse scoop fish\nT: gaze at a shell to teleport • Esc: menu\nVR: left stick swim • grip to paddle / hold fish\nRight primary button: gaze teleport");if(GUILayout.Button("Back / Continue diving"))SetMenu(false);currentAssist=GUILayout.Toggle(currentAssist,"Gentle current after 20 seconds idle");consequences=GUILayout.Toggle(consequences,"Enable contact consequences");GUILayout.Label("Explore a habitat");for(int i=0;i<8;i++){int zone=i;if(GUILayout.Button(OceanWorld.Names[i])){if(motor.TryTeleport(OceanWorld.Centers[zone])){velocity=Vector3.zero;menu=false;}else Say("That landing spot is obstructed.",null);}}GUILayout.EndArea();}
+ if(!menu)return;GUILayout.BeginArea(new Rect(24,24,430,650),GUI.skin.box);GUILayout.Label("UNDERWATER EXPLORATION");GUILayout.Label(Namesafe());GUILayout.Space(10);GUILayout.Label("WASD swim • Q / E descend / ascend\nHold right mouse to look • Left mouse scoop fish\nT: gaze at a shell to teleport • Esc: menu\nVR: left stick swim • grip to paddle / hold fish\nRight primary button: gaze teleport");if(GUILayout.Button("Back / Continue diving"))SetMenu(false);currentAssist=GUILayout.Toggle(currentAssist,"Gentle current after 20 seconds idle");consequences=GUILayout.Toggle(consequences,"Enable contact consequences");ShowCreatureFacts=GUILayout.Toggle(ShowCreatureFacts,"Optional creature facts and narration");GUILayout.Label("Explore a habitat");for(int i=0;i<8;i++){int zone=i;if(GUILayout.Button(OceanWorld.Names[i])){if(motor.TryTeleport(OceanWorld.Centers[zone])){velocity=Vector3.zero;menu=false;}else Say("That landing spot is obstructed.",null);}}GUILayout.EndArea();}
  string Namesafe()=>OceanWorld.Names[Zone];
 }
 }

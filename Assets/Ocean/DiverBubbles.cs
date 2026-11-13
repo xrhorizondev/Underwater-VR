@@ -27,9 +27,9 @@ public class DiverBubbles:MonoBehaviour {
   if(!head||!bubbles)return;if((head.position-lastPosition).sqrMagnitude>36){bubbles.Clear();budget=0;}lastPosition=head.position;
   float phase=clock%4;float envelope=phase<1.8f?Mathf.Sin(phase/1.8f*Mathf.PI):0;budget+=dt*24*envelope;
   Vector3 forward=Vector3.ProjectOnPlane(head.forward,Vector3.up);if(forward.sqrMagnitude<.01f)forward=transform.forward;forward.Normalize();Vector3 side=Vector3.Cross(Vector3.up,forward);
-  while(budget>=1){budget--;serial++;float sign=serial%2==0?1:-1;Vector3 position=head.position+forward*.16f+side*(sign*Random.Range(.22f,.28f))-Vector3.up*.22f;float size=serial%5==0?Random.Range(.025f,.038f):Random.Range(.008f,.025f);
+  while(budget>=1){budget--;serial++;float sign=serial%2==0?1:-1;Vector3 position=head.position+forward*.36f+side*(sign*Random.Range(.10f,.18f))-Vector3.up*.28f;float size=serial%5==0?Random.Range(.035f,.05f):Random.Range(.014f,.032f);
    if(Physics.CheckSphere(position,size,ReefSphereBody.SolidMask,QueryTriggerInteraction.Ignore))continue;
-   bubbles.Emit(new ParticleSystem.EmitParams{position=position,velocity=Vector3.up*Random.Range(.28f,.48f)+side*sign*.12f+forward*.04f,startSize=size,startLifetime=Random.Range(3.2f,4.5f),startColor=Color.white,rotation3D=new Vector3(0,Random.Range(0,360),Random.Range(-12,12)),randomSeed=serial},1);
+   bubbles.Emit(new ParticleSystem.EmitParams{position=position,velocity=Vector3.up*Random.Range(.28f,.48f)+side*sign*.035f+forward*.04f,startSize=size,startLifetime=Random.Range(3.2f,4.5f),startColor=Color.white,rotation3D=new Vector3(0,Random.Range(0,360),Random.Range(-12,12)),randomSeed=serial},1);
   }
  }
  public int ParticleCount=>bubbles?bubbles.particleCount:0;

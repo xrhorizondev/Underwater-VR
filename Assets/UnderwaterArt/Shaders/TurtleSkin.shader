@@ -5,8 +5,8 @@ Shader "Underwater/Loggerhead Skin" {
  #pragma surface surf Standard fullforwardshadows vertex:vert addshadow
  #pragma target 3.0
  sampler2D _MainTex,_BumpMap;float4 _Color;float _StrokePhase,_Glossiness,_ReefLight,_HeadTurn,_Blink,_EyePart;
- struct Input{float2 uv_MainTex;float2 uv_BumpMap;};
- void vert(inout appdata_full v){
+ struct Input{float2 uv_MainTex;float2 uv_BumpMap;float eyePart;};
+ void vert(inout appdata_full v,out Input o){UNITY_INITIALIZE_OUTPUT(Input,o);o.eyePart=v.texcoord1.x;
   float head=smoothstep(.26,.49,v.vertex.z)*(1-smoothstep(.18,.3,abs(v.vertex.x)));
   float turn=_HeadTurn*head;float hs=sin(turn),hc=cos(turn);float2 hp=v.vertex.xz-float2(0,.26);
   v.vertex.xz=float2(hp.x*hc+hp.y*hs,-hp.x*hs+hp.y*hc)+float2(0,.26);
@@ -21,7 +21,7 @@ Shader "Underwater/Loggerhead Skin" {
   v.normal.xy=float2(v.normal.x*cs-v.normal.y*sn,v.normal.x*sn+v.normal.y*cs);
   float rear=(1-front)*smoothstep(.16,.35,abs(v.vertex.x));v.vertex.y+=sin(_StrokePhase*6.283*.5+side)*rear*.015;
  }
- void surf(Input IN,inout SurfaceOutputStandard o){o.Albedo=tex2D(_MainTex,IN.uv_MainTex).rgb*_Color.rgb;o.Normal=UnpackScaleNormal(tex2D(_BumpMap,IN.uv_BumpMap),.65);o.Metallic=0;o.Smoothness=_Glossiness;o.Occlusion=1;o.Alpha=1;o.Emission=o.Albedo*float3(.055,.07,.08)*_ReefLight;}
+ void surf(Input IN,inout SurfaceOutputStandard o){o.Albedo=tex2D(_MainTex,IN.uv_MainTex).rgb*_Color.rgb;o.Normal=UnpackScaleNormal(tex2D(_BumpMap,IN.uv_BumpMap),.65);o.Metallic=0;o.Smoothness=_Glossiness;if(IN.eyePart>.5){o.Albedo=IN.eyePart<1.5?float3(.20,.12,.035):float3(.003,.005,.006);o.Normal=float3(0,0,1);o.Smoothness=.85;}o.Occlusion=1;o.Alpha=1;o.Emission=o.Albedo*float3(.055,.07,.08)*_ReefLight;}
  ENDCG
  }
  FallBack "Standard"
