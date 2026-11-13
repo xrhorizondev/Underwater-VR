@@ -4,6 +4,8 @@ namespace Underwater {
 public class FishSchool : MonoBehaviour {
  public Vector3 habitatCenter;
  public float habitatRadius=5;
+ public bool reefEncounter;float scatterUntil;Vector3 threat;
+ public void Scatter(Vector3 source){threat=source;scatterUntil=clock+2.5f;}
  public FishAgent[] fish;
  Vector3[] positions,velocities,flocking;float clock,decisionTimer;public int FlockingPasses {get;private set;}
  public void Initialize(){
@@ -28,7 +30,13 @@ public class FishSchool : MonoBehaviour {
    Vector3 steer=fish[i].transform.forward*.8f+(guide-positions[i]).normalized*.65f+flocking[i];
    Vector3 home=habitatCenter-positions[i];if(home.magnitude>habitatRadius)steer+=home.normalized*(home.magnitude-habitatRadius)*1.3f;
    var diver=Diver.Instance;if(Application.isPlaying&&diver&&diver.Head){Vector3 away=positions[i]-diver.Head.position;float distance=away.magnitude;bool scooping=diver.GrabRequested&&fish[i].IsGrabbable&&(positions[i]-diver.RightPalm).sqrMagnitude<.5f*.5f;if(distance<1.3f&&!scooping)steer+=away.normalized*(1.3f-distance)*3;}
-   fish[i].Step(dt,clock,steer);
+   if(reefEncounter){
+ if(Application.isPlaying&&diver&&!diver.MenuOpen){bool scoop=diver.GrabRequested&&(positions[i]-diver.RightPalm).sqrMagnitude<.5f*.5f;
+ if(!scoop&&diver.Head&&(positions[i]-diver.Head.position).sqrMagnitude<1.1f*1.1f)Scatter(diver.Head.position);}
+ if(clock<scatterUntil)steer+=(positions[i]-threat).normalized*3;
+ else steer+=(habitatCenter-positions[i]).normalized*1.4f;
+}
+fish[i].Step(dt,clock,steer);
   }
  }
 }
