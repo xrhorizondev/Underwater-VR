@@ -23,7 +23,7 @@ public class SeaLife:MonoBehaviour {
  }
  public string Warning(){if(kind=="Lionfish")return "Whoa. Don't touch those spines.";if(kind=="Ray tail")return "Careful. Watch the tail.";if(kind=="Moon jelly")return "Careful. Give it some space.";if(kind=="Fire coral")return "Careful. Don't touch that coral.";return "Don't touch that one.";}
  public void DangerReaction(){if(kind=="Lionfish")reacted=Time.time;}
- public void React(){reacted=Time.time;if(kind=="Turtle")Diver.Instance.Say("Sea turtle — Sea turtles breathe air.",null);}
+ public void React(){reacted=Time.time;if(kind=="Turtle")GetComponent<ReefCreatureInfo>()?.Reveal();}
  public void Grab(Transform h){if(!grabbable||hand)return;if(scale.sqrMagnitude<.00001f)scale=transform.localScale;if(!body)body=GetComponent<ReefSphereBody>();var touch=GetComponent<FishTouchBody>();palmLift=touch?touch.PalmLift:.04f;hand=h;heldAt=Time.time;heldUntil=heldAt+2;}
  public void StepHeld(float dt,float now){if(!hand)return;if(now>=heldUntil){Release();return;}var target=hand.position+hand.up*palmLift;if(now-heldAt>.2f&&(target-transform.position).sqrMagnitude>.45f*.45f){Release();return;}var delta=Vector3.ClampMagnitude(target-transform.position,3.5f*dt);if(body)body.Move(delta);else transform.position+=delta;var pose=hand.rotation*Quaternion.Euler(0,0,Mathf.Sin((now-heldAt)*12)*2);transform.rotation=Quaternion.Slerp(transform.rotation,pose,1-Mathf.Exp(-dt*20));transform.localScale=scale;}
  public void Release(){if(!hand)return;origin=transform.position;var heading=Vector3.ProjectOnPlane(hand.forward,Vector3.up);if(heading.sqrMagnitude<.01f)heading=Vector3.forward;transform.rotation=Quaternion.LookRotation(heading.normalized,Vector3.up);hand=null;transform.localScale=scale;}

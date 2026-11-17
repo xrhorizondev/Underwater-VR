@@ -8,7 +8,7 @@ public sealed class WreckCreature:MonoBehaviour {
  public float JawAngle{get;private set;}public bool Reacting=>clock-reacted<4;
  public void Initialize(){if(ready)return;ready=true;body=GetComponent<ReefSphereBody>();info=GetComponent<ReefCreatureInfo>();skin=GetComponent<Renderer>();touch=transform.Find("Animal body solid")?.GetComponent<Collider>();block=new MaterialPropertyBlock();home=transform.position;homeForward=transform.forward;loopCenter=habitatCenter;if(species==Species.Dolphin)pod=FindObjectsByType<WreckCreature>(FindObjectsSortMode.None);}
  public float HandDistance(Vector3 hand)=>touch?Vector3.Distance(hand,touch.ClosestPoint(hand)):Mathf.Max(0,Vector3.Distance(hand,transform.position)-.3f);
- void Update(){var diver=Diver.Instance;if(diver&&diver.MenuOpen)return;Initialize();Vector3? head=diver&&diver.Head?diver.Head.position:(Vector3?)null;Vector3? palm=diver?(HandDistance(diver.LeftPalm)<HandDistance(diver.RightPalm)?diver.LeftPalm:diver.RightPalm):(Vector3?)null;Step(Mathf.Min(Time.deltaTime,.05f),head,palm);}
+ void Update(){var diver=Diver.Instance;if(diver&&diver.MenuOpen||!ReefSimulationRange.Active(transform))return;Initialize();Vector3? head=diver&&diver.Head?diver.Head.position:(Vector3?)null;Vector3? palm=diver?(HandDistance(diver.LeftPalm)<HandDistance(diver.RightPalm)?diver.LeftPalm:diver.RightPalm):(Vector3?)null;Step(Mathf.Min(Time.deltaTime,.05f),head,palm);}
  public void React(){Initialize();if(clock<cooldown)return;reacted=clock;cooldown=clock+9;if(info)info.Reveal();}
  public void Step(float dt,Vector3? head=null,Vector3? hand=null){Initialize();clock+=dt;
   if(hand.HasValue&&HandDistance(hand.Value)<.16f||species==Species.Moray&&head.HasValue&&Vector3.Distance(head.Value,home)<1.5f)React();

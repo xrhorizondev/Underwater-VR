@@ -48,7 +48,7 @@ public static class ReefReviewCorrections {
   }
   var squid=GameObject.Find("Giant squid distant silhouette");var fullBody=squid.GetComponent<SquidSwimmer>();
   if(fullBody)fullBody.PlaceAboveSeabed();else {var swim=squid.GetComponent<ReefCruiser>();if(!swim)swim=squid.AddComponent<ReefCruiser>();swim.squid=true;swim.speed=.5f;swim.radius=6;var body=squid.GetComponent<ReefSphereBody>();if(!body)body=squid.AddComponent<ReefSphereBody>();body.radius=2;body.centerOffset=Vector3.zero;var squidPosition=squid.transform.position;squidPosition.y=Ground(squidPosition,3)+7;squid.transform.position=squidPosition;}
-  var coat=Material("Squid moving skin",new Color(.27f,.39f,.4f));coat.shader=Shader.Find("Underwater/Squid Skin");squid.GetComponent<Renderer>().sharedMaterial=coat;
+  var coat=Material("Squid moving skin",new Color(.27f,.39f,.4f));coat.shader=Shader.Find("Underwater/Squid Skin");var legacySkin=squid.GetComponent<Renderer>();if(legacySkin)legacySkin.sharedMaterial=coat;
   var glow=Material("Visible angler lure",new Color(.2f,.9f,1));glow.shader=Shader.Find("Underwater/Visible Lure");glow.color=new Color(.3f,1.4f,1.8f);glow.SetColor("_EmissionColor",new Color(.3f,1.5f,2));EditorUtility.SetDirty(glow);
   foreach(var f in UnityEngine.Object.FindObjectsByType<FishBodyMotion>(FindObjectsSortMode.None))if(f.name=="Anglerfish"){
    var old=f.transform.Find("Visible organic lure");if(old)UnityEngine.Object.DestroyImmediate(old.gameObject);

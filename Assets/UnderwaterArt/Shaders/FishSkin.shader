@@ -1,6 +1,7 @@
 Shader "Underwater/Living Fish Skin" {
  Properties {
   _MainTex("Photographic scales",2D)="white"{}
+  _BioEmission("Bioluminescence",Color)=(0,0,0,0)
   _BumpMap("Scale relief",2D)="bump"{}
   _Color("Natural coloration",Color)=(.85,.9,.92,1)
   _Species("Reef color species",Float)=0
@@ -14,7 +15,7 @@ Shader "Underwater/Living Fish Skin" {
  #pragma surface surf Standard fullforwardshadows vertex:vert addshadow
  #pragma target 3.0
  sampler2D _MainTex,_BumpMap;
- fixed4 _Color;float _ReefLight;float _Species;float _Pattern;float _TailPhase,_TailAmplitude,_TurnBend,_Grouper;
+ fixed4 _Color,_BioEmission;float _ReefLight;float _Species;float _Pattern;float _TailPhase,_TailAmplitude,_TurnBend,_Grouper;
  struct Input {float2 uv_MainTex;float2 uv_BumpMap;float3 viewDir;float3 bodyPosition;float eyePart;};
  void vert(inout appdata_full v,out Input o){UNITY_INITIALIZE_OUTPUT(Input,o);o.bodyPosition=v.vertex.xyz;o.eyePart=v.texcoord1.x;
   // Canonical mesh: head +Z, tail -Z, length 1 metre. Head and eyes remain stable.
@@ -51,7 +52,7 @@ Shader "Underwater/Living Fish Skin" {
   o.Metallic=.035;o.Smoothness=.3;
   if(IN.eyePart>.5){o.Albedo=IN.eyePart<1.5?float3(.18,.12,.045):float3(.003,.005,.007);o.Normal=float3(0,0,1);o.Smoothness=.82;o.Metallic=0;}
   // Art-directed bounced water light keeps coloration legible on the shaded side.
-  o.Emission=o.Albedo*float3(.3,.34,.38)*_ReefLight;
+  o.Emission=o.Albedo*float3(.3,.34,.38)*_ReefLight+_BioEmission.rgb*(IN.eyePart>.5?0:.3+lifted*.7);
   o.Occlusion=1;o.Alpha=1;
  }
  ENDCG

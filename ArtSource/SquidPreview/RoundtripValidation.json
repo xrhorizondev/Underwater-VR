@@ -1,0 +1,13 @@
+{
+  "fbx_roundtrip": "passed",
+  "mesh_renderers": 1,
+  "material_slots": 2,
+  "bones": 30,
+  "clips": [
+    "SquidRig|Scene"
+  ],
+  "deformation_m": 0.4503726421859006,
+  "loop_error_m": 0.0,
+  "root_motion_m": 0.0,
+  "unity_import": "not performed; awaiting user approval"
+}

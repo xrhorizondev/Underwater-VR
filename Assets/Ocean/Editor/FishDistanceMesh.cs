@@ -1,0 +1,13 @@
+using System.Collections.Generic;
+using UnityEngine;
+namespace Underwater.Editor {
+internal static class FishDistanceMesh {
+ public static Mesh Create(Mesh source,int resolution){var vertices=source.vertices;var uv=source.uv;var tags=source.uv2;var normals=source.normals;var bins=new Dictionary<(Vector3Int,int,int),int>();var positions=new List<Vector3>();var texcoords=new List<Vector2>();var eyeTags=new List<Vector2>();var normalSums=new List<Vector3>();var counts=new List<int>();var remap=new int[vertices.Length];float cell=source.bounds.size.magnitude/resolution;
+  for(int i=0;i<vertices.Length;i++){bool eye=tags.Length==vertices.Length&&tags[i].x>.5f;var tex=uv.Length==vertices.Length?uv[i]:Vector2.zero;var key=(Vector3Int.FloorToInt((vertices[i]-source.bounds.min)/cell),Mathf.FloorToInt(tex.x*8),Mathf.FloorToInt(tex.y*8));int id;if(eye||!bins.TryGetValue(key,out id)){id=positions.Count;if(!eye)bins.Add(key,id);positions.Add(Vector3.zero);texcoords.Add(Vector2.zero);eyeTags.Add(eye?tags[i]:Vector2.zero);normalSums.Add(Vector3.zero);counts.Add(0);}remap[i]=id;positions[id]+=vertices[i];texcoords[id]+=tex;normalSums[id]+=normals.Length==vertices.Length?normals[i]:Vector3.up;counts[id]++;}
+  for(int i=0;i<positions.Count;i++){positions[i]/=counts[i];texcoords[i]/=counts[i];normalSums[i]=normalSums[i].normalized;}
+  var faces=new List<int>();var unique=new HashSet<(int,int,int)>();var sourceFaces=source.triangles;for(int i=0;i<sourceFaces.Length;i+=3){int a=remap[sourceFaces[i]],b=remap[sourceFaces[i+1]],c=remap[sourceFaces[i+2]];if(a==b||b==c||a==c||!unique.Add((a,b,c)))continue;faces.Add(a);faces.Add(b);faces.Add(c);}
+  var result=new Mesh{name=source.name+" Quest distance "+resolution,indexFormat=UnityEngine.Rendering.IndexFormat.UInt32};result.SetVertices(positions);result.SetUVs(0,texcoords);result.SetUVs(1,eyeTags);result.SetNormals(normalSums);result.SetTriangles(faces,0);result.RecalculateTangents();result.bounds=source.bounds;return result;
+ }
+ public static void Install(){var cache=new Dictionary<Mesh,(Mesh,Mesh)>();int count=0;foreach(var fish in UnityEngine.Object.FindObjectsByType<FishAgent>(FindObjectsSortMode.None)){var filter=fish.GetComponent<MeshFilter>();if(!filter||fish.GetComponent<ReefFishDetail>())continue;var full=filter.sharedMesh;if(!cache.TryGetValue(full,out var pair)){pair=(Create(full,48),Create(full,24));cache.Add(full,pair);}var detail=fish.gameObject.AddComponent<ReefFishDetail>();detail.full=full;detail.medium=pair.Item1;detail.distant=pair.Item2;detail.closeDistance=Mathf.Max(2.2f,fish.bodyLength*4);count++;}Debug.Log("QUEST_FISH_DISTANCE_INSTALLED fish="+count+" uniqueMeshes="+cache.Count+" closeDetailAndEyes=preserved");}
+}
+}

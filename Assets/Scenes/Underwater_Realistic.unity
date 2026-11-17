@@ -7190,6 +7190,7 @@ GameObject:
   - component: {fileID: 47910044}
   - component: {fileID: 47910049}
   - component: {fileID: 47910050}
+  - component: {fileID: 47910051}
   m_Layer: 0
   m_Name: Anglerfish
   m_TagString: Untagged
@@ -7394,6 +7395,19 @@ MonoBehaviour:
   speed: 0.18
   radius: 2.4
   squid: 0
+--- !u!114 &47910051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47910042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 1
 --- !u!1 &48422706
 GameObject:
   m_ObjectHideFlags: 0
@@ -7405,6 +7419,9 @@ GameObject:
   - component: {fileID: 48422707}
   - component: {fileID: 48422708}
   - component: {fileID: 48422709}
+  - component: {fileID: 48422712}
+  - component: {fileID: 48422711}
+  - component: {fileID: 48422710}
   m_Layer: 0
   m_Name: Comb jelly
   m_TagString: Untagged
@@ -7454,8 +7471,8 @@ MonoBehaviour:
   danger: 0
   consequence: 0
   grabbable: 0
-  observationOnly: 0
-  stationary: 0
+  observationOnly: 1
+  stationary: 1
   proximityEnabled: 1
   cautionEnabled: 1
   cautionVoice: {fileID: 0}
@@ -7472,6 +7489,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a485ad26151ec5e44b9cf2fc1473105a, type: 3}
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefJellyMotion
+--- !u!114 &48422710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48422706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d85c185929774881a7fc5330836c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefCreatureInfo
+  creatureName: Comb jelly
+  fact: Moving comb rows scatter light.
+  narration: {fileID: 0}
+  cardsEnabled: 1
+  observationRange: 3.2
+--- !u!114 &48422711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48422706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 2
+--- !u!114 &48422712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48422706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7ea8eff35ab6d4b96549bfd9a8bbbb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefSphereBody
+  radius: 0.45
+  centerOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &49156020
 GameObject:
   m_ObjectHideFlags: 0
@@ -14058,6 +14119,149 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90782640}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &91815149
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 91815150}
+  - component: {fileID: 91815155}
+  - component: {fileID: 91815154}
+  - component: {fileID: 91815153}
+  - component: {fileID: 91815152}
+  - component: {fileID: 91815151}
+  m_Layer: 0
+  m_Name: Distant reef shark
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &91815150
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91815149}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 19, y: -11, z: 194}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1252348642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &91815151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91815149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f785557c39264664685c911b7157f14d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.OpenWaterShark
+  cautionVoice: {fileID: 8300000, guid: ee960efb73321bb438950f7a3d3f5bb5, type: 3}
+  patrolRadius: 7
+--- !u!114 &91815152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91815149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cdaa865d68ddc141b70f5e5903d4e25, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.SeaLife
+  kind: Reef shark
+  danger: 0
+  consequence: 0
+  grabbable: 0
+  observationOnly: 1
+  stationary: 1
+  proximityEnabled: 1
+  cautionEnabled: 1
+  cautionVoice: {fileID: 0}
+  reactionVoice: {fileID: 0}
+--- !u!114 &91815153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91815149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7ea8eff35ab6d4b96549bfd9a8bbbb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefSphereBody
+  radius: 1.9
+  centerOffset: {x: 0, y: 0, z: 0}
+--- !u!23 &91815154
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91815149}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 1f03af92379793e4cb040294ef808554, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &91815155
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91815149}
+  m_Mesh: {fileID: 4300000, guid: dcbe4767a27ba4542afa90e450766b20, type: 2}
 --- !u!1 &92433089
 GameObject:
   m_ObjectHideFlags: 0
@@ -20177,10 +20381,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 129639555}
-  - component: {fileID: 129639557}
-  - component: {fileID: 129639556}
   - component: {fileID: 129639558}
   - component: {fileID: 129639559}
+  - component: {fileID: 129639560}
+  - component: {fileID: 129639562}
+  - component: {fileID: 129639561}
   m_Layer: 0
   m_Name: Giant squid distant silhouette
   m_TagString: Untagged
@@ -20197,14 +20402,60 @@ Transform:
   m_GameObject: {fileID: 129639554}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.5, z: -0, w: 0.8660254}
-  m_LocalPosition: {x: 14, y: -39.72069, z: 135}
+  m_LocalPosition: {x: 14, y: -37.90172, z: 135}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 663761931}
   m_Father: {fileID: 1791450626}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &129639556
+--- !u!114 &129639558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129639554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7ea8eff35ab6d4b96549bfd9a8bbbb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefSphereBody
+  radius: 2
+  centerOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &129639559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129639554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1543703320fe87419a537d5cd40a5a4, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.SquidSwimmer
+  speed: 0.45
+  radius: 7
+  clearancePadding: 0
+--- !u!114 &129639560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129639554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d85c185929774881a7fc5330836c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefCreatureInfo
+  creatureName: Giant squid
+  fact: Watch its slow passage through the darkness.
+  narration: {fileID: 0}
+  cardsEnabled: 1
+  observationRange: 32
+--- !u!23 &129639561
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20253,7 +20504,7 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &129639557
+--- !u!33 &129639562
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20261,34 +20512,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 129639554}
   m_Mesh: {fileID: 4300000, guid: 0f12bd38d0c99004aab36d0df3f3b79c, type: 2}
---- !u!114 &129639558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 129639554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad7ea8eff35ab6d4b96549bfd9a8bbbb, type: 3}
-  m_Name:
-  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefSphereBody
-  radius: 2
-  centerOffset: {x: 0, y: 0, z: 0}
---- !u!114 &129639559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 129639554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1543703320fe87419a537d5cd40a5a4, type: 3}
-  m_Name:
-  m_EditorClassIdentifier: Assembly-CSharp::Underwater.SquidSwimmer
-  speed: 0.45
-  radius: 7
 --- !u!1 &129830521
 GameObject:
   m_ObjectHideFlags: 0
@@ -39298,6 +39521,7 @@ GameObject:
   - component: {fileID: 277187802}
   - component: {fileID: 277187807}
   - component: {fileID: 277187808}
+  - component: {fileID: 277187809}
   m_Layer: 0
   m_Name: Anglerfish
   m_TagString: Untagged
@@ -39502,6 +39726,19 @@ MonoBehaviour:
   speed: 0.18
   radius: 2.4
   squid: 0
+--- !u!114 &277187809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277187800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 1
 --- !u!1 &277454853
 GameObject:
   m_ObjectHideFlags: 0
@@ -42458,6 +42695,7 @@ GameObject:
   - component: {fileID: 298324024}
   - component: {fileID: 298324029}
   - component: {fileID: 298324030}
+  - component: {fileID: 298324031}
   m_Layer: 0
   m_Name: Anglerfish
   m_TagString: Untagged
@@ -42662,6 +42900,19 @@ MonoBehaviour:
   speed: 0.18
   radius: 2.4
   squid: 0
+--- !u!114 &298324031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298324022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 1
 --- !u!4 &298674093 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4996008873176630471, guid: fa677dffc243ffd4eacbe1400df27bb6, type: 3}
@@ -47792,6 +48043,9 @@ GameObject:
   - component: {fileID: 338844535}
   - component: {fileID: 338844536}
   - component: {fileID: 338844537}
+  - component: {fileID: 338844540}
+  - component: {fileID: 338844539}
+  - component: {fileID: 338844538}
   m_Layer: 0
   m_Name: Comb jelly
   m_TagString: Untagged
@@ -47841,8 +48095,8 @@ MonoBehaviour:
   danger: 0
   consequence: 0
   grabbable: 0
-  observationOnly: 0
-  stationary: 0
+  observationOnly: 1
+  stationary: 1
   proximityEnabled: 1
   cautionEnabled: 1
   cautionVoice: {fileID: 0}
@@ -47859,6 +48113,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a485ad26151ec5e44b9cf2fc1473105a, type: 3}
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefJellyMotion
+--- !u!114 &338844538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338844534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d85c185929774881a7fc5330836c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefCreatureInfo
+  creatureName: Comb jelly
+  fact: Moving comb rows scatter light.
+  narration: {fileID: 0}
+  cardsEnabled: 1
+  observationRange: 3.2
+--- !u!114 &338844539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338844534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 2
+--- !u!114 &338844540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338844534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7ea8eff35ab6d4b96549bfd9a8bbbb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefSphereBody
+  radius: 0.45
+  centerOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &340143965
 GameObject:
   m_ObjectHideFlags: 0
@@ -48999,6 +49297,9 @@ GameObject:
   - component: {fileID: 350702919}
   - component: {fileID: 350702920}
   - component: {fileID: 350702921}
+  - component: {fileID: 350702924}
+  - component: {fileID: 350702923}
+  - component: {fileID: 350702922}
   m_Layer: 0
   m_Name: Comb jelly
   m_TagString: Untagged
@@ -49048,8 +49349,8 @@ MonoBehaviour:
   danger: 0
   consequence: 0
   grabbable: 0
-  observationOnly: 0
-  stationary: 0
+  observationOnly: 1
+  stationary: 1
   proximityEnabled: 1
   cautionEnabled: 1
   cautionVoice: {fileID: 0}
@@ -49066,6 +49367,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a485ad26151ec5e44b9cf2fc1473105a, type: 3}
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefJellyMotion
+--- !u!114 &350702922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350702918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d85c185929774881a7fc5330836c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefCreatureInfo
+  creatureName: Comb jelly
+  fact: Moving comb rows scatter light.
+  narration: {fileID: 0}
+  cardsEnabled: 1
+  observationRange: 3.2
+--- !u!114 &350702923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350702918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 2
+--- !u!114 &350702924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350702918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7ea8eff35ab6d4b96549bfd9a8bbbb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefSphereBody
+  radius: 0.45
+  centerOffset: {x: 0, y: 0, z: 0}
 --- !u!1001 &352598985
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54708,6 +55053,7 @@ MonoBehaviour:
   fact: Groupers are ambush predators.
   narration: {fileID: 8300000, guid: 313e066dcc0d19c4a90a0be47226cedb, type: 3}
   cardsEnabled: 1
+  observationRange: 3.2
 --- !u!114 &397193339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60367,6 +60713,7 @@ GameObject:
   - component: {fileID: 437957207}
   - component: {fileID: 437957206}
   - component: {fileID: 437957205}
+  - component: {fileID: 437957208}
   m_Layer: 0
   m_Name: Resting stingray
   m_TagString: Untagged
@@ -60517,6 +60864,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefSphereBody
   radius: 1.5
   centerOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &437957208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437957200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d85c185929774881a7fc5330836c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefCreatureInfo
+  creatureName: Stingray
+  fact: Its tail carries the defensive barb.
+  narration: {fileID: 8300000, guid: dedd4865d4c5b1f4f87fe3daf31115ba, type: 3}
+  cardsEnabled: 1
+  observationRange: 3.2
 --- !u!4 &438010008 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 230607785329832519, guid: 64f1230d973052d4da658874d688916c, type: 3}
@@ -62101,6 +62465,7 @@ MonoBehaviour:
   fact: Dolphins breathe air at the surface.
   narration: {fileID: 8300000, guid: dad752d561d572e47b910313c8f445cb, type: 3}
   cardsEnabled: 1
+  observationRange: 3.2
 --- !u!114 &454232497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65518,6 +65883,7 @@ GameObject:
   - component: {fileID: 478665002}
   - component: {fileID: 478665007}
   - component: {fileID: 478665008}
+  - component: {fileID: 478665009}
   m_Layer: 0
   m_Name: Anglerfish
   m_TagString: Untagged
@@ -65722,6 +66088,19 @@ MonoBehaviour:
   speed: 0.18
   radius: 2.4
   squid: 0
+--- !u!114 &478665009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478665000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 1
 --- !u!1 &479254430
 GameObject:
   m_ObjectHideFlags: 0
@@ -69940,6 +70319,9 @@ GameObject:
   - component: {fileID: 506833276}
   - component: {fileID: 506833277}
   - component: {fileID: 506833278}
+  - component: {fileID: 506833281}
+  - component: {fileID: 506833280}
+  - component: {fileID: 506833279}
   m_Layer: 0
   m_Name: Comb jelly
   m_TagString: Untagged
@@ -69989,8 +70371,8 @@ MonoBehaviour:
   danger: 0
   consequence: 0
   grabbable: 0
-  observationOnly: 0
-  stationary: 0
+  observationOnly: 1
+  stationary: 1
   proximityEnabled: 1
   cautionEnabled: 1
   cautionVoice: {fileID: 0}
@@ -70007,6 +70389,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a485ad26151ec5e44b9cf2fc1473105a, type: 3}
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefJellyMotion
+--- !u!114 &506833279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506833275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d85c185929774881a7fc5330836c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefCreatureInfo
+  creatureName: Comb jelly
+  fact: Moving comb rows scatter light.
+  narration: {fileID: 0}
+  cardsEnabled: 1
+  observationRange: 3.2
+--- !u!114 &506833280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506833275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 2
+--- !u!114 &506833281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506833275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7ea8eff35ab6d4b96549bfd9a8bbbb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefSphereBody
+  radius: 0.45
+  centerOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &507760675
 GameObject:
   m_ObjectHideFlags: 0
@@ -70022,6 +70448,7 @@ GameObject:
   - component: {fileID: 507760682}
   - component: {fileID: 507760681}
   - component: {fileID: 507760680}
+  - component: {fileID: 507760683}
   m_Layer: 0
   m_Name: Resting stingray
   m_TagString: Untagged
@@ -70172,6 +70599,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefSphereBody
   radius: 1.5
   centerOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &507760683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507760675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d85c185929774881a7fc5330836c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefCreatureInfo
+  creatureName: Stingray
+  fact: Its tail carries the defensive barb.
+  narration: {fileID: 8300000, guid: dedd4865d4c5b1f4f87fe3daf31115ba, type: 3}
+  cardsEnabled: 1
+  observationRange: 3.2
 --- !u!4 &508747115 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8651881919154837335, guid: 0a7c167adfd30f94ebd1486cfb066516, type: 3}
@@ -74589,6 +75033,9 @@ GameObject:
   - component: {fileID: 539496008}
   - component: {fileID: 539496009}
   - component: {fileID: 539496010}
+  - component: {fileID: 539496013}
+  - component: {fileID: 539496012}
+  - component: {fileID: 539496011}
   m_Layer: 0
   m_Name: Comb jelly
   m_TagString: Untagged
@@ -74638,8 +75085,8 @@ MonoBehaviour:
   danger: 0
   consequence: 0
   grabbable: 0
-  observationOnly: 0
-  stationary: 0
+  observationOnly: 1
+  stationary: 1
   proximityEnabled: 1
   cautionEnabled: 1
   cautionVoice: {fileID: 0}
@@ -74656,6 +75103,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a485ad26151ec5e44b9cf2fc1473105a, type: 3}
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefJellyMotion
+--- !u!114 &539496011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539496007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d85c185929774881a7fc5330836c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefCreatureInfo
+  creatureName: Comb jelly
+  fact: Moving comb rows scatter light.
+  narration: {fileID: 0}
+  cardsEnabled: 1
+  observationRange: 3.2
+--- !u!114 &539496012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539496007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 2
+--- !u!114 &539496013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539496007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7ea8eff35ab6d4b96549bfd9a8bbbb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefSphereBody
+  radius: 0.45
+  centerOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &539596601
 GameObject:
   m_ObjectHideFlags: 0
@@ -81562,6 +82053,7 @@ GameObject:
   - component: {fileID: 588864617}
   - component: {fileID: 588864616}
   - component: {fileID: 588864619}
+  - component: {fileID: 588864620}
   m_Layer: 0
   m_Name: Loggerhead sea turtle
   m_TagString: Untagged
@@ -81665,6 +82157,23 @@ MonoBehaviour:
     m_Center: {x: -0.00005686283, y: 0.008245468, z: 0.09376222}
     m_Extent: {x: 0.66370547, y: 0.12824535, z: 0.6536709}
   bellySupportLocal: 0.107014656
+--- !u!114 &588864620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588864614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d85c185929774881a7fc5330836c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefCreatureInfo
+  creatureName: Sea turtle
+  fact: Sea turtles breathe air.
+  narration: {fileID: 8300000, guid: fa137ddb23f526a4c86df7541808850f, type: 3}
+  cardsEnabled: 1
+  observationRange: 3.2
 --- !u!1001 &589955710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -100134,6 +100643,7 @@ GameObject:
   - component: {fileID: 735763792}
   - component: {fileID: 735763791}
   - component: {fileID: 735763790}
+  - component: {fileID: 735763793}
   m_Layer: 0
   m_Name: Resting stingray
   m_TagString: Untagged
@@ -100284,6 +100794,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefSphereBody
   radius: 1.5
   centerOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &735763793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735763785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d85c185929774881a7fc5330836c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefCreatureInfo
+  creatureName: Stingray
+  fact: Its tail carries the defensive barb.
+  narration: {fileID: 8300000, guid: dedd4865d4c5b1f4f87fe3daf31115ba, type: 3}
+  cardsEnabled: 1
+  observationRange: 3.2
 --- !u!4 &736363579 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 692535403645544946, guid: b1f4ad7ea19067b46ad1d9a84ea85bf2, type: 3}
@@ -102899,6 +103426,9 @@ GameObject:
   - component: {fileID: 757033391}
   - component: {fileID: 757033392}
   - component: {fileID: 757033393}
+  - component: {fileID: 757033396}
+  - component: {fileID: 757033395}
+  - component: {fileID: 757033394}
   m_Layer: 0
   m_Name: Comb jelly
   m_TagString: Untagged
@@ -102948,8 +103478,8 @@ MonoBehaviour:
   danger: 0
   consequence: 0
   grabbable: 0
-  observationOnly: 0
-  stationary: 0
+  observationOnly: 1
+  stationary: 1
   proximityEnabled: 1
   cautionEnabled: 1
   cautionVoice: {fileID: 0}
@@ -102966,6 +103496,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a485ad26151ec5e44b9cf2fc1473105a, type: 3}
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefJellyMotion
+--- !u!114 &757033394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757033390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d85c185929774881a7fc5330836c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefCreatureInfo
+  creatureName: Comb jelly
+  fact: Moving comb rows scatter light.
+  narration: {fileID: 0}
+  cardsEnabled: 1
+  observationRange: 3.2
+--- !u!114 &757033395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757033390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 2
+--- !u!114 &757033396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757033390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7ea8eff35ab6d4b96549bfd9a8bbbb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefSphereBody
+  radius: 0.45
+  centerOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &757550707
 GameObject:
   m_ObjectHideFlags: 0
@@ -116990,6 +117564,9 @@ GameObject:
   - component: {fileID: 861054133}
   - component: {fileID: 861054134}
   - component: {fileID: 861054135}
+  - component: {fileID: 861054138}
+  - component: {fileID: 861054137}
+  - component: {fileID: 861054136}
   m_Layer: 0
   m_Name: Comb jelly
   m_TagString: Untagged
@@ -117039,8 +117616,8 @@ MonoBehaviour:
   danger: 0
   consequence: 0
   grabbable: 0
-  observationOnly: 0
-  stationary: 0
+  observationOnly: 1
+  stationary: 1
   proximityEnabled: 1
   cautionEnabled: 1
   cautionVoice: {fileID: 0}
@@ -117057,6 +117634,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a485ad26151ec5e44b9cf2fc1473105a, type: 3}
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefJellyMotion
+--- !u!114 &861054136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861054132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d85c185929774881a7fc5330836c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefCreatureInfo
+  creatureName: Comb jelly
+  fact: Moving comb rows scatter light.
+  narration: {fileID: 0}
+  cardsEnabled: 1
+  observationRange: 3.2
+--- !u!114 &861054137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861054132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 2
+--- !u!114 &861054138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861054132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7ea8eff35ab6d4b96549bfd9a8bbbb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefSphereBody
+  radius: 0.45
+  centerOffset: {x: 0, y: 0, z: 0}
 --- !u!1001 &861875369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -124783,6 +125404,9 @@ GameObject:
   - component: {fileID: 913286119}
   - component: {fileID: 913286120}
   - component: {fileID: 913286121}
+  - component: {fileID: 913286124}
+  - component: {fileID: 913286123}
+  - component: {fileID: 913286122}
   m_Layer: 0
   m_Name: Comb jelly
   m_TagString: Untagged
@@ -124832,8 +125456,8 @@ MonoBehaviour:
   danger: 0
   consequence: 0
   grabbable: 0
-  observationOnly: 0
-  stationary: 0
+  observationOnly: 1
+  stationary: 1
   proximityEnabled: 1
   cautionEnabled: 1
   cautionVoice: {fileID: 0}
@@ -124850,6 +125474,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a485ad26151ec5e44b9cf2fc1473105a, type: 3}
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefJellyMotion
+--- !u!114 &913286122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913286118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d85c185929774881a7fc5330836c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefCreatureInfo
+  creatureName: Comb jelly
+  fact: Moving comb rows scatter light.
+  narration: {fileID: 0}
+  cardsEnabled: 1
+  observationRange: 3.2
+--- !u!114 &913286123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913286118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 2
+--- !u!114 &913286124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913286118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7ea8eff35ab6d4b96549bfd9a8bbbb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefSphereBody
+  radius: 0.45
+  centerOffset: {x: 0, y: 0, z: 0}
 --- !u!1001 &913946765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -135400,6 +136068,9 @@ GameObject:
   - component: {fileID: 998693037}
   - component: {fileID: 998693038}
   - component: {fileID: 998693039}
+  - component: {fileID: 998693042}
+  - component: {fileID: 998693041}
+  - component: {fileID: 998693040}
   m_Layer: 0
   m_Name: Comb jelly
   m_TagString: Untagged
@@ -135449,8 +136120,8 @@ MonoBehaviour:
   danger: 0
   consequence: 0
   grabbable: 0
-  observationOnly: 0
-  stationary: 0
+  observationOnly: 1
+  stationary: 1
   proximityEnabled: 1
   cautionEnabled: 1
   cautionVoice: {fileID: 0}
@@ -135467,6 +136138,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a485ad26151ec5e44b9cf2fc1473105a, type: 3}
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefJellyMotion
+--- !u!114 &998693040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998693036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d85c185929774881a7fc5330836c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefCreatureInfo
+  creatureName: Comb jelly
+  fact: Moving comb rows scatter light.
+  narration: {fileID: 0}
+  cardsEnabled: 1
+  observationRange: 3.2
+--- !u!114 &998693041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998693036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 2
+--- !u!114 &998693042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998693036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7ea8eff35ab6d4b96549bfd9a8bbbb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefSphereBody
+  radius: 0.45
+  centerOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &998731224
 GameObject:
   m_ObjectHideFlags: 0
@@ -172460,6 +173175,7 @@ GameObject:
   - component: {fileID: 1247870352}
   - component: {fileID: 1247870357}
   - component: {fileID: 1247870358}
+  - component: {fileID: 1247870359}
   m_Layer: 0
   m_Name: Anglerfish
   m_TagString: Untagged
@@ -172664,6 +173380,19 @@ MonoBehaviour:
   speed: 0.18
   radius: 2.4
   squid: 0
+--- !u!114 &1247870359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247870350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 1
 --- !u!1 &1248116361
 GameObject:
   m_ObjectHideFlags: 0
@@ -173578,6 +174307,54 @@ MonoBehaviour:
     m_Center: {x: 0.000000007450581, y: 0, z: 0}
     m_Extent: {x: 0.11110307, y: 0.301763, z: 0.42499986}
   bellySupportLocal: 0.2786645
+--- !u!1 &1252348640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1252348642}
+  - component: {fileID: 1252348641}
+  m_Layer: 0
+  m_Name: Day 6 open water and finale
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1252348641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252348640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57ef3dc96feaa4c8e4a5104a134832, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DiveEnding
+  endingVoice: {fileID: 8300000, guid: a5372d262ab764543857d2f8a0cc232e, type: 3}
+--- !u!4 &1252348642
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252348640}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 91815150}
+  - {fileID: 1697284347}
+  - {fileID: 1602093977}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1253580513 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 726237624140868605, guid: d6db3de30fc73e74bbf7f36980e21981, type: 3}
@@ -180427,6 +181204,8 @@ GameObject:
   - component: {fileID: 1298008131}
   - component: {fileID: 1298008136}
   - component: {fileID: 1298008137}
+  - component: {fileID: 1298008139}
+  - component: {fileID: 1298008138}
   m_Layer: 0
   m_Name: Lumen
   m_TagString: Untagged
@@ -180585,6 +181364,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f491a4f0871a40841b87d715f98e9d3b, type: 3}
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefFishFollower
+--- !u!114 &1298008138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298008129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d85c185929774881a7fc5330836c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefCreatureInfo
+  creatureName: Lumen
+  fact: A quiet companion through deeper water.
+  narration: {fileID: 0}
+  cardsEnabled: 1
+  observationRange: 3.2
+--- !u!114 &1298008139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298008129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 0
 --- !u!4 &1298257462 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5650202068463602851, guid: b47d5902f5580404ea5c13ea66d5a5d3, type: 3}
@@ -187529,6 +188338,61 @@ MonoBehaviour:
     m_Center: {x: 0.000002451241, y: 0, z: 0}
     m_Extent: {x: 0.1111023, y: 0.27941003, z: 0.5000001}
   bellySupportLocal: 0.25802293
+--- !u!1 &1351802290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1351802291}
+  - component: {fileID: 1351802292}
+  m_Layer: 9
+  m_Name: Animal body solid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1351802291
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351802290}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1697284347}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &1351802292
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351802290}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.7
+  m_Height: 20
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: -3}
 --- !u!1001 &1351839092
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -189453,6 +190317,9 @@ GameObject:
   - component: {fileID: 1365277286}
   - component: {fileID: 1365277287}
   - component: {fileID: 1365277288}
+  - component: {fileID: 1365277291}
+  - component: {fileID: 1365277290}
+  - component: {fileID: 1365277289}
   m_Layer: 0
   m_Name: Comb jelly
   m_TagString: Untagged
@@ -189502,8 +190369,8 @@ MonoBehaviour:
   danger: 0
   consequence: 0
   grabbable: 0
-  observationOnly: 0
-  stationary: 0
+  observationOnly: 1
+  stationary: 1
   proximityEnabled: 1
   cautionEnabled: 1
   cautionVoice: {fileID: 0}
@@ -189520,6 +190387,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a485ad26151ec5e44b9cf2fc1473105a, type: 3}
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefJellyMotion
+--- !u!114 &1365277289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365277285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d85c185929774881a7fc5330836c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefCreatureInfo
+  creatureName: Comb jelly
+  fact: Moving comb rows scatter light.
+  narration: {fileID: 0}
+  cardsEnabled: 1
+  observationRange: 3.2
+--- !u!114 &1365277290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365277285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 2
+--- !u!114 &1365277291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365277285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7ea8eff35ab6d4b96549bfd9a8bbbb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefSphereBody
+  radius: 0.45
+  centerOffset: {x: 0, y: 0, z: 0}
 --- !u!1001 &1365994964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -191145,6 +192056,7 @@ GameObject:
   - component: {fileID: 1375336304}
   - component: {fileID: 1375336309}
   - component: {fileID: 1375336310}
+  - component: {fileID: 1375336311}
   m_Layer: 0
   m_Name: Anglerfish
   m_TagString: Untagged
@@ -191349,6 +192261,19 @@ MonoBehaviour:
   speed: 0.18
   radius: 2.4
   squid: 0
+--- !u!114 &1375336311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375336302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 1
 --- !u!1 &1375959417
 GameObject:
   m_ObjectHideFlags: 0
@@ -198173,6 +199098,7 @@ GameObject:
   - component: {fileID: 1418964160}
   - component: {fileID: 1418964165}
   - component: {fileID: 1418964166}
+  - component: {fileID: 1418964167}
   m_Layer: 0
   m_Name: Anglerfish
   m_TagString: Untagged
@@ -198377,6 +199303,19 @@ MonoBehaviour:
   speed: 0.18
   radius: 2.4
   squid: 0
+--- !u!114 &1418964167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418964158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 1
 --- !u!1 &1419166118
 GameObject:
   m_ObjectHideFlags: 0
@@ -202912,6 +203851,7 @@ MonoBehaviour:
   fact: Dolphins breathe air at the surface.
   narration: {fileID: 8300000, guid: dad752d561d572e47b910313c8f445cb, type: 3}
   cardsEnabled: 1
+  observationRange: 3.2
 --- !u!114 &1450313735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206178,6 +207118,9 @@ GameObject:
   - component: {fileID: 1477517156}
   - component: {fileID: 1477517157}
   - component: {fileID: 1477517158}
+  - component: {fileID: 1477517161}
+  - component: {fileID: 1477517160}
+  - component: {fileID: 1477517159}
   m_Layer: 0
   m_Name: Comb jelly
   m_TagString: Untagged
@@ -206194,7 +207137,7 @@ Transform:
   m_GameObject: {fileID: 1477517155}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7, y: -31, z: 87}
+  m_LocalPosition: {x: 7, y: -30, z: 87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -206227,8 +207170,8 @@ MonoBehaviour:
   danger: 0
   consequence: 0
   grabbable: 0
-  observationOnly: 0
-  stationary: 0
+  observationOnly: 1
+  stationary: 1
   proximityEnabled: 1
   cautionEnabled: 1
   cautionVoice: {fileID: 0}
@@ -206245,6 +207188,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a485ad26151ec5e44b9cf2fc1473105a, type: 3}
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefJellyMotion
+--- !u!114 &1477517159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477517155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d85c185929774881a7fc5330836c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefCreatureInfo
+  creatureName: Comb jelly
+  fact: Moving comb rows scatter light.
+  narration: {fileID: 0}
+  cardsEnabled: 1
+  observationRange: 3.2
+--- !u!114 &1477517160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477517155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 2
+--- !u!114 &1477517161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477517155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7ea8eff35ab6d4b96549bfd9a8bbbb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefSphereBody
+  radius: 0.45
+  centerOffset: {x: 0, y: 0, z: 0}
 --- !u!1001 &1477619482
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -210777,6 +211764,7 @@ GameObject:
   - component: {fileID: 1505373455}
   - component: {fileID: 1505373460}
   - component: {fileID: 1505373461}
+  - component: {fileID: 1505373462}
   m_Layer: 0
   m_Name: Anglerfish
   m_TagString: Untagged
@@ -210981,6 +211969,19 @@ MonoBehaviour:
   speed: 0.18
   radius: 2.4
   squid: 0
+--- !u!114 &1505373462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505373453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 1
 --- !u!1 &1505982014
 GameObject:
   m_ObjectHideFlags: 0
@@ -218093,6 +219094,7 @@ GameObject:
   - component: {fileID: 1552489126}
   - component: {fileID: 1552489131}
   - component: {fileID: 1552489132}
+  - component: {fileID: 1552489133}
   m_Layer: 0
   m_Name: Anglerfish
   m_TagString: Untagged
@@ -218297,6 +219299,19 @@ MonoBehaviour:
   speed: 0.18
   radius: 2.4
   squid: 0
+--- !u!114 &1552489133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552489124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 1
 --- !u!1 &1552903937
 GameObject:
   m_ObjectHideFlags: 0
@@ -224198,6 +225213,181 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 692535403645544946, guid: b1f4ad7ea19067b46ad1d9a84ea85bf2, type: 3}
   m_PrefabInstance: {fileID: 32619054}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1602093976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1602093977}
+  - component: {fileID: 1602093984}
+  - component: {fileID: 1602093983}
+  - component: {fileID: 1602093982}
+  - component: {fileID: 1602093981}
+  - component: {fileID: 1602093980}
+  - component: {fileID: 1602093979}
+  - component: {fileID: 1602093978}
+  m_Layer: 0
+  m_Name: Calm finale grouper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1602093977
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602093976}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2, y: -7, z: 225}
+  m_LocalScale: {x: 1.35, y: 1.35, z: 1.35}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1252348642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1602093978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602093976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d85c185929774881a7fc5330836c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefCreatureInfo
+  creatureName: Grouper
+  fact: Groupers are ambush predators.
+  narration: {fileID: 8300000, guid: 313e066dcc0d19c4a90a0be47226cedb, type: 3}
+  cardsEnabled: 1
+  observationRange: 3.2
+--- !u!114 &1602093979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602093976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8de2861a06d3cd24682336c026ed7e83, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefCruiser
+  speed: 0.16
+  radius: 1.8
+  squid: 0
+--- !u!114 &1602093980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602093976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e27a30327c31aca4da473377da2e560a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.FishBodyMotion
+--- !u!114 &1602093981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602093976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cdaa865d68ddc141b70f5e5903d4e25, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.SeaLife
+  kind: Grouper
+  danger: 0
+  consequence: 1
+  grabbable: 0
+  observationOnly: 0
+  stationary: 1
+  proximityEnabled: 1
+  cautionEnabled: 1
+  cautionVoice: {fileID: 0}
+  reactionVoice: {fileID: 0}
+--- !u!114 &1602093982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602093976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7ea8eff35ab6d4b96549bfd9a8bbbb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefSphereBody
+  radius: 0.85
+  centerOffset: {x: 0, y: 0, z: 0}
+--- !u!23 &1602093983
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602093976}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 991fd1f7e806187438f21b0799f79003, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1602093984
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602093976}
+  m_Mesh: {fileID: 4300000, guid: 65800f8ab939e9f469abe0e942220a79, type: 2}
 --- !u!1 &1602276726
 GameObject:
   m_ObjectHideFlags: 0
@@ -227925,6 +229115,7 @@ GameObject:
   - component: {fileID: 1624680748}
   - component: {fileID: 1624680753}
   - component: {fileID: 1624680754}
+  - component: {fileID: 1624680755}
   m_Layer: 0
   m_Name: Anglerfish
   m_TagString: Untagged
@@ -228129,6 +229320,19 @@ MonoBehaviour:
   speed: 0.18
   radius: 2.4
   squid: 0
+--- !u!114 &1624680755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624680746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 1
 --- !u!1 &1625096684
 GameObject:
   m_ObjectHideFlags: 0
@@ -247585,6 +248789,146 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1f4ad7ea19067b46ad1d9a84ea85bf2, type: 3}
+--- !u!1 &1697284346
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1697284347}
+  - component: {fileID: 1697284350}
+  - component: {fileID: 1697284349}
+  - component: {fileID: 1697284348}
+  - component: {fileID: 1697284352}
+  - component: {fileID: 1697284351}
+  m_Layer: 0
+  m_Name: Open water passing giant squid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1697284347
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697284346}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 31, y: -8, z: 196}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1351802291}
+  m_Father: {fileID: 1252348642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1697284348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697284346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d85c185929774881a7fc5330836c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefCreatureInfo
+  creatureName: Giant squid
+  fact: Watch its slow passage.
+  narration: {fileID: 8300000, guid: 99e4ab1c8871f1343a447b99e22d936d, type: 3}
+  cardsEnabled: 1
+  observationRange: 32
+--- !u!114 &1697284349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697284346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1543703320fe87419a537d5cd40a5a4, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.SquidSwimmer
+  speed: 0.45
+  radius: 3
+  clearancePadding: 0
+--- !u!114 &1697284350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697284346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7ea8eff35ab6d4b96549bfd9a8bbbb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefSphereBody
+  radius: 2
+  centerOffset: {x: 0, y: 0, z: 0}
+--- !u!23 &1697284351
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697284346}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0f8b411968a34e24e993be7f31b66819, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1697284352
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697284346}
+  m_Mesh: {fileID: 4300000, guid: 0f12bd38d0c99004aab36d0df3f3b79c, type: 2}
 --- !u!1 &1698192058
 GameObject:
   m_ObjectHideFlags: 0
@@ -251903,6 +253247,9 @@ GameObject:
   - component: {fileID: 1723965233}
   - component: {fileID: 1723965234}
   - component: {fileID: 1723965235}
+  - component: {fileID: 1723965238}
+  - component: {fileID: 1723965237}
+  - component: {fileID: 1723965236}
   m_Layer: 0
   m_Name: Comb jelly
   m_TagString: Untagged
@@ -251952,8 +253299,8 @@ MonoBehaviour:
   danger: 0
   consequence: 0
   grabbable: 0
-  observationOnly: 0
-  stationary: 0
+  observationOnly: 1
+  stationary: 1
   proximityEnabled: 1
   cautionEnabled: 1
   cautionVoice: {fileID: 0}
@@ -251970,6 +253317,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a485ad26151ec5e44b9cf2fc1473105a, type: 3}
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefJellyMotion
+--- !u!114 &1723965236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723965232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d85c185929774881a7fc5330836c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefCreatureInfo
+  creatureName: Comb jelly
+  fact: Moving comb rows scatter light.
+  narration: {fileID: 0}
+  cardsEnabled: 1
+  observationRange: 3.2
+--- !u!114 &1723965237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723965232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 2
+--- !u!114 &1723965238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723965232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7ea8eff35ab6d4b96549bfd9a8bbbb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefSphereBody
+  radius: 0.45
+  centerOffset: {x: 0, y: 0, z: 0}
 --- !u!1001 &1724686925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -260686,6 +262077,7 @@ GameObject:
   - component: {fileID: 1754018677}
   - component: {fileID: 1754018682}
   - component: {fileID: 1754018683}
+  - component: {fileID: 1754018684}
   m_Layer: 0
   m_Name: Anglerfish
   m_TagString: Untagged
@@ -260890,6 +262282,19 @@ MonoBehaviour:
   speed: 0.18
   radius: 2.4
   squid: 0
+--- !u!114 &1754018684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754018675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 1
 --- !u!1 &1754552342
 GameObject:
   m_ObjectHideFlags: 0
@@ -276036,6 +277441,7 @@ GameObject:
   - component: {fileID: 1871007660}
   - component: {fileID: 1871007665}
   - component: {fileID: 1871007666}
+  - component: {fileID: 1871007667}
   m_Layer: 0
   m_Name: Anglerfish
   m_TagString: Untagged
@@ -276240,6 +277646,19 @@ MonoBehaviour:
   speed: 0.18
   radius: 2.4
   squid: 0
+--- !u!114 &1871007667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871007658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 1
 --- !u!1 &1871355043
 GameObject:
   m_ObjectHideFlags: 0
@@ -279720,6 +281139,9 @@ GameObject:
   - component: {fileID: 1893039320}
   - component: {fileID: 1893039321}
   - component: {fileID: 1893039322}
+  - component: {fileID: 1893039325}
+  - component: {fileID: 1893039324}
+  - component: {fileID: 1893039323}
   m_Layer: 0
   m_Name: Comb jelly
   m_TagString: Untagged
@@ -279769,8 +281191,8 @@ MonoBehaviour:
   danger: 0
   consequence: 0
   grabbable: 0
-  observationOnly: 0
-  stationary: 0
+  observationOnly: 1
+  stationary: 1
   proximityEnabled: 1
   cautionEnabled: 1
   cautionVoice: {fileID: 0}
@@ -279787,6 +281209,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a485ad26151ec5e44b9cf2fc1473105a, type: 3}
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefJellyMotion
+--- !u!114 &1893039323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893039319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d85c185929774881a7fc5330836c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefCreatureInfo
+  creatureName: Comb jelly
+  fact: Moving comb rows scatter light.
+  narration: {fileID: 0}
+  cardsEnabled: 1
+  observationRange: 3.2
+--- !u!114 &1893039324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893039319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 2
+--- !u!114 &1893039325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893039319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7ea8eff35ab6d4b96549bfd9a8bbbb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefSphereBody
+  radius: 0.45
+  centerOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &1893168415
 GameObject:
   m_ObjectHideFlags: 0
@@ -282288,6 +283754,9 @@ GameObject:
   - component: {fileID: 1913419714}
   - component: {fileID: 1913419715}
   - component: {fileID: 1913419716}
+  - component: {fileID: 1913419719}
+  - component: {fileID: 1913419718}
+  - component: {fileID: 1913419717}
   m_Layer: 0
   m_Name: Comb jelly
   m_TagString: Untagged
@@ -282337,8 +283806,8 @@ MonoBehaviour:
   danger: 0
   consequence: 0
   grabbable: 0
-  observationOnly: 0
-  stationary: 0
+  observationOnly: 1
+  stationary: 1
   proximityEnabled: 1
   cautionEnabled: 1
   cautionVoice: {fileID: 0}
@@ -282355,6 +283824,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a485ad26151ec5e44b9cf2fc1473105a, type: 3}
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefJellyMotion
+--- !u!114 &1913419717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913419713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d85c185929774881a7fc5330836c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefCreatureInfo
+  creatureName: Comb jelly
+  fact: Moving comb rows scatter light.
+  narration: {fileID: 0}
+  cardsEnabled: 1
+  observationRange: 3.2
+--- !u!114 &1913419718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913419713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b22f36835d78a945921c19a838b21f9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.DeepWaterEncounter
+  species: 2
+--- !u!114 &1913419719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913419713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7ea8eff35ab6d4b96549bfd9a8bbbb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefSphereBody
+  radius: 0.45
+  centerOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &1914589516
 GameObject:
   m_ObjectHideFlags: 0
@@ -286898,6 +288411,7 @@ GameObject:
   - component: {fileID: 1940840339}
   - component: {fileID: 1940840338}
   - component: {fileID: 1940840341}
+  - component: {fileID: 1940840342}
   m_Layer: 0
   m_Name: Loggerhead sea turtle
   m_TagString: Untagged
@@ -287001,6 +288515,23 @@ MonoBehaviour:
     m_Center: {x: -0.00005722046, y: 0.008245587, z: 0.09376407}
     m_Extent: {x: 0.6637039, y: 0.12824556, z: 0.6536702}
   bellySupportLocal: 0.10701436
+--- !u!114 &1940840342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940840336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d85c185929774881a7fc5330836c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefCreatureInfo
+  creatureName: Sea turtle
+  fact: Sea turtles breathe air.
+  narration: {fileID: 8300000, guid: fa137ddb23f526a4c86df7541808850f, type: 3}
+  cardsEnabled: 1
+  observationRange: 3.2
 --- !u!1 &1941535052
 GameObject:
   m_ObjectHideFlags: 0
@@ -296243,6 +297774,7 @@ MonoBehaviour:
   fact: Open mouths help morays breathe.
   narration: {fileID: 8300000, guid: 49aeb9cc326f0754489e6c0d1f5d6349, type: 3}
   cardsEnabled: 1
+  observationRange: 3.2
 --- !u!114 &2006891553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314680,6 +316212,7 @@ MonoBehaviour:
   fact: Dolphins breathe air at the surface.
   narration: {fileID: 8300000, guid: dad752d561d572e47b910313c8f445cb, type: 3}
   cardsEnabled: 1
+  observationRange: 3.2
 --- !u!114 &2104719453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322908,3 +324441,4 @@ SceneRoots:
   - {fileID: 311066874}
   - {fileID: 1362827808}
   - {fileID: 1816242403}
+  - {fileID: 1252348642}

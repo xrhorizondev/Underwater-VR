@@ -5,6 +5,7 @@ public class FishBodyMotion:MonoBehaviour {
  Renderer skin;MaterialPropertyBlock block;SeaLife interaction;Vector3 previous;float phase;bool ownsTurning;
  void Start(){skin=GetComponent<Renderer>();block=new MaterialPropertyBlock();interaction=GetComponent<SeaLife>();ownsTurning=!GetComponent<ReefFishFollower>();previous=transform.position;phase=transform.position.x*2.4f;}
  void LateUpdate(){
+  if(!ReefSimulationRange.Active(transform)&&!(interaction&&interaction.IsHeld)){previous=transform.position;return;}
   float dt=Mathf.Max(Time.deltaTime,.001f);Vector3 v=(transform.position-previous)/dt;previous=transform.position;
   bool held=interaction&&interaction.IsHeld;
   if(ownsTurning&&!held&&v.sqrMagnitude>.0004f){v.y=Mathf.Clamp(v.y,-v.magnitude*.18f,v.magnitude*.18f);transform.rotation=Quaternion.RotateTowards(transform.rotation,Quaternion.LookRotation(v),55*dt);}

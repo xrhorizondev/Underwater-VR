@@ -7,7 +7,7 @@ public class QuestReefPerformance:MonoBehaviour {
  void Awake(){
   UnityEngine.XR.XRSettings.eyeTextureResolutionScale=.78f;QualitySettings.antiAliasing=2;QualitySettings.shadows=ShadowQuality.Disable;QualitySettings.shadowResolution=ShadowResolution.Low;QualitySettings.shadowDistance=16;QualitySettings.shadowCascades=0;QualitySettings.pixelLightCount=1;QualitySettings.lodBias=.65f;QualitySettings.maximumLODLevel=0;QualitySettings.vSyncCount=0;QualitySettings.realtimeReflectionProbes=false;
   QualitySettings.streamingMipmapsActive=true;QualitySettings.streamingMipmapsMemoryBudget=256;
-  view=Camera.main;if(view){view.allowHDR=false;view.allowMSAA=true;view.farClipPlane=60;var optics=view.GetComponent<ReefOptics>();if(optics)optics.enabled=false;}
+  view=Camera.main;if(view){view.allowHDR=false;view.allowMSAA=true;view.farClipPlane=60;var optics=view.GetComponent<ReefOptics>();if(optics)optics.enabled=false;view.depthTextureMode=DepthTextureMode.None;}
   // Mobile material conversion is performed by QuestReefBuild, before the APK
   // is written. Do not scan thousands of renderers or swap shaders on entry.
   // Unity culls against the stereo camera frustum and far plane, including the first frame after a teleport.

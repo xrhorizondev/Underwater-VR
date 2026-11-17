@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.XR.OpenXR;
 using UnityEngine.XR.OpenXR.Features.MetaQuestSupport;
 namespace Underwater.Editor {
-[BuildCallbackVersion(12)]
+[BuildCallbackVersion(14)]
 public class QuestReefBuild : IProcessSceneWithReport {
  public int callbackOrder=>100;
  public void OnProcessScene(Scene scene,BuildReport report){if(report!=null&&report.summary.platform==BuildTarget.Android)OptimizeScene();}
@@ -26,6 +26,9 @@ public class QuestReefBuild : IProcessSceneWithReport {
   AssetDatabase.SaveAssets();Debug.Log("QUEST_CONFIGURED ARM64 IL2CPP Vulkan multiview ASTC6x6");
  }
  static void OptimizeScene(){
+  foreach(var optics in UnityEngine.Object.FindObjectsByType<ReefOptics>(FindObjectsSortMode.None))UnityEngine.Object.DestroyImmediate(optics);
+  foreach(var camera in UnityEngine.Object.FindObjectsByType<Camera>(FindObjectsSortMode.None))camera.depthTextureMode=DepthTextureMode.None;
+  FishDistanceMesh.Install();
   long before=Triangles();int colonies=0;
   foreach(var group in UnityEngine.Object.FindObjectsByType<LODGroup>(FindObjectsSortMode.None)){
    var lods=group.GetLODs();if(lods.Length<3)continue;

@@ -6,7 +6,7 @@ public sealed class ReefCruiser:MonoBehaviour {
  Vector3 home;float clock;bool initialized;ReefSphereBody body;SeaLife life;Renderer skin;MaterialPropertyBlock block;
  readonly ReefRayNavigation navigation=new ReefRayNavigation();
  public void Initialize(){if(initialized)return;initialized=true;home=transform.position;body=GetComponent<ReefSphereBody>();life=GetComponent<SeaLife>();skin=GetComponent<Renderer>();block=new MaterialPropertyBlock();}
- void Update(){if(Diver.Instance&&Diver.Instance.MenuOpen)return;Step(Mathf.Min(Time.deltaTime,.05f));}
+ void Update(){if(Diver.Instance&&Diver.Instance.MenuOpen||!ReefSimulationRange.Active(transform))return;Step(Mathf.Min(Time.deltaTime,.05f));}
  public void Step(float dt){Initialize();if(life&&life.IsHeld)return;clock+=dt;
   Vector3 goal=home+new Vector3(Mathf.Sin(clock*.12f)*radius,Mathf.Sin(clock*.21f)*.3f,Mathf.Cos(clock*.12f)*radius);
   if(life&&life.kind=="Lumen"&&Diver.Instance&&Diver.Instance.Head&&Diver.Instance.Zone>=3)goal=Diver.Instance.Head.position+Diver.Instance.Head.forward*2;
