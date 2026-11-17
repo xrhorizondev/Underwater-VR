@@ -1,0 +1,44 @@
+Unity 6000.4.5f1; isolated project integration and regression checks.
+Source scene copied by verified SHA-256; existing source project settings preserved.
+
+MARINE_INSTALLED Turtle Loggerhead sea turtle bounds=Center: (0.00, 0.01, 0.09), Extents: (0.66, 0.26, 0.78)
+MARINE_INSTALLED Moon jelly Moon jelly bounds=Center: (0.00, -0.39, 0.00), Extents: (0.40, 0.27, 0.40)
+MARINE_INSTALLED Box jelly Box jelly bounds=Center: (0.00, -0.39, 0.00), Extents: (0.22, 0.63, 0.24)
+MARINE_INSTALLED Manta Manta ray gliding over the reef bounds=Center: (0.00, 0.22, -0.34), Extents: (2.26, 0.24, 2.35)
+MARINE_INSTALLED Reef shark Distant reef shark bounds=Center: (0.00, 0.18, -0.20), Extents: (0.87, 0.59, 1.75)
+MARINE_INSTALLED Octopus Day 3 rocky octopus bounds=Center: (0.00, 0.13, 0.00), Extents: (0.63, 0.32, 0.47)
+MARINE_VALIDATED Moon jelly deform=0.1230189 clip=16.66667
+MARINE_VALIDATED Turtle deform=0.8883336 clip=3.5
+MARINE_VALIDATED Box jelly deform=0.1464694 clip=2
+MARINE_VALIDATED Moon jelly deform=0.1229476 clip=16.66667
+MARINE_VALIDATED Turtle deform=0.888344 clip=3.5
+MARINE_VALIDATED Moon jelly deform=0.1229329 clip=16.66667
+MARINE_VALIDATED Octopus deform=0.3941938 clip=12.45833
+MARINE_VALIDATED Moon jelly deform=0.1229677 clip=16.66667
+MARINE_VALIDATED Moon jelly deform=0.1229604 clip=16.66667
+MARINE_VALIDATED Box jelly deform=0.1466898 clip=2
+MARINE_VALIDATED Box jelly deform=0.1466669 clip=2
+MARINE_VALIDATED Manta deform=1.508348 clip=24
+MARINE_VALIDATED Moon jelly deform=0.1229807 clip=16.66667
+MARINE_VALIDATED Moon jelly deform=0.1229793 clip=16.66667
+MARINE_VALIDATED Moon jelly deform=0.122953 clip=16.66667
+MARINE_VALIDATED Moon jelly deform=0.122993 clip=16.66667
+MARINE_VALIDATED Reef shark deform=0.4094579 clip=2.458333
+MARINE_VALIDATED Moon jelly deform=0.1229923 clip=16.66667
+MARINE_VALIDATED Moon jelly deform=0.1229895 clip=16.66667
+MARINE_INTEGRATION_PASSED actors=19 existingGameplaySettingsAndCollidersUnchanged=true
+REEF_COLLISION_VALIDATED fishSweep diverWallSlide blockedTeleport roomScale seabed
+FISH_MOTION_VALIDATED fish=227 shoals=9 simulatedSeconds=20 maxStep=0.0247 maxPitch=10.00 maxTurnDegreesPerSecond=51.42
+DAY_ONE_VALIDATED sides=4 outsideTeleports=rejected roomScale=passed menuDestinations=8 shells=24 ceiling=6.5 audio=baked
+DAY_TWO_VALIDATED hazards=19 tails=3 moonJellies=11 independentStages=passed surfaceDistance=passed warningLead=passed contactLatch=passed
+DAY_THREE_VALIDATED clownfishScatterReturn=passed encounters=passed recovery=passed mantaRoll=enabled previousRegressions=passed
+DAY_SIX_VALIDATED sharkWatchSlowApproach=silent fastPursuit=cautionOnly cooldown=passed sharkTravel=107.9846 squidTravel=77.09477 raySafeTouchRecovery=passed endingPauseResetPersistence=passed
+DAY_FIVE_VALIDATED lumenReveal=passed noLure=true anglers=12 individualTouchRecovery=passed combJellies=14 safeAvoidance=passed continuousDepthFog=passed
+REALISM_EYES_VALIDATED fish=243 turtles=2 sides=both singleMaterialFishMeshes=true
+DAY_FOUR_POD_AND_STERN_VALIDATED nearestDolphins=3.413918 clearCorridorSamples=25/25 localHeadHeight=4.75
+SQUID_FULL_BODY_VALIDATED seconds=360 horizontalDistance=152.2488 final=(19.02, -26.62, 139.74)
+DAY_FOUR_VALIDATED morayMouthRetreatRecovery=passed calmGrouper=passed dolphins=3 factsUnder12Words=passed previousRegressions=passed
+DAY_FOUR_POD_AND_STERN_VALIDATED nearestDolphins=3.182233 clearCorridorSamples=25/25 localHeadHeight=4.75
+MARINE_FINAL_REGRESSIONS_PASSED sourceRigEyeGeometryBothSides=true finalGraphicsCapture=true priorBehaviorChecksPassed=true
+MARINE_SHARED_CLIPS_PASSED instances=19 sceneBytes=10716696
+The graphics-disabled behavior run crashed in its automatic Camera.Render screenshot step after passing behavior assertions. The final visual checks were rerun with graphics enabled.

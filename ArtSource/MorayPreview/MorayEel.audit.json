@@ -1,0 +1,26 @@
+{
+  "source": "D:\\GIT Project\\Underwater-VR\\ArtSource\\MorayPreview\\MorayEel.blend",
+  "blender": "5.3.0",
+  "triangles": 4596,
+  "bones": 15,
+  "materials": [
+    "Moray spotted olive skin"
+  ],
+  "clips": [
+    "Idle",
+    "React",
+    "Swim"
+  ],
+  "images": {
+    "MoraySkin": [
+      1024,
+      1024
+    ],
+    "MorayNormal": [
+      1024,
+      1024
+    ]
+  },
+  "issues": [],
+  "status": "passed"
+}

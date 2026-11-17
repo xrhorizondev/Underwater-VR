@@ -1,0 +1,48 @@
+file 'D:/GIT Project/Underwater-VR/Renders/MorayPreview/Idle_001.png'
+duration 0.125000000
+file 'D:/GIT Project/Underwater-VR/Renders/MorayPreview/Idle_004.png'
+duration 0.125000000
+file 'D:/GIT Project/Underwater-VR/Renders/MorayPreview/Idle_007.png'
+duration 0.125000000
+file 'D:/GIT Project/Underwater-VR/Renders/MorayPreview/Idle_010.png'
+duration 0.125000000
+file 'D:/GIT Project/Underwater-VR/Renders/MorayPreview/Idle_013.png'
+duration 0.125000000
+file 'D:/GIT Project/Underwater-VR/Renders/MorayPreview/Idle_016.png'
+duration 0.125000000
+file 'D:/GIT Project/Underwater-VR/Renders/MorayPreview/Idle_019.png'
+duration 0.125000000
+file 'D:/GIT Project/Underwater-VR/Renders/MorayPreview/Idle_022.png'
+duration 0.125000000
+file 'D:/GIT Project/Underwater-VR/Renders/MorayPreview/Idle_025.png'
+duration 0.125000000
+file 'D:/GIT Project/Underwater-VR/Renders/MorayPreview/Idle_028.png'
+duration 0.125000000
+file 'D:/GIT Project/Underwater-VR/Renders/MorayPreview/Idle_031.png'
+duration 0.125000000
+file 'D:/GIT Project/Underwater-VR/Renders/MorayPreview/Idle_034.png'
+duration 0.125000000
+file 'D:/GIT Project/Underwater-VR/Renders/MorayPreview/Idle_037.png'
+duration 0.125000000
+file 'D:/GIT Project/Underwater-VR/Renders/MorayPreview/Idle_040.png'
+duration 0.125000000
+file 'D:/GIT Project/Underwater-VR/Renders/MorayPreview/Idle_043.png'
+duration 0.125000000
+file 'D:/GIT Project/Underwater-VR/Renders/MorayPreview/Idle_046.png'
+duration 0.125000000
+file 'D:/GIT Project/Underwater-VR/Renders/MorayPreview/Idle_049.png'
+duration 0.125000000
+file 'D:/GIT Project/Underwater-VR/Renders/MorayPreview/Idle_052.png'
+duration 0.125000000
+file 'D:/GIT Project/Underwater-VR/Renders/MorayPreview/Idle_055.png'
+duration 0.125000000
+file 'D:/GIT Project/Underwater-VR/Renders/MorayPreview/Idle_058.png'
+duration 0.125000000
+file 'D:/GIT Project/Underwater-VR/Renders/MorayPreview/Idle_061.png'
+duration 0.125000000
+file 'D:/GIT Project/Underwater-VR/Renders/MorayPreview/Idle_064.png'
+duration 0.125000000
+file 'D:/GIT Project/Underwater-VR/Renders/MorayPreview/Idle_067.png'
+duration 0.125000000
+file 'D:/GIT Project/Underwater-VR/Renders/MorayPreview/Idle_070.png'
+duration 0.125000000
