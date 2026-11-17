@@ -1,0 +1,48 @@
+file 'D:/GIT Project/Underwater-VR/Renders/SquidPreview/Swim_001.png'
+duration 0.0833333333
+file 'D:/GIT Project/Underwater-VR/Renders/SquidPreview/Swim_003.png'
+duration 0.0833333333
+file 'D:/GIT Project/Underwater-VR/Renders/SquidPreview/Swim_005.png'
+duration 0.0833333333
+file 'D:/GIT Project/Underwater-VR/Renders/SquidPreview/Swim_007.png'
+duration 0.0833333333
+file 'D:/GIT Project/Underwater-VR/Renders/SquidPreview/Swim_009.png'
+duration 0.0833333333
+file 'D:/GIT Project/Underwater-VR/Renders/SquidPreview/Swim_011.png'
+duration 0.0833333333
+file 'D:/GIT Project/Underwater-VR/Renders/SquidPreview/Swim_013.png'
+duration 0.0833333333
+file 'D:/GIT Project/Underwater-VR/Renders/SquidPreview/Swim_015.png'
+duration 0.0833333333
+file 'D:/GIT Project/Underwater-VR/Renders/SquidPreview/Swim_017.png'
+duration 0.0833333333
+file 'D:/GIT Project/Underwater-VR/Renders/SquidPreview/Swim_019.png'
+duration 0.0833333333
+file 'D:/GIT Project/Underwater-VR/Renders/SquidPreview/Swim_021.png'
+duration 0.0833333333
+file 'D:/GIT Project/Underwater-VR/Renders/SquidPreview/Swim_023.png'
+duration 0.0833333333
+file 'D:/GIT Project/Underwater-VR/Renders/SquidPreview/Swim_025.png'
+duration 0.0833333333
+file 'D:/GIT Project/Underwater-VR/Renders/SquidPreview/Swim_027.png'
+duration 0.0833333333
+file 'D:/GIT Project/Underwater-VR/Renders/SquidPreview/Swim_029.png'
+duration 0.0833333333
+file 'D:/GIT Project/Underwater-VR/Renders/SquidPreview/Swim_031.png'
+duration 0.0833333333
+file 'D:/GIT Project/Underwater-VR/Renders/SquidPreview/Swim_033.png'
+duration 0.0833333333
+file 'D:/GIT Project/Underwater-VR/Renders/SquidPreview/Swim_035.png'
+duration 0.0833333333
+file 'D:/GIT Project/Underwater-VR/Renders/SquidPreview/Swim_037.png'
+duration 0.0833333333
+file 'D:/GIT Project/Underwater-VR/Renders/SquidPreview/Swim_039.png'
+duration 0.0833333333
+file 'D:/GIT Project/Underwater-VR/Renders/SquidPreview/Swim_041.png'
+duration 0.0833333333
+file 'D:/GIT Project/Underwater-VR/Renders/SquidPreview/Swim_043.png'
+duration 0.0833333333
+file 'D:/GIT Project/Underwater-VR/Renders/SquidPreview/Swim_045.png'
+duration 0.0833333333
+file 'D:/GIT Project/Underwater-VR/Renders/SquidPreview/Swim_047.png'
+duration 0.0833333333
