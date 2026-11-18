@@ -114,11 +114,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3427007264838513865, guid: d4ff7e9c01459804fbc62b9aecd78b2b, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
-      value:
+      value: 
       objectReference: {fileID: 2100000, guid: c2dac54967bc2374ba0d92a29d8d090e, type: 2}
     - target: {fileID: -3427007264838513865, guid: d4ff7e9c01459804fbc62b9aecd78b2b, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
-      value:
+      value: 
       objectReference: {fileID: 2100000, guid: 609f9cac5dca84c4c9fe830ac3cc7be5, type: 2}
     - target: {fileID: 691971266295572807, guid: d4ff7e9c01459804fbc62b9aecd78b2b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5b0eb1b94a3d9d48a1ef224ed3dbb37, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Underwater.ReefImportedAnimation
   tailWarning: {fileID: 0}
   tailBone: {fileID: 0}

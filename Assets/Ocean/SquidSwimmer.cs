@@ -6,6 +6,7 @@ public sealed class SquidSwimmer:MonoBehaviour {
  static readonly float[] Radii={1.4f,1.95f,2,1.95f,2.1f,2.7f,3.5f,3.9f};
  public float speed=.45f,radius=7;
  public float clearancePadding;
+ public void ResetPatrol(Vector3 position,Quaternion rotation,float patrolRadius){initialized=false;clock=0;floorTimer=0;radius=patrolRadius;transform.SetPositionAndRotation(position,rotation);Initialize();}
  public static float RequiredPadding(Vector3 p){float needed=float.PositiveInfinity;for(int i=0;i<Stations.Length-1;i++){float z=Mathf.Clamp(p.z,Stations[i+1],Stations[i]);needed=Mathf.Min(needed,(p-new Vector3(0,0,z)).magnitude-Mathf.Max(Radii[i],Radii[i+1]));}return Mathf.Max(0,needed);}
  Vector3 home;float clock,floorTimer,floorHeight,minimumHeight;Renderer skin;MaterialPropertyBlock block;bool initialized;
  public bool ClearPose(Vector3 position,Quaternion rotation){for(int i=0;i<Stations.Length-1;i++){

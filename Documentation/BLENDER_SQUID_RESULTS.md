@@ -1,6 +1,6 @@
 # Approved Blender squid — Unity replacement
 
-Current source state: the user subsequently chose the old circled procedural squid. Both scene encounters have been restored to that mesh/material, with the Blender visual removed from the scene and the original collision dimensions restored. Blender FBX, prefab, textures and authoring files remain available in their folders. Logs/OriginalSquid-restore.log exited 0 with Day 1–6 regressions passing. The installed BlenderSquid APK predates this restoration; it must be rebuilt to show the restored old visual on the headset. The implementation history below describes the earlier Blender replacement, not the current active visual.
+Current source state (2026-11-18): User approved the Blender preview again. Replaced the old visual on the single RecurringSquid actor; no duplicate encounter added. Animation, visibility bounds, 180-second full-body patrol clearance and prior scene regression checks passed. Logs/Squid-approved-replacement.log, Unity exit 0. Source scene updated; headset APK has not been rebuilt for this replacement.
 
 The user approved Renders/SquidPreview/Swim.gif. Both existing giant-squid encounters now use one shared FBX visual, retaining separate SquidSwimmer patrols, facts and collision ownership. Source scene: Assets/Scenes/Underwater_Realistic.unity.
 
@@ -27,3 +27,4 @@ Builds/BlenderSquid/quest.apk — 77,333,225 bytes, ARM64 IL2CPP. Toolkit comple
 Installed successfully on the connected Quest 2 using adb install -r, preserving app data. Device package lastUpdateTime: 2026-11-17 14:21:03. No isolated settings were returned. Source changes remain local until a requested Git checkpoint. Device visual/FPS acceptance remains pending.
 
 Follow-up editor cleanup: removed the old mesh components, made fact cards use the child renderer when needed, and saved Assets/UnderwaterArt/BlenderSquid/GiantSquid.prefab alongside ReferenceSquid.fbx and its textures/materials. Logs/SquidReplacement-validation.log exited 0 with both navigation/deformation and prior regressions passing. This cleanup is saved in the Unity project; the previously installed APK predates this component cleanup but already displays the same FBX replacement.
+

@@ -104,14 +104,14 @@ public static class ReefCorrections {
  static void ValidateGrip(){
   var source=Array.Find(UnityEngine.Object.FindObjectsByType<SeaLife>(FindObjectsSortMode.None),f=>f.grabbable);var fish=UnityEngine.Object.Instantiate(source.gameObject,new Vector3(900,2,.12f),Quaternion.identity);
   var hand=new GameObject("Palm pose validation").transform;hand.position=new Vector3(900,2,0);hand.rotation=Quaternion.LookRotation(Vector3.right,Vector3.up);var life=fish.GetComponent<SeaLife>();
-  try{float now=Time.time;life.Grab(hand);for(int i=0;i<40;i++)life.StepHeld(1f/72,now+i/72f);if(!life.IsHeld||Vector3.Dot(fish.transform.up,hand.up)<.98f||Vector3.Distance(fish.transform.position,hand.position)>.2f)throw new Exception("Fish palm alignment failed");life.StepHeld(1f/72,now+2.1f);if(life.IsHeld)throw new Exception("Fish failed two-second escape");}
+  try{float now=Time.time;var initial=fish.transform.rotation;life.Grab(hand);for(int i=0;i<40;i++)life.StepHeld(1f/72,now+i/72f);if(!life.IsHeld||Quaternion.Angle(initial,fish.transform.rotation)>1.5f||Vector3.Distance(life.HeldContactPosition,hand.position)>.015f)throw new Exception("Fish contact-relative hold failed");life.StepHeld(1f/72,now+2.1f);if(life.IsHeld)throw new Exception("Fish failed two-second escape");}
   finally{UnityEngine.Object.DestroyImmediate(fish);UnityEngine.Object.DestroyImmediate(hand.gameObject);}
  }
  public static void CapturePreviews(){
   if(!System.IO.File.Exists("Renders/Coral_Base_Before.png")&&System.IO.File.Exists("Renders/Coral_Base_Audit.png"))System.IO.File.Copy("Renders/Coral_Base_Audit.png","Renders/Coral_Base_Before.png",true);
   ReefCorrectionAudit.Run();EditorSceneManager.OpenScene(Scene);System.IO.Directory.CreateDirectory("Renders");
   var camera=Camera.main;camera.allowHDR=false;camera.fieldOfView=70;camera.transform.position=new Vector3(0,-1,10);camera.transform.LookAt(new Vector3(0,-2.5f,23));ReefCorrectionAudit.Capture(camera,"Renders/Reef_Arch_Foundations.png");
-  var rig=new GameObject("Palm preview rig").transform;rig.position=new Vector3(900,2,0);var glove=ScubaGlove.Create(rig,false);glove.transform.localRotation=Quaternion.Euler(0,0,-90);glove.Animate(.2f,.55f,1);
+  var rig=new GameObject("Palm preview rig").transform;rig.position=new Vector3(900,2,0);var glove=ScubaGlove.Create(rig,false);glove.transform.rotation=Quaternion.FromToRotation(glove.GripAnchor.up,Vector3.up)*glove.transform.rotation;glove.Animate(.2f,.55f,1);
   if(Vector3.Dot(glove.GripAnchor.up,Vector3.up)<.99f)throw new Exception("Grip anchor disagrees with visible palm orientation");
   var source=Array.Find(UnityEngine.Object.FindObjectsByType<SeaLife>(FindObjectsSortMode.None),f=>f.grabbable);var fish=UnityEngine.Object.Instantiate(source.gameObject,glove.GripAnchor.position,Quaternion.identity);var life=fish.GetComponent<SeaLife>();life.Grab(glove.GripAnchor);for(int i=0;i<40;i++)life.StepHeld(1f/72,Time.time+i/72f);
   RenderSettings.fog=false;camera.clearFlags=CameraClearFlags.SolidColor;camera.backgroundColor=new Color(.09f,.12f,.15f);camera.fieldOfView=45;camera.nearClipPlane=.01f;camera.transform.position=glove.GripAnchor.position+new Vector3(.25f,.3f,.25f);camera.transform.LookAt(glove.GripAnchor.position);ReefCorrectionAudit.Capture(camera,"Renders/Fish_Palm_Grip.png");

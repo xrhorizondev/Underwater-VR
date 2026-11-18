@@ -29,9 +29,9 @@ public class FishSchool : MonoBehaviour {
    flocking[i]=neighbourSteer;}
    Vector3 steer=fish[i].transform.forward*.8f+(guide-positions[i]).normalized*.65f+flocking[i];
    Vector3 home=habitatCenter-positions[i];if(home.magnitude>habitatRadius)steer+=home.normalized*(home.magnitude-habitatRadius)*1.3f;
-   var diver=Diver.Instance;if(Application.isPlaying&&diver&&diver.Head){Vector3 away=positions[i]-diver.Head.position;float distance=away.magnitude;bool scooping=diver.GrabRequested&&fish[i].IsGrabbable&&(positions[i]-diver.RightPalm).sqrMagnitude<.5f*.5f;if(distance<1.3f&&!scooping)steer+=away.normalized*(1.3f-distance)*3;}
+   var diver=Diver.Instance;if(Application.isPlaying&&diver&&diver.Head){Vector3 away=positions[i]-diver.Head.position;float distance=away.magnitude;bool scooping=diver.GrabRequested&&fish[i].IsGrabbable&&Mathf.Min((positions[i]-diver.RightPalm).sqrMagnitude,(positions[i]-diver.LeftPalm).sqrMagnitude)<.5f*.5f;if(distance<1.3f&&!scooping)steer+=away.normalized*(1.3f-distance)*3;}
    if(reefEncounter){
- if(Application.isPlaying&&diver&&!diver.MenuOpen){bool scoop=diver.GrabRequested&&(positions[i]-diver.RightPalm).sqrMagnitude<.5f*.5f;
+ if(Application.isPlaying&&diver&&!diver.MenuOpen){bool scoop=diver.GrabRequested&&Mathf.Min((positions[i]-diver.RightPalm).sqrMagnitude,(positions[i]-diver.LeftPalm).sqrMagnitude)<.5f*.5f;
  if(!scoop&&diver.Head&&(positions[i]-diver.Head.position).sqrMagnitude<1.1f*1.1f)Scatter(diver.Head.position);}
  if(clock<scatterUntil)steer+=(positions[i]-threat).normalized*3;
  else steer+=(habitatCenter-positions[i]).normalized*1.4f;

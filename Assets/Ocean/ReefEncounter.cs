@@ -10,7 +10,7 @@ public sealed class ReefEncounter:MonoBehaviour {
  public float Reaction=>Mathf.Clamp01(1-(clock-reaction)/(response==Response.Octopus?6:3));
  public void Initialize(){if(initialized)return;initialized=true;home=transform.position;body=GetComponent<ReefSphereBody>();tint=new MaterialPropertyBlock();
   if(tentacles==null)tentacles=new Transform[0];rest=new Vector3[tentacles.Length];rotations=new Quaternion[tentacles.Length];for(int i=0;i<rest.Length;i++){rest[i]=tentacles[i].localScale;rotations[i]=tentacles[i].localRotation;}
-  if(skin==null||skin.Length==0)skin=GetComponentsInChildren<Renderer>();colors=new Color[skin.Length];for(int i=0;i<skin.Length;i++)colors[i]=skin[i].sharedMaterial.color;
+  if(skin==null||skin.Length==0)skin=GetComponentsInChildren<Renderer>();colors=new Color[skin.Length];for(int i=0;i<skin.Length;i++){var material=skin[i]?skin[i].sharedMaterial:null;colors[i]=material&&material.HasProperty("_Color")?material.GetColor("_Color"):Color.white;}
  }
  void Start(){Initialize();}
  void Update(){var d=Diver.Instance;if(!d||d.MenuOpen)return;float distance=d.DistanceToHands(transform.position);Vector3 source=(d.LeftPalm-transform.position).sqrMagnitude<(d.RightPalm-transform.position).sqrMagnitude?d.LeftPalm:d.RightPalm;Step(Mathf.Min(Time.deltaTime,.05f),source,distance);}
@@ -29,3 +29,4 @@ public sealed class ReefEncounter:MonoBehaviour {
  }
 }
 }
+

@@ -117,7 +117,7 @@ public class QuestReefBuild : IProcessSceneWithReport {
   foreach(bool left in new[]{true,false}){
    var hand=ScubaGlove.Create(camera.transform,left);
    var renderer=hand.GetComponentInChildren<SkinnedMeshRenderer>();
-   if(renderer.sharedMesh.blendShapeCount!=2||renderer.sharedMesh.vertexCount<1000)throw new Exception("Incomplete glove mesh");
+   if(renderer.sharedMesh.blendShapeCount!=3||renderer.sharedMesh.vertexCount<1000)throw new Exception("Incomplete glove mesh");
    hand.Animate(1,0,1);
    if(renderer.GetBlendShapeWeight(0)!=100||renderer.GetBlendShapeWeight(1)!=0)throw new Exception("Trigger pose failed");
    hand.Animate(0,1,1);
@@ -128,9 +128,11 @@ public class QuestReefBuild : IProcessSceneWithReport {
   EditorSceneManager.OpenScene("Assets/Scenes/Underwater_Realistic.unity");
   var diver=UnityEngine.Object.FindFirstObjectByType<Diver>();
   var hand=new GameObject("Grab test hand").transform;
-  var fish=Array.FindAll(UnityEngine.Object.FindObjectsByType<SeaLife>(FindObjectsSortMode.None),f=>f.grabbable);
-  if(fish.Length<2)throw new Exception("Expected clownfish colony");
-  for(int i=0;i<fish.Length;i++){fish[i].transform.position=hand.position+Vector3.right*(.2f-i*.025f);var touch=fish[i].GetComponent<FishTouchBody>();if(touch)touch.touchCollider.enabled=true;}Physics.SyncTransforms();
+  var fish=Array.FindAll(UnityEngine.Object.FindObjectsByType<SeaLife>(FindObjectsSortMode.None),f=>f.grabbable&&f.kind=="Clownfish");
+  if(fish.Length<2)throw new Exception("Expected scoopable reef fish");
+  fish=new[]{fish[0],fish[1]};
+  fish=new[]{fish[0],fish[1]};
+  for(int i=0;i<fish.Length;i++){fish[i].transform.position=hand.position+Vector3.right*(i==0?.4f:.03f);var touch=fish[i].GetComponent<FishTouchBody>();if(touch)touch.touchCollider.enabled=true;}Physics.SyncTransforms();
   diver.UpdateGrab(true,hand,fish);
   var nearest=fish[fish.Length-1];
   if(!nearest.IsHeld||Array.FindAll(fish,f=>f.IsHeld).Length!=1)throw new Exception("Grip failed to select one nearest fish");

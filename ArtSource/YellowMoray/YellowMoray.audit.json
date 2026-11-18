@@ -1,0 +1,28 @@
+{
+  "source": "D:\\GIT Project\\Underwater-VR\\ArtSource\\YellowMoray\\YellowMoray.blend",
+  "blender": "5.3.0",
+  "triangles": 4032,
+  "bones": 15,
+  "materials": [
+    "Yellow moray fine-mottled skin"
+  ],
+  "clips": [
+    "Idle",
+    "React",
+    "Recover",
+    "Retreat",
+    "Swim"
+  ],
+  "images": {
+    "MoraySkin": [
+      1024,
+      1024
+    ],
+    "MorayNormal": [
+      1024,
+      1024
+    ]
+  },
+  "issues": [],
+  "status": "passed"
+}

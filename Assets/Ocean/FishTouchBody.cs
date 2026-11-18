@@ -17,7 +17,29 @@ public sealed class FishTouchBody:MonoBehaviour {
   touchCollider.enabled=distance<(touchCollider.enabled?64:36);
  }
  public float PalmDistance(Vector3 palm){
+  if(!touchCollider||!touchCollider.enabled)return float.PositiveInfinity;
+  var life=interaction?interaction:GetComponent<SeaLife>();
+  if(life&&life.grabbable){if(InsideGrip(palm))return 0;return Mathf.Max(0,Vector3.Distance(palm,ProjectGripSurface(palm,0))-.035f);}
   return PointDistance(palm,.035f);
+ }
+ // Central flesh volume excludes the tail and tall, thin dorsal fins.
+ public Vector3 GripCenter=>bodyBounds.center+Vector3.forward*bodyBounds.size.z*.08f;
+ public Vector3 GripRadii=>new Vector3(Mathf.Max(.018f,bodyBounds.extents.x*.98f),Mathf.Max(.018f,bodyBounds.extents.y*.78f),Mathf.Max(.025f,bodyBounds.extents.z*.66f));
+ public Vector3 GrabSurface(Vector3 palm){return ProjectGripSurface(palm,.006f);}
+ public Vector3 ProjectGripSurface(Vector3 point,float padding){
+  var radii=GripRadii;var local=transform.InverseTransformPoint(point)-GripCenter;
+  var unit=new Vector3(local.x/radii.x,local.y/radii.y,local.z/radii.z);if(unit.sqrMagnitude<.000001f)unit=Vector3.up;
+  var surface=GripCenter+Vector3.Scale(unit.normalized,radii);var world=transform.TransformPoint(surface);
+  var normal=transform.TransformDirection(new Vector3(unit.x/radii.x,unit.y/radii.y,unit.z/radii.z)).normalized;
+  return world+normal*padding;
+ }
+ public bool InsideGrip(Vector3 world,float padding=0){
+  var scale=transform.lossyScale;var p=transform.InverseTransformPoint(world)-GripCenter;var r=GripRadii+new Vector3(padding/Mathf.Max(.001f,Mathf.Abs(scale.x)),padding/Mathf.Max(.001f,Mathf.Abs(scale.y)),padding/Mathf.Max(.001f,Mathf.Abs(scale.z)));
+  return p.x*p.x/(r.x*r.x)+p.y*p.y/(r.y*r.y)+p.z*p.z/(r.z*r.z)<1;
+ }
+ public Vector3 PalmSupport(Vector3 outward){
+  var n=transform.InverseTransformDirection(-outward).normalized;var r=GripRadii;var q=Vector3.Scale(r,n);float length=Mathf.Max(.00001f,q.magnitude);
+  return transform.TransformPoint(GripCenter+Vector3.Scale(r,q)/length);
  }
  float PointDistance(Vector3 point,float handRadius){
   if(!touchCollider||!touchCollider.enabled)return float.PositiveInfinity;
