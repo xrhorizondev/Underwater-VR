@@ -33,11 +33,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Grouper: 0
     - _Pattern: 0
+    - _Species: 0
     - _TailAmplitude: 0.055
     - _TailPhase: 0
     - _TurnBend: 0
     m_Colors:
+    - _BioEmission: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0.22, g: 0.3, b: 0.32, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
