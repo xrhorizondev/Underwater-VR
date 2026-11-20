@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "protectedVertices": 13831,
+  "jawVertices": 787,
+  "maxNonJawMovement": 0.0,
+  "maxJawOpeningMovement": 0.033004280783517505,
+  "hingeY": -0.4050000011920929,
+  "jawVerticesBehindHinge": 0
+}

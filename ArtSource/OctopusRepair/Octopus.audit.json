@@ -1,0 +1,20 @@
+{
+  "source": "D:\\GIT Project\\Underwater-VR\\ArtSource\\OctopusRepair\\Octopus.blend",
+  "blender": "5.3.0",
+  "triangles": 58640,
+  "bones": 75,
+  "materials": [
+    "Octopus_Skin"
+  ],
+  "clips": [
+    "Animation"
+  ],
+  "images": {
+    "Octopus_BaseColor.png": [
+      1024,
+      1024
+    ]
+  },
+  "issues": [],
+  "status": "passed"
+}

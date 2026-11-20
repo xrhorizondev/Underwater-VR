@@ -1,0 +1,15 @@
+{
+  "sourceTriangles": 58640,
+  "triangles": 58640,
+  "retainedSuckerIslands": 240,
+  "originalVerticesRetained": 32238,
+  "primaryAnatomyDecimation": false,
+  "morphTransferApproximation": false,
+  "originalShapeKeys": [
+    "Basis",
+    "body",
+    "Key 2"
+  ],
+  "bones": 75,
+  "materials": 1
+}

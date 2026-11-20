@@ -1,0 +1,33 @@
+{
+  "source": "D:\\GIT Project\\Underwater-VR\\ArtSource\\TripoMoray\\TripoMoray.blend",
+  "blender": "5.3.0",
+  "triangles": 18532,
+  "bones": 15,
+  "materials": [
+    "Moray lip lining and ivory teeth",
+    "tripo_material_60e08e23-d8e9-4584-969a-cd2d402f57c5"
+  ],
+  "clips": [
+    "Idle",
+    "React",
+    "Recover",
+    "Retreat",
+    "Swim"
+  ],
+  "images": {
+    "Color_60e08e23-d8e9-4584-969a-cd2d402f57c5": [
+      4096,
+      4096
+    ],
+    "NormalGL_60e08e23-d8e9-4584-969a-cd2d402f57c5": [
+      4096,
+      4096
+    ],
+    "ORM_60e08e23-d8e9-4584-969a-cd2d402f57c5": [
+      4096,
+      4096
+    ]
+  },
+  "issues": [],
+  "status": "passed"
+}

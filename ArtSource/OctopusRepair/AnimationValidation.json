@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "originalMorphCoordinateError": 0,
+  "originalWeightsUnchanged": true,
+  "framesSampled": 61,
+  "bones": 75,
+  "triangles": 58640,
+  "maxDeformationMeters": 0.388442865792683,
+  "maxEdgeLengthRatio": 9.036870566728586,
+  "maxEdgeRatioAbove5mm": 2.9565141157716353,
+  "loopEndpointDifferenceMeters": 0.0,
+  "rootDriftMeters": 0,
+  "shapeRanges": {
+    "body": [
+      0.0,
+      0.15000000596046448
+    ],
+    "Key 2": [
+      0.0,
+      0.5
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "triangles": 18532,
+  "bones": 15,
+  "clips": {
+    "Idle": {
+      "seconds": 4.0,
+      "deformation": 0.10431844620164393,
+      "loopEndpointDifference": 0.0
+    },
+    "React": {
+      "seconds": 2.0,
+      "deformation": 0.08202470112173085,
+      "loopEndpointDifference": 0.0
+    },
+    "Recover": {
+      "seconds": 3.0,
+      "deformation": 0.08946134017627368,
+      "loopEndpointDifference": 0.0
+    },
+    "Retreat": {
+      "seconds": 2.5,
+      "deformation": 0.11173815089338854,
+      "loopEndpointDifference": 0.0
+    },
+    "Swim": {
+      "seconds": 3.0,
+      "deformation": 0.1265566729047455,
+      "loopEndpointDifference": 0.0
+    }
+  },
+  "status": "passed"
+}

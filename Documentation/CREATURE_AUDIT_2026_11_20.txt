@@ -1,0 +1,332 @@
+Creature placement and animation audit
+Anglerfish count=12
+  Anglerfish position=(-4.00, -51.00, 121.00) zone=The Trench grab=False observation=False
+  Anglerfish position=(-2.00, -48.00, 125.00) zone=The Trench grab=False observation=False
+  Anglerfish position=(4.00, -45.00, 130.00) zone=The Trench grab=False observation=False
+  Anglerfish position=(-9.00, -51.00, 131.00) zone=The Trench grab=False observation=False
+  Anglerfish position=(0.00, -51.00, 126.00) zone=The Trench grab=False observation=False
+  Anglerfish position=(-1.96, -48.79, 120.13) zone=The Trench grab=False observation=False
+  Anglerfish position=(-2.98, -50.58, 132.72) zone=The Trench grab=False observation=False
+  Anglerfish position=(7.00, -45.00, 124.00) zone=The Trench grab=False observation=False
+  Anglerfish position=(-3.00, -48.00, 133.00) zone=The Trench grab=False observation=False
+  Anglerfish position=(7.00, -51.00, 122.00) zone=The Trench grab=False observation=False
+  Anglerfish position=(0.00, -48.00, 123.00) zone=The Trench grab=False observation=False
+  Anglerfish position=(3.00, -47.00, 125.00) zone=The Trench grab=False observation=False
+Blue tang count=19
+  Blue tang position=(-6.52, -0.65, 7.71) zone=Sunlit Reef grab=True observation=False
+  Blue tang position=(-4.24, -0.49, 6.11) zone=Sunlit Reef grab=True observation=False
+  Blue tang position=(-7.16, -0.16, 7.20) zone=Sunlit Reef grab=True observation=False
+  Blue tang position=(-3.05, -0.38, 7.49) zone=Sunlit Reef grab=True observation=False
+  Blue tang position=(-5.02, -0.70, 7.40) zone=Sunlit Reef grab=True observation=False
+  Blue tang position=(-5.03, -0.26, 8.17) zone=Sunlit Reef grab=True observation=False
+  Blue tang position=(-4.17, -0.27, 7.86) zone=Sunlit Reef grab=True observation=False
+  Blue tang position=(-3.11, -0.47, 6.48) zone=Sunlit Reef grab=True observation=False
+  Blue tang position=(-5.10, -0.48, 6.52) zone=Sunlit Reef grab=True observation=False
+  Blue tang position=(-6.34, -0.18, 7.79) zone=Sunlit Reef grab=True observation=False
+  Blue tang position=(-3.94, -0.38, 6.44) zone=Sunlit Reef grab=True observation=False
+  Blue tang position=(-5.76, -0.50, 7.20) zone=Sunlit Reef grab=True observation=False
+  Blue tang position=(-3.56, -0.68, 6.14) zone=Sunlit Reef grab=True observation=False
+  Blue tang position=(-4.63, -0.05, 7.35) zone=Sunlit Reef grab=True observation=False
+  Blue tang position=(2.01, -0.50, 1.11) zone=Sunlit Reef grab=True observation=False
+  Blue tang position=(-6.65, -0.50, 7.01) zone=Sunlit Reef grab=True observation=False
+  Blue tang position=(-3.90, -0.02, 6.10) zone=Sunlit Reef grab=True observation=False
+  Blue tang position=(-5.23, -0.41, 7.29) zone=Sunlit Reef grab=True observation=False
+  Blue tang position=(-6.63, -0.46, 5.88) zone=Sunlit Reef grab=True observation=False
+Box jelly count=3
+  Box jelly position=(8.00, -28.00, 169.00) zone=Jellyfish Drift grab=False observation=False
+  Box jelly position=(8.00, -30.00, 165.00) zone=Jellyfish Drift grab=False observation=False
+  Box jelly position=(-6.00, -27.00, 157.00) zone=Jellyfish Drift grab=False observation=False
+Clownfish count=5
+  Clownfish position=(-4.19, -1.10, 2.70) zone=Sunlit Reef grab=True observation=False
+  Clownfish position=(-3.50, -0.90, 3.10) zone=Sunlit Reef grab=True observation=False
+  Clownfish position=(-2.50, -0.90, 3.90) zone=Sunlit Reef grab=True observation=False
+  Clownfish position=(-3.40, -1.10, 3.50) zone=Sunlit Reef grab=True observation=False
+  Clownfish position=(-2.00, -1.10, 4.30) zone=Sunlit Reef grab=True observation=False
+Comb jelly count=14
+  Comb jelly position=(0.00, -30.00, 90.00) zone=Twilight Drift grab=False observation=True
+  Comb jelly position=(-7.00, -27.00, 97.00) zone=Twilight Drift grab=False observation=True
+  Comb jelly position=(-2.00, -29.00, 105.00) zone=Twilight Drift grab=False observation=True
+  Comb jelly position=(0.00, -27.00, 91.00) zone=Twilight Drift grab=False observation=True
+  Comb jelly position=(0.00, -27.00, 103.00) zone=Twilight Drift grab=False observation=True
+  Comb jelly position=(-9.00, -27.00, 98.00) zone=Twilight Drift grab=False observation=True
+  Comb jelly position=(-3.00, -31.00, 93.00) zone=Twilight Drift grab=False observation=True
+  Comb jelly position=(-6.00, -31.00, 107.00) zone=Twilight Drift grab=False observation=True
+  Comb jelly position=(6.00, -28.00, 104.00) zone=Twilight Drift grab=False observation=True
+  Comb jelly position=(2.00, -30.00, 101.00) zone=Twilight Drift grab=False observation=True
+  Comb jelly position=(3.00, -30.00, 97.00) zone=Twilight Drift grab=False observation=True
+  Comb jelly position=(7.00, -30.00, 87.00) zone=Twilight Drift grab=False observation=True
+  Comb jelly position=(-4.00, -31.00, 96.00) zone=Twilight Drift grab=False observation=True
+  Comb jelly position=(-4.00, -31.00, 99.00) zone=Twilight Drift grab=False observation=True
+Copperband butterflyfish count=1
+  Copperband butterflyfish position=(-0.09, -0.24, 2.05) zone=Sunlit Reef grab=True observation=False
+Dolphin count=3
+  Wreck dolphin 3 position=(-1.90, -13.50, 63.75) zone=The Wreck grab=False observation=False
+  Wreck dolphin 2 position=(5.90, -13.50, 63.75) zone=The Wreck grab=False observation=False
+  Wreck dolphin 1 position=(2.00, -13.50, 70.50) zone=The Wreck grab=False observation=False
+Fire coral count=1
+  Scanned Secale | Smithsonian position=(-3.00, -2.72, 5.00) zone=Sunlit Reef grab=False observation=False
+Grouper count=2
+  Calm wreck grouper position=(-1.80, -16.60, 63.00) zone=The Wreck grab=False observation=False
+  Calm finale grouper position=(2.00, -7.00, 225.00) zone=Wreck & Rays grab=False observation=False
+Lionfish count=1
+  Lionfish position=(1.00, -8.00, 30.00) zone=Rocky Ledge grab=False observation=False
+Lumen count=1
+  Lumen position=(0.00, -30.00, 99.00) zone=Twilight Drift grab=False observation=False
+Lyretail anthias count=109
+  Lyretail anthias position=(-3.89, -5.64, 227.29) zone=Wreck & Rays grab=True observation=False
+  Lyretail anthias position=(-0.24, -16.52, 68.32) zone=The Wreck grab=True observation=False
+  Lyretail anthias position=(2.92, -4.37, 227.02) zone=Wreck & Rays grab=True observation=False
+  Lyretail anthias position=(2.84, -16.39, 67.38) zone=The Wreck grab=True observation=False
+  Lyretail anthias position=(2.03, -16.07, 70.01) zone=The Wreck grab=True observation=False
+  Lyretail anthias position=(0.84, 0.54, 10.06) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(2.78, -6.84, 36.97) zone=Rocky Ledge grab=True observation=False
+  Lyretail anthias position=(3.97, -7.44, 36.76) zone=Rocky Ledge grab=True observation=False
+  Lyretail anthias position=(-5.40, 1.04, 9.48) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(2.79, -15.54, 67.35) zone=The Wreck grab=True observation=False
+  Lyretail anthias position=(0.71, -0.22, 1.80) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(-1.39, -16.18, 71.36) zone=The Wreck grab=True observation=False
+  Lyretail anthias position=(-2.39, -5.40, 227.62) zone=Wreck & Rays grab=True observation=False
+  Lyretail anthias position=(2.79, -6.80, 35.20) zone=Rocky Ledge grab=True observation=False
+  Lyretail anthias position=(-1.51, 0.29, 11.55) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(-3.36, -6.53, 39.34) zone=Rocky Ledge grab=True observation=False
+  Lyretail anthias position=(0.72, 1.10, 10.89) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(-4.98, 0.34, 11.97) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(-1.50, -7.38, 38.91) zone=Rocky Ledge grab=True observation=False
+  Lyretail anthias position=(1.88, -16.07, 67.75) zone=The Wreck grab=True observation=False
+  Lyretail anthias position=(-2.24, -5.01, 230.66) zone=Wreck & Rays grab=True observation=False
+  Lyretail anthias position=(2.21, -5.08, 231.15) zone=Wreck & Rays grab=True observation=False
+  Lyretail anthias position=(3.97, -5.18, 226.94) zone=Wreck & Rays grab=True observation=False
+  Lyretail anthias position=(-4.28, 0.97, 10.73) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(-2.15, -7.39, 35.91) zone=Rocky Ledge grab=True observation=False
+  Lyretail anthias position=(-3.03, -16.61, 70.20) zone=The Wreck grab=True observation=False
+  Lyretail anthias position=(-2.06, 0.54, 10.26) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(2.03, -4.99, 228.64) zone=Wreck & Rays grab=True observation=False
+  Lyretail anthias position=(-2.26, 1.10, 11.37) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(1.17, -6.56, 38.19) zone=Rocky Ledge grab=True observation=False
+  Lyretail anthias position=(-3.60, -4.34, 229.88) zone=Wreck & Rays grab=True observation=False
+  Lyretail anthias position=(-1.30, 1.32, 10.36) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(-3.32, -4.81, 227.74) zone=Wreck & Rays grab=True observation=False
+  Lyretail anthias position=(1.45, 0.90, 10.48) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(0.98, -16.51, 69.74) zone=The Wreck grab=True observation=False
+  Lyretail anthias position=(1.37, 0.38, 12.37) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(2.63, -6.77, 36.41) zone=Rocky Ledge grab=True observation=False
+  Lyretail anthias position=(-2.99, -15.73, 70.84) zone=The Wreck grab=True observation=False
+  Lyretail anthias position=(-0.31, 1.36, 11.45) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(-5.50, 0.34, 9.85) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(-4.72, 0.99, 11.99) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(0.97, -15.98, 68.54) zone=The Wreck grab=True observation=False
+  Lyretail anthias position=(-0.74, 1.05, 12.86) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(0.30, -4.99, 228.21) zone=Wreck & Rays grab=True observation=False
+  Lyretail anthias position=(2.25, -6.64, 38.21) zone=Rocky Ledge grab=True observation=False
+  Lyretail anthias position=(-0.06, -6.68, 38.91) zone=Rocky Ledge grab=True observation=False
+  Lyretail anthias position=(-0.65, -16.29, 70.54) zone=The Wreck grab=True observation=False
+  Lyretail anthias position=(3.90, -4.43, 231.03) zone=Wreck & Rays grab=True observation=False
+  Lyretail anthias position=(3.64, -16.18, 70.56) zone=The Wreck grab=True observation=False
+  Lyretail anthias position=(1.42, 0.34, 10.80) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(-2.25, 0.77, 12.50) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(-4.10, 0.29, 12.84) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(-3.62, 0.17, 11.34) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(3.59, -15.56, 69.23) zone=The Wreck grab=True observation=False
+  Lyretail anthias position=(2.63, -16.00, 70.48) zone=The Wreck grab=True observation=False
+  Lyretail anthias position=(-2.15, -5.19, 229.65) zone=Wreck & Rays grab=True observation=False
+  Lyretail anthias position=(2.61, -4.63, 228.49) zone=Wreck & Rays grab=True observation=False
+  Lyretail anthias position=(0.05, 1.23, 9.61) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(-0.06, 0.54, 12.53) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(1.76, -15.47, 71.24) zone=The Wreck grab=True observation=False
+  Lyretail anthias position=(-0.28, -7.45, 34.87) zone=Rocky Ledge grab=True observation=False
+  Lyretail anthias position=(2.78, -15.43, 69.22) zone=The Wreck grab=True observation=False
+  Lyretail anthias position=(2.16, -5.41, 227.13) zone=Wreck & Rays grab=True observation=False
+  Lyretail anthias position=(-4.32, 1.05, 9.04) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(-2.82, -6.50, 36.79) zone=Rocky Ledge grab=True observation=False
+  Lyretail anthias position=(3.21, -6.99, 39.01) zone=Rocky Ledge grab=True observation=False
+  Lyretail anthias position=(-0.37, -6.73, 36.61) zone=Rocky Ledge grab=True observation=False
+  Lyretail anthias position=(-0.90, 0.47, 12.15) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(-3.41, -4.57, 228.88) zone=Wreck & Rays grab=True observation=False
+  Lyretail anthias position=(-4.09, 0.35, 11.07) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(-3.43, 0.30, 10.16) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(2.09, -5.05, 230.50) zone=Wreck & Rays grab=True observation=False
+  Lyretail anthias position=(-1.09, -7.09, 38.64) zone=Rocky Ledge grab=True observation=False
+  Lyretail anthias position=(-0.85, -16.61, 71.24) zone=The Wreck grab=True observation=False
+  Lyretail anthias position=(-2.50, -15.74, 69.64) zone=The Wreck grab=True observation=False
+  Lyretail anthias position=(-4.21, 0.51, 9.98) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(-3.09, 0.82, 12.76) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(1.40, 0.85, 9.70) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(-0.64, -6.61, 37.71) zone=Rocky Ledge grab=True observation=False
+  Lyretail anthias position=(-2.62, -5.57, 229.80) zone=Wreck & Rays grab=True observation=False
+  Lyretail anthias position=(-0.81, 1.33, 12.34) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(-1.86, 0.94, 9.97) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(0.63, 0.54, 12.17) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(-1.33, -4.66, 229.20) zone=Wreck & Rays grab=True observation=False
+  Lyretail anthias position=(0.23, -7.49, 35.30) zone=Rocky Ledge grab=True observation=False
+  Lyretail anthias position=(2.38, -5.47, 228.19) zone=Wreck & Rays grab=True observation=False
+  Lyretail anthias position=(-2.55, -6.56, 35.69) zone=Rocky Ledge grab=True observation=False
+  Lyretail anthias position=(-0.86, -15.37, 68.77) zone=The Wreck grab=True observation=False
+  Lyretail anthias position=(-3.36, -16.01, 69.23) zone=The Wreck grab=True observation=False
+  Lyretail anthias position=(2.01, -7.06, 38.71) zone=Rocky Ledge grab=True observation=False
+  Lyretail anthias position=(-1.82, -4.52, 230.03) zone=Wreck & Rays grab=True observation=False
+  Lyretail anthias position=(1.34, -15.62, 70.48) zone=The Wreck grab=True observation=False
+  Lyretail anthias position=(-4.81, 0.28, 9.80) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(0.44, -6.86, 38.91) zone=Rocky Ledge grab=True observation=False
+  Lyretail anthias position=(-5.27, 0.23, 11.38) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(-3.61, -4.72, 230.45) zone=Wreck & Rays grab=True observation=False
+  Lyretail anthias position=(-2.37, -16.71, 67.54) zone=The Wreck grab=True observation=False
+  Lyretail anthias position=(0.83, -4.76, 229.54) zone=Wreck & Rays grab=True observation=False
+  Lyretail anthias position=(-3.02, 1.35, 11.21) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(0.27, -15.90, 66.84) zone=The Wreck grab=True observation=False
+  Lyretail anthias position=(-0.44, 0.64, 9.58) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(-0.13, -7.25, 36.04) zone=Rocky Ledge grab=True observation=False
+  Lyretail anthias position=(-0.63, -15.70, 67.73) zone=The Wreck grab=True observation=False
+  Lyretail anthias position=(3.97, -7.37, 39.21) zone=Rocky Ledge grab=True observation=False
+  Lyretail anthias position=(-2.61, -4.77, 231.14) zone=Wreck & Rays grab=True observation=False
+  Lyretail anthias position=(-2.49, 1.43, 12.05) zone=Sunlit Reef grab=True observation=False
+  Lyretail anthias position=(3.65, -7.26, 35.18) zone=Rocky Ledge grab=True observation=False
+  Lyretail anthias position=(-1.02, -4.87, 228.30) zone=Wreck & Rays grab=True observation=False
+  Lyretail anthias position=(0.33, -6.34, 37.80) zone=Rocky Ledge grab=True observation=False
+Manta count=1
+  Manta ray gliding over the reef position=(-3.00, 2.60, 8.00) zone=Sunlit Reef grab=False observation=False
+Moon jelly count=11
+  Moon jelly position=(8.00, -29.00, 170.00) zone=Jellyfish Drift grab=False observation=False
+  Moon jelly position=(-3.00, -29.00, 162.00) zone=Jellyfish Drift grab=False observation=False
+  Moon jelly position=(6.00, -29.00, 169.00) zone=Jellyfish Drift grab=False observation=False
+  Moon jelly position=(6.00, -29.00, 165.00) zone=Jellyfish Drift grab=False observation=False
+  Moon jelly position=(-8.00, -29.00, 160.00) zone=Jellyfish Drift grab=False observation=False
+  Moon jelly position=(-9.00, -30.00, 158.00) zone=Jellyfish Drift grab=False observation=False
+  Moon jelly position=(3.00, -31.00, 161.00) zone=Jellyfish Drift grab=False observation=False
+  Moon jelly position=(-7.00, -31.00, 153.00) zone=Jellyfish Drift grab=False observation=False
+  Moon jelly position=(1.00, -31.00, 166.00) zone=Jellyfish Drift grab=False observation=False
+  Moon jelly position=(-9.00, -28.00, 169.00) zone=Jellyfish Drift grab=False observation=False
+  Moon jelly position=(-1.00, -31.00, 156.00) zone=Jellyfish Drift grab=False observation=False
+Moray count=1
+  Moray in wreck stern opening position=(-3.22, -18.81, 69.97) zone=The Wreck grab=False observation=False
+Octopus count=1
+  Day 3 rocky octopus position=(-1.00, -11.81, 31.00) zone=Rocky Ledge grab=False observation=False
+Ray tail count=3
+  Tail-only caution zone position=(4.00, -8.27, 230.95) zone=Wreck & Rays grab=False observation=False
+  Tail-only caution zone position=(1.00, -8.27, 226.95) zone=Wreck & Rays grab=False observation=False
+  Tail-only caution zone position=(-2.00, -8.27, 222.95) zone=Wreck & Rays grab=False observation=False
+Reef shark count=1
+  Distant reef shark position=(19.00, -11.00, 194.00) zone=Open Water Drift grab=False observation=True
+Royal gramma count=1
+  Royal gramma position=(-0.42, -0.09, -0.08) zone=Sunlit Reef grab=True observation=False
+Sergeant major count=90
+  Sergeant major position=(1.29, 1.12, 16.50) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(3.92, 2.69, 19.42) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(6.45, 1.01, 17.13) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(9.98, 3.04, 19.24) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(1.39, -14.19, 197.16) zone=Open Water Drift grab=True observation=False
+  Sergeant major position=(6.03, 1.13, 18.99) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(5.88, 2.52, 22.99) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(5.61, 1.17, 17.69) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(-2.26, -13.84, 197.65) zone=Open Water Drift grab=True observation=False
+  Sergeant major position=(-0.47, -13.53, 199.05) zone=Open Water Drift grab=True observation=False
+  Sergeant major position=(9.78, 1.69, 22.48) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(1.05, 3.38, 24.28) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(5.23, 2.44, 22.04) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(5.73, 2.40, 19.87) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(-1.99, -13.41, 195.29) zone=Open Water Drift grab=True observation=False
+  Sergeant major position=(0.68, 1.09, 19.48) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(3.39, -13.40, 198.25) zone=Open Water Drift grab=True observation=False
+  Sergeant major position=(0.67, 2.25, 20.00) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(-0.61, -14.39, 195.14) zone=Open Water Drift grab=True observation=False
+  Sergeant major position=(3.05, 2.17, 18.69) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(8.40, 1.25, 22.35) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(2.47, 3.76, 23.03) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(-1.57, 2.97, 18.15) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(9.05, 1.92, 21.99) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(6.25, 1.62, 20.66) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(6.89, 2.28, 18.31) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(-3.52, -14.66, 196.28) zone=Open Water Drift grab=True observation=False
+  Sergeant major position=(-2.60, -14.55, 198.91) zone=Open Water Drift grab=True observation=False
+  Sergeant major position=(-2.95, -14.21, 195.05) zone=Open Water Drift grab=True observation=False
+  Sergeant major position=(3.75, 2.19, 20.09) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(1.57, 1.99, 20.87) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(7.20, 2.69, 23.15) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(-0.86, 1.39, 22.37) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(-1.32, 3.00, 18.91) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(9.34, 1.92, 20.01) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(5.35, 1.55, 23.29) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(5.47, 2.17, 21.22) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(0.59, -0.82, 1.23) zone=Sunlit Reef grab=True observation=False
+  Sergeant major position=(9.51, 1.51, 21.55) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(-0.29, 1.15, 19.41) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(7.65, 2.62, 16.53) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(1.02, 1.39, 17.99) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(7.48, 2.08, 20.57) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(7.25, 3.07, 20.76) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(0.83, 2.58, 21.28) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(9.95, 1.69, 17.66) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(3.57, 2.78, 17.94) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(3.73, -13.36, 196.72) zone=Open Water Drift grab=True observation=False
+  Sergeant major position=(9.43, 2.94, 22.20) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(3.01, 2.25, 21.80) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(5.03, 2.20, 16.98) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(2.13, -14.11, 195.03) zone=Open Water Drift grab=True observation=False
+  Sergeant major position=(5.98, 1.95, 23.11) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(4.76, 2.79, 21.21) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(8.92, 1.38, 18.76) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(1.28, -14.36, 199.27) zone=Open Water Drift grab=True observation=False
+  Sergeant major position=(8.48, 1.58, 19.44) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(1.11, -14.70, 194.71) zone=Open Water Drift grab=True observation=False
+  Sergeant major position=(1.01, -14.00, 195.35) zone=Open Water Drift grab=True observation=False
+  Sergeant major position=(-1.84, -13.48, 196.00) zone=Open Water Drift grab=True observation=False
+  Sergeant major position=(3.22, -13.51, 194.71) zone=Open Water Drift grab=True observation=False
+  Sergeant major position=(3.58, 2.03, 22.68) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(9.10, 2.32, 16.62) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(-2.84, -13.77, 196.57) zone=Open Water Drift grab=True observation=False
+  Sergeant major position=(8.82, 2.76, 17.24) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(5.20, 2.66, 21.51) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(2.49, -13.76, 196.69) zone=Open Water Drift grab=True observation=False
+  Sergeant major position=(9.68, 2.16, 20.80) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(6.87, 1.10, 22.31) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(7.83, 2.07, 18.99) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(0.34, 2.95, 17.34) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(5.79, 1.44, 21.77) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(8.85, 2.13, 18.34) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(0.09, 2.34, 21.04) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(1.90, 2.63, 20.92) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(1.37, -13.41, 196.37) zone=Open Water Drift grab=True observation=False
+  Sergeant major position=(-2.39, -14.58, 195.63) zone=Open Water Drift grab=True observation=False
+  Sergeant major position=(8.19, 2.76, 22.49) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(7.35, 2.52, 19.65) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(3.45, 1.10, 17.87) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(0.40, -13.91, 199.38) zone=Open Water Drift grab=True observation=False
+  Sergeant major position=(4.26, 1.09, 17.96) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(8.75, 2.06, 17.63) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(-0.05, 1.76, 17.45) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(-1.91, -14.63, 198.99) zone=Open Water Drift grab=True observation=False
+  Sergeant major position=(-0.12, 0.96, 20.66) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(3.14, -14.16, 197.03) zone=Open Water Drift grab=True observation=False
+  Sergeant major position=(-3.09, -13.79, 198.40) zone=Open Water Drift grab=True observation=False
+  Sergeant major position=(7.86, 1.70, 18.30) zone=Rocky Ledge grab=True observation=False
+  Sergeant major position=(-1.49, 4.18, 22.32) zone=Rocky Ledge grab=True observation=False
+Stingray count=3
+  Resting stingray position=(4.00, -8.30, 232.00) zone=Wreck & Rays grab=False observation=False
+  Resting stingray position=(1.00, -8.30, 228.00) zone=Wreck & Rays grab=False observation=False
+  Resting stingray position=(-2.00, -8.30, 224.00) zone=Wreck & Rays grab=False observation=False
+Turtle count=2
+  Loggerhead sea turtle position=(1.00, -14.00, 196.00) zone=Open Water Drift grab=False observation=False
+  Loggerhead sea turtle position=(1.70, -0.30, 7.50) zone=Sunlit Reef grab=False observation=False
+Yellow tang count=2
+  Yellow tang position=(0.01, 0.13, -0.66) zone=Sunlit Reef grab=True observation=False
+  Yellow tang position=(1.85, -0.03, 0.02) zone=Sunlit Reef grab=True observation=False
+SCHOOL School | 18 reef fish center=(-5.00, -0.40, 7.00) radius=4.2 count=18
+SCHOOL School | 7 reef fish center=(-0.50, -0.30, 1.00) radius=5 count=7
+SCHOOL School | 24 reef fish center=(0.00, -14.00, 197.00) radius=6 count=24
+SCHOOL School | 24 reef fish center=(0.00, -7.00, 37.00) radius=6 count=24
+SCHOOL Clownfish coral territory center=(-3.00, -1.10, 3.50) radius=1.8 count=5
+SCHOOL School | 65 reef fish center=(4.00, 2.00, 20.00) radius=8 count=65
+SCHOOL School | 24 reef fish center=(0.00, -16.00, 69.00) radius=6 count=24
+SCHOOL School | 24 reef fish center=(0.00, -5.00, 229.00) radius=6 count=24
+SCHOOL School | 36 reef fish center=(-2.00, 0.80, 11.00) radius=5.5 count=36
+CLIP Approved Blender squid length=2
+  phase=0 skin=ReferenceSquidVisual bounds=Center: (11.97, -40.70, 132.00), Extents: (11.41, 2.80, 3.85)
+  phase=1 skin=ReferenceSquidVisual bounds=Center: (11.97, -40.70, 132.00), Extents: (11.41, 2.80, 3.85)
+  phase=2 skin=ReferenceSquidVisual bounds=Center: (11.97, -40.70, 132.00), Extents: (11.41, 2.80, 3.85)
+  phase=3 skin=ReferenceSquidVisual bounds=Center: (11.97, -40.70, 132.00), Extents: (11.41, 2.80, 3.85)
+  phase=4 skin=ReferenceSquidVisual bounds=Center: (11.97, -40.70, 132.00), Extents: (11.41, 2.80, 3.85)
+CLIP ReefShark length=2.458333
+  phase=0 skin=ReefShark_Mesh bounds=Center: (19.00, -10.36, 193.58), Extents: (2.87, 1.79, 4.65)
+  phase=1 skin=ReefShark_Mesh bounds=Center: (19.00, -10.36, 193.58), Extents: (2.87, 1.79, 4.65)
+  phase=2 skin=ReefShark_Mesh bounds=Center: (19.00, -10.36, 193.58), Extents: (2.87, 1.79, 4.65)
+  phase=3 skin=ReefShark_Mesh bounds=Center: (19.00, -10.36, 193.58), Extents: (2.87, 1.79, 4.65)
+  phase=4 skin=ReefShark_Mesh bounds=Center: (19.00, -10.36, 193.58), Extents: (2.87, 1.79, 4.65)

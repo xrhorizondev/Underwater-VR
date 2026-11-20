@@ -11,7 +11,7 @@ public sealed class RecurringSquid:MonoBehaviour {
   if(zone==Habitat)return true;
   // Never relocate an animal that is still in the diver's immediate view range.
   if(Vector3.Distance(viewer,transform.position)<45)return false;
-  GetComponent<SquidSwimmer>().ResetPatrol(zone==4?trenchPosition:openWaterPosition,zone==4?trenchRotation:openWaterRotation,zone==4?7:3);
+  GetComponent<SquidSwimmer>().ResetPatrol(zone==4?trenchPosition:openWaterPosition,zone==4?trenchRotation:openWaterRotation,3,zone==4);
   Habitat=zone;return true;
  }
 }

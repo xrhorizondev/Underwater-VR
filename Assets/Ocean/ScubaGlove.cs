@@ -121,7 +121,10 @@ namespace Underwater {
             var center=touch.GripCenter;var scale=touch.transform.lossyScale;var r=touch.GripRadii+new Vector3(.003f/Mathf.Abs(scale.x),.003f/Mathf.Abs(scale.y),.003f/Mathf.Abs(scale.z));
             System.Array.Copy(restVertices,fittedVertices,restVertices.Length);
             for(int finger=0;finger<5;finger++){
-                var delta=finger==0?triggerDelta:gripDelta;float target=holding?Mathf.Lerp(finger==4?.85f:.95f,finger==0?triggerPose:gripPose,1-holdBlend):finger==0?triggerPose:gripPose;
+                // Contact fitting must follow the same size-adaptive soft hold
+                // as the visible blendshape, rather than replacing it with a fist.
+                var delta=finger==0?triggerDelta:gripDelta;
+                float target=Mathf.Clamp01((finger==0?triggerPose:gripPose)+holdPose*(finger==0?.65f:.68f));
                 float curl=0;
                 // Stop each authored finger chain at first contact, separately.
                 for(int step=1;step<=14;step++){

@@ -1,0 +1,43 @@
+using System;
+using System.IO;
+using System.Linq;
+using UnityEditor;
+using UnityEditor.SceneManagement;
+using UnityEngine;
+namespace Underwater.Editor {
+public static class TripoMorayIntegration {
+ const string Folder="Assets/UnderwaterArt/TripoMoray",Fbx=Folder+"/TripoMoray.fbx",Scene="Assets/Scenes/Underwater_Realistic.unity";
+ static Vector3[] Points(SkinnedMeshRenderer skin){var v=skin.sharedMesh.vertices;var weights=skin.sharedMesh.boneWeights;var matrices=skin.bones.Select((b,i)=>b.localToWorldMatrix*skin.sharedMesh.bindposes[i]).ToArray();for(int i=0;i<v.Length;i++){var w=weights[i];var p=v[i];v[i]=matrices[w.boneIndex0].MultiplyPoint3x4(p)*w.weight0+matrices[w.boneIndex1].MultiplyPoint3x4(p)*w.weight1+matrices[w.boneIndex2].MultiplyPoint3x4(p)*w.weight2+matrices[w.boneIndex3].MultiplyPoint3x4(p)*w.weight3;}return v;}
+ static Bounds Bounds(Transform root,Renderer[] renderers){var points=renderers.SelectMany(r=>r is SkinnedMeshRenderer skin?Points(skin):r.GetComponent<MeshFilter>().sharedMesh.vertices.Select(p=>r.transform.TransformPoint(p)).ToArray()).Select(p=>root.InverseTransformPoint(p)).ToArray();var bounds=new Bounds(points[0],Vector3.zero);foreach(var p in points)bounds.Encapsulate(p);return bounds;}
+ public static void Run(){
+  AssetDatabase.Refresh();var importer=(ModelImporter)AssetImporter.GetAtPath(Fbx);importer.animationType=ModelImporterAnimationType.Legacy;importer.importAnimation=true;importer.isReadable=true;importer.materialImportMode=ModelImporterMaterialImportMode.None;importer.animationCompression=ModelImporterAnimationCompression.Off;
+  var takes=importer.defaultClipAnimations;foreach(var take in takes){take.loopTime=!take.name.EndsWith("React")&&!take.name.EndsWith("Recover");take.wrapMode=take.loopTime?WrapMode.Loop:WrapMode.ClampForever;}importer.clipAnimations=takes;importer.SaveAndReimport();
+  foreach(string name in new[]{"BaseColor","Normal","ORM"}){var ti=(TextureImporter)AssetImporter.GetAtPath(Folder+"/"+name+".png");ti.textureType=name=="Normal"?TextureImporterType.NormalMap:TextureImporterType.Default;ti.sRGBTexture=name=="BaseColor";ti.mipmapEnabled=true;ti.maxTextureSize=2048;ti.anisoLevel=2;var android=ti.GetPlatformTextureSettings("Android");android.overridden=true;android.maxTextureSize=2048;android.format=TextureImporterFormat.ASTC_6x6;ti.SetPlatformTextureSettings(android);ti.SaveAndReimport();}
+  var material=AssetDatabase.LoadAssetAtPath<Material>(Folder+"/TripoMoray.mat");if(!material){material=new Material(Shader.Find("Underwater/Tripo Moray PBR"));AssetDatabase.CreateAsset(material,Folder+"/TripoMoray.mat");}material.mainTexture=AssetDatabase.LoadAssetAtPath<Texture2D>(Folder+"/BaseColor.png");material.SetTexture("_BumpMap",AssetDatabase.LoadAssetAtPath<Texture2D>(Folder+"/Normal.png"));material.SetTexture("_OrmMap",AssetDatabase.LoadAssetAtPath<Texture2D>(Folder+"/ORM.png"));material.enableInstancing=true;EditorUtility.SetDirty(material);
+  var scene=EditorSceneManager.OpenScene(Scene);var actor=UnityEngine.Object.FindObjectsByType<WreckCreature>(FindObjectsSortMode.None).Single(a=>a.species==WreckCreature.Species.Moray);
+  string baseline=EditorJsonUtility.ToJson(actor);var actorPose=actor.transform.localToWorldMatrix;var colliders=actor.GetComponentsInChildren<Collider>(true).ToDictionary(c=>c,c=>EditorJsonUtility.ToJson(c));
+  var old=actor.GetComponentInChildren<YellowMorayMotion>();var oldBounds=Bounds(actor.transform,old.GetComponentsInChildren<Renderer>().Where(r=>r.enabled).ToArray());
+  UnityEngine.Object.DestroyImmediate(old.gameObject);
+  var wrapper=new GameObject("Supplied Tripo moray animated visual").transform;wrapper.SetParent(actor.transform,false);var model=(GameObject)PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>(Fbx));model.transform.SetParent(wrapper,false);
+  var player=model.GetComponent<Animation>();var clips=AssetDatabase.LoadAllAssetsAtPath(Fbx).OfType<AnimationClip>().Where(c=>!c.name.StartsWith("__")).ToArray();if(clips.Length!=5)throw new Exception("Expected five moray clips");
+  var serialized=new SerializedObject(player);var entries=serialized.FindProperty("m_Animations");entries.arraySize=clips.Length;for(int i=0;i<clips.Length;i++)entries.GetArrayElementAtIndex(i).objectReferenceValue=clips[i];serialized.FindProperty("m_Animation").objectReferenceValue=clips.Single(c=>c.name.EndsWith("Idle"));serialized.ApplyModifiedPropertiesWithoutUndo();
+  var bones=model.GetComponentsInChildren<Transform>();var head=bones.Single(b=>b.name=="Head");var tail=bones.Single(b=>b.name=="Spine11");var jaw=bones.Single(b=>b.name=="Jaw");var forward=wrapper.InverseTransformPoint(head.position)-wrapper.InverseTransformPoint(tail.position);var up=Vector3.ProjectOnPlane(wrapper.InverseTransformPoint(head.position)-wrapper.InverseTransformPoint(jaw.position),forward);
+  up=wrapper.InverseTransformPoint(bones.Single(b=>b.name=="DorsalUp").position)-wrapper.InverseTransformPoint(bones.Single(b=>b.name=="Root").position);
+  var mouth=AssetDatabase.LoadAssetAtPath<Material>(Folder+"/MouthLining.mat");if(!mouth){mouth=new Material(Shader.Find("Underwater/Moray Mouth Lining"));AssetDatabase.CreateAsset(mouth,Folder+"/MouthLining.mat");}mouth.enableInstancing=true;EditorUtility.SetDirty(mouth);
+  wrapper.localRotation=Quaternion.Inverse(Quaternion.LookRotation(forward,up));var skin=model.GetComponentInChildren<SkinnedMeshRenderer>();skin.sharedMaterials=new[]{material,mouth};skin.shadowCastingMode=UnityEngine.Rendering.ShadowCastingMode.Off;skin.receiveShadows=false;
+  clips.Single(c=>c.name.EndsWith("Idle")).SampleAnimation(model,0);var bounds=Bounds(actor.transform,new Renderer[]{skin});wrapper.localScale*=oldBounds.size.z/bounds.size.z;bounds=Bounds(actor.transform,new Renderer[]{skin});wrapper.localPosition+=oldBounds.center-bounds.center;
+  var space=skin.rootBone?skin.rootBone:skin.transform;bool first=true;var envelope=new Bounds();foreach(var clip in clips)for(int i=0;i<=24;i++){clip.SampleAnimation(model,clip.length*i/24);foreach(var point in Points(skin)){var p=space.InverseTransformPoint(point);if(first){envelope=new Bounds(p,Vector3.zero);first=false;}else envelope.Encapsulate(p);}}envelope.Expand(envelope.size.magnitude*.08f);skin.localBounds=envelope;skin.updateWhenOffscreen=false;
+  clips.Single(c=>c.name.EndsWith("Idle")).SampleAnimation(model,0);var motion=wrapper.gameObject.AddComponent<YellowMorayMotion>();motion.actor=actor;motion.animationPlayer=player;
+  if(baseline!=EditorJsonUtility.ToJson(actor)||actorPose!=actor.transform.localToWorldMatrix||colliders.Any(p=>!p.Key||EditorJsonUtility.ToJson(p.Key)!=p.Value))throw new Exception("Moray gameplay/placement/colliders changed");
+  EditorSceneManager.MarkSceneDirty(scene);EditorSceneManager.SaveScene(scene);var clone=UnityEngine.Object.Instantiate(actor.gameObject);clone.transform.position=Vector3.zero;PrefabUtility.SaveAsPrefabAsset(clone,Folder+"/TripoMorayEncounter.prefab");UnityEngine.Object.DestroyImmediate(clone);AssetDatabase.SaveAssets();
+  Validate();
+ }
+ public static void Validate(){
+  YellowMorayIntegration.Validate();EditorSceneManager.OpenScene(Scene);var motion=UnityEngine.Object.FindFirstObjectByType<YellowMorayMotion>();var player=motion.animationPlayer;var skin=player.GetComponentInChildren<SkinnedMeshRenderer>();int triangles=skin.sharedMesh.triangles.Length/3;
+  if(triangles>20000||skin.sharedMaterials.Length!=2||skin.sharedMaterials.Any(m=>!m||ShaderUtil.ShaderHasError(m.shader))||!AssetDatabase.GetAssetPath(skin.sharedMesh).StartsWith(Folder))throw new Exception("Supplied moray model or budget invalid");
+  foreach(var clip in player.Cast<AnimationState>().Select(s=>s.clip))for(int i=0;i<=24;i++){clip.SampleAnimation(player.gameObject,clip.length*i/24);var visible=skin.bounds;visible.Expand(.01f);foreach(var p in Points(skin))if(!visible.Contains(p))throw new Exception("Supplied moray outside culling bounds: "+clip.name);}
+  Debug.Log("TRIPO_MORAY_VALIDATED triangles="+triangles+" bones="+skin.bones.Length+" clips=5 originalTextures=true placementGameplayCollidersPreserved=true");YellowMorayIntegration.Capture();
+ }
+ public static void CheckColors(){AssetDatabase.Refresh();var mesh=AssetDatabase.LoadAllAssetsAtPath(Fbx).OfType<Mesh>().First();var colors=mesh.colors;var mouthIndices=mesh.GetTriangles(1).Distinct().ToArray();if(colors.Length!=mesh.vertexCount)throw new Exception("Missing mouth vertex colors");float min=mouthIndices.Min(i=>colors[i].r),max=mouthIndices.Max(i=>colors[i].r);Debug.Log("MOUTH_COLORS_IMPORTED count="+colors.Length+" mouthRedMin="+min+" max="+max);if(min>.4f||max<.6f)throw new Exception("Tissue/tooth palette missing");YellowMorayIntegration.Capture();}
+}
+}
