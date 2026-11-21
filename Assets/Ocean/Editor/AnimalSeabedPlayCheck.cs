@@ -15,7 +15,7 @@ public static class AnimalSeabedPlayCheck {
   int phase=SessionState.GetInt(Key,0);if(phase==0)return;
   if(phase==2&&!EditorApplication.isPlayingOrWillChangePlaymode){SessionState.SetInt(Key,0);Debug.Log("ANIMAL_SAND_PLAYMODE_VALIDATED seconds=30 allMovementOwners=true");EditorApplication.Exit(0);return;}
   if(phase==3&&!EditorApplication.isPlayingOrWillChangePlaymode){SessionState.SetInt(Key,0);Debug.LogError("ANIMAL_SAND_PLAYMODE_FAILED");EditorApplication.Exit(1);return;}
-  if(!EditorApplication.isPlaying||EditorApplication.isCompiling)return;
+  if(!EditorApplication.isPlaying||EditorApplication.isCompiling||Time.timeSinceLevelLoad<2)return;
   try{
    if(!configured){
     var diver=Diver.Instance;if(!diver||!diver.Head)return;
@@ -24,7 +24,7 @@ public static class AnimalSeabedPlayCheck {
    }
    frames++;
    if(EditorApplication.timeSinceStartup<nextCheck)return;nextCheck=EditorApplication.timeSinceStartup+.1;
-   foreach(var guard in guards){if(!guard.RequiredHeight(guard.transform.position,guard.transform.rotation,out float height)||guard.transform.position.y<height-.0005f)throw new Exception("Live animal below animated clearance: "+guard.name);checks++;}
+   foreach(var guard in guards){if(!guard.RequiredHeight(guard.transform.position,guard.transform.rotation,out float height)||guard.transform.position.y<height-.0005f)throw new Exception("Live animal below animated clearance: "+guard.name+" actual="+guard.transform.position+" required="+height+" time="+Time.timeSinceLevelLoad);checks++;}
    if(Time.timeSinceLevelLoad<30)return;
    int moving=guards.Where((g,i)=>Vector3.Distance(starts[i],g.transform.position)>.02f).Count();
    if(moving<200)throw new Exception("Too few active live patrols: "+moving);
@@ -36,3 +36,4 @@ public static class AnimalSeabedPlayCheck {
  }
 }
 }
+

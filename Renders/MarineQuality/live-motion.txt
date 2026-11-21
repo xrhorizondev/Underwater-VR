@@ -1,0 +1,30 @@
+Dolphin movement=0.8312299 playing=True speed=1 time=14.14738 initial=2.139304 culling=AlwaysAnimate
+Comb jelly movement=0.1083908 playing=True speed=0.7 time=10.16741 initial=1.761755 culling=AlwaysAnimate
+Comb jelly movement=0.09521963 playing=True speed=0.7 time=12.5544 initial=4.148748 culling=AlwaysAnimate
+Comb jelly movement=0.1037806 playing=True speed=0.7 time=12.77731 initial=4.37166 culling=AlwaysAnimate
+Reef shark movement=0.9150686 playing=True speed=1 time=14.11293 initial=2.104862 culling=AlwaysAnimate
+Comb jelly movement=0.1084733 playing=True speed=0.7 time=12.19372 initial=3.788068 culling=AlwaysAnimate
+Comb jelly movement=0.1031712 playing=True speed=0.7 time=10.751 initial=2.345347 culling=AlwaysAnimate
+Comb jelly movement=0.1154789 playing=True speed=0.7 time=11.02653 initial=2.620884 culling=AlwaysAnimate
+Comb jelly movement=0.1062149 playing=True speed=0.7 time=12.27886 initial=3.873211 culling=AlwaysAnimate
+Comb jelly movement=0.1172754 playing=True speed=0.7 time=11.11168 initial=2.706027 culling=AlwaysAnimate
+Lionfish movement=0.08278079 playing=True speed=0.8 time=11.70613 initial=2.099677 culling=AlwaysAnimate
+Comb jelly movement=0.1184978 playing=True speed=0.7 time=13.49867 initial=5.09302 culling=AlwaysAnimate
+Comb jelly movement=0.1143678 playing=True speed=0.7 time=13.00022 initial=4.594572 culling=AlwaysAnimate
+Comb jelly movement=0.1181139 playing=True speed=0.7 time=13.22313 initial=4.817483 culling=AlwaysAnimate
+Comb jelly movement=0.11869 playing=True speed=0.7 time=11.69527 initial=3.289619 culling=AlwaysAnimate
+Comb jelly movement=0.1009147 playing=True speed=0.7 time=12.41663 initial=4.01098 culling=AlwaysAnimate
+Comb jelly movement=0.117545 playing=True speed=0.7 time=13.13799 initial=4.73234 culling=AlwaysAnimate
+Dolphin movement=0.8778154 playing=True speed=1 time=15.89815 initial=3.89008 culling=AlwaysAnimate
+Comb jelly movement=0.09759884 playing=True speed=0.7 time=10.66585 initial=2.260204 culling=AlwaysAnimate
+Comb jelly movement=0.1164426 playing=True speed=0.7 time=9.806726 initial=1.401075 culling=AlwaysAnimate
+Comb jelly movement=0.1179544 playing=True speed=0.7 time=11.47236 initial=3.066707 culling=AlwaysAnimate
+Comb jelly movement=0.1183311 playing=True speed=0.7 time=13.72158 initial=5.315932 culling=AlwaysAnimate
+Dolphin movement=0.7652553 playing=True speed=1 time=14.73097 initial=2.722896 culling=AlwaysAnimate
+Comb jelly movement=0.09494595 playing=True speed=0.7 time=12.63954 initial=4.233891 culling=AlwaysAnimate
+Comb jelly movement=0.1102456 playing=True speed=0.7 time=12.05595 initial=3.650299 culling=AlwaysAnimate
+Comb jelly movement=0.09505966 playing=True speed=0.7 time=10.52809 initial=2.122435 culling=AlwaysAnimate
+Comb jelly movement=0.1192865 playing=True speed=0.7 time=11.61013 initial=3.204476 culling=AlwaysAnimate
+Comb jelly movement=0.1105068 playing=True speed=0.7 time=10.88877 initial=2.483115 culling=AlwaysAnimate
+Comb jelly movement=0.1154512 playing=True speed=0.7 time=11.83304 initial=3.427387 culling=AlwaysAnimate
+Comb jelly movement=0.1167701 playing=True speed=0.7 time=13.3609 initial=4.955252 culling=AlwaysAnimate

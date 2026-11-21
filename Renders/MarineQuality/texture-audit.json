@@ -1,0 +1,3804 @@
+{
+    "animalObjects": 313,
+    "uniqueTextures": 27,
+    "normalMaps": 8,
+    "surfaces": [
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Box jelly",
+            "renderer": "Object_7",
+            "material": "Box-jelly_tentacle",
+            "shader": "Underwater/Imported Box Jelly",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/ImportedBoxJelly/textures/Tentacles.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Box jelly",
+            "renderer": "Object_8",
+            "material": "Box-jelly_bell",
+            "shader": "Underwater/Imported Box Jelly",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/ImportedBoxJelly/textures/Bell.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Box jelly",
+            "renderer": "Object_9",
+            "material": "Box-jelly_canal-oral",
+            "shader": "Underwater/Imported Box Jelly",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/ImportedBoxJelly/textures/Bell.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Box jelly",
+            "renderer": "Object_10",
+            "material": "Box-jelly_eye",
+            "shader": "Underwater/Imported Box Jelly",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/ImportedBoxJelly/textures/Bell.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Blue tang",
+            "renderer": "Blue tang",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Anglerfish",
+            "material": "Species Anglerfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Lure stalk",
+            "material": "Species Anglerfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Emissive lure bulb",
+            "material": "Visible angler lure",
+            "shader": "Underwater/Visible Lure",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Lure glow halo",
+            "material": "LureHalo",
+            "shader": "Underwater/Lure Halo",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Blue tang",
+            "renderer": "Blue tang",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Anglerfish",
+            "material": "Species Anglerfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Lure stalk",
+            "material": "Species Anglerfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Emissive lure bulb",
+            "material": "Visible angler lure",
+            "shader": "Underwater/Visible Lure",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Lure glow halo",
+            "material": "LureHalo",
+            "shader": "Underwater/Lure Halo",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Anglerfish",
+            "material": "Species Anglerfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Lure stalk",
+            "material": "Species Anglerfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Emissive lure bulb",
+            "material": "Visible angler lure",
+            "shader": "Underwater/Visible Lure",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Lure glow halo",
+            "material": "LureHalo",
+            "shader": "Underwater/Lure Halo",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Copperband butterflyfish",
+            "renderer": "Copperband butterflyfish",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Anglerfish",
+            "material": "Species Anglerfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Lure stalk",
+            "material": "Species Anglerfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Emissive lure bulb",
+            "material": "Visible angler lure",
+            "shader": "Underwater/Visible Lure",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Lure glow halo",
+            "material": "LureHalo",
+            "shader": "Underwater/Lure Halo",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Blue tang",
+            "renderer": "Blue tang",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Anglerfish",
+            "material": "Species Anglerfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Lure stalk",
+            "material": "Species Anglerfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Emissive lure bulb",
+            "material": "Visible angler lure",
+            "shader": "Underwater/Visible Lure",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Lure glow halo",
+            "material": "LureHalo",
+            "shader": "Underwater/Lure Halo",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Grouper",
+            "renderer": "Calm finale grouper",
+            "material": "Natural mottled grouper",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Blue tang",
+            "renderer": "Blue tang",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Anglerfish",
+            "material": "Species Anglerfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Lure stalk",
+            "material": "Species Anglerfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Emissive lure bulb",
+            "material": "Visible angler lure",
+            "shader": "Underwater/Visible Lure",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Lure glow halo",
+            "material": "LureHalo",
+            "shader": "Underwater/Lure Halo",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Blue tang",
+            "renderer": "Blue tang",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Blue tang",
+            "renderer": "Blue tang",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Anglerfish",
+            "material": "Species Anglerfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Lure stalk",
+            "material": "Species Anglerfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Emissive lure bulb",
+            "material": "Visible angler lure",
+            "shader": "Underwater/Visible Lure",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Lure glow halo",
+            "material": "LureHalo",
+            "shader": "Underwater/Lure Halo",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Grouper",
+            "renderer": "Calm wreck grouper",
+            "material": "Natural mottled grouper",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Turtle",
+            "renderer": "LoggerheadTurtle_Body",
+            "material": "body",
+            "shader": "Standard",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/PreparedMarine/LoggerheadTurtle/textures/LoggerheadTurtle_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/PreparedMarine/LoggerheadTurtle/textures/LoggerheadTurtle_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Turtle",
+            "renderer": "LoggerheadTurtle_Eyes",
+            "material": "eyes.outer",
+            "shader": "Underwater/Prepared Turtle Eyes",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/PreparedMarine/LoggerheadTurtle/textures/LoggerheadTurtle_albedo.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Blue tang",
+            "renderer": "Blue tang",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Blue tang",
+            "renderer": "Blue tang",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Anglerfish",
+            "material": "Species Anglerfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Lure stalk",
+            "material": "Species Anglerfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Emissive lure bulb",
+            "material": "Visible angler lure",
+            "shader": "Underwater/Visible Lure",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Lure glow halo",
+            "material": "LureHalo",
+            "shader": "Underwater/Lure Halo",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Blue tang",
+            "renderer": "Blue tang",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Dolphin",
+            "renderer": "Dolphin_Anatomy",
+            "material": "TT_checker_2048x2048_UV_GRID",
+            "shader": "Underwater/Imported Marine Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/Dolphin/textures/Dolphin_LPP_TT_checker_2048x2048_UV_GRID_BaseColor_png_BaseColor.png",
+                "_BumpMap: Assets/UnderwaterArt/MarineRefresh/Dolphin/textures/Dolphin_LPP_TT_checker_2048x2048_UV_GRID_Normal_png_Normal.png",
+                "_RoughnessMap: Assets/UnderwaterArt/MarineRefresh/Dolphin/textures/Dolphin_Roughness.png",
+                "_OcclusionMap: Assets/UnderwaterArt/MarineRefresh/Dolphin/textures/Dolphin_Occlusion.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Stingray",
+            "renderer": "Resting stingray",
+            "material": "Detailed natural stingray",
+            "shader": "Underwater/Rigged Ray Skin",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Anglerfish",
+            "material": "Species Anglerfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Lure stalk",
+            "material": "Species Anglerfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Emissive lure bulb",
+            "material": "Visible angler lure",
+            "shader": "Underwater/Visible Lure",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Lure glow halo",
+            "material": "LureHalo",
+            "shader": "Underwater/Lure Halo",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Clownfish",
+            "renderer": "Clownfish",
+            "material": "Species Clownfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Clownfish",
+            "renderer": "Clownfish",
+            "material": "Species Clownfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Stingray",
+            "renderer": "Resting stingray",
+            "material": "Detailed natural stingray",
+            "shader": "Underwater/Rigged Ray Skin",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Blue tang",
+            "renderer": "Blue tang",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Blue tang",
+            "renderer": "Blue tang",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Blue tang",
+            "renderer": "Blue tang",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Octopus",
+            "renderer": "Octopus_Mesh",
+            "material": "Octopus_Skin",
+            "shader": "Underwater/Octopus Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/PreparedMarine/Octopus/textures/Octopus_BaseColor.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Dolphin",
+            "renderer": "Dolphin_Anatomy",
+            "material": "TT_checker_2048x2048_UV_GRID",
+            "shader": "Underwater/Imported Marine Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/Dolphin/textures/Dolphin_LPP_TT_checker_2048x2048_UV_GRID_BaseColor_png_BaseColor.png",
+                "_BumpMap: Assets/UnderwaterArt/MarineRefresh/Dolphin/textures/Dolphin_LPP_TT_checker_2048x2048_UV_GRID_Normal_png_Normal.png",
+                "_RoughnessMap: Assets/UnderwaterArt/MarineRefresh/Dolphin/textures/Dolphin_Roughness.png",
+                "_OcclusionMap: Assets/UnderwaterArt/MarineRefresh/Dolphin/textures/Dolphin_Occlusion.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Blue tang",
+            "renderer": "Blue tang",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Stingray",
+            "renderer": "Resting stingray",
+            "material": "Detailed natural stingray",
+            "shader": "Underwater/Rigged Ray Skin",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Turtle",
+            "renderer": "LoggerheadTurtle_Body",
+            "material": "body",
+            "shader": "Standard",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/PreparedMarine/LoggerheadTurtle/textures/LoggerheadTurtle_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/PreparedMarine/LoggerheadTurtle/textures/LoggerheadTurtle_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Turtle",
+            "renderer": "LoggerheadTurtle_Eyes",
+            "material": "eyes.outer",
+            "shader": "Underwater/Prepared Turtle Eyes",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/PreparedMarine/LoggerheadTurtle/textures/LoggerheadTurtle_albedo.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Yellow tang",
+            "renderer": "Yellow tang",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Blue tang",
+            "renderer": "Blue tang",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lionfish",
+            "renderer": "Lionfish_Anatomy",
+            "material": "Q11651-1all-7_tex0",
+            "shader": "Underwater/Imported Marine Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/Lionfish/textures/Lionfish_Image_1_BaseColor.png",
+                "_BumpMap: Assets/UnderwaterArt/MarineRefresh/Lionfish/textures/Lionfish_ScanSurface_Normal_0.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lionfish",
+            "renderer": "Lionfish_Anatomy",
+            "material": "Q11651-1all-7_tex1",
+            "shader": "Underwater/Imported Marine Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/Lionfish/textures/Lionfish_Image_2_BaseColor.png",
+                "_BumpMap: Assets/UnderwaterArt/MarineRefresh/Lionfish/textures/Lionfish_ScanSurface_Normal_1.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lionfish",
+            "renderer": "Lionfish_Anatomy",
+            "material": "Lionfish_Eyes",
+            "shader": "Underwater/Imported Marine Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/Lionfish/textures/Lionfish_Eyes.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Manta",
+            "renderer": "MantaRay_Body",
+            "material": "body",
+            "shader": "Standard",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/PreparedMarine/MantaRay/textures/MantaRay_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/PreparedMarine/MantaRay/textures/MantaRay_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Anglerfish",
+            "material": "Species Anglerfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Lure stalk",
+            "material": "Species Anglerfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Emissive lure bulb",
+            "material": "Visible angler lure",
+            "shader": "Underwater/Visible Lure",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Lure glow halo",
+            "material": "LureHalo",
+            "shader": "Underwater/Lure Halo",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Blue tang",
+            "renderer": "Blue tang",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Dolphin",
+            "renderer": "Dolphin_Anatomy",
+            "material": "TT_checker_2048x2048_UV_GRID",
+            "shader": "Underwater/Imported Marine Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/Dolphin/textures/Dolphin_LPP_TT_checker_2048x2048_UV_GRID_BaseColor_png_BaseColor.png",
+                "_BumpMap: Assets/UnderwaterArt/MarineRefresh/Dolphin/textures/Dolphin_LPP_TT_checker_2048x2048_UV_GRID_Normal_png_Normal.png",
+                "_RoughnessMap: Assets/UnderwaterArt/MarineRefresh/Dolphin/textures/Dolphin_Roughness.png",
+                "_OcclusionMap: Assets/UnderwaterArt/MarineRefresh/Dolphin/textures/Dolphin_Occlusion.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Royal gramma",
+            "renderer": "Royal gramma",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Blue tang",
+            "renderer": "Blue tang",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Anglerfish",
+            "material": "Species Anglerfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Lure stalk",
+            "material": "Species Anglerfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Emissive lure bulb",
+            "material": "Visible angler lure",
+            "shader": "Underwater/Visible Lure",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Lure glow halo",
+            "material": "LureHalo",
+            "shader": "Underwater/Lure Halo",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Moray",
+            "renderer": "Supplied moray skin",
+            "material": "TripoMoray",
+            "shader": "Underwater/Tripo Moray PBR",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/TripoMoray/BaseColor.png",
+                "_BumpMap: Assets/UnderwaterArt/TripoMoray/Normal.png",
+                "_OrmMap: Assets/UnderwaterArt/TripoMoray/ORM.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Moray",
+            "renderer": "Supplied moray skin",
+            "material": "MouthLining",
+            "shader": "Underwater/Moray Mouth Lining",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Blue tang",
+            "renderer": "Blue tang",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Yellow tang",
+            "renderer": "Yellow tang",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Fire coral",
+            "renderer": "Secale_LOD0",
+            "material": "09 Smithsonian Acropora",
+            "shader": "Underwater/Reef Surface",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Scans/Secale_scan.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/LivingCoral_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Fire coral",
+            "renderer": "Secale_LOD1",
+            "material": "09 Smithsonian Acropora",
+            "shader": "Underwater/Reef Surface",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Scans/Secale_scan.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/LivingCoral_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Fire coral",
+            "renderer": "Secale_LOD2",
+            "material": "09 Smithsonian Acropora",
+            "shader": "Underwater/Reef Surface",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Scans/Secale_scan.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/LivingCoral_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lumen",
+            "renderer": "Lumen",
+            "material": "Species Lumen",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Reef shark",
+            "renderer": "GreatWhite_Anatomy",
+            "material": "mat_0-megalodon_jpg",
+            "shader": "Underwater/Imported Marine Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/Shark/textures/Shark_Image_0_BaseColor.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Blue tang",
+            "renderer": "Blue tang",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Clownfish",
+            "renderer": "Clownfish",
+            "material": "Species Clownfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Box jelly",
+            "renderer": "Object_7",
+            "material": "Box-jelly_tentacle",
+            "shader": "Underwater/Imported Box Jelly",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/ImportedBoxJelly/textures/Tentacles.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Box jelly",
+            "renderer": "Object_8",
+            "material": "Box-jelly_bell",
+            "shader": "Underwater/Imported Box Jelly",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/ImportedBoxJelly/textures/Bell.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Box jelly",
+            "renderer": "Object_9",
+            "material": "Box-jelly_canal-oral",
+            "shader": "Underwater/Imported Box Jelly",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/ImportedBoxJelly/textures/Bell.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Box jelly",
+            "renderer": "Object_10",
+            "material": "Box-jelly_eye",
+            "shader": "Underwater/Imported Box Jelly",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/ImportedBoxJelly/textures/Bell.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Blue tang",
+            "renderer": "Blue tang",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Anglerfish",
+            "material": "Species Anglerfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Lure stalk",
+            "material": "Species Anglerfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Emissive lure bulb",
+            "material": "Visible angler lure",
+            "shader": "Underwater/Visible Lure",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Anglerfish",
+            "renderer": "Lure glow halo",
+            "material": "LureHalo",
+            "shader": "Underwater/Lure Halo",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Clownfish",
+            "renderer": "Clownfish",
+            "material": "Species Clownfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Clownfish",
+            "renderer": "Clownfish",
+            "material": "Species Clownfish",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Moon jelly",
+            "renderer": "Earlier moon jelly visual",
+            "material": "JellyTissue",
+            "shader": "Underwater/Translucent Jelly Tissue",
+            "textures": [],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Box jelly",
+            "renderer": "Object_7",
+            "material": "Box-jelly_tentacle",
+            "shader": "Underwater/Imported Box Jelly",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/ImportedBoxJelly/textures/Tentacles.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Box jelly",
+            "renderer": "Object_8",
+            "material": "Box-jelly_bell",
+            "shader": "Underwater/Imported Box Jelly",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/ImportedBoxJelly/textures/Bell.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Box jelly",
+            "renderer": "Object_9",
+            "material": "Box-jelly_canal-oral",
+            "shader": "Underwater/Imported Box Jelly",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/ImportedBoxJelly/textures/Bell.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Box jelly",
+            "renderer": "Object_10",
+            "material": "Box-jelly_eye",
+            "shader": "Underwater/Imported Box Jelly",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/ImportedBoxJelly/textures/Bell.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Comb jelly",
+            "renderer": "CombJelly_Anatomy",
+            "material": "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194",
+            "shader": "Underwater/Comb Jelly Glass",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/MarineRefresh/CombJelly/textures/CombJelly_TransparentTissue.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Sergeant major",
+            "renderer": "Sergeant major",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "renderer": "Lyretail anthias",
+            "material": "Underwater/Living Fish Skin",
+            "shader": "Underwater/Living Fish Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/Textures/FishScan_albedo.png",
+                "_BumpMap: Assets/UnderwaterArt/Textures/FishScan_normal.png"
+            ],
+            "surfaceDepth": true
+        },
+        {
+            "kind": "Giant squid",
+            "renderer": "ReferenceSquidVisual",
+            "material": "SquidBody",
+            "shader": "Underwater/Imported Squid Skin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/BlenderSquid/SquidSkin.png"
+            ],
+            "surfaceDepth": false
+        },
+        {
+            "kind": "Giant squid",
+            "renderer": "ReferenceSquidVisual",
+            "material": "SquidFin",
+            "shader": "Underwater/Imported Squid Fin",
+            "textures": [
+                "_MainTex: Assets/UnderwaterArt/BlenderSquid/SquidFin.png"
+            ],
+            "surfaceDepth": false
+        }
+    ]
+}

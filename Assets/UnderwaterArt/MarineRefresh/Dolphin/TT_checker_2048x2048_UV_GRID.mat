@@ -31,10 +31,21 @@ Material:
         m_Texture: {fileID: 2800000, guid: 7df02b71198f14a499cf0c8ff5f4ac99, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 2800000, guid: e24f2846495073142a0003415819de39, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RoughnessMap:
+        m_Texture: {fileID: 2800000, guid: abcbef56ede6951469e04b19d486272b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _BumpScale: 1
     - _Cull: 0
     - _Glossiness: 0.5
+    - _OcclusionStrength: 0.45
+    - _UseRoughnessMap: 1
     m_Colors:
     - _Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   m_BuildTextureStacks: []

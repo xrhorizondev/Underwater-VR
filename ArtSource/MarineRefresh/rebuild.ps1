@@ -15,5 +15,7 @@ try {
  Invoke-MarineStep 'polish_lion_only.py'
  Invoke-MarineStep 'polish_comb_only.py'
  Invoke-MarineStep 'shark_clean_swim.py'
+ Invoke-MarineStep 'quality_refine.py'
  Invoke-MarineStep 'review.py'
 } finally {Pop-Location}
+
