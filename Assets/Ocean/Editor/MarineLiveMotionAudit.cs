@@ -25,6 +25,3 @@ if(imageIndex<30&&EditorApplication.timeSinceStartup>=nextFrame){nextFrame=Edito
  Directory.CreateDirectory("Renders/MarineQuality");var lines=samples.Select(s=>s.animation.GetComponentInParent<SeaLife>().kind+" movement="+s.movement+" playing="+s.animation.isPlaying+" speed="+s.animation[s.animation.clip.name].speed+" time="+s.animation[s.animation.clip.name].time+" initial="+s.time0+" culling="+s.animation.cullingType).ToArray();File.WriteAllLines("Renders/MarineQuality/live-motion.txt",lines);foreach(var l in lines)Debug.Log("LIVE_MARINE "+l);if(samples.Count!=30)throw new Exception("Unexpected animated animal count");if(samples.Any(s=>s.movement<.001f))throw new Exception("Runtime skeletal animation stalled");EditorApplication.ExitPlaymode();
  }catch(Exception e){Debug.LogError(e);failed=true;EditorApplication.ExitPlaymode();}}
 }}
-
-
-

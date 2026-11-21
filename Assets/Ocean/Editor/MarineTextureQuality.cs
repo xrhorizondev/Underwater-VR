@@ -43,4 +43,3 @@ public static class MarineTextureQuality {
   MarineModelRefresh.Regression();HabitatDocumentAudit.ValidatePlacementsAndShark();MarineModelRefresh.FinalVisualChecks();
  }
 }}
-
