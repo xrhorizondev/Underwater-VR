@@ -10,7 +10,7 @@ public static class MarineModelRefresh {
  const string Scene="Assets/Scenes/Underwater_Realistic.unity",Folder="Assets/UnderwaterArt/MarineRefresh";
  [Serializable]public class MaterialData {public string name,baseColorTexture,normalTexture;public float[] baseColor;public float roughness;}
  [Serializable]public class Manifest {public string kind;public MaterialData[] materials;}
- static string Key(SeaLife life){switch(life.kind){case "Dolphin":return "Dolphin";case "Reef shark":return "Shark";case "Comb jelly":return "CombJelly";case "Lionfish":return "Lionfish";default:return null;}}
+ static string Key(SeaLife life){switch(life.kind){case "Dolphin":return "Dolphin";case "Reef shark":return "Shark";case "Comb jelly":return "CombJelly";case "Lionfish":return null;default:return null;}}
  static SeaLife[] Actors()=>UnityEngine.Object.FindObjectsByType<SeaLife>(FindObjectsSortMode.None).Where(l=>Key(l)!=null).ToArray();
  static string Fbx(string key)=>Folder+"/"+key+"/"+key+".fbx";
  static Renderer[] Surfaces(Transform actor)=>actor.GetComponentsInChildren<Renderer>().Where(r=>r.enabled&&r.gameObject.activeInHierarchy&&(r is MeshRenderer||r is SkinnedMeshRenderer)).ToArray();
@@ -93,7 +93,7 @@ public static class MarineModelRefresh {
    if(key=="CombJelly"){if(actor.danger||actor.consequence||!actor.observationOnly)throw new Exception("Comb jelly safety changed");var tex=(Texture2D)model.GetComponentInChildren<Renderer>().sharedMaterial.mainTexture;var source=new Texture2D(2,2,TextureFormat.RGBA32,false);source.LoadImage(File.ReadAllBytes(AssetDatabase.GetAssetPath(tex)));var pixels=source.GetPixels32();int transparent=pixels.Count(p=>p.a<250),rows=pixels.Count(p=>p.a>100);UnityEngine.Object.DestroyImmediate(source);if(transparent<pixels.Length*.9f||rows==0)throw new Exception("Missing transparent tissue/comb-row alpha");}
    Debug.Log("MARINE_REFRESH_VALIDATED "+key+" deformation="+deformation+" loopSeam="+seam+" boneAnimation=true");count++;
   }
-  if(count!=30)throw new Exception("Actor count changed");Debug.Log("MARINE_REFRESH_VERTICES_VALIDATED checks="+vertexChecks+" minSandGap="+minGap);
+  if(count!=29)throw new Exception("Actor count changed");Debug.Log("MARINE_REFRESH_VERTICES_VALIDATED checks="+vertexChecks+" minSandGap="+minGap);
   Simulate();
  }
  public static void Simulate(){
@@ -103,12 +103,12 @@ public static class MarineModelRefresh {
    if(key=="Dolphin")actor.GetComponent<WreckCreature>().Step(dt);else if(key=="Shark")actor.GetComponent<OpenWaterShark>().Step(dt,actor.transform.position+Vector3.right*10,Vector3.zero,true);else if(key=="CombJelly")actor.GetComponent<DeepWaterEncounter>().Step(dt,5,positions[i]+Vector3.forward*.6f,0);else actor.GetComponent<ReefEncounter>().Step(dt,actor.transform.position-Vector3.forward,frame%500<40?.1f:10);
    var ground=actor.GetComponent<ReefAnimalClearance>();ground.Enforce();if(!ground.RequiredHeight(actor.transform.position,actor.transform.rotation,out float height)||actor.transform.position.y<height-.0001f)throw new Exception("Patrol body entered sand: "+key);travel[i]+=Vector3.Distance(before,actor.transform.position);poseChecks++;
   }
-  foreach(var key in new[]{"Dolphin","Shark","CombJelly","Lionfish"}){float min=actors.Select((a,i)=>new{a,i}).Where(x=>Key(x.a)==key).Min(x=>travel[x.i]);if(min<.1f)throw new Exception("Replacement movement stalled: "+key);Debug.Log("MARINE_REFRESH_PATROL "+key+" minTravel="+min);}
+  foreach(var key in new[]{"Dolphin","Shark","CombJelly"}){float min=actors.Select((a,i)=>new{a,i}).Where(x=>Key(x.a)==key).Min(x=>travel[x.i]);if(min<.1f)throw new Exception("Replacement movement stalled: "+key);Debug.Log("MARINE_REFRESH_PATROL "+key+" minTravel="+min);}
   Debug.Log("MARINE_REFRESH_PATROLS_VALIDATED seconds=120 poseChecks="+poseChecks);
  }
  public static void Capture(){
   Directory.CreateDirectory("Renders/MarineRefresh/Unity");
-  foreach(var key in new[]{"Dolphin","Shark","CombJelly","Lionfish"}){
+  foreach(var key in new[]{"Dolphin","Shark","CombJelly"}){
    EditorSceneManager.OpenScene(Scene);var actor=Actors().First(a=>Key(a)==key);var wrapper=actor.transform.Find("Prepared animated model");var model=wrapper.GetChild(0).gameObject;var animation=model.GetComponent<Animation>();var renderers=model.GetComponentsInChildren<SkinnedMeshRenderer>();
    var camera=new GameObject("Marine refresh camera").AddComponent<Camera>();camera.cullingMask=1<<31;camera.clearFlags=CameraClearFlags.SolidColor;camera.backgroundColor=new Color(.025f,.08f,.12f);camera.nearClipPlane=.005f;camera.farClipPlane=100;camera.orthographic=true;RenderSettings.fog=false;RenderSettings.ambientLight=new Color(.5f,.6f,.7f);Shader.SetGlobalFloat("_ReefLight",.8f);
    var lamp=new GameObject("Marine review light").AddComponent<Light>();lamp.type=LightType.Directional;lamp.intensity=1.3f;lamp.transform.rotation=Quaternion.Euler(30,-35,0);

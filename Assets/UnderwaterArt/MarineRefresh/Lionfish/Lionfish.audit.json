@@ -1,10 +1,9 @@
 {
   "source": "D:\\GIT Project\\Underwater-VR\\ArtSource\\MarineRefresh\\Lionfish.blend",
   "blender": "5.3.0",
-  "triangles": 20576,
+  "triangles": 20000,
   "bones": 15,
   "materials": [
-    "Lionfish_Eyes",
     "Q11651-1all-7_tex0",
     "Q11651-1all-7_tex1"
   ],
@@ -12,23 +11,11 @@
     "Lionfish_Swim"
   ],
   "images": {
-    "Lionfish eye atlas": [
-      128,
-      128
-    ],
-    "Image_2": [
-      1024,
-      1024
-    ],
-    "Lionfish scan normals 1": [
-      1024,
-      1024
-    ],
     "Image_1": [
       1024,
       1024
     ],
-    "Lionfish scan normals 0": [
+    "Image_2": [
       1024,
       1024
     ]

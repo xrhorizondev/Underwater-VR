@@ -31,9 +31,9 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Dolphin_Swim
-      takeName: Dolphin_Swim
-      internalID: 2343114392180647484
+      name: Dolphin_Coordinated_Swim
+      takeName: Dolphin_Coordinated_Swim
+      internalID: 7368002798113503233
       firstFrame: 0
       lastFrame: 60
       wrapMode: 2

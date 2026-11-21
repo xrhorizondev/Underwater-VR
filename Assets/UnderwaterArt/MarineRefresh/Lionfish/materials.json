@@ -10,7 +10,7 @@
         1
       ],
       "baseColorTexture": "textures/Lionfish_Image_1_BaseColor.png",
-      "normalTexture": "textures/Lionfish_ScanSurface_Normal_0.png",
+      "normalTexture": null,
       "roughness": 0.4
     },
     {
@@ -22,25 +22,12 @@
         1
       ],
       "baseColorTexture": "textures/Lionfish_Image_2_BaseColor.png",
-      "normalTexture": "textures/Lionfish_ScanSurface_Normal_1.png",
-      "roughness": 0.4
-    },
-    {
-      "name": "Lionfish_Eyes",
-      "baseColor": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "baseColorTexture": "textures/Lionfish_Eyes.png",
       "normalTexture": null,
-      "roughness": 0.18
+      "roughness": 0.4
     }
   ],
   "notes": [
-    "Kept every source scan surface partition and removed the non-anatomical helper cube before reduction.",
-    "Original full scan baked to tangent normals; two socket-fitted anatomical eyes added and weighted to Body."
+    "Kept every source scan surface partition and removed the non-anatomical helper cube before reduction."
   ],
   "frames": [
     0,

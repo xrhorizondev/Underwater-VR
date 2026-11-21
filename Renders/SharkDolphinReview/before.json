@@ -1,0 +1,56 @@
+{
+    "animals": [
+        {
+            "kind": "Reef shark",
+            "name": "Distant reef shark",
+            "tailSide": 0.3698730766773224,
+            "tailVertical": 0.0000010132789611816407,
+            "headMotion": 0.012977899052202702,
+            "flukeMismatch": 1.341104507446289e-7,
+            "loopSeam": 0.0,
+            "travel": 72.00082397460938,
+            "stoppedFraction": 0.0,
+            "maxTurn": 18.010705947875978,
+            "minPodGap": 1000.0
+        },
+        {
+            "kind": "Dolphin",
+            "name": "Wreck dolphin 1",
+            "tailSide": 6.137706805020571e-7,
+            "tailVertical": 0.6689682006835938,
+            "headMotion": 0.000040768147300696,
+            "flukeMismatch": 0.014554619789123536,
+            "loopSeam": 0.0,
+            "travel": 83.99906158447266,
+            "stoppedFraction": 0.0,
+            "maxTurn": 28.006824493408204,
+            "minPodGap": 6.017978191375732
+        },
+        {
+            "kind": "Dolphin",
+            "name": "Wreck dolphin 2",
+            "tailSide": 0.0000031647796276956798,
+            "tailVertical": 0.6689682602882385,
+            "headMotion": 0.00004076468030689284,
+            "flukeMismatch": 0.014555171132087708,
+            "loopSeam": 0.0,
+            "travel": 83.9996109008789,
+            "stoppedFraction": 0.0,
+            "maxTurn": 28.006824493408204,
+            "minPodGap": 6.033487319946289
+        },
+        {
+            "kind": "Dolphin",
+            "name": "Wreck dolphin 3",
+            "tailSide": 0.0000019344588508829476,
+            "tailVertical": 0.6689677834510803,
+            "headMotion": 0.0000407618899771478,
+            "flukeMismatch": 0.014554455876350403,
+            "loopSeam": 0.0,
+            "travel": 83.99894714355469,
+            "stoppedFraction": 0.0,
+            "maxTurn": 28.013107299804689,
+            "minPodGap": 7.187074184417725
+        }
+    ]
+}

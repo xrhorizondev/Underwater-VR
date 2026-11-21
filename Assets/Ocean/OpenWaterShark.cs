@@ -25,7 +25,7 @@ public sealed class OpenWaterShark:MonoBehaviour {
   // steer straight back into the ledge that the navigation just avoided.
   if(!navigation.Avoiding)direction.y=Mathf.Clamp(direction.y,-.18f,.18f);
   if(direction.sqrMagnitude>.001f){var old=transform.forward;var forward=Vector3.RotateTowards(old,direction.normalized,18*Mathf.Deg2Rad*dt,0);float turn=Vector3.SignedAngle(old,forward,Vector3.up)/Mathf.Max(dt,.001f);bank=Mathf.Lerp(bank,Mathf.Clamp(-turn*.35f,-6,6),1-Mathf.Exp(-dt*2));transform.rotation=Quaternion.LookRotation(forward,Vector3.up)*Quaternion.AngleAxis(bank,Vector3.forward);}
-  if(body){float moved=body.MoveSliding(transform.forward*currentSpeed*dt).magnitude;navigation.RecordMovement(moved,currentSpeed*dt,dt);if(swim&&swim.clip){var state=swim[swim.clip.name];if(state!=null)state.speed=Mathf.Lerp(state.speed,Mathf.Clamp(moved/Mathf.Max(dt,.001f)/.75f,.25f,1.6f),1-Mathf.Exp(-dt*3));}}
+  if(body){float moved=body.MoveSliding(transform.forward*currentSpeed*dt).magnitude;navigation.RecordMovement(moved,currentSpeed*dt,dt);if(swim){var stroke=swim.GetComponent<ReefImportedAnimation>();if(stroke)stroke.MatchTravel(moved/Mathf.Max(dt,.001f),.75f);}}
   if(skin){skin.GetPropertyBlock(block);block.SetFloat("_TailPhase",clock*3);skin.SetPropertyBlock(block);}return pursuit>=.75f&&cooldown<=0;
  }
 }

@@ -1,0 +1,4 @@
+Wreck dolphin 1 liveDeformation=0.4776126 travel=7.484321 clipTimeDelta=13.5914 rate=1.000009
+Distant reef shark liveDeformation=0.9152912 travel=5.820483 clipTimeDelta=10.98419 rate=0.8000088
+Wreck dolphin 2 liveDeformation=0.2502028 travel=7.470602 clipTimeDelta=13.59138 rate=0.99999
+Wreck dolphin 3 liveDeformation=0.4181122 travel=7.356094 clipTimeDelta=13.5913 rate=1.000002
