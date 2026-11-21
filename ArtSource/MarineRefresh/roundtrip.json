@@ -1,0 +1,50 @@
+{
+  "Dolphin": {
+    "triangles": 7300,
+    "bones": 40,
+    "frames": [
+      1.0,
+      61.0
+    ],
+    "clip": "Armature.001|Dolphin_Swim",
+    "maxDeformation": 0.7353178905668785,
+    "loopSeam": 0.0,
+    "centerMotion": 0.04555285485065984
+  },
+  "Shark": {
+    "triangles": 3690,
+    "bones": 7,
+    "frames": [
+      1.0,
+      91.0
+    ],
+    "clip": "GreatWhite_Rig|GreatWhite_Swim_Loop",
+    "maxDeformation": 0.23750915432849876,
+    "loopSeam": 0.0,
+    "centerMotion": 0.028350316693577217
+  },
+  "CombJelly": {
+    "triangles": 5987,
+    "bones": 10,
+    "frames": [
+      1.0,
+      121.0
+    ],
+    "clip": "CombJelly_Rig|CombJelly_Drift",
+    "maxDeformation": 0.08095851253275199,
+    "loopSeam": 0.0,
+    "centerMotion": 0.004337491710474855
+  },
+  "Lionfish": {
+    "triangles": 19945,
+    "bones": 15,
+    "frames": [
+      1.0,
+      121.0
+    ],
+    "clip": "Lionfish_Rig|Lionfish_Swim",
+    "maxDeformation": 0.11540604041587553,
+    "loopSeam": 0.0,
+    "centerMotion": 0.010255686410218763
+  }
+}

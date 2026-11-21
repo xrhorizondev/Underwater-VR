@@ -1,0 +1,149 @@
+{
+  "status": "passed",
+  "unityVersion": "6000.4.5f1",
+  "installed": {
+    "dolphins": 3,
+    "greatWhiteShark": 1,
+    "combJellies": 25,
+    "lionfish": 1
+  },
+  "trianglesPerModel": {
+    "Dolphin": 7300,
+    "Shark": 3690,
+    "CombJelly": 5987,
+    "Lionfish": 20000
+  },
+  "shapes": {
+    "Dolphin": {
+      "originalTriangles": 31820,
+      "optimizedTriangles": 7300,
+      "reductionPercent": 77.05845380263985,
+      "sampledOriginalVertices": 16776,
+      "surfaceErrorPercentOfLength": {
+        "mean": 0.016086970821314803,
+        "p95": 0.04644915752578527,
+        "p99": 0.057780339557211846,
+        "max": 0.08775716414675117
+      },
+      "silhouetteDirections": 258,
+      "maxSilhouetteSupportErrorPercentOfLength": 0.012873101582505653
+    },
+    "Shark": {
+      "originalTriangles": 3690,
+      "optimizedTriangles": 3690,
+      "reductionPercent": 0.0,
+      "sampledOriginalVertices": 2262,
+      "surfaceErrorPercentOfLength": {
+        "mean": 5.517184729264281E-07,
+        "p95": 2.9802322387695312E-06,
+        "p99": 3.094458378427589E-06,
+        "max": 4.165001143974223E-06
+      },
+      "silhouetteDirections": 258,
+      "maxSilhouetteSupportErrorPercentOfLength": 3.1501450781235008E-06
+    },
+    "CombJelly": {
+      "originalTriangles": 1991807,
+      "optimizedTriangles": 5987,
+      "reductionPercent": 99.69941866857582,
+      "sampledOriginalVertices": 103785,
+      "surfaceErrorPercentOfLength": {
+        "mean": 0.08475469706140722,
+        "p95": 0.20084263291209925,
+        "p99": 0.28185879252851015,
+        "max": 1.0244591161608696
+      },
+      "silhouetteDirections": 258,
+      "maxSilhouetteSupportErrorPercentOfLength": 0.3193028808091858
+    },
+    "Lionfish": {
+      "originalTriangles": 546363,
+      "optimizedTriangles": 20000,
+      "reductionPercent": 96.33943001264727,
+      "sampledOriginalVertices": 112472,
+      "surfaceErrorPercentOfLength": {
+        "mean": 0.03915862752453602,
+        "p95": 0.09795723017305136,
+        "p99": 0.11599694844335318,
+        "max": 0.6877651438117027
+      },
+      "silhouetteDirections": 258,
+      "maxSilhouetteSupportErrorPercentOfLength": 0.2828058848833498
+    }
+  },
+  "fbxRoundtrip": {
+    "Dolphin": {
+      "triangles": 7300,
+      "bones": 40,
+      "frames": [
+        1.0,
+        61.0
+      ],
+      "clip": "Armature.001|Dolphin_Swim",
+      "maxDeformation": 0.7353178905668785,
+      "loopSeam": 0.0,
+      "centerMotion": 0.04555285485065984
+    },
+    "Shark": {
+      "triangles": 3690,
+      "bones": 7,
+      "frames": [
+        1.0,
+        91.0
+      ],
+      "clip": "GreatWhite_Rig|GreatWhite_Swim_Loop",
+      "maxDeformation": 0.23750915432849876,
+      "loopSeam": 0.0,
+      "centerMotion": 0.028350316693577217
+    },
+    "CombJelly": {
+      "triangles": 5987,
+      "bones": 10,
+      "frames": [
+        1.0,
+        121.0
+      ],
+      "clip": "CombJelly_Rig|CombJelly_Drift",
+      "maxDeformation": 0.08095851253275199,
+      "loopSeam": 0.0,
+      "centerMotion": 0.004337491710474855
+    },
+    "Lionfish": {
+      "triangles": 19945,
+      "bones": 15,
+      "frames": [
+        1.0,
+        121.0
+      ],
+      "clip": "Lionfish_Rig|Lionfish_Swim",
+      "maxDeformation": 0.11540604041587553,
+      "loopSeam": 0.0,
+      "centerMotion": 0.010255686410218763
+    }
+  },
+  "unity": {
+    "vertexChecks": 11174550,
+    "minimumSandGapMetres": 0.161314,
+    "patrolSeconds": 120,
+    "patrolPoseChecks": 72000,
+    "spineWarningSurfaces": 7,
+    "hazardStages": "passed",
+    "otherPreparedAnimals": "passed",
+    "shaderBindings": "passed",
+    "leftRightRenderViews": "passed",
+    "playMode": {
+      "status": "passed",
+      "seconds": 30,
+      "guarded": 283,
+      "moving": 282,
+      "clearanceChecks": 83768
+    },
+    "exitCodes": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "deviceTested": false
+}

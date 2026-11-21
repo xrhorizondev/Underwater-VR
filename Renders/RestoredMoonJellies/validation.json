@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "restoredMoonJellies": 25,
+  "retainedCombJellies": 25,
+  "boxJellies": 3,
+  "oldBellAndTentacleGeometry": "retained without vertex reduction",
+  "renderersPerMoon": 1,
+  "previousRenderersPerMoon": 11,
+  "sourceGeometryVertexComparison": "passed",
+  "secondsSimulatedPerMoon": 40,
+  "sandClearanceChecks": 30000,
+  "existingAnimalPlacements": "unchanged",
+  "warningAndOtherAnimalRegression": "passed",
+  "unityExitCodes": [
+    0,
+    0
+  ]
+}

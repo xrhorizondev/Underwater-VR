@@ -1,0 +1,28 @@
+{
+  "source": "D:\\GIT Project\\Underwater-VR\\ArtSource\\MarineRefresh\\Shark.blend",
+  "blender": "5.3.0",
+  "triangles": 3690,
+  "bones": 7,
+  "materials": [
+    "mat_0-megalodon.jpg"
+  ],
+  "clips": [
+    "GreatWhite_Swim_Loop"
+  ],
+  "images": {
+    "Image_0": [
+      1024,
+      512
+    ],
+    "Image_1": [
+      1024,
+      512
+    ],
+    "Image_2": [
+      1024,
+      512
+    ]
+  },
+  "issues": [],
+  "status": "passed"
+}

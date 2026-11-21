@@ -1,6 +1,6 @@
 Shader "Underwater/Imported Squid Fin" {
- Properties {_MainTex("Fin atlas",2D)="white"{} _Color("Tint",Color)=(1,1,1,1)}
- SubShader {Tags {"Queue"="Transparent" "RenderType"="Transparent"} Blend SrcAlpha OneMinusSrcAlpha ZWrite Off Cull Off
+ Properties {_MainTex("Fin atlas",2D)="white"{} _Color("Tint",Color)=(1,1,1,1) [Enum(Front,2,Back,1,Both,0)] _Cull("Face orientation",Float)=0}
+ SubShader {Tags {"Queue"="Transparent" "RenderType"="Transparent"} Blend SrcAlpha OneMinusSrcAlpha ZWrite Off Cull [_Cull]
  Pass {CGPROGRAM
  #pragma vertex vert
  #pragma fragment frag

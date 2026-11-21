@@ -1,0 +1,14 @@
+{
+  "status": "replacement-passed",
+  "replaced": 11,
+  "combJellies": 25,
+  "moonJellies": 0,
+  "boxJellies": 3,
+  "movementSecondsPerComb": 20,
+  "seabedProtection": "passed",
+  "hazards": "passed",
+  "remainingPreparedAnimals": "passed",
+  "unityReplacementExitCode": 0,
+  "broadRegression": "Existing anglerfish patrol threshold failure reproduced unchanged on original scene: distance=5.277522",
+  "deviceTested": false
+}

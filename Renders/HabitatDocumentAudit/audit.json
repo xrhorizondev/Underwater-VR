@@ -1,0 +1,6045 @@
+{
+    "status": "audited",
+    "animals": [
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": -9.0,
+                "y": -30.0,
+                "z": 158.0
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Anglerfish",
+            "name": "Anglerfish",
+            "parent": "05 | The Trench",
+            "position": {
+                "x": 4.0,
+                "y": -45.0,
+                "z": 130.0
+            },
+            "zone": 5,
+            "controllers": [
+                "FishBodyMotion",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "ReefCruiser",
+                "DeepWaterEncounter",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": 1.3670239448547364,
+                "y": 0.3812991976737976,
+                "z": 12.369081497192383
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Blue tang",
+            "name": "Blue tang",
+            "parent": "School | 18 reef fish",
+            "position": {
+                "x": -4.633793830871582,
+                "y": -0.04877212643623352,
+                "z": 7.350769996643066
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": 7.0,
+                "y": -28.806617736816408,
+                "z": 89.80000305175781
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -0.634458065032959,
+                "y": -15.697494506835938,
+                "z": 67.73075866699219
+            },
+            "zone": 3,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 2.2074174880981447,
+                "y": -5.077092170715332,
+                "z": 231.15078735351563
+            },
+            "zone": 8,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": 0.7150201797485352,
+                "y": 1.1022189855575562,
+                "z": 10.8892822265625
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -3.618168354034424,
+                "y": 0.1734817624092102,
+                "z": 11.336044311523438
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": 1.0,
+                "y": -31.0,
+                "z": 166.0
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 2.4912595748901369,
+                "y": -13.758499145507813,
+                "z": 196.69081115722657
+            },
+            "zone": 7,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Dolphin",
+            "name": "Wreck dolphin 3",
+            "parent": "Day 4 wreck encounters",
+            "position": {
+                "x": -1.8971145153045655,
+                "y": -13.5,
+                "z": 63.75
+            },
+            "zone": 3,
+            "controllers": [
+                "SeaLife",
+                "ReefSphereBody",
+                "WreckCreature",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 5.233783721923828,
+                "y": 2.4420926570892336,
+                "z": 22.04189682006836
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 5.349857330322266,
+                "y": 1.549541711807251,
+                "z": 23.289400100708009
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 9.053323745727539,
+                "y": 1.915352702140808,
+                "z": 21.986164093017579
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": -1.3698978424072266,
+                "y": -31.0,
+                "z": 99.96050262451172
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -0.06425714492797852,
+                "y": -6.681087017059326,
+                "z": 38.90786361694336
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 0.3972010612487793,
+                "y": -13.913572311401368,
+                "z": 199.38243103027345
+            },
+            "zone": 7,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lionfish",
+            "name": "Lionfish",
+            "parent": "02 | Rocky Ledge",
+            "position": {
+                "x": 1.0,
+                "y": -8.0,
+                "z": 30.0
+            },
+            "zone": 2,
+            "controllers": [
+                "FishBodyMotion",
+                "SeaLife",
+                "ReefSphereBody",
+                "ReefDangerZone",
+                "FishTouchBody",
+                "ReefEncounter",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -0.05739402770996094,
+                "y": 0.5435006618499756,
+                "z": 12.527013778686524
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 7.346816062927246,
+                "y": 2.5236074924468996,
+                "z": 19.64781379699707
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 5.878993988037109,
+                "y": 2.5239434242248537,
+                "z": 22.989152908325197
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -2.98779296875,
+                "y": -15.73465633392334,
+                "z": 70.84327697753906
+            },
+            "zone": 3,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -0.805465817451477,
+                "y": 1.3288984298706055,
+                "z": 12.344161987304688
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -0.8455615043640137,
+                "y": -16.60848045349121,
+                "z": 71.24346923828125
+            },
+            "zone": 3,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -5.495110034942627,
+                "y": 0.34092146158218386,
+                "z": 9.84847354888916
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 3.754096031188965,
+                "y": 2.186072587966919,
+                "z": 20.086881637573243
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 1.0170879364013672,
+                "y": 1.3897300958633423,
+                "z": 17.98916244506836
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -4.983302593231201,
+                "y": 0.3413650393486023,
+                "z": 11.967147827148438
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 2.03493595123291,
+                "y": -4.9947896003723148,
+                "z": 228.644775390625
+            },
+            "zone": 8,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -5.404514789581299,
+                "y": 1.041472315788269,
+                "z": 9.480226516723633
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": 6.0,
+                "y": -29.0,
+                "z": 169.0
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 7.201720714569092,
+                "y": 2.69317626953125,
+                "z": 23.15433120727539
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": -1.7749969959259034,
+                "y": -31.0,
+                "z": 165.62664794921876
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": -6.757198333740234,
+                "y": -31.0,
+                "z": 95.51229095458985
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": -7.036303997039795,
+                "y": -29.0,
+                "z": 157.37106323242188
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Anglerfish",
+            "name": "Anglerfish",
+            "parent": "05 | The Trench",
+            "position": {
+                "x": 7.0,
+                "y": -45.0,
+                "z": 124.0
+            },
+            "zone": 5,
+            "controllers": [
+                "FishBodyMotion",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "ReefCruiser",
+                "DeepWaterEncounter",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -1.8171420097351075,
+                "y": -4.5244059562683109,
+                "z": 230.03221130371095
+            },
+            "zone": 8,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 3.0470495223999025,
+                "y": 2.1679344177246095,
+                "z": 18.692623138427736
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Dolphin",
+            "name": "Wreck dolphin 2",
+            "parent": "Day 4 wreck encounters",
+            "position": {
+                "x": 5.897114276885986,
+                "y": -13.5,
+                "z": 63.75
+            },
+            "zone": 3,
+            "controllers": [
+                "SeaLife",
+                "ReefSphereBody",
+                "WreckCreature",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -3.88895320892334,
+                "y": -5.635213375091553,
+                "z": 227.29183959960938
+            },
+            "zone": 8,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": 0.5739936828613281,
+                "y": -30.0,
+                "z": 98.39803314208985
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -1.2973766326904297,
+                "y": 1.3212168216705323,
+                "z": 10.363960266113282
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -0.6545805931091309,
+                "y": -16.28513526916504,
+                "z": 70.53553771972656
+            },
+            "zone": 3,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 1.8970756530761719,
+                "y": 2.628739356994629,
+                "z": 20.919387817382814
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 5.472143173217773,
+                "y": 2.16546630859375,
+                "z": 21.21959686279297
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -2.949154853820801,
+                "y": -14.213232040405274,
+                "z": 195.04840087890626
+            },
+            "zone": 7,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 7 reef fish",
+            "position": {
+                "x": 0.589889407157898,
+                "y": -0.8193942308425903,
+                "z": 1.2296724319458008
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 2.246537208557129,
+                "y": -6.636655330657959,
+                "z": 38.21015548706055
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 2.6255626678466799,
+                "y": -6.7746758460998539,
+                "z": 36.410030364990237
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -2.2601006031036379,
+                "y": 1.1018784046173096,
+                "z": 11.37326431274414
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Yellow tang",
+            "name": "Yellow tang",
+            "parent": "School | 7 reef fish",
+            "position": {
+                "x": 0.009660720825195313,
+                "y": 0.12714418768882752,
+                "z": -0.6567074060440064
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": -1.2963690757751465,
+                "y": -31.0,
+                "z": 95.22208404541016
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": 3.0,
+                "y": -31.0,
+                "z": 161.0
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Blue tang",
+            "name": "Blue tang",
+            "parent": "School | 18 reef fish",
+            "position": {
+                "x": -3.938896894454956,
+                "y": -0.3836978077888489,
+                "z": 6.439243316650391
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -0.28452634811401369,
+                "y": -7.448475360870361,
+                "z": 34.869449615478519
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 3.2089462280273439,
+                "y": -6.9948530197143559,
+                "z": 39.00701141357422
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Clownfish",
+            "name": "Clownfish",
+            "parent": "Clownfish coral territory",
+            "position": {
+                "x": -4.185999870300293,
+                "y": -1.100000023841858,
+                "z": 2.700000047683716
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "SeaLife",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": -0.1244192123413086,
+                "y": 0.9594217538833618,
+                "z": 20.66148567199707
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Grouper",
+            "name": "Calm wreck grouper",
+            "parent": "Day 4 wreck encounters",
+            "position": {
+                "x": -1.7999999523162842,
+                "y": -16.600000381469728,
+                "z": 63.0
+            },
+            "zone": 3,
+            "controllers": [
+                "SeaLife",
+                "ReefSphereBody",
+                "WreckCreature",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Blue tang",
+            "name": "Blue tang",
+            "parent": "School | 18 reef fish",
+            "position": {
+                "x": -5.032467842102051,
+                "y": -0.264701247215271,
+                "z": 8.173881530761719
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 2.086942672729492,
+                "y": -5.050641059875488,
+                "z": 230.50450134277345
+            },
+            "zone": 8,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Octopus",
+            "name": "Day 3 rocky octopus",
+            "parent": "",
+            "position": {
+                "x": -1.0,
+                "y": -11.426127433776856,
+                "z": 31.0
+            },
+            "zone": 2,
+            "controllers": [
+                "ReefSphereBody",
+                "SeaLife",
+                "ReefEncounter",
+                "OctopusGroundClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": 4.984712600708008,
+                "y": -31.0,
+                "z": 159.02493286132813
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -0.9047838449478149,
+                "y": 0.4671775698661804,
+                "z": 12.153302192687989
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -0.8626561164855957,
+                "y": -15.373157501220704,
+                "z": 68.76879119873047
+            },
+            "zone": 3,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 0.2259221076965332,
+                "y": -7.494399070739746,
+                "z": 35.30244064331055
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": 0.05341482162475586,
+                "y": 1.2344238758087159,
+                "z": 9.61277961730957
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": 0.2447902113199234,
+                "y": -27.0,
+                "z": 88.21072387695313
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 5.7333574295043949,
+                "y": 2.404078483581543,
+                "z": 19.868738174438478
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": 1.4468402862548829,
+                "y": 0.9000775814056397,
+                "z": 10.48419189453125
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 6.452397346496582,
+                "y": 1.007629632949829,
+                "z": 17.128841400146486
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Anglerfish",
+            "name": "Anglerfish",
+            "parent": "05 | The Trench",
+            "position": {
+                "x": -3.0,
+                "y": -48.0,
+                "z": 133.0
+            },
+            "zone": 5,
+            "controllers": [
+                "FishBodyMotion",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "ReefCruiser",
+                "DeepWaterEncounter",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": 8.859423637390137,
+                "y": -29.100000381469728,
+                "z": 154.36434936523438
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 1.3895443677902222,
+                "y": -14.194196701049805,
+                "z": 197.15660095214845
+            },
+            "zone": 7,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 2.61160945892334,
+                "y": -4.626471519470215,
+                "z": 228.4918670654297
+            },
+            "zone": 8,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Clownfish",
+            "name": "Clownfish",
+            "parent": "Clownfish coral territory",
+            "position": {
+                "x": -2.5,
+                "y": -0.9000000357627869,
+                "z": 3.9000000953674318
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "SeaLife",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Blue tang",
+            "name": "Blue tang",
+            "parent": "School | 18 reef fish",
+            "position": {
+                "x": -7.160850524902344,
+                "y": -0.15565267205238343,
+                "z": 7.196188926696777
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": -8.0,
+                "y": -29.0,
+                "z": 160.0
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 9.779705047607422,
+                "y": 1.689935326576233,
+                "z": 22.480674743652345
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": -3.1293225288391115,
+                "y": -29.0,
+                "z": 164.79701232910157
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": -4.0,
+                "y": -31.0,
+                "z": 96.0
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 6.254258632659912,
+                "y": 1.615553617477417,
+                "z": 20.658767700195314
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -1.8376240730285645,
+                "y": -13.482255935668946,
+                "z": 195.9986572265625
+            },
+            "zone": 7,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -1.394514560699463,
+                "y": -16.182279586791993,
+                "z": 71.36292266845703
+            },
+            "zone": 3,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Ray tail",
+            "name": "Tail-only caution zone",
+            "parent": "Resting stingray",
+            "position": {
+                "x": -2.0,
+                "y": -8.265000343322754,
+                "z": 222.9499969482422
+            },
+            "zone": 8,
+            "controllers": [
+                "SeaLife",
+                "ReefDangerZone"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -2.6205453872680666,
+                "y": -5.574374675750732,
+                "z": 229.79710388183595
+            },
+            "zone": 8,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Manta",
+            "name": "Manta ray gliding over the reef",
+            "parent": "UNDERWATER | Living reef",
+            "position": {
+                "x": -3.0,
+                "y": 2.5999999046325685,
+                "z": 8.0
+            },
+            "zone": 1,
+            "controllers": [
+                "MarineSwimmer",
+                "SeaLife",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -2.256558418273926,
+                "y": -13.843280792236329,
+                "z": 197.64981079101563
+            },
+            "zone": 7,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -4.093534469604492,
+                "y": 0.34578779339790347,
+                "z": 11.073911666870118
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -1.32551908493042,
+                "y": -4.660817623138428,
+                "z": 229.20431518554688
+            },
+            "zone": 8,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Grouper",
+            "name": "Calm finale grouper",
+            "parent": "Day 6 open water and finale",
+            "position": {
+                "x": 2.0,
+                "y": -7.0,
+                "z": 225.0
+            },
+            "zone": 8,
+            "controllers": [
+                "ReefSphereBody",
+                "SeaLife",
+                "FishBodyMotion",
+                "ReefCruiser",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 3.903487205505371,
+                "y": -4.42522668838501,
+                "z": 231.02569580078126
+            },
+            "zone": 8,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -3.0856027603149416,
+                "y": -13.789453506469727,
+                "z": 198.3973388671875
+            },
+            "zone": 7,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Blue tang",
+            "name": "Blue tang",
+            "parent": "School | 18 reef fish",
+            "position": {
+                "x": -5.101052284240723,
+                "y": -0.4811847507953644,
+                "z": 6.518233776092529
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 4.759299278259277,
+                "y": 2.78708553314209,
+                "z": 21.205495834350587
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 2.779581069946289,
+                "y": -15.429208755493164,
+                "z": 69.22491455078125
+            },
+            "zone": 3,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -2.063906192779541,
+                "y": 0.5449139475822449,
+                "z": 10.25634479522705
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": 6.0,
+                "y": -29.0,
+                "z": 165.0
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 2.7793664932250978,
+                "y": -6.837050914764404,
+                "z": 36.97053146362305
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 3.574610710144043,
+                "y": 2.7820277214050295,
+                "z": 17.9421329498291
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 8.189748764038086,
+                "y": 2.764279842376709,
+                "z": 22.49431610107422
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 0.9772467613220215,
+                "y": -16.508333206176759,
+                "z": 69.74372100830078
+            },
+            "zone": 3,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 5.982494354248047,
+                "y": 1.9549006223678589,
+                "z": 23.108800888061525
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 7.862710952758789,
+                "y": 1.697675347328186,
+                "z": 18.304176330566408
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Blue tang",
+            "name": "Blue tang",
+            "parent": "School | 18 reef fish",
+            "position": {
+                "x": -4.1743550300598148,
+                "y": -0.2723950147628784,
+                "z": 7.855515956878662
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": 0.0,
+                "y": -30.0,
+                "z": 90.0
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": -1.3216772079467774,
+                "y": 3.0048184394836427,
+                "z": 18.907756805419923
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 1.882140040397644,
+                "y": -16.06597328186035,
+                "z": 67.74785614013672
+            },
+            "zone": 3,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": 7.0,
+                "y": -28.806617736816408,
+                "z": 87.0
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Stingray",
+            "name": "Resting stingray",
+            "parent": "08 | Wreck & Rays",
+            "position": {
+                "x": 1.0,
+                "y": -8.300000190734864,
+                "z": 228.0
+            },
+            "zone": 8,
+            "controllers": [
+                "SeaLife",
+                "ReefSphereBody",
+                "StingraySwimmer",
+                "FishTouchBody",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -2.8171768188476564,
+                "y": -6.496723175048828,
+                "z": 36.789588928222659
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lumen",
+            "name": "Lumen",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": 0.0,
+                "y": -30.0,
+                "z": 99.0
+            },
+            "zone": 4,
+            "controllers": [
+                "FishBodyMotion",
+                "SeaLife",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "ReefFishFollower",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Clownfish",
+            "name": "Clownfish",
+            "parent": "Clownfish coral territory",
+            "position": {
+                "x": -3.5,
+                "y": -0.9000000357627869,
+                "z": 3.1000001430511476
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "SeaLife",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": -1.3598449230194092,
+                "y": -31.0,
+                "z": 153.2232208251953
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Turtle",
+            "name": "Loggerhead sea turtle",
+            "parent": "UNDERWATER | Living reef",
+            "position": {
+                "x": 1.7000000476837159,
+                "y": -0.30000001192092898,
+                "z": 7.5
+            },
+            "zone": 1,
+            "controllers": [
+                "TurtleSwimmer",
+                "SeaLife",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 2.843484878540039,
+                "y": -16.388172149658204,
+                "z": 67.384521484375
+            },
+            "zone": 3,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Blue tang",
+            "name": "Blue tang",
+            "parent": "School | 18 reef fish",
+            "position": {
+                "x": -3.110600709915161,
+                "y": -0.4717111885547638,
+                "z": 6.479922294616699
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -1.5125534534454346,
+                "y": 0.2921050190925598,
+                "z": 11.547080039978028
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -2.3900632858276369,
+                "y": -14.575407028198243,
+                "z": 195.62559509277345
+            },
+            "zone": 7,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Anglerfish",
+            "name": "Anglerfish",
+            "parent": "05 | The Trench",
+            "position": {
+                "x": 7.0,
+                "y": -49.47711944580078,
+                "z": 122.0
+            },
+            "zone": 5,
+            "controllers": [
+                "FishBodyMotion",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "ReefCruiser",
+                "DeepWaterEncounter",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": -0.04673194885253906,
+                "y": 1.7634586095809937,
+                "z": 17.44530487060547
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 7.4770612716674809,
+                "y": 2.0834670066833498,
+                "z": 20.56934356689453
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Anglerfish",
+            "name": "Anglerfish",
+            "parent": "05 | The Trench",
+            "position": {
+                "x": -9.0,
+                "y": -48.84095764160156,
+                "z": 131.0
+            },
+            "zone": 5,
+            "controllers": [
+                "FishBodyMotion",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "ReefCruiser",
+                "DeepWaterEncounter",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -1.4956269264221192,
+                "y": -7.376297473907471,
+                "z": 38.90542984008789
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 8.823982238769532,
+                "y": 2.764422655105591,
+                "z": 17.23796844482422
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 1.0479519367218018,
+                "y": 3.380491256713867,
+                "z": 24.284324645996095
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 5.60984992980957,
+                "y": 1.1744778156280518,
+                "z": 17.68640899658203
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 3.576396942138672,
+                "y": 2.0338284969329836,
+                "z": 22.684389114379884
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": -9.847748756408692,
+                "y": -30.0,
+                "z": 160.6685791015625
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 2.466123580932617,
+                "y": 3.758121967315674,
+                "z": 23.0283203125
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 0.34121108055114748,
+                "y": 2.949801445007324,
+                "z": 17.339067459106447
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -4.318025588989258,
+                "y": 1.049024224281311,
+                "z": 9.039045333862305
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -0.47180986404418948,
+                "y": -13.53126049041748,
+                "z": 199.04901123046876
+            },
+            "zone": 7,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -1.9900403022766114,
+                "y": -13.408188819885254,
+                "z": 195.28871154785157
+            },
+            "zone": 7,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": -4.637486934661865,
+                "y": -27.0,
+                "z": 95.49716186523438
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 8.484673500061036,
+                "y": 1.5789967775344849,
+                "z": 19.43971061706543
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": 0.5245504379272461,
+                "y": -29.100000381469728,
+                "z": 154.02297973632813
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Clownfish",
+            "name": "Clownfish",
+            "parent": "Clownfish coral territory",
+            "position": {
+                "x": -3.4010000228881838,
+                "y": -1.100000023841858,
+                "z": 3.5
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "SeaLife",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -2.5471248626708986,
+                "y": -6.556686878204346,
+                "z": 35.68781661987305
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": -0.8589696884155273,
+                "y": 1.3897913694381714,
+                "z": 22.370180130004884
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 9.975549697875977,
+                "y": 3.0435924530029299,
+                "z": 19.235872268676759
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 2.0086002349853517,
+                "y": -7.058312892913818,
+                "z": 38.70903778076172
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Blue tang",
+            "name": "Blue tang",
+            "parent": "School | 18 reef fish",
+            "position": {
+                "x": -6.653253555297852,
+                "y": -0.49818092584609988,
+                "z": 7.011443138122559
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 3.6372947692871095,
+                "y": -16.178037643432618,
+                "z": 70.56310272216797
+            },
+            "zone": 3,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -2.151235580444336,
+                "y": -5.192039489746094,
+                "z": 229.64739990234376
+            },
+            "zone": 8,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -3.413267135620117,
+                "y": -4.572993755340576,
+                "z": 228.87509155273438
+            },
+            "zone": 8,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -1.0185961723327637,
+                "y": -4.86785364151001,
+                "z": 228.2984619140625
+            },
+            "zone": 8,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 7 reef fish",
+            "position": {
+                "x": 0.7093362808227539,
+                "y": -0.22299836575984956,
+                "z": 1.7994883060455323
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -1.0926480293273926,
+                "y": -7.085878372192383,
+                "z": 38.64439392089844
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moray",
+            "name": "Moray in wreck stern opening",
+            "parent": "Day 4 wreck encounters",
+            "position": {
+                "x": -3.2242531776428224,
+                "y": -18.808385848999025,
+                "z": 69.96856689453125
+            },
+            "zone": 3,
+            "controllers": [
+                "SeaLife",
+                "ReefSphereBody",
+                "WreckCreature",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Stingray",
+            "name": "Resting stingray",
+            "parent": "08 | Wreck & Rays",
+            "position": {
+                "x": 4.0,
+                "y": -8.300000190734864,
+                "z": 232.0
+            },
+            "zone": 8,
+            "controllers": [
+                "SeaLife",
+                "ReefSphereBody",
+                "StingraySwimmer",
+                "FishTouchBody",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Anglerfish",
+            "name": "Anglerfish",
+            "parent": "05 | The Trench",
+            "position": {
+                "x": 3.0,
+                "y": -47.0,
+                "z": 125.0
+            },
+            "zone": 5,
+            "controllers": [
+                "FishBodyMotion",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "ReefCruiser",
+                "DeepWaterEncounter",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -3.318819999694824,
+                "y": -4.809577465057373,
+                "z": 227.73779296875
+            },
+            "zone": 8,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Blue tang",
+            "name": "Blue tang",
+            "parent": "School | 18 reef fish",
+            "position": {
+                "x": -6.516494274139404,
+                "y": -0.6453658938407898,
+                "z": 7.708766460418701
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 0.32808446884155276,
+                "y": -6.344182968139648,
+                "z": 37.796085357666019
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -0.3149690628051758,
+                "y": 1.3559937477111817,
+                "z": 11.447002410888672
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -2.595433235168457,
+                "y": -14.54990291595459,
+                "z": 198.90518188476563
+            },
+            "zone": 7,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 1.0074728727340699,
+                "y": -13.995745658874512,
+                "z": 195.34616088867188
+            },
+            "zone": 7,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": -4.0,
+                "y": -31.0,
+                "z": 99.0
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -1.9109892845153809,
+                "y": -14.627581596374512,
+                "z": 198.99171447753907
+            },
+            "zone": 7,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": 1.1867629289627076,
+                "y": -27.0,
+                "z": 100.46394348144531
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": 1.4192581176757813,
+                "y": 0.3369918465614319,
+                "z": 10.795635223388672
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -2.1499853134155275,
+                "y": -7.393397808074951,
+                "z": 35.90959930419922
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 0.43849992752075198,
+                "y": -6.864871025085449,
+                "z": 38.907814025878909
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 8.845222473144532,
+                "y": 2.129769802093506,
+                "z": 18.339094161987306
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 5.202083587646484,
+                "y": 2.6588189601898195,
+                "z": 21.506683349609376
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 9.343867301940918,
+                "y": 1.9209067821502686,
+                "z": 20.010112762451173
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -4.104887962341309,
+                "y": 0.2870418429374695,
+                "z": 12.840485572814942
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": 0.0,
+                "y": -27.0,
+                "z": 91.0
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 6.871222496032715,
+                "y": 1.1031149625778199,
+                "z": 22.312955856323243
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": 0.0,
+                "y": -27.0,
+                "z": 103.0
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Turtle",
+            "name": "Loggerhead sea turtle",
+            "parent": "UNDERWATER | Living reef",
+            "position": {
+                "x": 1.0,
+                "y": -14.0,
+                "z": 196.0
+            },
+            "zone": 7,
+            "controllers": [
+                "TurtleSwimmer",
+                "SeaLife",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": -9.0,
+                "y": -27.0,
+                "z": 98.0
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 1.2873258590698243,
+                "y": 1.1226776838302613,
+                "z": 16.49769401550293
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Dolphin",
+            "name": "Wreck dolphin 1",
+            "parent": "Day 4 wreck encounters",
+            "position": {
+                "x": 2.0,
+                "y": -13.5,
+                "z": 70.5
+            },
+            "zone": 3,
+            "controllers": [
+                "SeaLife",
+                "ReefSphereBody",
+                "WreckCreature",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 7.2532501220703129,
+                "y": 3.067317008972168,
+                "z": 20.75859260559082
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Anglerfish",
+            "name": "Anglerfish",
+            "parent": "05 | The Trench",
+            "position": {
+                "x": -2.975752592086792,
+                "y": -49.9947509765625,
+                "z": 132.7237091064453
+            },
+            "zone": 5,
+            "controllers": [
+                "FishBodyMotion",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "ReefCruiser",
+                "DeepWaterEncounter",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -2.374283790588379,
+                "y": -16.7109317779541,
+                "z": 67.5442886352539
+            },
+            "zone": 3,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Blue tang",
+            "name": "Blue tang",
+            "parent": "School | 18 reef fish",
+            "position": {
+                "x": -4.2421956062316898,
+                "y": -0.49058109521865847,
+                "z": 6.105330944061279
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 1.3692635297775269,
+                "y": -13.408943176269532,
+                "z": 196.37319946289063
+            },
+            "zone": 7,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 0.9690403938293457,
+                "y": -15.982259750366211,
+                "z": 68.53949737548828
+            },
+            "zone": 3,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -4.281918048858643,
+                "y": 0.9698679447174072,
+                "z": 10.729142189025879
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -3.3605527877807619,
+                "y": -16.008512496948243,
+                "z": 69.22833251953125
+            },
+            "zone": 3,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Reef shark",
+            "name": "Distant reef shark",
+            "parent": "Day 6 open water and finale",
+            "position": {
+                "x": 19.0,
+                "y": -11.0,
+                "z": 194.0
+            },
+            "zone": 7,
+            "controllers": [
+                "ReefSphereBody",
+                "SeaLife",
+                "OpenWaterShark",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 3.3853225708007814,
+                "y": -13.404923439025879,
+                "z": 198.24774169921876
+            },
+            "zone": 7,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 3.445371627807617,
+                "y": 1.1003891229629517,
+                "z": 17.87030029296875
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": -1.488417625427246,
+                "y": 4.176758766174316,
+                "z": 22.324844360351564
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -2.4868814945220949,
+                "y": 1.429001808166504,
+                "z": 12.046552658081055
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 7.830656051635742,
+                "y": 2.0719847679138185,
+                "z": 18.992910385131837
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 0.2974419593811035,
+                "y": -4.989091873168945,
+                "z": 228.21083068847657
+            },
+            "zone": 8,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Blue tang",
+            "name": "Blue tang",
+            "parent": "School | 18 reef fish",
+            "position": {
+                "x": -5.021670818328857,
+                "y": -0.696811318397522,
+                "z": 7.403872489929199
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -0.4376779794692993,
+                "y": 0.64044588804245,
+                "z": 9.578948974609375
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Box jelly",
+            "name": "Box jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": 8.0,
+                "y": -30.0,
+                "z": 165.0
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefDangerZone",
+                "ReefJellyMotion",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Yellow tang",
+            "name": "Yellow tang",
+            "parent": "School | 7 reef fish",
+            "position": {
+                "x": 1.8508672714233399,
+                "y": -0.026680558919906617,
+                "z": 0.022974610328674318
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": -3.1152286529541017,
+                "y": -26.951440811157228,
+                "z": 171.58859252929688
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -3.520411491394043,
+                "y": -14.660042762756348,
+                "z": 196.2838897705078
+            },
+            "zone": 7,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -0.12738275527954102,
+                "y": -7.247080326080322,
+                "z": 36.0368537902832
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Anglerfish",
+            "name": "Anglerfish",
+            "parent": "05 | The Trench",
+            "position": {
+                "x": -2.0,
+                "y": -48.0,
+                "z": 125.0
+            },
+            "zone": 5,
+            "controllers": [
+                "FishBodyMotion",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "ReefCruiser",
+                "DeepWaterEncounter",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -4.8079681396484379,
+                "y": 0.281673789024353,
+                "z": 9.803831100463868
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Blue tang",
+            "name": "Blue tang",
+            "parent": "School | 18 reef fish",
+            "position": {
+                "x": -6.337429046630859,
+                "y": -0.1772179901599884,
+                "z": 7.786304473876953
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 8.754739761352539,
+                "y": 2.061265707015991,
+                "z": 17.625917434692384
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Anglerfish",
+            "name": "Anglerfish",
+            "parent": "05 | The Trench",
+            "position": {
+                "x": 0.0,
+                "y": -48.0,
+                "z": 123.0
+            },
+            "zone": 5,
+            "controllers": [
+                "FishBodyMotion",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "ReefCruiser",
+                "DeepWaterEncounter",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": -1.573899269104004,
+                "y": 2.968860626220703,
+                "z": 18.149734497070314
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 3.1406564712524416,
+                "y": -14.15832233428955,
+                "z": 197.0348663330078
+            },
+            "zone": 7,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Copperband butterflyfish",
+            "name": "Copperband butterflyfish",
+            "parent": "School | 7 reef fish",
+            "position": {
+                "x": -0.08919239044189453,
+                "y": -0.2419881373643875,
+                "z": 2.052567958831787
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 3.9699888229370119,
+                "y": -5.183967590332031,
+                "z": 226.93643188476563
+            },
+            "zone": 8,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 5.790611267089844,
+                "y": 1.44230055809021,
+                "z": 21.76636505126953
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": -9.0,
+                "y": -27.009618759155275,
+                "z": 169.0
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": -3.0,
+                "y": -31.0,
+                "z": 93.0
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 9.948627471923829,
+                "y": 1.692799687385559,
+                "z": 17.661653518676759
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 1.5746313333511353,
+                "y": 1.9857251644134522,
+                "z": 20.866212844848634
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 0.8308987617492676,
+                "y": -4.760507106781006,
+                "z": 229.5358123779297
+            },
+            "zone": 8,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -2.2464280128479006,
+                "y": 0.7719544768333435,
+                "z": 12.498835563659668
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -3.597079277038574,
+                "y": -4.3358283042907719,
+                "z": 229.88197326660157
+            },
+            "zone": 8,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -2.236299514770508,
+                "y": -5.0135979652404789,
+                "z": 230.66424560546876
+            },
+            "zone": 8,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 2.1340742111206056,
+                "y": -14.110231399536133,
+                "z": 195.02545166015626
+            },
+            "zone": 7,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -3.0225038528442385,
+                "y": 1.3496713638305665,
+                "z": 11.209585189819336
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -3.092513084411621,
+                "y": 0.8178091645240784,
+                "z": 12.757285118103028
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Blue tang",
+            "name": "Blue tang",
+            "parent": "School | 18 reef fish",
+            "position": {
+                "x": -3.56465482711792,
+                "y": -0.6838490962982178,
+                "z": 6.144237041473389
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 9.43057918548584,
+                "y": 2.937138795852661,
+                "z": 22.204002380371095
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 0.2659173011779785,
+                "y": -15.903244972229004,
+                "z": 66.83878326416016
+            },
+            "zone": 3,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 2.0312442779541017,
+                "y": -16.06806182861328,
+                "z": 70.006591796875
+            },
+            "zone": 3,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -2.840121269226074,
+                "y": -13.774154663085938,
+                "z": 196.57398986816407
+            },
+            "zone": 7,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -0.6138777732849121,
+                "y": -14.38503360748291,
+                "z": 195.14181518554688
+            },
+            "zone": 7,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": -7.0,
+                "y": -27.0,
+                "z": 97.0
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -0.7427307367324829,
+                "y": 1.047034740447998,
+                "z": 12.863037109375
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Blue tang",
+            "name": "Blue tang",
+            "parent": "School | 18 reef fish",
+            "position": {
+                "x": -6.625974655151367,
+                "y": -0.46001699566841128,
+                "z": 5.881059646606445
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": 0.6287751197814941,
+                "y": 0.537338137626648,
+                "z": 12.171645164489746
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": 0.8432302474975586,
+                "y": 0.5412147045135498,
+                "z": 10.064675331115723
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 4.2612409591674809,
+                "y": 1.0902392864227296,
+                "z": 17.957130432128908
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 1.1092575788497925,
+                "y": -14.700597763061524,
+                "z": 194.7080078125
+            },
+            "zone": 7,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -0.6386761665344238,
+                "y": -6.608998775482178,
+                "z": 37.707481384277347
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -2.3925838470458986,
+                "y": -5.40340518951416,
+                "z": 227.6181640625
+            },
+            "zone": 8,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": 3.0,
+                "y": -30.0,
+                "z": 97.0
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Blue tang",
+            "name": "Blue tang",
+            "parent": "School | 7 reef fish",
+            "position": {
+                "x": 2.0082035064697267,
+                "y": -0.4956126809120178,
+                "z": 1.1141692399978638
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Ray tail",
+            "name": "Tail-only caution zone",
+            "parent": "Resting stingray",
+            "position": {
+                "x": 1.0,
+                "y": -8.265000343322754,
+                "z": 226.9499969482422
+            },
+            "zone": 8,
+            "controllers": [
+                "SeaLife",
+                "ReefDangerZone"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Box jelly",
+            "name": "Box jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": -6.0,
+                "y": -27.0,
+                "z": 157.0
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefDangerZone",
+                "ReefJellyMotion",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -4.208259582519531,
+                "y": 0.5057103037834168,
+                "z": 9.97995662689209
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -2.4976806640625,
+                "y": -15.736885070800782,
+                "z": 69.63904571533203
+            },
+            "zone": 3,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 3.974029541015625,
+                "y": -7.370471477508545,
+                "z": 39.206661224365237
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 0.092396080493927,
+                "y": 2.335983991622925,
+                "z": 21.036100387573243
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": -2.6312687397003176,
+                "y": -30.0,
+                "z": 90.9572982788086
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": -2.0,
+                "y": -29.0,
+                "z": 105.0
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": 4.2060041427612309,
+                "y": -29.0,
+                "z": 162.8502197265625
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Blue tang",
+            "name": "Blue tang",
+            "parent": "School | 18 reef fish",
+            "position": {
+                "x": -3.8952131271362306,
+                "y": -0.02092042565345764,
+                "z": 6.102336883544922
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 2.632070541381836,
+                "y": -15.995845794677735,
+                "z": 70.48387908935547
+            },
+            "zone": 3,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -3.6085691452026369,
+                "y": -4.7234578132629398,
+                "z": 230.45262145996095
+            },
+            "zone": 8,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": -10.290546417236329,
+                "y": -27.0,
+                "z": 95.51514434814453
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 9.513325691223145,
+                "y": 1.5110617876052857,
+                "z": 21.546110153198243
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -3.361758232116699,
+                "y": -6.5283050537109379,
+                "z": 39.34391784667969
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": -3.0,
+                "y": -29.0,
+                "z": 162.0
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": 7.6131391525268559,
+                "y": -29.0,
+                "z": 166.7113800048828
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 3.9736156463623049,
+                "y": -7.43948221206665,
+                "z": 36.76197814941406
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 8.403884887695313,
+                "y": 1.2486788034439088,
+                "z": 22.354944229125978
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 3.2215957641601564,
+                "y": -13.512889862060547,
+                "z": 194.7128448486328
+            },
+            "zone": 7,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": 1.3988542556762696,
+                "y": 0.8548516035079956,
+                "z": 9.70350170135498
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Anglerfish",
+            "name": "Anglerfish",
+            "parent": "05 | The Trench",
+            "position": {
+                "x": 0.0,
+                "y": -51.0,
+                "z": 126.0
+            },
+            "zone": 5,
+            "controllers": [
+                "FishBodyMotion",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "ReefCruiser",
+                "DeepWaterEncounter",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 6.03150749206543,
+                "y": 1.128252625465393,
+                "z": 18.985109329223634
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 1.3364895582199097,
+                "y": -15.616750717163086,
+                "z": 70.47689819335938
+            },
+            "zone": 3,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Blue tang",
+            "name": "Blue tang",
+            "parent": "School | 18 reef fish",
+            "position": {
+                "x": -5.755067348480225,
+                "y": -0.4970424771308899,
+                "z": 7.199295997619629
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 1.1707667112350464,
+                "y": -6.559435844421387,
+                "z": 38.18687438964844
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 2.7894649505615236,
+                "y": -15.541753768920899,
+                "z": 67.35130310058594
+            },
+            "zone": 3,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": 7.942525863647461,
+                "y": -27.573841094970704,
+                "z": 169.55648803710938
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -2.608409881591797,
+                "y": -4.767055511474609,
+                "z": 231.14321899414063
+            },
+            "zone": 8,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": 2.0,
+                "y": -30.0,
+                "z": 101.0
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": 6.0,
+                "y": -28.0,
+                "z": 104.0
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -3.434760570526123,
+                "y": 0.2965320944786072,
+                "z": 10.162166595458985
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": 9.654257774353028,
+                "y": -27.573841094970704,
+                "z": 167.34063720703126
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Clownfish",
+            "name": "Clownfish",
+            "parent": "Clownfish coral territory",
+            "position": {
+                "x": -2.0,
+                "y": -1.100000023841858,
+                "z": 4.300000190734863
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "SeaLife",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 7.650869369506836,
+                "y": 2.615816116333008,
+                "z": 16.527271270751954
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -4.716993808746338,
+                "y": 0.9851541519165039,
+                "z": 11.988192558288575
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Blue tang",
+            "name": "Blue tang",
+            "parent": "School | 18 reef fish",
+            "position": {
+                "x": -5.229109764099121,
+                "y": -0.40823087096214297,
+                "z": 7.294037818908691
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -3.0251855850219728,
+                "y": -16.6118106842041,
+                "z": 70.19818115234375
+            },
+            "zone": 3,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 8.915761947631836,
+                "y": 1.3779367208480836,
+                "z": 18.757558822631837
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Blue tang",
+            "name": "Blue tang",
+            "parent": "School | 18 reef fish",
+            "position": {
+                "x": -3.0491809844970705,
+                "y": -0.3815270662307739,
+                "z": 7.485648155212402
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 5.026551246643066,
+                "y": 2.20428466796875,
+                "z": 16.981754302978517
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": -8.610349655151368,
+                "y": -31.0,
+                "z": 155.29058837890626
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 1.2802408933639527,
+                "y": -14.361004829406739,
+                "z": 199.26971435546876
+            },
+            "zone": 7,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 6.887788772583008,
+                "y": 2.283370018005371,
+                "z": 18.31049156188965
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -0.2420182228088379,
+                "y": -16.519275665283204,
+                "z": 68.31951141357422
+            },
+            "zone": 3,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": -1.0,
+                "y": -31.0,
+                "z": 156.0
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Anglerfish",
+            "name": "Anglerfish",
+            "parent": "05 | The Trench",
+            "position": {
+                "x": -1.9584962129592896,
+                "y": -48.32201385498047,
+                "z": 120.13231658935547
+            },
+            "zone": 5,
+            "controllers": [
+                "FishBodyMotion",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "ReefCruiser",
+                "DeepWaterEncounter",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 2.3832597732543947,
+                "y": -5.46845817565918,
+                "z": 228.18736267089845
+            },
+            "zone": 8,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Stingray",
+            "name": "Resting stingray",
+            "parent": "08 | Wreck & Rays",
+            "position": {
+                "x": -2.0,
+                "y": -8.300000190734864,
+                "z": 224.0
+            },
+            "zone": 8,
+            "controllers": [
+                "SeaLife",
+                "ReefSphereBody",
+                "StingraySwimmer",
+                "FishTouchBody",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Fire coral",
+            "name": "Scanned Secale | Smithsonian",
+            "parent": "01 | Sunlit Reef",
+            "position": {
+                "x": -3.0,
+                "y": -2.721630096435547,
+                "z": 5.0
+            },
+            "zone": 1,
+            "controllers": [
+                "SeaLife",
+                "ReefDangerZone"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 3.7344913482666017,
+                "y": -13.359703063964844,
+                "z": 196.71951293945313
+            },
+            "zone": 7,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 2.920764923095703,
+                "y": -4.374024868011475,
+                "z": 227.01931762695313
+            },
+            "zone": 8,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": -0.2859210968017578,
+                "y": 1.1511943340301514,
+                "z": 19.4127254486084
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -1.8620624542236329,
+                "y": 0.9372218251228333,
+                "z": 9.97003173828125
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 3.0097503662109377,
+                "y": 2.251009225845337,
+                "z": 21.797462463378908
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 0.6699106693267822,
+                "y": 2.2522764205932619,
+                "z": 20.001420974731447
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Royal gramma",
+            "name": "Royal gramma",
+            "parent": "School | 7 reef fish",
+            "position": {
+                "x": -0.4174633026123047,
+                "y": -0.09405517578125,
+                "z": -0.07724511623382569
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Anglerfish",
+            "name": "Anglerfish",
+            "parent": "05 | The Trench",
+            "position": {
+                "x": -4.0,
+                "y": -48.30926513671875,
+                "z": 121.0
+            },
+            "zone": 5,
+            "controllers": [
+                "FishBodyMotion",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "ReefCruiser",
+                "DeepWaterEncounter",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 0.8286021947860718,
+                "y": 2.5770065784454347,
+                "z": 21.275653839111329
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 3.915255546569824,
+                "y": 2.6881606578826906,
+                "z": 19.41566276550293
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 36 reef fish",
+            "position": {
+                "x": -5.274853706359863,
+                "y": 0.22696655988693238,
+                "z": 11.382396697998047
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 3.5938310623168947,
+                "y": -15.559261322021485,
+                "z": 69.228759765625
+            },
+            "zone": 3,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 9.09626293182373,
+                "y": 2.322110891342163,
+                "z": 16.6208438873291
+            },
+            "zone": 1,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 0.6822090148925781,
+                "y": 1.0939791202545167,
+                "z": 19.47898292541504
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Ray tail",
+            "name": "Tail-only caution zone",
+            "parent": "Resting stingray",
+            "position": {
+                "x": 4.0,
+                "y": -8.265000343322754,
+                "z": 230.9499969482422
+            },
+            "zone": 8,
+            "controllers": [
+                "SeaLife",
+                "ReefDangerZone"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 2.164255142211914,
+                "y": -5.406172275543213,
+                "z": 227.1312255859375
+            },
+            "zone": 8,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 1.7565754652023316,
+                "y": -15.473681449890137,
+                "z": 71.23605346679688
+            },
+            "zone": 3,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Sergeant major",
+            "name": "Sergeant major",
+            "parent": "School | 65 reef fish",
+            "position": {
+                "x": 9.680482864379883,
+                "y": 2.164222240447998,
+                "z": 20.80344009399414
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 3.6515426635742189,
+                "y": -7.259422779083252,
+                "z": 35.17747497558594
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": -11.756002426147461,
+                "y": -27.009618759155275,
+                "z": 168.50558471679688
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Box jelly",
+            "name": "Box jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": 8.0,
+                "y": -28.0,
+                "z": 169.0
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefDangerZone",
+                "ReefJellyMotion",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": 2.790691375732422,
+                "y": -6.804764747619629,
+                "z": 35.20032501220703
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": -0.5881648063659668,
+                "y": -30.0,
+                "z": 102.06836700439453
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Comb jelly",
+            "name": "Comb jelly",
+            "parent": "04 | Twilight Drift",
+            "position": {
+                "x": -6.0,
+                "y": -31.0,
+                "z": 107.0
+            },
+            "zone": 4,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Moon jelly",
+            "name": "Moon jelly",
+            "parent": "06 | Jellyfish Drift",
+            "position": {
+                "x": -7.0,
+                "y": -31.0,
+                "z": 153.0
+            },
+            "zone": 6,
+            "controllers": [
+                "SeaLife",
+                "ReefJellyMotion",
+                "ReefSphereBody",
+                "DeepWaterEncounter",
+                "ReefCreatureInfo",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Lyretail anthias",
+            "name": "Lyretail anthias",
+            "parent": "School | 24 reef fish",
+            "position": {
+                "x": -0.365811824798584,
+                "y": -6.732489585876465,
+                "z": 36.610923767089847
+            },
+            "zone": 2,
+            "controllers": [
+                "FishAgent",
+                "ReefSphereBody",
+                "FishTouchBody",
+                "SeaLife",
+                "ReefAnimalClearance"
+            ],
+            "matchesDocument": true
+        },
+        {
+            "kind": "Giant squid",
+            "name": "Giant squid distant silhouette",
+            "parent": "05 | The Trench",
+            "position": {
+                "x": 16.0,
+                "y": -40.746273040771487,
+                "z": 132.0
+            },
+            "zone": 5,
+            "controllers": [
+                "SquidSwimmer"
+            ],
+            "matchesDocument": true
+        }
+    ],
+    "shark": {
+        "clip": "GreatWhite_Swim_Loop",
+        "seconds": 3.000000238418579,
+        "tailLateralRange": 0.37025076150894167,
+        "tailVerticalRange": 0.0000011026859283447266,
+        "headMovement": 0.012977899052202702,
+        "loopSeam": 0.0,
+        "position": {
+            "x": 19.0,
+            "y": -11.0,
+            "z": 194.0
+        },
+        "bodySize": {
+            "x": 1.2860121726989747,
+            "y": 1.1504721641540528,
+            "z": 3.4402761459350588
+        },
+        "lateralSwimming": true,
+        "zone7": true,
+        "distant": true
+    },
+    "notes": [
+        "Great-white model retained per user's supplied-model request; document names a reef shark.",
+        "Fixed trench-only squid retained per earlier no-relocation request; the document additionally describes a distant Open Water squid.",
+        "Octopus is in Rocky Ledge but rests over sand; document describes a rock perch. Its existing arm-clearance/escape controller was not redesigned by this placement audit.",
+        "Restored Moon jellies remain information-only; document also specifies proximity glow/caution without consequence.",
+        "Shark fast-pursuit voice warning exists; a dedicated pursuit glow is absent from the current controller.",
+        "Pufferfish is mentioned in the interaction examples, but no pufferfish actor or assigned habitat exists."
+    ]
+}

@@ -1,0 +1,28 @@
+{
+  "source": "D:\\GIT Project\\Underwater-VR\\ArtSource\\MarineRefresh\\CombJelly.blend",
+  "blender": "5.3.0",
+  "triangles": 5987,
+  "bones": 10,
+  "materials": [
+    "tripo_material_f89d8582-e2ae-4aad-9add-986b66280194"
+  ],
+  "clips": [
+    "CombJelly_Drift"
+  ],
+  "images": {
+    "TransparentTissue": [
+      1024,
+      1024
+    ],
+    "ORM_f89d8582-e2ae-4aad-9add-986b66280194": [
+      1024,
+      1024
+    ],
+    "NormalGL_f89d8582-e2ae-4aad-9add-986b66280194": [
+      1024,
+      1024
+    ]
+  },
+  "issues": [],
+  "status": "passed"
+}

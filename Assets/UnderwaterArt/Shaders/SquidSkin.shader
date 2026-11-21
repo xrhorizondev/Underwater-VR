@@ -1,6 +1,6 @@
 Shader "Underwater/Squid Skin" {
- Properties {_MainTex("Skin",2D)="white"{} _Color("Tint",Color)=(.16,.29,.32,1) _SwimPhase("Swim phase",Float)=0}
- SubShader {Tags {"RenderType"="Opaque"} Cull Off
+ Properties {_MainTex("Skin",2D)="white"{} _Color("Tint",Color)=(.16,.29,.32,1) _SwimPhase("Swim phase",Float)=0 [Enum(Front,2,Back,1,Both,0)] _Cull("Face orientation",Float)=0}
+ SubShader {Tags {"RenderType"="Opaque"} Cull [_Cull]
  CGPROGRAM
  #pragma surface surf Standard vertex:vert addshadow
  #pragma target 3.0

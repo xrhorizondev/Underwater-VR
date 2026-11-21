@@ -1,0 +1,351 @@
+{
+  "objects": [
+    {
+      "name": "Sketchfab_model",
+      "type": "EMPTY",
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "root",
+      "type": "EMPTY",
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GLTF_SceneRootNode",
+      "type": "EMPTY",
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "Box-jelly_arm_74",
+      "type": "EMPTY",
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GLTF_created_0",
+      "type": "ARMATURE",
+      "dimensions": [
+        7.763715744018555,
+        5.506407260894775,
+        9.070571899414062
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bones": 74,
+      "animation": {
+        "action": "<bpy_struct, Action(\"Loop-200\") at 0x0000013BF8C1A988>",
+        "tracks": [
+          "Loop-200"
+        ]
+      }
+    },
+    {
+      "name": "Object_7",
+      "type": "MESH",
+      "dimensions": [
+        6.659145355224609,
+        5.099159240722656,
+        7.1491780281066895
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "triangles": 672,
+      "vertices": 696,
+      "shape_keys": false
+    },
+    {
+      "name": "Object_8",
+      "type": "MESH",
+      "dimensions": [
+        4.999690055847168,
+        4.19081974029541,
+        5.442047595977783
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "triangles": 1408,
+      "vertices": 931,
+      "shape_keys": false
+    },
+    {
+      "name": "Object_9",
+      "type": "MESH",
+      "dimensions": [
+        3.4693827629089355,
+        2.823009729385376,
+        3.955430030822754
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "triangles": 1112,
+      "vertices": 716,
+      "shape_keys": false
+    },
+    {
+      "name": "Object_10",
+      "type": "MESH",
+      "dimensions": [
+        3.468278408050537,
+        4.039605140686035,
+        2.114607810974121
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "triangles": 352,
+      "vertices": 196,
+      "shape_keys": false
+    },
+    {
+      "name": "Box-jelly_mesh_73",
+      "type": "EMPTY",
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "Icosphere",
+      "type": "MESH",
+      "dimensions": [
+        1.9021157026290894,
+        1.9999998807907104,
+        2.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "triangles": 80,
+      "vertices": 42,
+      "shape_keys": false
+    }
+  ],
+  "actions": [
+    {
+      "name": "Loop-200",
+      "range": [
+        0.0,
+        200.0
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "Box-jelly_bell",
+      "nodes": [
+        [
+          "EMISSION",
+          "Emission"
+        ],
+        [
+          "LIGHT_PATH",
+          "Light Path"
+        ],
+        [
+          "BSDF_TRANSPARENT",
+          "Transparent BSDF"
+        ],
+        [
+          "MIX_SHADER",
+          "Mix Shader"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "MIX_SHADER",
+          "Mix Shader.001"
+        ],
+        [
+          "MIX",
+          "Mix"
+        ],
+        [
+          "MATH",
+          "Math"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ]
+      ]
+    },
+    {
+      "name": "Box-jelly_canal-oral",
+      "nodes": [
+        [
+          "EMISSION",
+          "Emission"
+        ],
+        [
+          "LIGHT_PATH",
+          "Light Path"
+        ],
+        [
+          "BSDF_TRANSPARENT",
+          "Transparent BSDF"
+        ],
+        [
+          "MIX_SHADER",
+          "Mix Shader"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "MIX_SHADER",
+          "Mix Shader.001"
+        ],
+        [
+          "MIX",
+          "Mix"
+        ],
+        [
+          "MATH",
+          "Math"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ]
+      ]
+    },
+    {
+      "name": "Box-jelly_eye",
+      "nodes": [
+        [
+          "EMISSION",
+          "Emission"
+        ],
+        [
+          "LIGHT_PATH",
+          "Light Path"
+        ],
+        [
+          "BSDF_TRANSPARENT",
+          "Transparent BSDF"
+        ],
+        [
+          "MIX_SHADER",
+          "Mix Shader"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ]
+      ]
+    },
+    {
+      "name": "Box-jelly_tentacle",
+      "nodes": [
+        [
+          "EMISSION",
+          "Emission"
+        ],
+        [
+          "LIGHT_PATH",
+          "Light Path"
+        ],
+        [
+          "BSDF_TRANSPARENT",
+          "Transparent BSDF"
+        ],
+        [
+          "MIX_SHADER",
+          "Mix Shader"
+        ],
+        [
+          "OUTPUT_MATERIAL",
+          "Material Output"
+        ],
+        [
+          "MIX_SHADER",
+          "Mix Shader.001"
+        ],
+        [
+          "TEX_IMAGE",
+          "Image Texture"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "name": "Image_0",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "Image_1",
+      "size": [
+        2048,
+        2048
+      ]
+    }
+  ]
+}

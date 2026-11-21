@@ -1,6 +1,6 @@
 Shader "Underwater/Imported Squid Skin" {
- Properties {_MainTex("Skin atlas",2D)="white"{} _HeightMap("Skin height",2D)="gray"{} _HeightStrength("Surface relief",Range(0,0.04))=0.012 _Color("Tint",Color)=(1,1,1,1)}
- SubShader {Tags {"RenderType"="Opaque"} Cull Back
+ Properties {_MainTex("Skin atlas",2D)="white"{} _HeightMap("Skin height",2D)="gray"{} _HeightStrength("Surface relief",Range(0,0.04))=0.012 _Color("Tint",Color)=(1,1,1,1) [Enum(Front,2,Back,1,Both,0)] _Cull("Face orientation",Float)=2}
+ SubShader {Tags {"RenderType"="Opaque"} Cull [_Cull]
  Pass {Tags {"LightMode"="ForwardBase"} CGPROGRAM
  #pragma vertex vert
  #pragma fragment frag

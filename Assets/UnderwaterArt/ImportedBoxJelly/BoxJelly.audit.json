@@ -1,0 +1,27 @@
+{
+  "source": "D:\\GIT Project\\Underwater-VR\\ArtSource\\BoxJellyReplacement\\BoxJelly.blend",
+  "blender": "5.3.0",
+  "triangles": 3544,
+  "bones": 74,
+  "materials": [
+    "Box-jelly_bell",
+    "Box-jelly_canal-oral",
+    "Box-jelly_eye",
+    "Box-jelly_tentacle"
+  ],
+  "clips": [
+    "Loop-200"
+  ],
+  "images": {
+    "Image_1": [
+      1024,
+      1024
+    ],
+    "Image_0": [
+      1024,
+      1024
+    ]
+  },
+  "issues": [],
+  "status": "passed"
+}

@@ -1,0 +1,12 @@
+{
+  "triangles": 3544,
+  "bones": 74,
+  "meshes": 4,
+  "clip": "GLTF_created_0|Loop-200",
+  "frames": [
+    1,
+    201
+  ],
+  "max_deformation": 0.4606908081501568,
+  "loop_seam": 3.4714269110109892e-06
+}

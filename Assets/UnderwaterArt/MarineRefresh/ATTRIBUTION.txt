@@ -1,0 +1,24 @@
+Marine Refresh — user-supplied models
+
+Great White Shark — charliegodofsharks
+https://sketchfab.com/3d-models/great-white-shark-bf81b64f0121443da38112f706b7356f
+CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+Converted from supplied GLB; canonical orientation, clean in-place swim rig,
+Unity material adaptation and placement fitting.
+
+Luna Lionfish, Pterois lunulata — ffish.asia / floraZia.com
+https://sketchfab.com/3d-models/cc0-luna-lionfish-pterois-lunulata-701f33ba0db84058900232bf7ee91fec
+CC0: https://creativecommons.org/publicdomain/zero/1.0/
+Retained all scan surface partitions, removed the helper cube,
+reduced geometry, added weighted fin/tail/spine rig and looping hover animation.
+
+Dolphin — supplied dolphin.zip (source/LPP.fbx and textures).
+Archive did not include creator/license metadata. Original archive contents
+retained under ArtSource/MarineRefresh/Source/Dolphin.
+Removed floating bubble props, reduced anatomy, retained atlas/eyes/native rig,
+and authored a clean in-place swim cycle.
+
+Comb jelly — supplied Tripo GLB.
+Reduced geometry, added a body/lobe rig and loop, baked RGBA tissue transparency
+and comb-row mask; added lightweight iridescent row shading.
+

@@ -1,0 +1,36 @@
+{
+  "source": "D:\\GIT Project\\Underwater-VR\\ArtSource\\MarineRefresh\\Dolphin.blend",
+  "blender": "5.3.0",
+  "triangles": 7300,
+  "bones": 40,
+  "materials": [
+    "TT_checker_2048x2048_UV_GRID"
+  ],
+  "clips": [
+    "Dolphin_Swim"
+  ],
+  "images": {
+    "LPP_TT_checker_2048x2048_UV_GRID_BaseColor.png": [
+      1024,
+      1024
+    ],
+    "TT_checker_2048x2048_UV_GRID_Opacity.png": [
+      1024,
+      1024
+    ],
+    "LPP_TT_checker_2048x2048_UV_GRID_Normal.png": [
+      1024,
+      1024
+    ],
+    "LPP_TT_checker_2048x2048_UV_GRID_Roughness.png": [
+      1024,
+      1024
+    ],
+    "LPP_TT_checker_2048x2048_UV_GRID_Metallic.png": [
+      1024,
+      1024
+    ]
+  },
+  "issues": [],
+  "status": "passed"
+}

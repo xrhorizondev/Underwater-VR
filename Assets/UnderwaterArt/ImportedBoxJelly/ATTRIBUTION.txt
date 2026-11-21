@@ -1,0 +1,7 @@
+Box Jellyfish (Cubomedusae)
+Author: n- (https://sketchfab.com/n-)
+Source: https://sketchfab.com/3d-models/box-jellyfish-cubomedusae-b6050e8eddb34f17bc1c80ff23cadb18
+License: Creative Commons Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/)
+User-supplied GLB. Converted to Blender and FBX; removed unskinned helper sphere,
+resized textures to 1024, adapted materials for built-in Unity rendering,
+and fitted visuals to existing box jellyfish actors. Original rig/Loop-200 animation retained.

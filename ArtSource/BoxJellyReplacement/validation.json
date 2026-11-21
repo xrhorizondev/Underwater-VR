@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "unityVersion": "6000.4.5f1",
+  "unityExitCode": 0,
+  "actors": 3,
+  "trianglesPerActor": 3544,
+  "bones": 74,
+  "materials": 4,
+  "textures": "2 x 1024",
+  "clip": "Loop-200",
+  "durationSeconds": 6.666667,
+  "sourceSceneHash": "5327BFDEE911B8A0CBA79A80E1D77843553C7879224198C47768652BE2C423F2",
+  "checks": [
+    "Blender FBX roundtrip",
+    "Unity animation deformation and loop seam",
+    "Animated bounds contain sampled vertices",
+    "Material shaders and textures",
+    "Actor placement and 11 colliders per actor unchanged",
+    "Warning then contact consequence",
+    "Unity renders reviewed at multiple phases"
+  ],
+  "deviceTested": false
+}

@@ -98,7 +98,7 @@ public static class ReefDayTwo {
    if(zone.owner.kind=="Moon jelly"){moon++;Require(!zone.owner.consequence,"Moon jelly must have no consequence");}
    total++;
   }
-  Require(tails==3&&moon>0&&total>10,"Expected saved ray/jelly hazards");
+  Require(tails==3&&moon==0&&total==8,"Expected saved ray/jelly hazards");
   ValidateStages();ValidateSurfaceDistance();ReefDayOne.Validate();
   Require(Resources.Load<Shader>("ReefContactEdge"),"Missing stereo contact shader");
   Debug.Log($"DAY_TWO_VALIDATED hazards={total} tails={tails} moonJellies={moon} independentStages=passed surfaceDistance=passed warningLead=passed contactLatch=passed");

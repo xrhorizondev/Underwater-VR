@@ -4,10 +4,13 @@ namespace Underwater {
 public class ReefSphereBody : MonoBehaviour {
  public const int SolidMask=1<<8;
  public float radius=.25f;public Vector3 centerOffset;
+ ReefAnimalClearance sand;
+ ReefAnimalClearance Sand {get{if(!sand)sand=GetComponent<ReefAnimalClearance>();return sand;}}
  public Vector3 WorldCenter=>transform.position+transform.TransformVector(centerOffset);
- public bool Clear(Vector3 p)=>!Physics.CheckSphere(p+transform.TransformVector(centerOffset),radius,SolidMask,QueryTriggerInteraction.Ignore);
+ public bool Clear(Vector3 p){var ground=Sand;if(ground&&(!ground.RequiredHeight(p,transform.rotation,out float height)||p.y<height-.0001f))return false;return !Physics.CheckSphere(p+transform.TransformVector(centerOffset),radius,SolidMask,QueryTriggerInteraction.Ignore);}
  public Vector3 Move(Vector3 delta){
-  Vector3 start=transform.position;float distance=delta.magnitude;
+  var ground=Sand;if(ground)ground.Enforce();
+  Vector3 start=transform.position;if(ground)delta=ground.ConstrainPosition(start+delta)-start;float distance=delta.magnitude;
   if(distance<.000001f||!Clear(start))return Vector3.zero;
   if(Physics.SphereCast(WorldCenter,radius,delta/distance,out var hit,distance+.015f,SolidMask,QueryTriggerInteraction.Ignore))distance=Mathf.Max(0,hit.distance-.015f);
   Vector3 end=start+delta.normalized*distance;if(Clear(end))transform.position=end;return transform.position-start;

@@ -8,11 +8,11 @@ namespace Underwater.Editor {
 public static class PreparedMarineIntegration {
  const string Folder="Assets/UnderwaterArt/PreparedMarine", Scene="Assets/Scenes/Underwater_Realistic.unity";
  static string Pose(Transform t)=>t.localPosition.ToString("F8")+t.localRotation.ToString("F8")+t.localScale.ToString("F8");
- static string Key(string kind){switch(kind){case "Turtle":return "LoggerheadTurtle";case "Manta":return "MantaRay";case "Reef shark":return "ReefShark";case "Octopus":return "Octopus";case "Moon jelly":return "MoonJelly";case "Box jelly":return "BoxJelly";default:return null;}}
+ static string Key(string kind){switch(kind){case "Turtle":return "LoggerheadTurtle";case "Manta":return "MantaRay";case "Reef shark":return "ReefShark";case "Octopus":return "Octopus";case "Box jelly":return "BoxJelly";default:return null;}}
  public static void Run(){
   AssetDatabase.Refresh();var scene=EditorSceneManager.OpenScene(Scene);
   var actors=UnityEngine.Object.FindObjectsByType<SeaLife>(FindObjectsSortMode.None).Where(l=>Key(l.kind)!=null).ToArray();
-  if(actors.Length!=19)throw new Exception("Expected 19 existing creature instances, found "+actors.Length);
+  if(actors.Length!=8)throw new Exception("Expected 8 existing creature instances, found "+actors.Length);
   var protectedTypes=new[]{typeof(SeaLife),typeof(TurtleSwimmer),typeof(MarineSwimmer),typeof(ReefSphereBody),typeof(FishTouchBody),typeof(OpenWaterShark),typeof(ReefCreatureInfo),typeof(ReefJellyMotion)};
   var baseline=actors.SelectMany(a=>a.GetComponents<Component>().Where(c=>protectedTypes.Contains(c.GetType()))).ToDictionary(c=>c, c=>EditorJsonUtility.ToJson(c));
   var colliders=actors.SelectMany(a=>a.GetComponentsInChildren<Collider>(true)).ToDictionary(c=>c,c=>EditorJsonUtility.ToJson(c)+Pose(c.transform));
@@ -52,7 +52,7 @@ public static class PreparedMarineIntegration {
   foreach(var entry in roots)if(Pose(entry.Key.transform)!=entry.Value)throw new Exception("Actor placement changed: "+entry.Key.name);
   EditorSceneManager.MarkSceneDirty(scene);EditorSceneManager.SaveScene(scene);AssetDatabase.SaveAssets();
   Validate();Capture();
-  Debug.Log("MARINE_INTEGRATION_PASSED actors=19 existingGameplaySettingsAndCollidersUnchanged=true");
+  Debug.Log("MARINE_INTEGRATION_PASSED actors=8 existingGameplaySettingsAndCollidersUnchanged=true");
  }
  static Material Skin(string key,string slot,Renderer renderer){
   string directory=Folder+"/"+key,path=directory+"/"+slot+".mat";var material=AssetDatabase.LoadAssetAtPath<Material>(path);if(material)return material;
@@ -96,7 +96,7 @@ public static class PreparedMarineIntegration {
    var encounter=actor.GetComponent<ReefEncounter>();if(encounter){encounter.Initialize();encounter.Step(.05f,actor.transform.position+Vector3.right,.1f);if(encounter.Reaction<.9f)throw new Exception("Octopus reaction lost");var r=wrapper.GetComponentInChildren<Renderer>();var block=new MaterialPropertyBlock();r.GetPropertyBlock(block);if(block.GetColor("_Color").r<.5f)throw new Exception("Octopus tint not reaching new model");}
    Debug.Log("MARINE_VALIDATED "+actor.kind+" deform="+deformation+" clip="+animation.clip.length);count++;
   }
-  if(count!=19)throw new Exception("Instance count changed");
+  if(count!=8)throw new Exception("Instance count changed");
  }
  public static void Regression(){Validate();ReefDayTwo.Validate();ReefDayThree.Validate();ReefDaySix.Validate();Debug.Log("MARINE_REGRESSIONS_PASSED headBlinkBridge=true hazards=true encounters=true navigation=true daySix=true");}
  public static bool ValidatePreparedTurtleEyes(TurtleSwimmer turtle){
