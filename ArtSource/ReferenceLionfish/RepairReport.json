@@ -1,0 +1,58 @@
+{
+  "original_triangles": 3056,
+  "optimized_triangles": 2957,
+  "texture_sha256_unchanged": "ed9484631a513eeea79281f2fce9679f81896fdffbf4e93b0ad967d13ac5d74b",
+  "transforms_unchanged": true,
+  "bounds_exact": true,
+  "existing_bones": 20,
+  "new_bones": 0,
+  "new_animations": 0,
+  "results": [
+    {
+      "mesh": "Lionfish body eyes spines and opercula",
+      "original_triangles": 2758,
+      "clean_triangles": 2710,
+      "candidate_triangles": 2710,
+      "accepted_planar_reduction": false,
+      "triangles": 2710,
+      "removed_degenerate_faces": 48,
+      "welded_vertices": 63,
+      "removed_duplicate_faces": 0,
+      "candidate_surface_error_m": 4.983132384950295e-05,
+      "candidate_uv_error": 0.03490629848058078,
+      "candidate_bounds_error_m": 0
+    },
+    {
+      "mesh": "Lionfish thin fin membranes",
+      "original_triangles": 298,
+      "clean_triangles": 247,
+      "candidate_triangles": 247,
+      "accepted_planar_reduction": false,
+      "triangles": 247,
+      "removed_degenerate_faces": 51,
+      "welded_vertices": 409,
+      "removed_duplicate_faces": 0,
+      "candidate_surface_error_m": 2.3883155790827004e-06,
+      "candidate_uv_error": 8.492139734268696e-05,
+      "candidate_bounds_error_m": 0
+    }
+  ],
+  "preserved_custom_corner_normals": true,
+  "animated_surface_error_m": 1.922991759784054e-05,
+  "animated_bounds_error_m": 0,
+  "sampled_poses": 18,
+  "fifty_percent_trial_rejected": [
+    {
+      "mesh": "Lionfish body eyes spines and opercula",
+      "surface_error_m": 0.0008202779572457075,
+      "accepted": false
+    },
+    {
+      "mesh": "Lionfish thin fin membranes",
+      "surface_error_m": 0.002058862242847681,
+      "accepted": false
+    }
+  ],
+  "vertices_before": 2229,
+  "vertices_after": 1757
+}

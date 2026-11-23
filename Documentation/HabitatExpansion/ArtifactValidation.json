@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "unityExitCode": 0,
+  "unityBuildResult": "Succeeded",
+  "artifact": "Builds/HabitatExpansion/Underwater-Quest2.apk",
+  "bytes": 112133141,
+  "androidManifestPresent": true,
+  "arm64Il2cppLibraryPresent": true,
+  "arm64UnityLibraryPresent": true,
+  "apkSignatureVerified": true,
+  "signatureScheme": "v2",
+  "deviceInstall": "Success",
+  "device": "Quest 2",
+  "notes": "Existing obsolete Unity API warnings remain. Vulkan multiview shader error fixed and final build contains no shader compilation errors."
+}

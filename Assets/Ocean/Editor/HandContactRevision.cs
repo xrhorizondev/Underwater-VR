@@ -21,7 +21,7 @@ public static class HandContactRevision {
    if(Vector3.Dot(glove.FingertipPosition-glove.Wrist.position,Vector3.forward)<.02f)throw new Exception("Open hand does not extend forward from upright controller grip");
    if(Vector3.Dot(glove.GripAnchor.up,left?Vector3.right:Vector3.left)<.99f)throw new Exception("Mirrored palm basis incorrect");
    foreach(var source in candidates.GroupBy(f=>f.kind).Select(g=>g.First()))foreach(var side in new[]{Vector3.left,Vector3.right,Vector3.down,Vector3.up}){
-    var fish=UnityEngine.Object.Instantiate(source.gameObject,rig.transform.position,Quaternion.Euler(7,35,0));var touch=fish.GetComponent<FishTouchBody>();touch.touchCollider.enabled=true;Physics.SyncTransforms();
+    var fish=UnityEngine.Object.Instantiate(source.gameObject,rig.transform.position,Quaternion.Euler(7,35,0));var clearance=fish.GetComponent<ReefAnimalClearance>();if(clearance)UnityEngine.Object.DestroyImmediate(clearance);var touch=fish.GetComponent<FishTouchBody>();touch.touchCollider.enabled=true;Physics.SyncTransforms();
     var hand=new GameObject("Body contact hand").transform;var bounds=touch.bodyBounds;var local=bounds.center+Vector3.Scale(side,bounds.extents+Vector3.one*.08f);hand.position=fish.transform.TransformPoint(local);hand.position=touch.GrabSurface(hand.position);hand.rotation=Quaternion.Euler(20,-15,32);
     try{
      var before=fish.transform.position;var initial=fish.transform.rotation;var life=fish.GetComponent<SeaLife>();life.Grab(hand);

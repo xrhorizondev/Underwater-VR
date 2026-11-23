@@ -1,0 +1,14 @@
+{
+    "status": "passed",
+    "profile": "quest",
+    "displayName": "Meta Quest APK",
+    "unityVersion": "6000.4.5f1",
+    "buildTarget": "Android",
+    "artifact": "D:\\GIT Project\\Underwater-VR\\.utmp\\SuppliedReview\\Builds\\Codex\\quest.apk",
+    "validationMode": "standard",
+    "scenes": [
+        "Assets/Scenes/Underwater_Realistic.unity"
+    ],
+    "diagnostics": [],
+    "buildResult": "Succeeded"
+}

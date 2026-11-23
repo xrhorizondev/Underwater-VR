@@ -4,6 +4,7 @@ namespace Underwater {
 public class FishSchool : MonoBehaviour {
  public Vector3 habitatCenter;
  public float habitatRadius=5;
+ public float simulationRadius=45;
  public bool reefEncounter;float scatterUntil;Vector3 threat;
  public void Scatter(Vector3 source){threat=source;scatterUntil=clock+2.5f;}
  public FishAgent[] fish;
@@ -13,7 +14,7 @@ public class FishSchool : MonoBehaviour {
   for(int i=0;i<fish.Length;i++)fish[i].Initialize(i+Mathf.Abs(Mathf.RoundToInt(habitatCenter.z*3)%53));
  }
  void Start(){Initialize();}
- void Update(){if(Application.platform==RuntimePlatform.Android&&Diver.Instance&&(Diver.Instance.transform.position-habitatCenter).sqrMagnitude>45*45)return;Simulate(Mathf.Min(Time.deltaTime,.05f));}
+ void Update(){if(Diver.Instance&&Diver.Instance.MenuOpen)return;if(Application.platform==RuntimePlatform.Android&&Diver.Instance&&(Diver.Instance.transform.position-habitatCenter).sqrMagnitude>simulationRadius*simulationRadius)return;Simulate(Mathf.Min(Time.deltaTime,.05f));}
  public void Simulate(float dt){
   if(positions==null)Initialize();clock+=dt;decisionTimer-=dt;bool decide=decisionTimer<=0;if(decide){decisionTimer=.1f;FlockingPasses++;}
   for(int i=0;i<fish.Length;i++){positions[i]=fish[i].transform.position;velocities[i]=fish[i].Velocity.normalized;}

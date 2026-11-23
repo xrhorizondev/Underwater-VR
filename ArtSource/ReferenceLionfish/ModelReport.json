@@ -1,0 +1,17 @@
+{
+  "triangles": 3056,
+  "bones": 20,
+  "materials": 2,
+  "texture": [
+    1024,
+    1024
+  ],
+  "clips": [
+    "Idle",
+    "Swim",
+    "Breath"
+  ],
+  "length_m": 0.4096,
+  "eye_vertices": 168,
+  "breathing": "Independent jaw and paired opercula; locomotion has no root translation"
+}

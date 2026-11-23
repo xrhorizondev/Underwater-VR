@@ -1,0 +1,32 @@
+TURTLE Loggerhead sea turtle components=Transform,TurtleSwimmer,SeaLife,ReefSphereBody,FishTouchBody,ReefCreatureInfo,ReefAnimalClearance
+HEAD head.002 parent=Spine.001 position=(1.34, -0.28, 7.84)
+BONE Loggerhead sea turtle parent=UNDERWATER | Living reef local=(1.70, -0.30, 7.50)
+BONE Loggerhead glossy iris globe parent=Loggerhead sea turtle local=(0.00, 0.00, 0.00)
+BONE Loggerhead glossy iris globe.001 parent=Loggerhead sea turtle local=(0.00, 0.00, 0.00)
+BONE Loggerhead round pupil parent=Loggerhead sea turtle local=(0.00, 0.00, 0.00)
+BONE Loggerhead round pupil.001 parent=Loggerhead sea turtle local=(0.00, 0.00, 0.00)
+BONE LoggerheadTurtle_Animated parent=Prepared animated model local=(0.00, 0.00, 0.00)
+BONE loggerhead.armature parent=LoggerheadTurtle_Animated local=(0.00, 0.00, 0.00)
+BONE head.002 parent=Spine.001 local=(0.00, 0.00, 0.00)
+BONE head.001 parent=head.002 local=(0.00, 0.00, 0.00)
+BONE head.001_end parent=head.001 local=(0.00, 0.00, 0.00)
+BONE LoggerheadTurtle_Body parent=LoggerheadTurtle_Animated local=(0.00, 0.00, 0.00)
+BONE LoggerheadTurtle_Eyes parent=LoggerheadTurtle_Animated local=(0.00, 0.00, 0.00)
+CLIP Scene duration=3.5 speed=1 adapter=False
+TURTLE Loggerhead sea turtle components=Transform,TurtleSwimmer,SeaLife,ReefSphereBody,FishTouchBody,ReefCreatureInfo,ReefAnimalClearance
+HEAD head.002 parent=Spine.001 position=(0.83, -13.98, 196.46)
+BONE Loggerhead sea turtle parent=UNDERWATER | Living reef local=(1.00, -14.00, 196.00)
+BONE Loggerhead glossy iris globe parent=Loggerhead sea turtle local=(0.00, 0.00, 0.00)
+BONE Loggerhead glossy iris globe.001 parent=Loggerhead sea turtle local=(0.00, 0.00, 0.00)
+BONE Loggerhead round pupil parent=Loggerhead sea turtle local=(0.00, 0.00, 0.00)
+BONE Loggerhead round pupil.001 parent=Loggerhead sea turtle local=(0.00, 0.00, 0.00)
+BONE LoggerheadTurtle_Animated parent=Prepared animated model local=(0.00, 0.00, 0.00)
+BONE loggerhead.armature parent=LoggerheadTurtle_Animated local=(0.00, 0.00, 0.00)
+BONE head.002 parent=Spine.001 local=(0.00, 0.00, 0.00)
+BONE head.001 parent=head.002 local=(0.00, 0.00, 0.00)
+BONE head.001_end parent=head.001 local=(0.00, 0.00, 0.00)
+BONE LoggerheadTurtle_Body parent=LoggerheadTurtle_Animated local=(0.00, 0.00, 0.00)
+BONE LoggerheadTurtle_Eyes parent=LoggerheadTurtle_Animated local=(0.00, 0.00, 0.00)
+CLIP Scene duration=3.5 speed=1 adapter=False
+GROUPER Calm wreck grouper components=Transform,MeshFilter,MeshRenderer,SeaLife,ReefSphereBody,WreckCreature,ReefCreatureInfo,ReefAnimalClearance shader=Underwater/Living Fish Skin bounds=Center: (0.00, 0.00, 0.00), Extents: (0.17, 0.26, 0.60)
+SCHOOLS 14

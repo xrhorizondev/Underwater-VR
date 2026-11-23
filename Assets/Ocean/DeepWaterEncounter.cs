@@ -13,8 +13,9 @@ public sealed class DeepWaterEncounter:MonoBehaviour {
   bool touching=handDistance<.28f;if(species==Species.Angler&&touching&&!wasTouching)remaining=2.4f;wasTouching=touching;
   float target=species==Species.Lumen?(zone>=3?.7f:.035f):species==Species.Angler?(remaining>0?1.3f:.07f):0;
   Brightness=Mathf.MoveTowards(Brightness,target,dt*(target>Brightness?.75f:.55f));
-  // Anglers emit from the lure, while Lumen retains its body reveal.
-  if(skin&&species!=Species.CombJelly&&species!=Species.MoonJelly){skin.GetPropertyBlock(block);block.SetColor("_BioEmission",species==Species.Angler?Color.clear:new Color(.08f,.65f,.8f)*Brightness);skin.SetPropertyBlock(block);}
+  // Fish skin stays natural. Curiosity brightness belongs to a lure, never
+  // a cyan emission wash over the companion's texture.
+  if(skin&&species!=Species.CombJelly&&species!=Species.MoonJelly){skin.GetPropertyBlock(block);block.SetColor("_BioEmission",Color.clear);skin.SetPropertyBlock(block);}
   if(species==Species.Angler){float response=Mathf.InverseLerp(.07f,1.3f,Brightness);if(glow)glow.intensity=.35f+response*.65f;foreach(var bulb in bulbs){bulb.GetPropertyBlock(block);block.SetColor("_Color",new Color(.3f,1.4f,1.8f)*Mathf.Lerp(1,1.5f,response));bulb.SetPropertyBlock(block);}}
   if((species==Species.CombJelly||species==Species.MoonJelly)&&body){var away=Vector3.ProjectOnPlane(transform.position-viewer,Vector3.up);var goal=home+new Vector3(Mathf.Sin(clock*.2f+home.x)*.35f,Mathf.Sin(clock*.3f)*.15f,0);if(away.magnitude<1.7f)goal+=away.sqrMagnitude>.001f?away.normalized*.85f:Vector3.right*.85f;body.MoveSliding(Vector3.ClampMagnitude(goal-transform.position,.22f)*dt);}
  }

@@ -1,0 +1,149 @@
+SHIP (-20.32, -42.83, 125.45) rotation=(9.72, 93.18, 326.95) scale=(1.34, 1.34, 1.34)
+Moon jelly kind=Moon jelly colliders=1
+Moon jelly kind=Moon jelly colliders=1
+Moon jelly kind=Moon jelly colliders=1
+Comb jelly kind=Comb jelly colliders=1
+Moon jelly kind=Moon jelly colliders=1
+Comb jelly kind=Comb jelly colliders=1
+Comb jelly kind=Comb jelly colliders=1
+Comb jelly kind=Comb jelly colliders=1
+Comb jelly kind=Comb jelly colliders=1
+Comb jelly kind=Comb jelly colliders=1
+Moon jelly kind=Moon jelly colliders=1
+Comb jelly kind=Comb jelly colliders=1
+Distant reef shark kind=Reef shark colliders=0
+Comb jelly kind=Comb jelly colliders=1
+Moon jelly kind=Moon jelly colliders=1
+Moon jelly kind=Moon jelly colliders=1
+Comb jelly kind=Comb jelly colliders=1
+Comb jelly kind=Comb jelly colliders=1
+Box jelly kind=Box jelly colliders=12
+Moon jelly kind=Moon jelly colliders=1
+Lumen kind=Lumen colliders=2
+ LUMEN Lumen shader=Underwater/Instanced Marine
+Moon jelly kind=Moon jelly colliders=1
+Comb jelly kind=Comb jelly colliders=1
+Moon jelly kind=Moon jelly colliders=1
+Moon jelly kind=Moon jelly colliders=1
+Comb jelly kind=Comb jelly colliders=1
+Moon jelly kind=Moon jelly colliders=1
+Moon jelly kind=Moon jelly colliders=1
+Comb jelly kind=Comb jelly colliders=1
+Comb jelly kind=Comb jelly colliders=1
+Comb jelly kind=Comb jelly colliders=1
+Comb jelly kind=Comb jelly colliders=1
+Moon jelly kind=Moon jelly colliders=1
+Moon jelly kind=Moon jelly colliders=1
+Moon jelly kind=Moon jelly colliders=1
+Moon jelly kind=Moon jelly colliders=1
+Box jelly kind=Box jelly colliders=12
+Moon jelly kind=Moon jelly colliders=1
+Comb jelly kind=Comb jelly colliders=1
+Moon jelly kind=Moon jelly colliders=1
+Moon jelly kind=Moon jelly colliders=1
+Comb jelly kind=Comb jelly colliders=1
+Moon jelly kind=Moon jelly colliders=1
+Moon jelly kind=Moon jelly colliders=1
+Comb jelly kind=Comb jelly colliders=1
+Box jelly kind=Box jelly colliders=12
+Moon jelly kind=Moon jelly colliders=1
+Comb jelly kind=Comb jelly colliders=1
+Moon jelly kind=Moon jelly colliders=1
+Comb jelly kind=Comb jelly colliders=1
+Moon jelly kind=Moon jelly colliders=1
+Comb jelly kind=Comb jelly colliders=1
+Comb jelly kind=Comb jelly colliders=1
+Comb jelly kind=Comb jelly colliders=1
+Comb jelly kind=Comb jelly colliders=1
+SHARK_CURVE GreatWhite_Rig m_LocalRotation.x
+SHARK_CURVE GreatWhite_Rig m_LocalRotation.y
+SHARK_CURVE GreatWhite_Rig m_LocalRotation.z
+SHARK_CURVE GreatWhite_Rig m_LocalRotation.w
+SHARK_CURVE GreatWhite_Rig/Root m_LocalRotation.x
+SHARK_CURVE GreatWhite_Rig/Root m_LocalRotation.y
+SHARK_CURVE GreatWhite_Rig/Root m_LocalRotation.z
+SHARK_CURVE GreatWhite_Rig/Root m_LocalRotation.w
+SHARK_CURVE GreatWhite_Rig/Root/Body m_LocalRotation.x
+SHARK_CURVE GreatWhite_Rig/Root/Body m_LocalRotation.y
+SHARK_CURVE GreatWhite_Rig/Root/Body m_LocalRotation.z
+SHARK_CURVE GreatWhite_Rig/Root/Body m_LocalRotation.w
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase m_LocalRotation.x
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase m_LocalRotation.y
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase m_LocalRotation.z
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase m_LocalRotation.w
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase/TailMid m_LocalRotation.x
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase/TailMid m_LocalRotation.y
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase/TailMid m_LocalRotation.z
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase/TailMid m_LocalRotation.w
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase/TailMid/TailTip m_LocalRotation.x
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase/TailMid/TailTip m_LocalRotation.y
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase/TailMid/TailTip m_LocalRotation.z
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase/TailMid/TailTip m_LocalRotation.w
+SHARK_CURVE GreatWhite_Rig/Root/Body/Pectoral_-1 m_LocalRotation.x
+SHARK_CURVE GreatWhite_Rig/Root/Body/Pectoral_-1 m_LocalRotation.y
+SHARK_CURVE GreatWhite_Rig/Root/Body/Pectoral_-1 m_LocalRotation.z
+SHARK_CURVE GreatWhite_Rig/Root/Body/Pectoral_-1 m_LocalRotation.w
+SHARK_CURVE GreatWhite_Rig/Root/Body/Pectoral_1 m_LocalRotation.x
+SHARK_CURVE GreatWhite_Rig/Root/Body/Pectoral_1 m_LocalRotation.y
+SHARK_CURVE GreatWhite_Rig/Root/Body/Pectoral_1 m_LocalRotation.z
+SHARK_CURVE GreatWhite_Rig/Root/Body/Pectoral_1 m_LocalRotation.w
+SHARK_CURVE GreatWhite_Rig m_LocalPosition.x
+SHARK_CURVE GreatWhite_Rig m_LocalPosition.y
+SHARK_CURVE GreatWhite_Rig m_LocalPosition.z
+SHARK_CURVE GreatWhite_Rig/Root m_LocalPosition.x
+SHARK_CURVE GreatWhite_Rig/Root m_LocalPosition.y
+SHARK_CURVE GreatWhite_Rig/Root m_LocalPosition.z
+SHARK_CURVE GreatWhite_Rig/Root/Body m_LocalPosition.x
+SHARK_CURVE GreatWhite_Rig/Root/Body m_LocalPosition.y
+SHARK_CURVE GreatWhite_Rig/Root/Body m_LocalPosition.z
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase m_LocalPosition.x
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase m_LocalPosition.y
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase m_LocalPosition.z
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase/TailMid m_LocalPosition.x
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase/TailMid m_LocalPosition.y
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase/TailMid m_LocalPosition.z
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase/TailMid/TailTip m_LocalPosition.x
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase/TailMid/TailTip m_LocalPosition.y
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase/TailMid/TailTip m_LocalPosition.z
+SHARK_CURVE GreatWhite_Rig/Root/Body/Pectoral_-1 m_LocalPosition.x
+SHARK_CURVE GreatWhite_Rig/Root/Body/Pectoral_-1 m_LocalPosition.y
+SHARK_CURVE GreatWhite_Rig/Root/Body/Pectoral_-1 m_LocalPosition.z
+SHARK_CURVE GreatWhite_Rig/Root/Body/Pectoral_1 m_LocalPosition.x
+SHARK_CURVE GreatWhite_Rig/Root/Body/Pectoral_1 m_LocalPosition.y
+SHARK_CURVE GreatWhite_Rig/Root/Body/Pectoral_1 m_LocalPosition.z
+SHARK_CURVE GreatWhite_Rig m_LocalScale.x
+SHARK_CURVE GreatWhite_Rig m_LocalScale.y
+SHARK_CURVE GreatWhite_Rig m_LocalScale.z
+SHARK_CURVE GreatWhite_Rig/Root m_LocalScale.x
+SHARK_CURVE GreatWhite_Rig/Root m_LocalScale.y
+SHARK_CURVE GreatWhite_Rig/Root m_LocalScale.z
+SHARK_CURVE GreatWhite_Rig/Root/Body m_LocalScale.x
+SHARK_CURVE GreatWhite_Rig/Root/Body m_LocalScale.y
+SHARK_CURVE GreatWhite_Rig/Root/Body m_LocalScale.z
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase m_LocalScale.x
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase m_LocalScale.y
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase m_LocalScale.z
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase/TailMid m_LocalScale.x
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase/TailMid m_LocalScale.y
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase/TailMid m_LocalScale.z
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase/TailMid/TailTip m_LocalScale.x
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase/TailMid/TailTip m_LocalScale.y
+SHARK_CURVE GreatWhite_Rig/Root/Body/TailBase/TailMid/TailTip m_LocalScale.z
+SHARK_CURVE GreatWhite_Rig/Root/Body/Pectoral_-1 m_LocalScale.x
+SHARK_CURVE GreatWhite_Rig/Root/Body/Pectoral_-1 m_LocalScale.y
+SHARK_CURVE GreatWhite_Rig/Root/Body/Pectoral_-1 m_LocalScale.z
+SHARK_CURVE GreatWhite_Rig/Root/Body/Pectoral_1 m_LocalScale.x
+SHARK_CURVE GreatWhite_Rig/Root/Body/Pectoral_1 m_LocalScale.y
+SHARK_CURVE GreatWhite_Rig/Root/Body/Pectoral_1 m_LocalScale.z
+SHARK_BONE Distant reef shark local=(19.00, -11.00, 194.00)
+SHARK_BONE Prepared animated model local=(0.02, 0.29, -0.16)
+SHARK_BONE Shark local=(0.00, 0.00, 0.00)
+SHARK_BONE GreatWhite_Anatomy local=(0.00, 0.00, 0.00)
+SHARK_BONE GreatWhite_Rig local=(0.00, 0.00, 0.00)
+SHARK_BONE Root local=(0.00, 0.00, 0.00)
+SHARK_BONE Body local=(0.00, 0.00, 0.01)
+SHARK_BONE Pectoral_-1 local=(0.00, 0.00, 0.00)
+SHARK_BONE Pectoral_1 local=(0.00, 0.00, 0.00)
+SHARK_BONE TailBase local=(0.00, 0.01, 0.00)
+SHARK_BONE TailMid local=(0.00, 0.01, 0.00)
+SHARK_BONE TailTip local=(0.00, 0.01, 0.00)

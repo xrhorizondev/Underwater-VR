@@ -1,0 +1,40 @@
+0 Anglerfish | encounter renderer=Anglerfish material=Species Anglerfish shader=Underwater/Living Fish Skin texture=Assets/UnderwaterArt/Textures/FishScan_albedo.png
+0 Anglerfish | encounter renderer=Lure stalk material=Species Anglerfish shader=Underwater/Living Fish Skin texture=Assets/UnderwaterArt/Textures/FishScan_albedo.png
+0 Anglerfish | encounter renderer=Emissive lure bulb material=Visible angler lure shader=Underwater/Visible Lure texture=none
+0 Anglerfish | encounter renderer=Lure glow halo material=LureHalo shader=Underwater/Lure Halo texture=none
+1 Blue tang | Underwater/Living Fish Skin renderer=Blue tang material=Underwater/Living Fish Skin shader=Underwater/Living Fish Skin texture=Assets/UnderwaterArt/Textures/FishScan_albedo.png
+2 Butterflyfish | Surface renderer=ReefFish school fish 4 material=Surface shader=Underwater/Instanced Marine texture=Assets/UnderwaterArt/SuppliedReview/ReefFish/Albedo.jpg
+3 Clownfish | Species Clownfish renderer=Clownfish material=Species Clownfish shader=Underwater/Living Fish Skin texture=Assets/UnderwaterArt/Textures/FishScan_albedo.png
+4 Clownfish | Surface renderer=Clownfish school fish 3 material=Surface shader=Underwater/Instanced Marine texture=Assets/UnderwaterArt/HabitatExpansion/Clownfish/Albedo.png
+5 Copperband butterflyfish | Underwater/Living Fish Skin renderer=Copperband butterflyfish material=Underwater/Living Fish Skin shader=Underwater/Living Fish Skin texture=Assets/UnderwaterArt/Textures/FishScan_albedo.png
+6 Dolphin | encounter renderer=Dolphin_Anatomy material=TT_checker_2048x2048_UV_GRID shader=Underwater/Imported Marine Skin texture=Assets/UnderwaterArt/MarineRefresh/Dolphin/textures/Dolphin_LPP_TT_checker_2048x2048_UV_GRID_BaseColor_png_BaseColor.png
+7 Flame angelfish | Surface renderer=FlameAngel school fish 2 material=Surface shader=Underwater/Instanced Marine texture=Assets/UnderwaterArt/SuppliedReview/FlameAngel/Albedo.png
+8 Grouper | encounter renderer=Calm finale grouper material=Natural mottled grouper shader=Underwater/Living Fish Skin texture=Assets/UnderwaterArt/Textures/FishScan_albedo.png
+9 Lionfish | encounter renderer=Lionfish material=Species Lionfish shader=Underwater/Living Fish Skin texture=Assets/UnderwaterArt/Textures/FishScan_albedo.png
+9 Lionfish | encounter renderer=Venomous fin ray material=01 Calcareous reef sand shader=Underwater/Reef Surface texture=Assets/UnderwaterArt/Textures/coast_sand_02_diff_2k.jpg
+9 Lionfish | encounter renderer=Venomous fin ray material=01 Calcareous reef sand shader=Underwater/Reef Surface texture=Assets/UnderwaterArt/Textures/coast_sand_02_diff_2k.jpg
+9 Lionfish | encounter renderer=Venomous fin ray material=01 Calcareous reef sand shader=Underwater/Reef Surface texture=Assets/UnderwaterArt/Textures/coast_sand_02_diff_2k.jpg
+9 Lionfish | encounter renderer=Venomous fin ray material=01 Calcareous reef sand shader=Underwater/Reef Surface texture=Assets/UnderwaterArt/Textures/coast_sand_02_diff_2k.jpg
+9 Lionfish | encounter renderer=Venomous fin ray material=01 Calcareous reef sand shader=Underwater/Reef Surface texture=Assets/UnderwaterArt/Textures/coast_sand_02_diff_2k.jpg
+9 Lionfish | encounter renderer=Venomous fin ray material=01 Calcareous reef sand shader=Underwater/Reef Surface texture=Assets/UnderwaterArt/Textures/coast_sand_02_diff_2k.jpg
+9 Lionfish | encounter renderer=Venomous fin ray material=01 Calcareous reef sand shader=Underwater/Reef Surface texture=Assets/UnderwaterArt/Textures/coast_sand_02_diff_2k.jpg
+9 Lionfish | encounter renderer=Venomous fin ray material=01 Calcareous reef sand shader=Underwater/Reef Surface texture=Assets/UnderwaterArt/Textures/coast_sand_02_diff_2k.jpg
+9 Lionfish | encounter renderer=Venomous fin ray material=01 Calcareous reef sand shader=Underwater/Reef Surface texture=Assets/UnderwaterArt/Textures/coast_sand_02_diff_2k.jpg
+9 Lionfish | encounter renderer=Venomous fin ray material=01 Calcareous reef sand shader=Underwater/Reef Surface texture=Assets/UnderwaterArt/Textures/coast_sand_02_diff_2k.jpg
+9 Lionfish | encounter renderer=Venomous fin ray material=01 Calcareous reef sand shader=Underwater/Reef Surface texture=Assets/UnderwaterArt/Textures/coast_sand_02_diff_2k.jpg
+9 Lionfish | encounter renderer=Venomous fin ray material=01 Calcareous reef sand shader=Underwater/Reef Surface texture=Assets/UnderwaterArt/Textures/coast_sand_02_diff_2k.jpg
+9 Lionfish | encounter renderer=Venomous fin ray material=01 Calcareous reef sand shader=Underwater/Reef Surface texture=Assets/UnderwaterArt/Textures/coast_sand_02_diff_2k.jpg
+10 Lumen | encounter renderer=Lumen material=Natural companion skin shader=Underwater/Instanced Marine texture=Assets/UnderwaterArt/Textures/FishScan_albedo.png
+11 Lyretail anthias | Underwater/Living Fish Skin renderer=Lyretail anthias material=Underwater/Living Fish Skin shader=Underwater/Living Fish Skin texture=Assets/UnderwaterArt/Textures/FishScan_albedo.png
+12 Manta | encounter renderer=MantaRay_Body material=body shader=Standard texture=Assets/UnderwaterArt/PreparedMarine/MantaRay/textures/MantaRay_albedo.png
+13 Moray | encounter renderer=Supplied moray skin material=TripoMoray shader=Underwater/Tripo Moray PBR texture=Assets/UnderwaterArt/TripoMoray/BaseColor.png,MouthLining shader=Underwater/Moray Mouth Lining texture=none
+13 Moray | encounter renderer=Moray left eye material=SocketEyes shader=Standard texture=Assets/UnderwaterArt/TripoMoray/SocketEyes.png
+13 Moray | encounter renderer=Moray right eye material=SocketEyes shader=Standard texture=Assets/UnderwaterArt/TripoMoray/SocketEyes.png
+14 Reef shark | encounter renderer=GreatWhite_Anatomy material=mat_0-megalodon_jpg shader=Underwater/Imported Marine Skin texture=Assets/UnderwaterArt/MarineRefresh/Shark/textures/Shark_Image_0_BaseColor.png
+15 Royal gramma | Underwater/Living Fish Skin renderer=Royal gramma material=Underwater/Living Fish Skin shader=Underwater/Living Fish Skin texture=Assets/UnderwaterArt/Textures/FishScan_albedo.png
+16 Seabass | Surface renderer=Seabass school fish 1 material=Surface shader=Underwater/Instanced Marine texture=Assets/UnderwaterArt/HabitatExpansion/Seabass/Albedo.png
+17 Sergeant major | Underwater/Living Fish Skin renderer=Sergeant major material=Underwater/Living Fish Skin shader=Underwater/Living Fish Skin texture=Assets/UnderwaterArt/Textures/FishScan_albedo.png
+18 Stingray | encounter renderer=Resting stingray material=Detailed natural stingray shader=Underwater/Rigged Ray Skin texture=none
+19 Turtle | encounter renderer=LoggerheadTurtle_Body material=body shader=Standard texture=Assets/UnderwaterArt/PreparedMarine/LoggerheadTurtle/textures/LoggerheadTurtle_albedo.png
+19 Turtle | encounter renderer=LoggerheadTurtle_Eyes material=eyes.outer shader=Underwater/Prepared Turtle Eyes texture=Assets/UnderwaterArt/PreparedMarine/LoggerheadTurtle/textures/LoggerheadTurtle_albedo.png
+20 Yellow tang | Underwater/Living Fish Skin renderer=Yellow tang material=Underwater/Living Fish Skin shader=Underwater/Living Fish Skin texture=Assets/UnderwaterArt/Textures/FishScan_albedo.png

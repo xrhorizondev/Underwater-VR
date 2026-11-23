@@ -1,0 +1,23 @@
+{
+  "source": "D:\\GIT Project\\Underwater-VR\\ArtSource\\ReferenceLionfish\\Lionfish_Repaired.blend",
+  "blender": "5.3.0",
+  "triangles": 2957,
+  "bones": 20,
+  "materials": [
+    "Lionfish fin cutout",
+    "Lionfish skin"
+  ],
+  "clips": [
+    "Breath",
+    "Idle",
+    "Swim"
+  ],
+  "images": {
+    "Lionfish_Albedo": [
+      1024,
+      1024
+    ]
+  },
+  "issues": [],
+  "status": "passed"
+}

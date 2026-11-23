@@ -1,0 +1,4 @@
+Grounded rocks=106
+Seagrass tufts=283
+3 shared 280-triangle rock meshes; plants batched per habitat.
+Saved terrain grounding, 4.8m central corridor, existing object spacing, scene and collision checks passed.

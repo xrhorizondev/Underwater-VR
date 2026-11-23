@@ -1,0 +1,3 @@
+Schools=5 Fish=30 FullTriangles=49425 ShipTriangles=1028
+Simulation: all schools 30 seconds, movement and solid clearance passed. Editor simulation elapsedMs=159 (not headset FPS)
+Instanced shared materials, no added lights or shadows, distance meshes and small-fish culling enabled.

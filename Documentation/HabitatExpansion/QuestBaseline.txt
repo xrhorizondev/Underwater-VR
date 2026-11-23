@@ -1,0 +1,9 @@
+11-23 10:46:07.277  7638  7673 I Unity   : REEF_TRAVEL habitat=0 frames=216 overTwoRefreshes=0 worstMs=14.3
+11-23 10:46:10.283  7638  7673 I Unity   : REEF_TRAVEL habitat=1 frames=216 overTwoRefreshes=0 worstMs=14.2
+11-23 10:46:13.289  7638  7673 I Unity   : REEF_TRAVEL habitat=2 frames=216 overTwoRefreshes=0 worstMs=14.3
+11-23 10:46:16.296  7638  7673 I Unity   : REEF_TRAVEL habitat=3 frames=216 overTwoRefreshes=0 worstMs=14.2
+11-23 10:46:19.303  7638  7673 I Unity   : REEF_TRAVEL habitat=4 frames=216 overTwoRefreshes=0 worstMs=14.8
+11-23 10:46:22.311  7638  7673 I Unity   : REEF_TRAVEL habitat=5 frames=216 overTwoRefreshes=0 worstMs=14.4
+11-23 10:46:25.318  7638  7673 I Unity   : REEF_TRAVEL habitat=6 frames=216 overTwoRefreshes=0 worstMs=14.2
+11-23 10:46:28.325  7638  7673 I Unity   : REEF_TRAVEL habitat=7 frames=216 overTwoRefreshes=0 worstMs=14.2
+11-23 10:46:28.326  7638  7673 I Unity   : REEF_TRAVEL complete

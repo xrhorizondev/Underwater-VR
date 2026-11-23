@@ -1,0 +1,6 @@
+Unity 6000.4.5f1
+Final saved-scene validation: exit code 0
+SUPPLIED_FINAL_VALIDATION_PASSED fish=4 anchors=2 movement=passed materials=passed
+REEF_VALIDATED missingScripts=0 teleportAnchors=24 materials=valid turtleModels=2 fishVarieties=6
+Quest profile validation: exit code 2; ACTIVE_TARGET_MISMATCH (StandaloneWindows64 vs Android)
+No APK generated. Headset performance not tested.

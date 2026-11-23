@@ -35,7 +35,7 @@ namespace Underwater {
         static Vector3 Vector(BinaryReader reader) => new Vector3(reader.ReadSingle(),reader.ReadSingle(),reader.ReadSingle());
 
         Transform palmSpace;Vector3 palmCenter;
-        public Vector3 PalmPosition=>palmSpace?palmSpace.TransformPoint(palmCenter):transform.position;
+        public Vector3 PalmPosition=>gripAnchor?gripAnchor.position:palmSpace?palmSpace.TransformPoint(palmCenter):transform.position;
         Vector3 tipPoint,tipTrigger,tipGrip,tipHold;float triggerPose,gripPose,holdPose,holdBlend,holdClosure=1;
         SeaLife posedFish;
         public Vector3 FingertipPosition=>palmSpace?palmSpace.TransformPoint(fittedMesh?fittedVertices[tipVertex]:tipPoint+tipTrigger*triggerPose+tipGrip*gripPose+tipHold*holdPose):transform.position;

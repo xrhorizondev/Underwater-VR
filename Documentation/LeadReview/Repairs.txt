@@ -1,0 +1,5 @@
+FlameAngel closeTriangles=10272 mediumTriangles=752
+ReefFish closeTriangles=4808 mediumTriangles=506
+Clownfish closeTriangles=6420 mediumTriangles=1139
+Seabass closeTriangles=6128 mediumTriangles=474
+fish=34 neckVertices=158 infillColonies=12 ship=preserved

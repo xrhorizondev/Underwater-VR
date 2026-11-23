@@ -1,0 +1,4 @@
+Ship triangles=1028 bounds=(0.02, 0.06, 0.10) renderers=1
+ShipSimple triangles=992 bounds=(0.02, 0.06, 0.11) renderers=1
+Seabass triangles=1532 bounds=(0.06, 0.09, 0.28) renderers=1
+Clownfish triangles=1605 bounds=(0.67, 1.76, 3.49) renderers=1

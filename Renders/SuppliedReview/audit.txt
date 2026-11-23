@@ -1,0 +1,6 @@
+Anchor triangles=3740 bounds=(0.11, 0.06, 0.01) clips=0
+Crab triangles=8864 bounds=(0.02, 0.08, 0.13) clips=0
+FlameAngel triangles=2568 bounds=(0.04, 0.10, 0.21) clips=0
+ReefFish triangles=1202 bounds=(0.01, 0.01, 0.00) clips=0
+Puffer triangles=2820 bounds=(0.09, 0.19, 0.25) clips=1
+Barracuda triangles=1106 bounds=(0.02, 0.03, 0.08) clips=1

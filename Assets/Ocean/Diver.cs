@@ -17,7 +17,7 @@ public class Diver:MonoBehaviour {
  public bool VoicePlaying=>voice&&voice.isPlaying;
  public bool ShowCreatureFacts=true;bool previousFactToggle;public bool currentAssist=true,consequences=true;Transform left,right;Vector3 velocity,previousLeft,previousRight;float idle,captionUntil;string caption="";int menuZone;float nextMenuStep;bool previousBack,previousMenuSelect;bool menu=true,previousMenu,previousTeleport,xrStarted;float yaw,pitch;AudioSource voice;Camera cam;TextMesh headsetCaption;
  void Start(){lifeCache=FindObjectsByType<SeaLife>(FindObjectsSortMode.None);atmosphereCache=FindFirstObjectByType<ReefAtmosphere>();Instance=this;Head=transform.Find("Head");motor=GetComponent<DiverCollisionMotor>();if(!motor)motor=gameObject.AddComponent<DiverCollisionMotor>();motor.Initialize();cam=Head.GetComponent<Camera>();voice=Head.gameObject.AddComponent<AudioSource>();voice.spatialBlend=0;
- if(PlayerPrefs.GetInt("DiveHandFitVersion",0)!=2){controllerHandPosition=new Vector3(0,-.015f,.015f);controllerHandRotation=Vector3.zero;}else controllerHandPosition=new Vector3(PlayerPrefs.GetFloat("DiveHandX",controllerHandPosition.x),PlayerPrefs.GetFloat("DiveHandY",controllerHandPosition.y),PlayerPrefs.GetFloat("DiveHandZ",controllerHandPosition.z));if(PlayerPrefs.GetInt("DiveHandFitVersion",0)==2)controllerHandRotation=new Vector3(PlayerPrefs.GetFloat("DiveHandPitch",controllerHandRotation.x),PlayerPrefs.GetFloat("DiveHandYaw",controllerHandRotation.y),controllerHandRotation.z);
+ if(PlayerPrefs.GetInt("DiveHandFitVersion",0)!=3){controllerHandPosition=new Vector3(0,-.015f,.015f);controllerHandRotation=Vector3.zero;}else controllerHandPosition=new Vector3(PlayerPrefs.GetFloat("DiveHandX",controllerHandPosition.x),PlayerPrefs.GetFloat("DiveHandY",controllerHandPosition.y),PlayerPrefs.GetFloat("DiveHandZ",controllerHandPosition.z));if(PlayerPrefs.GetInt("DiveHandFitVersion",0)==3)controllerHandRotation=new Vector3(PlayerPrefs.GetFloat("DiveHandPitch",controllerHandRotation.x),PlayerPrefs.GetFloat("DiveHandYaw",controllerHandRotation.y),controllerHandRotation.z);
  leftGlove=ScubaGlove.Create(transform,true);rightGlove=ScubaGlove.Create(transform,false);left=leftGlove.transform;right=rightGlove.transform;leftGlove.SetControllerFit(controllerHandPosition,controllerHandRotation,true);rightGlove.SetControllerFit(controllerHandPosition,controllerHandRotation,false);
  var outfit=gameObject.AddComponent<DiverOutfit>();outfit.Initialize(Head,leftGlove,rightGlove);outfit.showBody=showDiverBody;outfit.showMask=showMaskRim;
  var text=new GameObject("Diver caution caption");text.transform.SetParent(Head,false);text.transform.localPosition=new(0,-.2f,1);headsetCaption=text.AddComponent<TextMesh>();headsetCaption.anchor=TextAnchor.MiddleCenter;headsetCaption.alignment=TextAlignment.Center;headsetCaption.characterSize=.012f;headsetCaption.fontSize=48;
@@ -43,14 +43,14 @@ public class Diver:MonoBehaviour {
  if(Input.GetKeyDown(KeyCode.Escape)||menuPressed&&!previousMenu)SetMenu(!menu);previousMenu=menuPressed;
  bool teleportPressed=r.TryGetFeatureValue(CommonUsages.primaryButton,out bool tp)&&tp;
  if(!menu&&(Input.GetKeyDown(KeyCode.T)||teleportPressed&&!previousTeleport))TeleportRay();previousTeleport=teleportPressed;
-  bool fitting=xr&&menu&&r.TryGetFeatureValue(CommonUsages.triggerButton,out bool fitTrigger)&&fitTrigger;
+  bool fitting=xr&&menu&&r.TryGetFeatureValue(CommonUsages.triggerButton,out bool fitTrigger)&&fitTrigger&&l.TryGetFeatureValue(CommonUsages.gripButton,out bool fitLeft)&&fitLeft&&r.TryGetFeatureValue(CommonUsages.gripButton,out bool fitRight)&&fitRight;
  if(fitting)AdjustHandFit(l,r);
   if(xr&&menu&&!fitting){r.TryGetFeatureValue(CommonUsages.primary2DAxis,out Vector2 choice);if(Mathf.Abs(choice.y)>.65f&&Time.unscaledTime>nextMenuStep){menuZone=(menuZone+(choice.y<0?1:7))%8;nextMenuStep=Time.unscaledTime+.3f;}if(teleportPressed&&!previousMenuSelect){if(motor.TryTeleport(OceanWorld.Centers[menuZone]))SetMenu(false);else Say("That landing spot is obstructed.",null);}}
  previousMenuSelect=teleportPressed;
  bool factToggle=r.TryGetFeatureValue(CommonUsages.secondaryButton,out bool factButton)&&factButton;if(menu&&(factToggle&&!previousFactToggle||Input.GetKeyDown(KeyCode.I)))ShowCreatureFacts=!ShowCreatureFacts;previousFactToggle=factToggle;
  bool back=l.TryGetFeatureValue(CommonUsages.secondaryButton,out bool backDown)&&backDown;if(back&&!previousBack&&menu)SetMenu(false);previousBack=back;
  headsetCaption.text=xr&&menu?"HABITATS\n"+OceanWorld.Names[menuZone]+"\nRight stick: select | A: dive\nY / left menu: back\nB: creature facts "+(ShowCreatureFacts?"on":"off"):xr&&Time.time<captionUntil?caption:"";
- if(xr&&menu)headsetCaption.text+="\nHold right trigger: fit hands";
+ if(xr&&menu)headsetCaption.text+="\nBoth grips + right trigger: fit hands";
  if(fitting)headsetCaption.text="HAND FIT\nRight stick: height / reach\nLeft trigger + right stick: width\nLeft stick: pitch / mirrored yaw\nRelease trigger when aligned";
  bool grab=!menu&&(Input.GetMouseButton(0)||r.TryGetFeatureValue(CommonUsages.gripButton,out bool grip)&&grip);
  bool leftGrip=!menu&&l.TryGetFeatureValue(CommonUsages.gripButton,out bool lg)&&lg;
@@ -58,7 +58,7 @@ public class Diver:MonoBehaviour {
  leftGlove.SetContactFish(rightGrab.fish);rightGlove.SetContactFish(leftGrab.fish);
 
  }
- void SetMenu(bool open){if(!open){PlayerPrefs.SetInt("DiveHandFitVersion",2);PlayerPrefs.SetFloat("DiveHandX",controllerHandPosition.x);PlayerPrefs.SetFloat("DiveHandY",controllerHandPosition.y);PlayerPrefs.SetFloat("DiveHandZ",controllerHandPosition.z);PlayerPrefs.SetFloat("DiveHandPitch",controllerHandRotation.x);PlayerPrefs.SetFloat("DiveHandYaw",controllerHandRotation.y);PlayerPrefs.Save();}menu=open;velocity=Vector3.zero;ReleaseGrab();GetComponent<ReefSoundscape>()?.Cue(false);}
+ void SetMenu(bool open){if(!open){PlayerPrefs.SetInt("DiveHandFitVersion",3);PlayerPrefs.SetFloat("DiveHandX",controllerHandPosition.x);PlayerPrefs.SetFloat("DiveHandY",controllerHandPosition.y);PlayerPrefs.SetFloat("DiveHandZ",controllerHandPosition.z);PlayerPrefs.SetFloat("DiveHandPitch",controllerHandRotation.x);PlayerPrefs.SetFloat("DiveHandYaw",controllerHandRotation.y);PlayerPrefs.Save();}menu=open;velocity=Vector3.zero;ReleaseGrab();GetComponent<ReefSoundscape>()?.Cue(false);}
  bool NearScoopTarget(){foreach(var f in lifeCache){if(!f||!f.grabbable||f.danger||f.observationOnly)continue;if(Mathf.Min((f.transform.position-LeftPalm).sqrMagnitude,(f.transform.position-RightPalm).sqrMagnitude)<.65f*.65f)return true;}return false;}
  void AdjustHandFit(InputDevice l,InputDevice r){
   r.TryGetFeatureValue(CommonUsages.primary2DAxis,out Vector2 move);l.TryGetFeatureValue(CommonUsages.primary2DAxis,out Vector2 angle);
@@ -82,7 +82,14 @@ public class Diver:MonoBehaviour {
  }
  void ReleaseHand(GrabState state){if(state.fish)state.fish.Release();state.fish=null;state.down=false;state.spent=false;}
  void ReleaseGrab(){ReleaseHand(leftGrab);ReleaseHand(rightGrab);}
- void OnDisable(){ReleaseGrab();} void Track(InputDevice d,Transform t){bool tracked=d.isValid&&(!d.TryGetFeatureValue(CommonUsages.isTracked,out bool isTracked)||isTracked);t.gameObject.SetActive(tracked);if(!tracked)return;if(d.TryGetFeatureValue(CommonUsages.devicePosition,out Vector3 p))t.localPosition=p;if(d.TryGetFeatureValue(CommonUsages.deviceRotation,out Quaternion q))t.localRotation=q;}
+ void OnEnable(){Application.onBeforeRender+=RefreshTrackedHands;}
+ void RefreshTrackedHands(){
+  if(!Head||!left||!right)return;var h=InputDevices.GetDeviceAtXRNode(XRNode.Head);if(!h.isValid)return;
+  if(h.TryGetFeatureValue(CommonUsages.devicePosition,out Vector3 p))Head.localPosition=p;if(h.TryGetFeatureValue(CommonUsages.deviceRotation,out Quaternion q))Head.localRotation=q;
+  Track(InputDevices.GetDeviceAtXRNode(XRNode.LeftHand),left);Track(InputDevices.GetDeviceAtXRNode(XRNode.RightHand),right);motor.TrackHead();
+  float dt=Mathf.Min(Time.unscaledDeltaTime,.05f);if(leftGrab.fish)leftGrab.fish.StepHeld(dt,Time.time);if(rightGrab.fish)rightGrab.fish.StepHeld(dt,Time.time);
+ }
+ void OnDisable(){Application.onBeforeRender-=RefreshTrackedHands;ReleaseGrab();} void Track(InputDevice d,Transform t){bool tracked=d.isValid&&(!d.TryGetFeatureValue(CommonUsages.isTracked,out bool isTracked)||isTracked);t.gameObject.SetActive(tracked);if(!tracked)return;if(d.TryGetFeatureValue(CommonUsages.devicePosition,out Vector3 p))t.localPosition=p;if(d.TryGetFeatureValue(CommonUsages.deviceRotation,out Quaternion q))t.localRotation=q;}
  public float DistanceToHands(Vector3 p)=>Mathf.Min(Vector3.Distance(LeftPalm,p),Vector3.Distance(RightPalm,p));
  public void Say(string text,AudioClip clip){caption=text;captionUntil=Time.time+3;if(clip)voice.PlayOneShot(clip);}
  public bool TryCaution(string text,AudioClip clip){if(menu||Time.time<nextCaution)return false;nextCaution=Time.time+Mathf.Max(3,clip?clip.length:0);Say(text,clip);return true;}

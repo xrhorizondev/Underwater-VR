@@ -2,11 +2,12 @@ using UnityEngine;
 namespace Underwater {
 public sealed class ReefImportedAnimation:MonoBehaviour {
  public Transform tailWarning,tailBone;public float speed=.72f;
+ public float minimumTravelRate=.55f;
  [Range(0,1)]public float cycleOffset;
  Animation player;float desiredRate=-1;
  // Locomotion supplies actual travel speed rather than letting a blocked
  // animal keep the same full-speed stroke.
- public void MatchTravel(float metresPerSecond,float referenceSpeed){desiredRate=Mathf.Clamp(metresPerSecond/Mathf.Max(.1f,referenceSpeed),.55f,1.6f);}
+ public void MatchTravel(float metresPerSecond,float referenceSpeed){desiredRate=Mathf.Clamp(metresPerSecond/Mathf.Max(.1f,referenceSpeed),minimumTravelRate,1.6f);}
  void Start(){var animation=GetComponent<Animation>();if(animation&&animation.clip){var state=animation[animation.clip.name];state.speed=speed;animation.wrapMode=WrapMode.Loop;
  // Keep the compact bone clocks running between habitats. Renderer-based
  // culling can leave a legacy clip frozen at its initial sampled pose.

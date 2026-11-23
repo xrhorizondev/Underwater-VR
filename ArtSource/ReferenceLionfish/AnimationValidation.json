@@ -1,0 +1,45 @@
+{
+  "Idle": {
+    "loop_error": 0.0,
+    "motion_radians": {
+      "Jaw": 0.056852616369724274,
+      "GillL": 0.03644866496324539,
+      "GillR": 0.01213849801570177,
+      "TailTip": 6.267484188079834,
+      "PectoralL2": 0.0882740467786789
+    },
+    "root_translation": 0
+  },
+  "Swim": {
+    "loop_error": 0.0,
+    "motion_radians": {
+      "Jaw": 0.06549452990293503,
+      "GillL": 0.05901351198554039,
+      "GillR": 0.010403955355286598,
+      "TailTip": 6.238283634185791,
+      "PectoralL2": 0.28130459785461426
+    },
+    "root_translation": 0
+  },
+  "Breath": {
+    "loop_error": 0.0,
+    "motion_radians": {
+      "Jaw": 0.055541496723890305,
+      "GillL": 0.02429674193263054,
+      "GillR": 0.02429674193263054,
+      "TailTip": 0.0,
+      "PectoralL2": 0.0
+    },
+    "root_translation": 0
+  },
+  "round_trip": {
+    "clips": [
+      "LionfishRig|Breath",
+      "LionfishRig|Idle",
+      "LionfishRig|Swim"
+    ],
+    "bones": 20,
+    "meshes": 2,
+    "triangles": 3056
+  }
+}
