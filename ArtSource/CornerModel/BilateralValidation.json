@@ -1,0 +1,26 @@
+[
+  {
+    "model": "Lionfish_Bilateral",
+    "triangles": 593222,
+    "vertices": 308513,
+    "bones": 9,
+    "loop_error": 0.0,
+    "max_edge_ratio": 1.2136744260787964,
+    "min_edge_ratio": 0.7333278656005859,
+    "max_sampled_mirror_error": 0.08823192119598389,
+    "symmetry_plane": 0.018334388732910156,
+    "polygons": 592533
+  },
+  {
+    "model": "Lionfish_BilateralReduced",
+    "triangles": 20022,
+    "vertices": 15078,
+    "bones": 9,
+    "loop_error": 0.0,
+    "max_edge_ratio": 1.3027472496032715,
+    "min_edge_ratio": 0.7530314922332764,
+    "max_sampled_mirror_error": 0.08784427493810654,
+    "symmetry_plane": 0.018334388732910156,
+    "polygons": 20022
+  }
+]

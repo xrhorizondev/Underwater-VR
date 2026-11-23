@@ -1,0 +1,2 @@
+Reduced lionfish | 19999 triangles triangles=19999 bones=9 sampled motion=0.05298157
+Original lionfish | 469558 triangles triangles=469558 bones=9 sampled motion=0.05301298

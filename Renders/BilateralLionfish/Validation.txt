@@ -1,0 +1,2 @@
+Bilateral full | 593222 triangles triangles=593222 bones=9 sampled motion=0.05301298
+Bilateral reduced | 20022 triangles triangles=20022 bones=9 sampled motion=0.05311283

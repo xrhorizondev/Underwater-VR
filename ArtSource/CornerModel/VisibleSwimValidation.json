@@ -1,0 +1,26 @@
+[
+  {
+    "model": "Lionfish_Animated",
+    "triangles": 469558,
+    "loop_error": 0.0,
+    "max_edge_ratio": 1.2053853273391724,
+    "min_edge_ratio": 0.7992497682571411,
+    "side_view_motion_metres": 0.018282031640410423,
+    "bind_geometry_unchanged": true,
+    "uvs_unchanged": true,
+    "phases_checked": 25,
+    "cycle_seconds": 1.5
+  },
+  {
+    "model": "Lionfish_Reduced",
+    "triangles": 19999,
+    "loop_error": 0.0,
+    "max_edge_ratio": 1.3576924800872803,
+    "min_edge_ratio": 0.7939853668212891,
+    "side_view_motion_metres": 0.01833532564342022,
+    "bind_geometry_unchanged": true,
+    "uvs_unchanged": true,
+    "phases_checked": 25,
+    "cycle_seconds": 1.5
+  }
+]

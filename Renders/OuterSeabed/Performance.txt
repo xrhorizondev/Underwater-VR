@@ -1,0 +1,5 @@
+Rock patches=211 Plant patches=211
+Total rock high triangles=1200016 distant=373748
+64 habitat views, 65m far clip: conservative visible added geometry upper bound (counts BOTH rock LODs)=101588 triangles, 32 renderers.
+No added lights, rigidbodies, per-frame scripts or shadows. Plants cull before rocks. Static simplified rock colliders.
+This is an editor geometry audit, not measured Quest FPS.

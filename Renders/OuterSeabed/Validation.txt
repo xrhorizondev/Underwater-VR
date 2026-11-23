@@ -1,0 +1,2 @@
+Rocks=1257 Plants=2237
+20m spatial batches, saved sand grounding including all four extensions.

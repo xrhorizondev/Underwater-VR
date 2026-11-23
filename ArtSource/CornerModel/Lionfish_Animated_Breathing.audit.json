@@ -1,0 +1,28 @@
+{
+  "source": "D:\\GIT Project\\Underwater-VR\\ArtSource\\CornerModel\\Lionfish_Animated_Breathing.blend",
+  "blender": "5.3.0",
+  "triangles": 469558,
+  "bones": 9,
+  "materials": [
+    "tripo_material_245ce788-dee8-4fc9-80bd-4ca89aa0679f"
+  ],
+  "clips": [
+    "Lionfish_SwimAndBreathe"
+  ],
+  "images": {
+    "Color_245ce788-dee8-4fc9-80bd-4ca89aa0679f": [
+      4096,
+      4096
+    ],
+    "ORM_245ce788-dee8-4fc9-80bd-4ca89aa0679f": [
+      4096,
+      4096
+    ],
+    "NormalGL_245ce788-dee8-4fc9-80bd-4ca89aa0679f": [
+      4096,
+      4096
+    ]
+  },
+  "issues": [],
+  "status": "passed"
+}

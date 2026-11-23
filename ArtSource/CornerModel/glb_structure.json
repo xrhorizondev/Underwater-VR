@@ -1,0 +1,32 @@
+{
+  "extensionsUsed": [
+    "KHR_mesh_quantization",
+    "EXT_meshopt_compression"
+  ],
+  "extensionsRequired": [
+    "KHR_mesh_quantization",
+    "EXT_meshopt_compression"
+  ],
+  "nodes": [
+    {
+      "name": "tripo_node_245ce788-dee8-4fc9-80bd-4ca89aa0679f",
+      "mesh": 0
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "animations": null
+}

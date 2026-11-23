@@ -1,0 +1,17 @@
+{
+  "original_triangles": 469558,
+  "reduced_triangles": 19999,
+  "reduced_vertices": 14667,
+  "reduction_percent": 95.7408882395785,
+  "sampled_surface_points": 14328,
+  "maximum_surface_error": 0.0007994621992111206,
+  "surface_error_99_percent": 0.0003087588449125175,
+  "max_error_percent_body_length": 0.18579933574772153,
+  "loop_error": 0.0,
+  "maximum_edge_stretch": 1.062228798866272,
+  "minimum_edge_ratio": 0.9382373094558716,
+  "bones": 6,
+  "materials": 1,
+  "uvs_preserved": true,
+  "checked_animation_phases": 25
+}

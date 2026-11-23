@@ -1,0 +1,10 @@
+{
+  "triangles": 593222,
+  "bones": 9,
+  "actions": [
+    "Lionfish Swim Rig|Scene"
+  ],
+  "sampled_vertices": 10639,
+  "sampled_frames": 5,
+  "max_export_position_error": 1.491163459377276e-07
+}

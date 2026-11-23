@@ -1,0 +1,3 @@
+Corals=443 patches=153
+High triangles=597845 distant=233388
+Saved visual rock raycast anchoring, no added colliders, lights, shadows or runtime scripts. Shared existing materials and two mesh LODs with early culling.

@@ -1,0 +1,15 @@
+{
+  "vertices": 243563,
+  "polygons": 469558,
+  "triangles": 469558,
+  "bones": 6,
+  "materials": 1,
+  "loop_vertex_error": 0.0,
+  "max_edge_stretch": 1.058973789215088,
+  "min_edge_ratio": 0.9424111247062683,
+  "bind_geometry_unchanged": true,
+  "uvs_unchanged": true,
+  "clip": "Lionfish_GentleSwim",
+  "seconds": 3,
+  "checked_phases": 25
+}
