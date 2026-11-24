@@ -1,0 +1,1 @@
+Active skeletal manta: 193 cephalic-fin curves fixed to authored curled pose. Maximum face-joint rotation=0 degrees; wing rotation=20.44744 degrees across 80 clip samples.

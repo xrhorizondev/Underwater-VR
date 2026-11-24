@@ -1,0 +1,1 @@
+Right palm contact and later fingertip contact each completed a separate escape/ground/curl cycle. Repeated escape collision checks passed. A fully obstructed route declined the reaction without teleporting or changing the resting pose.

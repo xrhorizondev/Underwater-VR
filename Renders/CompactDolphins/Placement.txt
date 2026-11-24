@@ -1,0 +1,1 @@
+Compact centre=(2.00, -13.50, 66.00); radii=(4.50, 4.00); cruise speed=0.58 m/s. Entire route swept at body radius + 0.35 m.

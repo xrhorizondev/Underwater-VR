@@ -1,0 +1,14 @@
+{
+  "Straight": {
+    "samples": 11089,
+    "maxSurfaceErrorMetres": 6.29072601441294e-05,
+    "meanSurfaceErrorMetres": 9.113793476006538e-06,
+    "p99SurfaceErrorMetres": 3.3685618400340904e-05
+  },
+  "Curled": {
+    "samples": 10044,
+    "maxSurfaceErrorMetres": 0.0001869695697678253,
+    "meanSurfaceErrorMetres": 2.3418416663027718e-05,
+    "p99SurfaceErrorMetres": 8.52977069007464e-05
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "source": "D:\\GIT Project\\Underwater-VR\\ArtSource\\MorayComparison\\Curled.blend",
+  "blender": "5.3.0",
+  "triangles": 421844,
+  "bones": 22,
+  "materials": [
+    "MorayOriginalSurface"
+  ],
+  "clips": [
+    "FullBodySwim"
+  ],
+  "images": {
+    "Color_276577f8-af31-4895-b835-2c508e7883a8": [
+      4096,
+      4096
+    ],
+    "ORM_276577f8-af31-4895-b835-2c508e7883a8": [
+      4096,
+      4096
+    ],
+    "NormalGL_276577f8-af31-4895-b835-2c508e7883a8": [
+      4096,
+      4096
+    ]
+  },
+  "issues": [],
+  "status": "passed"
+}

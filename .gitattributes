@@ -3,6 +3,6 @@
 #
 # Git LFS is path-based: once a path crosses the threshold, future revisions
 # of that path stay in LFS. This keeps the current commit checkoutable.
-
 # BEGIN AUTO-LFS
 # END AUTO-LFS
+Assets/UnderwaterArt/PreparedMarine/MantaRay/MantaFixedFace.anim filter=lfs diff=lfs merge=lfs -text

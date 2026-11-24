@@ -1,0 +1,3 @@
+Wreck dolphin 1: minimum stroke rate=0.2597327 Hz; minimum glide effort=0.3040986; minimum tail rotation per 3-second window=9.320352 degrees; glide samples=371
+Wreck dolphin 2: minimum stroke rate=0.2597307 Hz; minimum glide effort=0.3040926; minimum tail rotation per 3-second window=10.10495 degrees; glide samples=385
+Wreck dolphin 3: minimum stroke rate=0.2597471 Hz; minimum glide effort=0.3041417; minimum tail rotation per 3-second window=10.15235 degrees; glide samples=347

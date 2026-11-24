@@ -1,0 +1,5 @@
+24,000 triangles; 22 bones; curled-rest and straight-swim clips.
+Hand proximity alone ignored; hand contact triggered escape.
+States=Rising, Uncurling, Swimming, Curling, Settling, Resting
+Horizontal displacement=3.887997 m; path travel=5.699805 m; settled clearance margin=0.02834129 m; minimum floor margin=0.02834129 m.
+Animated vertices checked=614882; sphere/reef and animated bounds passed. Cooldown passed.

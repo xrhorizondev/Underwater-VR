@@ -1,0 +1,3 @@
+Previous root=(-2.66, -18.88, 70.08) resting root=(-1.45, -21.47, 70.40)
+Rest bounds=Center: (-0.41, 0.00, -0.55), Extents: (0.50, 0.15, 0.58)
+Travel bounds=Center: (-0.35, 0.00, -0.91), Extents: (0.56, 0.16, 0.94)

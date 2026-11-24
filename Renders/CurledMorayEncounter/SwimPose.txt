@@ -1,0 +1,1 @@
+State=Swimming local spine extent=(0.12, 0.00, 1.70) max local joint translation between rest and swim clips=1.261614E-09

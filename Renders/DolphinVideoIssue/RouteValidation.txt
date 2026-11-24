@@ -1,0 +1,1 @@
+10-minute compact patrol: travel=345.5156,346.338,346.4617 m; max distance from centre=4.5 m; longest stop=0 s; closest spacing=6.477401 m.

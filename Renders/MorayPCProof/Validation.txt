@@ -1,0 +1,4 @@
+Actual Play-mode Update advanced resting animation: max local vertex displacement=0.1491937 m, clock=20.93533 s.
+Menu paused animation. PC ray click used the production desktop-touch handler; reach and occlusion checks passed.
+Real Update loop completed escape, swimming, curl and ground settling; travel=5.700503 m.
+Skin: specular highlights and glossy reflections disabled; normal depth=0.25; smoothness=0.08.

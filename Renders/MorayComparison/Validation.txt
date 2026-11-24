@@ -1,0 +1,4 @@
+Curled Reduced: 24000 triangles; 22 bones, 21 animated; maximum displacement=0.1483236 m; loop seam=0 m
+Straight Full: 199596 triangles; 22 bones, 21 animated; maximum displacement=0.09229362 m; loop seam=0 m
+Straight Reduced: 24000 triangles; 22 bones, 21 animated; maximum displacement=0.09228863 m; loop seam=0 m
+Curled Full: 421844 triangles; 22 bones, 21 animated; maximum displacement=0.1483133 m; loop seam=0 m
