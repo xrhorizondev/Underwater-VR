@@ -1,0 +1,1 @@
+Removed 34 imported small fish; four species folders and four close-detail meshes deleted. No remaining scene dependencies on deleted assets. Other actors preserved, including 25 reduced comb jellies. Fish-school and small-fish contact references cleaned.

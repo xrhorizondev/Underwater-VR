@@ -13,13 +13,14 @@ public sealed class YellowMorayMotion:MonoBehaviour {
  void LateUpdate(){var diver=Diver.Instance;if(diver&&diver.MenuOpen)return;Step(Mathf.Min(Time.deltaTime,.05f));}
  public AnimationClip Clip(string state){if(clips==null){if(!animationPlayer)animationPlayer=GetComponentInChildren<Animation>();clips=animationPlayer.Cast<AnimationState>().Select(s=>s.clip).ToDictionary(c=>c.name.Split('|').Last(),c=>c);}return clips[state];}
  public void Step(float dt){
-  Initialize();reactionClock+=dt;stateClock+=dt;string state="Idle";
+  Initialize();reactionClock+=dt;stateClock+=dt;string state="Idle";float actualTravel=0;
   if(actor){bool reacting=actor.Reacting;if(reacting&&!wasReacting)reactionClock=0;wasReacting=reacting;
-   float velocity=Vector3.Dot(actor.transform.position-previous,actor.transform.forward)/Mathf.Max(dt,.001f);previous=actor.transform.position;
+   float velocity=Vector3.Dot(actor.transform.position-previous,actor.transform.forward)/Mathf.Max(dt,.001f);previous=actor.transform.position;actualTravel=Mathf.Abs(velocity);
    state=reactionClock<.7f?"React":velocity<-.01f?"Retreat":velocity>.01f?"Recover":"Idle";
   }else if(freeSwim)state="Swim";
   var clip=Clip(state);bool changed=state!=CurrentState;CurrentState=state;
   if(changed){stateClock=0;blendClock=0;for(int i=0;i<poseBones.Length;i++){blendPositions[i]=poseBones[i].localPosition;blendRotations[i]=poseBones[i].localRotation;blendScales[i]=poseBones[i].localScale;}}
+  else if(actor&&(state=="Retreat"||state=="Recover"))stateClock+=dt*(Mathf.Clamp(actualTravel/.35f,.12f,1.4f)-1);
   float time=stateClock;time=state=="React"||state=="Recover"?Mathf.Min(time,clip.length):time%clip.length;
   // One explicit clock/sample path in play mode and validation. Renderer
   // culling or the legacy component's autoplay cannot freeze the idle pose.

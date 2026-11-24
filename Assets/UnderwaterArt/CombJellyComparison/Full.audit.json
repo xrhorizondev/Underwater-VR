@@ -1,0 +1,20 @@
+{
+  "source": "D:\\GIT Project\\Underwater-VR\\ArtSource\\CombJellyComparison\\CombJelly_Comparison.blend",
+  "blender": "5.3.0",
+  "triangles": 245902,
+  "bones": 5,
+  "materials": [
+    "Reference translucent tissue"
+  ],
+  "clips": [
+    "GentlePulse"
+  ],
+  "images": {
+    "CombJelly_TranslucentTissue": [
+      2048,
+      2048
+    ]
+  },
+  "issues": [],
+  "status": "passed"
+}

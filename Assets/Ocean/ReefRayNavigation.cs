@@ -10,6 +10,11 @@ public sealed class ReefRayNavigation {
   if(!body)return goal;
   if(probeTimer>0)return hold>0?escape:goal;
   probeTimer=.18f;float reach=Mathf.Max(2.5f,speed*7);
+  // Finish a clearance-tested turn before choosing another relative heading.
+  // Re-selecting every probe made a slow fish chase a receding escape vector.
+  if(Avoiding&&hold>0&&escape.sqrMagnitude>.1f&&body.Clear(actor.position+escape*.05f)&&!Physics.SphereCast(body.WorldCenter,body.radius,escape,out _,reach*.65f,ReefSphereBody.SolidMask,QueryTriggerInteraction.Ignore)){
+   if(Vector3.Dot(actor.forward,escape)<.7f)hold=Mathf.Max(hold,.4f);return escape;
+  }
   bool blocked=Physics.SphereCast(body.WorldCenter,body.radius,actor.forward,out _,reach,ReefSphereBody.SolidMask,QueryTriggerInteraction.Ignore)||Physics.SphereCast(body.WorldCenter,body.radius,goal,out _,reach,ReefSphereBody.SolidMask,QueryTriggerInteraction.Ignore);
   if(!blocked&&stalled<.2f){if(hold>0)return escape;Avoiding=false;return goal;}
   Avoiding=true;float best=float.NegativeInfinity;Vector3 selected=-actor.forward;

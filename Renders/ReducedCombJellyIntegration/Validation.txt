@@ -1,0 +1,4 @@
+25 comb jellies replaced; 21,999 triangles and 5 bones each.
+All pulse vertices within existing clearance envelope: 7099200 checks.
+30-second drift per jelly; minimum travel=1.524148 m; minimum seabed clearance margin=-1.907349E-06 m.
+Actor transforms, root gameplay components, colliders and unrelated scene objects preserved. Information-only behavior retained. No Quest FPS measurement.

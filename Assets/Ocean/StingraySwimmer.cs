@@ -2,7 +2,7 @@ using UnityEngine;
 namespace Underwater {
 public sealed class StingraySwimmer:MonoBehaviour {
  public float speed=.28f,radius=2.5f,phase;
- ReefSphereBody body;Renderer skin;MaterialPropertyBlock block;Vector3 center;float clock,bank;bool ready;
+ ReefSphereBody body;Renderer skin;MaterialPropertyBlock block;Vector3 center;float clock,bank,strokePhase,effort;bool ready;
  readonly ReefRayNavigation navigation=new ReefRayNavigation();
  public float TouchResponse {get;private set;}
  public bool SafeBodyTouch(Vector3 world){var p=transform.InverseTransformPoint(world);float depth=p.z>=0?.64f:.54f;return p.x*p.x/(.96f*.96f)+p.z*p.z/(depth*depth)<=1&&Mathf.Abs(p.y-.04f)<.28f;}
@@ -17,8 +17,8 @@ public sealed class StingraySwimmer:MonoBehaviour {
   var desired=(target-transform.position).normalized;
   desired=navigation.Direction(transform,body,desired,speed,dt);desired.y=Mathf.Clamp(desired.y,-.3f,.3f);
   var forward=Vector3.RotateTowards(transform.forward,desired,(navigation.Avoiding?28:18)*Mathf.Deg2Rad*dt,0);float turn=Vector3.SignedAngle(transform.forward,forward,Vector3.up)/Mathf.Max(dt,.001f);bank=Mathf.MoveTowards(bank,Mathf.Clamp(-turn*.4f,-10,10),12*dt);transform.rotation=Quaternion.LookRotation(forward,Vector3.up)*Quaternion.AngleAxis(bank,Vector3.forward);
-  if(body)navigation.RecordMovement(body.MoveSliding(forward*speed*dt).magnitude,speed*dt,dt);
-  if(skin){skin.GetPropertyBlock(block);block.SetFloat("_StrokePhase",clock*2.3f+phase);block.SetFloat("_StrokeStrength",.9f+.1f*Mathf.Sin(clock*.27f+phase)+TouchResponse*.18f);skin.SetPropertyBlock(block);}
+  float actual=0;if(body){float moved=body.MoveSliding(forward*speed*dt).magnitude;actual=moved/Mathf.Max(dt,.001f);navigation.RecordMovement(moved,speed*dt,dt);}effort=Mathf.Lerp(effort,Mathf.Clamp01(actual/Mathf.Max(.01f,speed)),1-Mathf.Exp(-dt*4));strokePhase+=dt*2.3f*Mathf.Lerp(.15f,1,effort);
+  if(skin){skin.GetPropertyBlock(block);block.SetFloat("_StrokePhase",strokePhase+phase);block.SetFloat("_StrokeStrength",Mathf.Lerp(.4f,.9f,effort)+.06f*Mathf.Sin(clock*.27f+phase)+TouchResponse*.18f);skin.SetPropertyBlock(block);}
  }
 }
 }

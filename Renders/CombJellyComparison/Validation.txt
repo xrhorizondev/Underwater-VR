@@ -1,0 +1,2 @@
+Full: 245902 triangles; 5 bones; clip 4 sec; max motion 0.02495121 m; seam 0 m
+Reduced: 21999 triangles; 5 bones; clip 4 sec; max motion 0.02495585 m; seam 0 m

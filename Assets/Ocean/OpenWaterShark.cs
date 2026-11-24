@@ -3,9 +3,10 @@ namespace Underwater {
 // Observation encounter: pursuit earns advice, never contact damage.
 public sealed class OpenWaterShark:MonoBehaviour {
  public AudioClip cautionVoice;public float patrolRadius=7;
- ReefSphereBody body;Renderer skin;Animation swim;MaterialPropertyBlock block;Vector3 home,previousViewer;float clock,pursuit,cooldown,currentSpeed=.6f,bank;bool ready,hasViewer;
+ ReefSphereBody body;ReefAnimalClearance clearance;ReefImportedAnimation stroke;Renderer skin;Animation swim;MaterialPropertyBlock block;Vector3 home,previousViewer,steering;float clock,pursuit,cooldown,currentSpeed=.6f,bank;bool ready,hasViewer;
+ public float ActualSpeed{get;private set;}
  readonly ReefRayNavigation navigation=new ReefRayNavigation();
- public void Initialize(){if(ready)return;ready=true;body=GetComponent<ReefSphereBody>();skin=GetComponent<Renderer>();if(skin&&!skin.enabled)skin=null;swim=GetComponentInChildren<Animation>();block=new MaterialPropertyBlock();home=transform.position;}
+ public void Initialize(){if(ready)return;ready=true;body=GetComponent<ReefSphereBody>();clearance=GetComponent<ReefAnimalClearance>();skin=GetComponent<Renderer>();if(skin&&!skin.enabled)skin=null;swim=GetComponentInChildren<Animation>();stroke=swim?swim.GetComponent<ReefImportedAnimation>():null;block=new MaterialPropertyBlock();home=transform.position;steering=transform.forward;}
  void Update(){var d=Diver.Instance;if(!d||!d.Head||d.MenuOpen||!ReefSimulationRange.Active(transform)){hasViewer=false;pursuit=0;return;}float dt=Mathf.Min(Time.deltaTime,.05f);Vector3 viewer=d.Head.position;Vector3 velocity=hasViewer?(viewer-previousViewer)/Mathf.Max(dt,.001f):Vector3.zero;if((viewer-previousViewer).sqrMagnitude>4)velocity=Vector3.zero;previousViewer=viewer;hasViewer=true;bool warn=Step(dt,viewer,velocity,d.Zone==6);if(warn&&!d.VoicePlaying&&d.TryCaution("Let's not chase it, just watch.",cautionVoice))MarkWarned();}
  public void MarkWarned(){cooldown=18;pursuit=0;}
  public bool Step(float dt,Vector3 viewer,Vector3 viewerVelocity,bool inHabitat){Initialize();clock+=dt;cooldown=Mathf.Max(0,cooldown-dt);var toward=transform.position-viewer;float distance=toward.magnitude;
@@ -19,13 +20,14 @@ public sealed class OpenWaterShark:MonoBehaviour {
   desired.y=Mathf.Clamp(home.y+Mathf.Sin(clock*.13f)*.35f-transform.position.y,-.12f,.12f);
   float avoidance=inHabitat?Mathf.SmoothStep(0,1,Mathf.InverseLerp(10,4,distance)):0;
   desired+=Vector3.ProjectOnPlane(toward,Vector3.up).normalized*avoidance*1.8f;
-  currentSpeed=Mathf.MoveTowards(currentSpeed,Mathf.Lerp(.6f,1.2f,avoidance),.22f*dt);
+  float turnEase=Mathf.Lerp(.7f,1,Mathf.Clamp01(Vector3.Dot(transform.forward,desired.normalized)));
+  float cruise=.7f*(1+.045f*Mathf.Sin(clock*.31f));currentSpeed=Mathf.MoveTowards(currentSpeed,Mathf.Lerp(cruise,1.15f,avoidance)*turnEase,.18f*dt);
   var direction=navigation.Direction(transform,body,desired.normalized,currentSpeed,dt,true);
   // Keep the clearance-tested escape slope. Flattening it after probing can
   // steer straight back into the ledge that the navigation just avoided.
-  if(!navigation.Avoiding)direction.y=Mathf.Clamp(direction.y,-.18f,.18f);
-  if(direction.sqrMagnitude>.001f){var old=transform.forward;var forward=Vector3.RotateTowards(old,direction.normalized,18*Mathf.Deg2Rad*dt,0);float turn=Vector3.SignedAngle(old,forward,Vector3.up)/Mathf.Max(dt,.001f);bank=Mathf.Lerp(bank,Mathf.Clamp(-turn*.35f,-6,6),1-Mathf.Exp(-dt*2));transform.rotation=Quaternion.LookRotation(forward,Vector3.up)*Quaternion.AngleAxis(bank,Vector3.forward);}
-  if(body){float moved=body.MoveSliding(transform.forward*currentSpeed*dt).magnitude;navigation.RecordMovement(moved,currentSpeed*dt,dt);if(swim){var stroke=swim.GetComponent<ReefImportedAnimation>();if(stroke)stroke.MatchTravel(moved/Mathf.Max(dt,.001f),.75f);}}
+  direction.y=Mathf.Clamp(direction.y,navigation.Avoiding?-.3f:-.14f,navigation.Avoiding?.3f:.14f);direction.Normalize();steering=Vector3.Slerp(steering,direction,1-Mathf.Exp(-dt*1.8f));
+  if(steering.sqrMagnitude>.001f){var old=transform.forward;var forward=Vector3.RotateTowards(old,steering.normalized,(navigation.Avoiding?20:14)*Mathf.Deg2Rad*dt,0);float turn=Vector3.SignedAngle(old,forward,Vector3.up)/Mathf.Max(dt,.001f);bank=Mathf.Lerp(bank,Mathf.Clamp(-turn*.3f,-5,5),1-Mathf.Exp(-dt*1.6f));var rotation=Quaternion.LookRotation(forward,Vector3.up)*Quaternion.AngleAxis(bank,Vector3.forward);bool canTurn=true;if(body&&clearance&&clearance.RequiredHeight(transform.position,rotation,out float height)&&height>transform.position.y+.012f){body.MoveSliding(Vector3.up*Mathf.Min(height-transform.position.y+.02f,.25f*dt));canTurn=height<=transform.position.y+.012f;}if(canTurn)transform.rotation=rotation;}
+  if(body){var delta=transform.forward*currentSpeed*dt;if(clearance&&clearance.RequiredHeight(transform.position+delta,transform.rotation,out float height)&&height>transform.position.y+delta.y+.012f)delta=Vector3.up*Mathf.Min(height-transform.position.y+.02f,.25f*dt);float moved=body.MoveSliding(delta).magnitude;ActualSpeed=moved/Mathf.Max(dt,.001f);navigation.RecordMovement(moved,currentSpeed*dt,dt);if(stroke)stroke.MatchTravel(ActualSpeed,.75f);}
   if(skin){skin.GetPropertyBlock(block);block.SetFloat("_TailPhase",clock*3);skin.SetPropertyBlock(block);}return pursuit>=.75f&&cooldown<=0;
  }
 }

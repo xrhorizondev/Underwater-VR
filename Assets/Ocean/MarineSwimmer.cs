@@ -6,7 +6,7 @@ namespace Underwater {
   public Vector3 center;public float radius=3,speed=.12f,phase;public Transform[] fins;public bool isRay;public bool encounterRoll;
   public void Initialize(){if(initialized)return;initialized=true;heading=transform.forward;body=GetComponent<ReefSphereBody>();center=isRay?transform.position+transform.right*10:transform.position;skin=GetComponent<Renderer>();properties=new MaterialPropertyBlock();}
   void Start(){Initialize();}
-  void Update(){Step(Mathf.Min(Time.deltaTime,.05f));}
+ void Update(){if(Diver.Instance&&Diver.Instance.MenuOpen||!ReefSimulationRange.Active(transform))return;Step(Mathf.Min(Time.deltaTime,.05f));}
   public void Step(float dt){Initialize();clock+=dt;
    if(isRay){
     Vector3 radial=Vector3.ProjectOnPlane(transform.position-center,Vector3.up);if(radial.sqrMagnitude<1)radial=-transform.right*10;

@@ -30,7 +30,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Cull: 2
-    - _Cutoff: 0.25
+    - _Cutoff: 0
     - _Cutout: 0
     m_Colors: []
   m_BuildTextureStacks: []
