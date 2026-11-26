@@ -6,7 +6,7 @@ Shader "Underwater/Translucent Jelly Tissue" {
  #pragma target 3.0
  float4 _Color,_RimColor,_TissueOffset;float _ReefTime,_JellyPhase;
  struct Input {float3 viewDir;float3 worldPos;float2 uv_MainTex;};
- void vert(inout appdata_full v){float pulse=sin(_ReefTime*1.4+_JellyPhase);float3 p=v.vertex.xyz+_TissueOffset.xyz;p.xz*=1+pulse*.035;p.y*=1-pulse*.06;v.vertex.xyz=p-_TissueOffset.xyz;}
+ void vert(inout appdata_full v){float t=frac(_ReefTime/3.4+_JellyPhase*.15915);float pulse=t<.23?smoothstep(0,.23,t):1-smoothstep(.23,1,t);float3 p=v.vertex.xyz+_TissueOffset.xyz;float bell=smoothstep(-.18,0,p.y);p.xz*=1-pulse*.16*bell;p.y=.24+(p.y-.24)*(1+pulse*.14*bell);float trailing=1-bell;p.x+=sin(_ReefTime*1.85+p.y*3+_JellyPhase)*trailing*.025;p.z+=sin(_ReefTime*1.85+p.y*3+_JellyPhase+1.3)*trailing*.018;v.vertex.xyz=p-_TissueOffset.xyz;}
  void surf(Input IN,inout SurfaceOutputStandard o){float rim=pow(1-saturate(abs(dot(normalize(IN.viewDir),float3(0,0,1)))),2);float stripes=pow(saturate(sin(IN.uv_MainTex.x*6.283*32)),12);o.Albedo=_Color.rgb*.4;o.Smoothness=.86;o.Metallic=0;o.Emission=_RimColor.rgb*(.2+rim*.55+stripes*.055);o.Alpha=_Color.a+rim*.38;}
  ENDCG
  }

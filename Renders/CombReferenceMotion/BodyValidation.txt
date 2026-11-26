@@ -1,0 +1,6 @@
+Comb jellies: 25
+Rig: 11 joints with crown/waist body deformation; mesh: 21,999 triangles; loop: 4.8 seconds
+Sampled poses: 2425
+Maximum tissue displacement: 0.07797315 m
+Main-body width variation: 0.08636475 m
+Loop seam, render/clearance bounds, root placement and fitted contact sensors passed. No comb distance-cull group.

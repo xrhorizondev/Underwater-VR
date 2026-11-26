@@ -27,10 +27,13 @@ namespace Underwater.Editor {
             }
             for(int i=0;i<points.Count;i++) points[i]/=counts[i];
             var faces=new List<int>();
+            var unique=new HashSet<(int,int,int)>();
             var triangles=source.triangles;
             for(int k=0;k<triangles.Length;k+=3){
                 int a=remap[triangles[k]],b=remap[triangles[k+1]],c=remap[triangles[k+2]];
                 if(a==b||b==c||a==c)continue;
+                int lo=Mathf.Min(a,Mathf.Min(b,c)),hi=Mathf.Max(a,Mathf.Max(b,c));
+                if(!unique.Add((lo,a+b+c-lo-hi,hi)))continue;
                 faces.Add(a);faces.Add(b);faces.Add(c);
             }
             if(faces.Count==0||faces.Count>=triangles.Length)return source;

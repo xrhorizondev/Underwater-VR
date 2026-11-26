@@ -1,0 +1,17 @@
+Creature fixes — 24 November 2026
+Main scene: Assets/Scenes/Underwater_Realistic.unity
+
+Removed the tagged iris/pupil meshes that were superimposed on existing photographic eyes on 242 fish. Preserved original body meshes, textures and UVs; the clean copies have fewer triangles. Replaced the protruding eyes on three rays with one shallow anatomical pair per ray. Tail hazards and touch ownership remain unchanged.
+
+Both groupers now use a seven-bone skinned visual: stable shoulder/head, progressive body/tail bend and paired pectoral motion. 3,864 triangles per grouper. A UV-based skin shader keeps spots/scales attached to the mesh. Body/tail effort and frequency follow actual travel, with filtered steering flex and gentle idle motion. No runtime mesh baking or per-frame vertex edits.
+
+Shark: 2.1-second progressive lateral swim, quieter head, stronger rear-body/tail wave, subtle pectoral motion, filtered turning flex, smooth acceleration and bank, broad patrol and speed easing during turns. Existing model and pursuit-only warning behavior retained. Stroke follows actual displacement. Culling and seabed bounds include complete swim/fin cycles and both extreme turning directions.
+
+Validation:
+- Final merged scene Unity batch exit 0; missing scripts=0; reef collision and lionfish interaction regressions passed.
+- 257 school fish and 31 featured fish/visitors simulated for 60 seconds each; loop and speed-response tests passed.
+- Two-minute shark/dolphin patrol review passed; shark lateral tail displacement 0.8192 actor units, loop seam zero, no stationary frames in that review.
+- Grouper deformation sampled through the full two-stroke fin cycle: rear-body flex ~0.061 actor units, tail flex ~0.242, head flex ~0.004; loop error below 0.000003.
+- Actual Unity Play mode: both groupers visibly deform and travel; shark skin visibly deforms and travels. Live skin baking was used only by the editor audit.
+- Front, left and right phase renders inspected. See Poses and GrouperAndShark.mp4 (left=grouper, right=shark).
+- Original gameplay actor placements, rig and project settings preserved. No headset FPS measurement performed.

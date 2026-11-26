@@ -2,7 +2,7 @@ using UnityEngine;
 namespace Underwater {
 // Observation encounter: pursuit earns advice, never contact damage.
 public sealed class OpenWaterShark:MonoBehaviour {
- public AudioClip cautionVoice;public float patrolRadius=7;
+ public AudioClip cautionVoice;public float patrolRadius=12;
  ReefSphereBody body;ReefAnimalClearance clearance;ReefImportedAnimation stroke;Renderer skin;Animation swim;MaterialPropertyBlock block;Vector3 home,previousViewer,steering;float clock,pursuit,cooldown,currentSpeed=.6f,bank;bool ready,hasViewer;
  public float ActualSpeed{get;private set;}
  readonly ReefRayNavigation navigation=new ReefRayNavigation();
@@ -16,18 +16,21 @@ public sealed class OpenWaterShark:MonoBehaviour {
   if(radial.sqrMagnitude<1)radial=Vector3.back*patrolRadius;
   // A tangent plus gentle radial correction produces a broad continuous
   // circuit, without repeatedly steering into a short chord ahead.
-  var desired=Vector3.Cross(Vector3.up,radial.normalized)+radial.normalized*Mathf.Clamp((patrolRadius-radial.magnitude)/Mathf.Max(1,patrolRadius),-.6f,.6f);
+  float bearing=clock*.018f+Mathf.Sin(clock*.047f)*.45f;
+  var cruiseHeading=new Vector3(Mathf.Sin(bearing),0,Mathf.Cos(bearing));
+  float boundary=Mathf.SmoothStep(0,1,Mathf.InverseLerp(patrolRadius*.55f,patrolRadius,radial.magnitude));
+  var desired=Vector3.Lerp(cruiseHeading,-radial.normalized,boundary*.92f);
   desired.y=Mathf.Clamp(home.y+Mathf.Sin(clock*.13f)*.35f-transform.position.y,-.12f,.12f);
   float avoidance=inHabitat?Mathf.SmoothStep(0,1,Mathf.InverseLerp(10,4,distance)):0;
   desired+=Vector3.ProjectOnPlane(toward,Vector3.up).normalized*avoidance*1.8f;
   float turnEase=Mathf.Lerp(.7f,1,Mathf.Clamp01(Vector3.Dot(transform.forward,desired.normalized)));
-  float cruise=.7f*(1+.045f*Mathf.Sin(clock*.31f));currentSpeed=Mathf.MoveTowards(currentSpeed,Mathf.Lerp(cruise,1.15f,avoidance)*turnEase,.18f*dt);
+  float cruise=1.05f*(1+.08f*Mathf.Sin(clock*.11f));currentSpeed=Mathf.MoveTowards(currentSpeed,Mathf.Lerp(cruise,1.4f,avoidance)*turnEase,.14f*dt);
   var direction=navigation.Direction(transform,body,desired.normalized,currentSpeed,dt,true);
   // Keep the clearance-tested escape slope. Flattening it after probing can
   // steer straight back into the ledge that the navigation just avoided.
   direction.y=Mathf.Clamp(direction.y,navigation.Avoiding?-.3f:-.14f,navigation.Avoiding?.3f:.14f);direction.Normalize();steering=Vector3.Slerp(steering,direction,1-Mathf.Exp(-dt*1.8f));
   if(steering.sqrMagnitude>.001f){var old=transform.forward;var forward=Vector3.RotateTowards(old,steering.normalized,(navigation.Avoiding?20:14)*Mathf.Deg2Rad*dt,0);float turn=Vector3.SignedAngle(old,forward,Vector3.up)/Mathf.Max(dt,.001f);bank=Mathf.Lerp(bank,Mathf.Clamp(-turn*.3f,-5,5),1-Mathf.Exp(-dt*1.6f));var rotation=Quaternion.LookRotation(forward,Vector3.up)*Quaternion.AngleAxis(bank,Vector3.forward);bool canTurn=true;if(body&&clearance&&clearance.RequiredHeight(transform.position,rotation,out float height)&&height>transform.position.y+.012f){body.MoveSliding(Vector3.up*Mathf.Min(height-transform.position.y+.02f,.25f*dt));canTurn=height<=transform.position.y+.012f;}if(canTurn)transform.rotation=rotation;}
-  if(body){var delta=transform.forward*currentSpeed*dt;if(clearance&&clearance.RequiredHeight(transform.position+delta,transform.rotation,out float height)&&height>transform.position.y+delta.y+.012f)delta=Vector3.up*Mathf.Min(height-transform.position.y+.02f,.25f*dt);float moved=body.MoveSliding(delta).magnitude;ActualSpeed=moved/Mathf.Max(dt,.001f);navigation.RecordMovement(moved,currentSpeed*dt,dt);if(stroke)stroke.MatchTravel(ActualSpeed,.75f);}
+  if(body){var delta=transform.forward*currentSpeed*dt;if(clearance&&clearance.RequiredHeight(transform.position+delta,transform.rotation,out float height)&&height>transform.position.y+delta.y+.012f)delta=Vector3.up*Mathf.Min(height-transform.position.y+.02f,.25f*dt);float moved=body.MoveSliding(delta).magnitude;ActualSpeed=moved/Mathf.Max(dt,.001f);navigation.RecordMovement(moved,currentSpeed*dt,dt);if(stroke)stroke.MatchTravel(ActualSpeed,1.05f);}
   if(skin){skin.GetPropertyBlock(block);block.SetFloat("_TailPhase",clock*3);skin.SetPropertyBlock(block);}return pursuit>=.75f&&cooldown<=0;
  }
 }

@@ -1,0 +1,4 @@
+Reduced fish=20022 triangles, 9 bones, 1 skin/material.
+80-second encounter patrol/retreat: distance=16.00825 min forward alignment=0.9999999 max playback rate=2.739725
+Collision/seabed clearance, warning/contact flow, movement-linked body/tail cycle and independent breathing at rest passed.
+No preview-only playback component, no runtime mesh baking, no added light/shadow. Device FPS not measured.

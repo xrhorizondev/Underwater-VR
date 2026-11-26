@@ -1,0 +1,3 @@
+Weathered supplied anchor - Wreck & Rays verticalShift=-0.05181408
+Weathered supplied anchor - The Wreck verticalShift=0.0273304
+Final Unity exit code: 0. Octopus: 41,936,180 animated vertex samples; minimum conservative sand clearance 0.0162 m; 8 movement headings, 60 seconds each; maximum travel 10.87 m. Returned only four scene records for the octopus and two anchors.

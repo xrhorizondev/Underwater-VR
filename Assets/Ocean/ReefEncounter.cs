@@ -13,9 +13,9 @@ public sealed class ReefEncounter:MonoBehaviour {
   if(skin==null||skin.Length==0)skin=GetComponentsInChildren<Renderer>();colors=new Color[skin.Length];for(int i=0;i<skin.Length;i++){var material=skin[i]?skin[i].sharedMaterial:null;colors[i]=material&&material.HasProperty("_Color")?material.GetColor("_Color"):Color.white;}
  }
  void Start(){Initialize();}
- void Update(){var d=Diver.Instance;if(!d||d.MenuOpen)return;float distance=d.DistanceToHands(transform.position);Vector3 source=(d.LeftPalm-transform.position).sqrMagnitude<(d.RightPalm-transform.position).sqrMagnitude?d.LeftPalm:d.RightPalm;Step(Mathf.Min(Time.deltaTime,.05f),source,distance);}
+ void Update(){var d=Diver.Instance;if(!d||d.MenuOpen)return;float distance=d.DistanceToHands(transform.position);var contact=GetComponent<CreatureContactSurface>();if(contact)distance=Mathf.Min(contact.Distance(d.LeftPalm),contact.Distance(d.RightPalm));Vector3 source=(d.LeftPalm-transform.position).sqrMagnitude<(d.RightPalm-transform.position).sqrMagnitude?d.LeftPalm:d.RightPalm;Step(Mathf.Min(Time.deltaTime,.05f),source,distance);}
  public void Step(float dt,Vector3 source,float distance){Initialize();clock+=dt;
-  if(distance<(response==Response.Anemone?.65f:1.1f)&&clock>=cooldown){reaction=clock;cooldown=clock+(response==Response.Octopus?9:5);escape=Vector3.ProjectOnPlane(transform.position-source,Vector3.up).normalized;if(escape.sqrMagnitude<.01f)escape=transform.forward;}
+  if(distance<(response==Response.Anemone?.65f:response==Response.Octopus?.045f:1.1f)&&clock>=cooldown){GetComponent<ReefCreatureInfo>()?.Reveal();reaction=clock;cooldown=clock+(response==Response.Octopus?9:5);escape=Vector3.ProjectOnPlane(transform.position-source,Vector3.up).normalized;if(escape.sqrMagnitude<.01f)escape=transform.forward;}
   float amount=Reaction;
   if(response==Response.Anemone){for(int i=0;i<tentacles.Length;i++){var scale=rest[i];scale.y*=Mathf.Lerp(1,.28f,amount);tentacles[i].localRotation=rotations[i]*Quaternion.Euler(Mathf.Sin(clock*1.4f+i)*4*(1-amount),0,0);tentacles[i].localScale=Vector3.Lerp(tentacles[i].localScale,scale,1-Mathf.Exp(-dt*5));}return;}
   if(body){
@@ -30,7 +30,7 @@ public sealed class ReefEncounter:MonoBehaviour {
    navigation.RecordMovement((transform.position-before).magnitude,speed*dt,dt);
    if(response==Response.Lionfish&&lionfish)lionfish.MatchTravel((transform.position-before).magnitude/Mathf.Max(dt,.0001f));
   }
-  if(response==Response.Octopus){for(int i=0;i<skin.Length;i++){if(skin[i].sharedMaterial.shader.name!="Underwater/Octopus Skin")continue;skin[i].GetPropertyBlock(tint);tint.SetFloat("_Motion",amount);tint.SetFloat("_Phase",clock);tint.SetColor("_Color",Color.Lerp(colors[i],new Color(.55f,.16f,.35f),amount));skin[i].SetPropertyBlock(tint);}for(int i=0;i<tentacles.Length;i++)tentacles[i].localRotation=rotations[i]*Quaternion.Euler(Mathf.Sin(clock*3+i)*(2+16*amount),0,0);}
+  if(response==Response.Octopus){for(int i=0;i<skin.Length;i++){if(skin[i].sharedMaterial.shader.name!="Underwater/Octopus Skin")continue;skin[i].GetPropertyBlock(tint);tint.SetFloat("_Motion",amount);tint.SetFloat("_Phase",clock);tint.SetColor("_Color",colors[i]);skin[i].SetPropertyBlock(tint);}for(int i=0;i<tentacles.Length;i++)tentacles[i].localRotation=rotations[i]*Quaternion.Euler(Mathf.Sin(clock*3+i)*(2+16*amount),0,0);}
  }
 }
 }

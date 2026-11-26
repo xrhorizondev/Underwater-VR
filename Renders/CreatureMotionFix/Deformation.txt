@@ -1,0 +1,5 @@
+Calm finale grouper triangles=3864 bones=7 bodyFlex=0.06101273 tailFlex=0.2422815 headFlex=0.004043625 seam=3.576279E-07 UVs=preserved
+Calm wreck grouper triangles=3864 bones=7 bodyFlex=0.06101074 tailFlex=0.2422817 headFlex=0.00404329 seam=2.827495E-06 UVs=preserved
+Ray eyes=one recessed pair, pupil depth<6mm; tail hazard unchanged
+Ray eyes=one recessed pair, pupil depth<6mm; tail hazard unchanged
+Ray eyes=one recessed pair, pupil depth<6mm; tail hazard unchanged

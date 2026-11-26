@@ -1,0 +1,7 @@
+Warning volumes tested=954; surface contact, distant silence and warning-before-consequence passed.
+All jellies use fitted trigger surfaces; moon/comb jellies warn without damage.
+Moray grounded retreat: max lift=0 max frame step=0.004931735 travel=0.08889561
+180s free dolphin swimming: travel=179.9283,179.8503,183.2926 longest slow/stop=0 min pod gap=3.55429 range=24.29782 max yaw=24.53376
+180s shark cruise: travel=146.0166 longest slow/stop=0 player body collider=true
+Left/right palm centering passed across neutral, upright and rotated controller poses. Physical fit still requires headset confirmation.
+Shark tail stroke: lateral=0.8074287 local m; vertical=2.205372E-06 local m; both repaired shaders compiled.

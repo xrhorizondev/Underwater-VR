@@ -1,0 +1,5 @@
+Fitted facts: 309
+Octopus solid contact segments: 73
+Jelly animation drivers: 28
+Camera far plane: 160
+Collision checks passed. Hardware fit/performance still require headset testing.

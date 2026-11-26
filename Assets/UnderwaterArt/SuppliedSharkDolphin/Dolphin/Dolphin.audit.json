@@ -1,0 +1,16 @@
+{
+  "source": "D:\\GIT Project\\Underwater-VR\\ArtSource\\SuppliedSharkDolphin\\Dolphin_Reduced.blend",
+  "blender": "5.3.0",
+  "triangles": 30652,
+  "bones": 40,
+  "materials": [
+    "TT_checker_2048x2048_UV_GRID",
+    "TT_checker_2048x2048_UV_GRID.001"
+  ],
+  "clips": [
+    "Armature.001|Scene"
+  ],
+  "images": {},
+  "issues": [],
+  "status": "passed"
+}

@@ -1,0 +1,804 @@
+RIG {"Transform":{"serializedVersion":"2","m_LocalRotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"m_LocalPosition":{"x":0.0,"y":-1.2999999523162842,"z":-9.0},"m_LocalScale":{"x":1.0,"y":1.0,"z":1.0},"m_ConstrainProportionsScale":false,"m_LocalEulerAnglesHint":{"x":0.0,"y":0.0,"z":0.0}}} HEAD {"Transform":{"serializedVersion":"2","m_LocalRotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"m_LocalPosition":{"x":0.0,"y":1.600000023841858,"z":0.0},"m_LocalScale":{"x":1.0,"y":1.0,"z":1.0},"m_ConstrainProportionsScale":false,"m_LocalEulerAnglesHint":{"x":0.0,"y":0.0,"z":0.0}}}
+CAMERA near=0.06 far=110 fov=64 occlusion=True
+LOD Corals on Rocks_0_12 count=1 size=10.47394 levels=0.3,0.14
+LOD Corals on Rocks_0_13 count=1 size=5.847229 levels=0.3,0.14
+LOD Corals on Rocks_0_17 count=1 size=10.41919 levels=0.3,0.14
+LOD Corals on Rocks_0_19 count=1 size=10.65454 levels=0.3,0.14
+LOD Corals on Rocks_0_-3 count=1 size=4.887344 levels=0.3,0.14
+LOD Corals on Rocks_0_-5 count=1 size=8.696815 levels=0.3,0.14
+LOD Corals on Rocks_0_6 count=1 size=2.979897 levels=0.3,0.14
+LOD Corals on Rocks_1_-1 count=1 size=9.395797 levels=0.3,0.14
+LOD Corals on Rocks_-1_12 count=1 size=2.330389 levels=0.3,0.14
+LOD Corals on Rocks_-1_14 count=1 size=12.06061 levels=0.3,0.14
+LOD Corals on Rocks_1_15 count=1 size=12.65151 levels=0.3,0.14
+LOD Corals on Rocks_-1_15 count=1 size=6.90744 levels=0.3,0.14
+LOD Corals on Rocks_1_16 count=1 size=13.08157 levels=0.3,0.14
+LOD Corals on Rocks_-1_16 count=1 size=5.430725 levels=0.3,0.14
+LOD Corals on Rocks_1_17 count=1 size=5.968384 levels=0.3,0.14
+LOD Corals on Rocks_-1_17 count=1 size=6.85491 levels=0.3,0.14
+LOD Corals on Rocks_1_19 count=1 size=4.93581 levels=0.3,0.14
+LOD Corals on Rocks_1_2 count=1 size=9.323593 levels=0.3,0.14
+LOD Corals on Rocks_1_-2 count=1 size=3.46904 levels=0.3,0.14
+LOD Corals on Rocks_-1_-2 count=1 size=11.19565 levels=0.3,0.14
+LOD Corals on Rocks_-1_-5 count=1 size=8.520821 levels=0.3,0.14
+LOD Corals on Rocks_1_-7 count=1 size=4.174492 levels=0.3,0.14
+LOD Corals on Rocks_1_8 count=1 size=4.228592 levels=0.3,0.14
+LOD Corals on Rocks_1_-8 count=1 size=10.6189 levels=0.3,0.14
+LOD Corals on Rocks_2_0 count=1 size=4.442493 levels=0.3,0.14
+LOD Corals on Rocks_2_1 count=1 size=11.24696 levels=0.3,0.14
+LOD Corals on Rocks_2_-1 count=1 size=10.40953 levels=0.3,0.14
+LOD Corals on Rocks_-2_1 count=1 size=2.643158 levels=0.3,0.14
+LOD Corals on Rocks_2_14 count=1 size=6.196686 levels=0.3,0.14
+LOD Corals on Rocks_-2_16 count=1 size=8.044861 levels=0.3,0.14
+LOD Corals on Rocks_2_2 count=1 size=7.827301 levels=0.3,0.14
+LOD Corals on Rocks_2_-2 count=1 size=9.698746 levels=0.3,0.14
+LOD Corals on Rocks_-2_-2 count=1 size=8.727539 levels=0.3,0.14
+LOD Corals on Rocks_-2_-3 count=1 size=3.52916 levels=0.3,0.14
+LOD Corals on Rocks_-2_4 count=1 size=10.53107 levels=0.3,0.14
+LOD Corals on Rocks_-2_-4 count=1 size=7.108398 levels=0.3,0.14
+LOD Corals on Rocks_-2_5 count=1 size=7.009975 levels=0.3,0.14
+LOD Corals on Rocks_2_-8 count=1 size=6.343811 levels=0.3,0.14
+LOD Corals on Rocks_3_0 count=1 size=6.082748 levels=0.3,0.14
+LOD Corals on Rocks_-3_-1 count=1 size=3.303951 levels=0.3,0.14
+LOD Corals on Rocks_3_10 count=1 size=6.579636 levels=0.3,0.14
+LOD Corals on Rocks_3_14 count=1 size=8.63913 levels=0.3,0.14
+LOD Corals on Rocks_3_15 count=1 size=5.15509 levels=0.3,0.14
+LOD Corals on Rocks_-3_17 count=1 size=5.442619 levels=0.3,0.14
+LOD Corals on Rocks_-3_18 count=1 size=3.43576 levels=0.3,0.14
+LOD Corals on Rocks_3_19 count=1 size=9.781128 levels=0.3,0.14
+LOD Corals on Rocks_-3_2 count=1 size=7.178162 levels=0.3,0.14
+LOD Corals on Rocks_-3_-2 count=1 size=7.977392 levels=0.3,0.14
+LOD Corals on Rocks_3_3 count=1 size=5.531906 levels=0.3,0.14
+LOD Corals on Rocks_3_-3 count=1 size=4.871124 levels=0.3,0.14
+LOD Corals on Rocks_3_4 count=1 size=14.9834 levels=0.3,0.14
+LOD Corals on Rocks_3_5 count=1 size=8.732208 levels=0.3,0.14
+LOD Corals on Rocks_3_-5 count=1 size=7.788483 levels=0.3,0.14
+LOD Corals on Rocks_-3_-8 count=1 size=8.47023 levels=0.3,0.14
+LOD Corals on Rocks_3_9 count=1 size=4.778732 levels=0.3,0.14
+LOD Corals on Rocks_-4_10 count=1 size=6.222656 levels=0.3,0.14
+LOD Corals on Rocks_-4_12 count=1 size=2.220062 levels=0.3,0.14
+LOD Corals on Rocks_4_14 count=1 size=9.022736 levels=0.3,0.14
+LOD Corals on Rocks_4_15 count=1 size=4.02356 levels=0.3,0.14
+LOD Corals on Rocks_-4_15 count=1 size=4.991943 levels=0.3,0.14
+LOD Corals on Rocks_-4_17 count=1 size=3.594772 levels=0.3,0.14
+LOD Corals on Rocks_4_18 count=1 size=4.46286 levels=0.3,0.14
+LOD Corals on Rocks_4_19 count=1 size=2.503052 levels=0.3,0.14
+LOD Corals on Rocks_4_-2 count=1 size=3.532249 levels=0.3,0.14
+LOD Corals on Rocks_-4_2 count=1 size=15.01186 levels=0.3,0.14
+LOD Corals on Rocks_4_-3 count=1 size=9.935135 levels=0.3,0.14
+LOD Corals on Rocks_-4_-3 count=1 size=2.596519 levels=0.3,0.14
+LOD Corals on Rocks_4_-5 count=1 size=7.278503 levels=0.3,0.14
+LOD Corals on Rocks_-4_5 count=1 size=3.286743 levels=0.3,0.14
+LOD Corals on Rocks_4_-6 count=1 size=11.62219 levels=0.3,0.14
+LOD Corals on Rocks_-4_-6 count=1 size=15.32947 levels=0.3,0.14
+LOD Corals on Rocks_-4_8 count=1 size=2.960785 levels=0.3,0.14
+LOD Corals on Rocks_-4_-8 count=1 size=1.827057 levels=0.3,0.14
+LOD Corals on Rocks_5_11 count=1 size=5.740433 levels=0.3,0.14
+LOD Corals on Rocks_5_12 count=1 size=5.979256 levels=0.3,0.14
+LOD Corals on Rocks_-5_12 count=1 size=6.252686 levels=0.3,0.14
+LOD Corals on Rocks_-5_13 count=1 size=7.294556 levels=0.3,0.14
+LOD Corals on Rocks_5_19 count=1 size=3.198372 levels=0.3,0.14
+LOD Corals on Rocks_-5_-2 count=1 size=12.12825 levels=0.3,0.14
+LOD Corals on Rocks_5_3 count=1 size=4.493454 levels=0.3,0.14
+LOD Corals on Rocks_5_-3 count=1 size=5.93219 levels=0.3,0.14
+LOD Corals on Rocks_-5_3 count=1 size=7.273895 levels=0.3,0.14
+LOD Corals on Rocks_5_-6 count=1 size=5.894348 levels=0.3,0.14
+LOD Corals on Rocks_-5_6 count=1 size=9.88562 levels=0.3,0.14
+LOD Corals on Rocks_5_7 count=1 size=15.27812 levels=0.3,0.14
+LOD Corals on Rocks_5_-7 count=1 size=11.83239 levels=0.3,0.14
+LOD Corals on Rocks_5_-8 count=1 size=4.324997 levels=0.3,0.14
+LOD Corals on Rocks_-5_8 count=1 size=5.29512 levels=0.3,0.14
+LOD Corals on Rocks_-5_-8 count=1 size=5.500801 levels=0.3,0.14
+LOD Corals on Rocks_6_-1 count=1 size=12.09835 levels=0.3,0.14
+LOD Corals on Rocks_6_11 count=1 size=10.7262 levels=0.3,0.14
+LOD Corals on Rocks_6_12 count=1 size=6.12677 levels=0.3,0.14
+LOD Corals on Rocks_-6_13 count=1 size=10.58215 levels=0.3,0.14
+LOD Corals on Rocks_6_-2 count=1 size=5.066977 levels=0.3,0.14
+LOD Corals on Rocks_-6_2 count=1 size=9.67923 levels=0.3,0.14
+LOD Corals on Rocks_6_3 count=1 size=9.813599 levels=0.3,0.14
+LOD Corals on Rocks_-6_3 count=1 size=7.822708 levels=0.3,0.14
+LOD Corals on Rocks_6_4 count=1 size=10.89523 levels=0.3,0.14
+LOD Corals on Rocks_-6_-5 count=1 size=3.657013 levels=0.3,0.14
+LOD Corals on Rocks_6_-6 count=1 size=3.03215 levels=0.3,0.14
+LOD Corals on Rocks_-6_6 count=1 size=7.357147 levels=0.3,0.14
+LOD Corals on Rocks_6_-7 count=1 size=6.153503 levels=0.3,0.14
+LOD Corals on Rocks_-6_7 count=1 size=5.414337 levels=0.3,0.14
+LOD Corals on Rocks_-6_8 count=1 size=8.028824 levels=0.3,0.14
+LOD Corals on Rocks_-6_-8 count=1 size=3.734528 levels=0.3,0.14
+LOD Corals on Rocks_6_9 count=1 size=3.254654 levels=0.3,0.14
+LOD Corals on Rocks_7_0 count=1 size=13.37161 levels=0.3,0.14
+LOD Corals on Rocks_-7_1 count=1 size=6.932037 levels=0.3,0.14
+LOD Corals on Rocks_-7_11 count=1 size=9.028564 levels=0.3,0.14
+LOD Corals on Rocks_-7_12 count=1 size=4.233826 levels=0.3,0.14
+LOD Corals on Rocks_7_16 count=1 size=7.171204 levels=0.3,0.14
+LOD Corals on Rocks_-7_16 count=1 size=13.504 levels=0.3,0.14
+LOD Corals on Rocks_7_-2 count=1 size=3.295227 levels=0.3,0.14
+LOD Corals on Rocks_7_-3 count=1 size=3.978058 levels=0.3,0.14
+LOD Corals on Rocks_-7_3 count=1 size=4.795624 levels=0.3,0.14
+LOD Corals on Rocks_-7_-4 count=1 size=3.5522 levels=0.3,0.14
+LOD Corals on Rocks_-7_-5 count=1 size=6.217186 levels=0.3,0.14
+LOD Corals on Rocks_7_-6 count=1 size=15.25278 levels=0.3,0.14
+LOD Corals on Rocks_7_7 count=1 size=4.393555 levels=0.3,0.14
+LOD Corals on Rocks_7_-7 count=1 size=5.027496 levels=0.3,0.14
+LOD Corals on Rocks_7_8 count=1 size=6.396301 levels=0.3,0.14
+LOD Corals on Rocks_7_9 count=1 size=5.743927 levels=0.3,0.14
+LOD Corals on Rocks_8_1 count=1 size=6.777893 levels=0.3,0.14
+LOD Corals on Rocks_-8_1 count=1 size=4.970963 levels=0.3,0.14
+LOD Corals on Rocks_-8_10 count=1 size=5.51944 levels=0.3,0.14
+LOD Corals on Rocks_8_11 count=1 size=5.117996 levels=0.3,0.14
+LOD Corals on Rocks_-8_11 count=1 size=11.08762 levels=0.3,0.14
+LOD Corals on Rocks_8_12 count=1 size=3.854431 levels=0.3,0.14
+LOD Corals on Rocks_-8_12 count=1 size=3.30481 levels=0.3,0.14
+LOD Corals on Rocks_8_14 count=1 size=4.615295 levels=0.3,0.14
+LOD Corals on Rocks_-8_15 count=1 size=5.550232 levels=0.3,0.14
+LOD Corals on Rocks_8_16 count=1 size=12.32275 levels=0.3,0.14
+LOD Corals on Rocks_-8_16 count=1 size=7.284119 levels=0.3,0.14
+LOD Corals on Rocks_8_17 count=1 size=8.547058 levels=0.3,0.14
+LOD Corals on Rocks_-8_17 count=1 size=5.817444 levels=0.3,0.14
+LOD Corals on Rocks_8_2 count=1 size=3.05011 levels=0.3,0.14
+LOD Corals on Rocks_-8_2 count=1 size=1.890625 levels=0.3,0.14
+LOD Corals on Rocks_-8_-2 count=1 size=8.76403 levels=0.3,0.14
+LOD Corals on Rocks_8_4 count=1 size=2.502869 levels=0.3,0.14
+LOD Corals on Rocks_-8_-4 count=1 size=3.151917 levels=0.3,0.14
+LOD Corals on Rocks_-8_-5 count=1 size=7.968018 levels=0.3,0.14
+LOD Corals on Rocks_8_7 count=1 size=11.45837 levels=0.3,0.14
+LOD Corals on Rocks_8_-8 count=1 size=10.55167 levels=0.3,0.14
+LOD Corals on Rocks_-9_12 count=1 size=3.297852 levels=0.3,0.14
+LOD Corals on Rocks_-9_13 count=1 size=2.054443 levels=0.3,0.14
+LOD Corals on Rocks_-9_17 count=1 size=18.24854 levels=0.3,0.14
+LOD Corals on Rocks_-9_4 count=1 size=10.62907 levels=0.3,0.14
+LOD Corals on Rocks_-9_-4 count=1 size=9.101685 levels=0.3,0.14
+LOD Corals on Rocks_-9_5 count=1 size=6.391975 levels=0.3,0.14
+LOD Corals on Rocks_-9_-5 count=1 size=5.229004 levels=0.3,0.14
+LOD Corals on Rocks_-9_6 count=1 size=18.50006 levels=0.3,0.14
+LOD Corals on Rocks_-9_-7 count=1 size=5.823792 levels=0.3,0.14
+LOD Corals on Rocks_-9_-8 count=1 size=16.78934 levels=0.3,0.14
+LOD Grounded gap limestone count=106 size=2.217099 levels=0.014
+LOD Plants_0_12 count=1 size=14.09473 levels=0.16
+LOD Plants_0_13 count=1 size=11.58297 levels=0.16
+LOD Plants_0_17 count=1 size=12.80566 levels=0.16
+LOD Plants_0_19 count=1 size=12.02429 levels=0.16
+LOD Plants_0_-2 count=1 size=13.0253 levels=0.16
+LOD Plants_0_-3 count=1 size=13.41187 levels=0.16
+LOD Plants_0_-5 count=1 size=14.02187 levels=0.16
+LOD Plants_0_6 count=1 size=1.348135 levels=0.16
+LOD Plants_0_-6 count=1 size=14.18008 levels=0.16
+LOD Plants_1_-1 count=1 size=7.693864 levels=0.16
+LOD Plants_1_11 count=1 size=10.45477 levels=0.16
+LOD Plants_1_12 count=1 size=14.86102 levels=0.16
+LOD Plants_-1_12 count=1 size=13.20392 levels=0.16
+LOD Plants_-1_13 count=1 size=11.73051 levels=0.16
+LOD Plants_-1_14 count=1 size=11.81233 levels=0.16
+LOD Plants_1_15 count=1 size=15.96567 levels=0.16
+LOD Plants_-1_15 count=1 size=6.87923 levels=0.16
+LOD Plants_1_16 count=1 size=16.45942 levels=0.16
+LOD Plants_-1_16 count=1 size=14.15814 levels=0.16
+LOD Plants_1_17 count=1 size=13.19576 levels=0.16
+LOD Plants_-1_17 count=1 size=12.71075 levels=0.16
+LOD Plants_1_19 count=1 size=9.377106 levels=0.16
+LOD Plants_1_2 count=1 size=9.550682 levels=0.16
+LOD Plants_1_-2 count=1 size=11.17388 levels=0.16
+LOD Plants_-1_-2 count=1 size=13.67524 levels=0.16
+LOD Plants_1_3 count=1 size=8.657379 levels=0.16
+LOD Plants_-1_-5 count=1 size=11.56573 levels=0.16
+LOD Plants_-1_-6 count=1 size=12.24386 levels=0.16
+LOD Plants_1_-7 count=1 size=8.532082 levels=0.16
+LOD Plants_1_8 count=1 size=2.445313 levels=0.16
+LOD Plants_1_-8 count=1 size=15.16733 levels=0.16
+LOD Plants_2_0 count=1 size=15.95458 levels=0.16
+LOD Plants_2_1 count=1 size=13.75323 levels=0.16
+LOD Plants_2_-1 count=1 size=13.22953 levels=0.16
+LOD Plants_-2_1 count=1 size=7.824341 levels=0.16
+LOD Plants_2_10 count=1 size=5.595482 levels=0.16
+LOD Plants_2_14 count=1 size=7.021545 levels=0.16
+LOD Plants_2_15 count=1 size=4.547363 levels=0.16
+LOD Plants_-2_16 count=1 size=14.5564 levels=0.16
+LOD Plants_-2_17 count=1 size=13.37708 levels=0.16
+LOD Plants_2_2 count=1 size=12.06075 levels=0.16
+LOD Plants_2_-2 count=1 size=13.86597 levels=0.16
+LOD Plants_-2_-2 count=1 size=12.27725 levels=0.16
+LOD Plants_2_3 count=1 size=13.58344 levels=0.16
+LOD Plants_-2_-3 count=1 size=14.4281 levels=0.16
+LOD Plants_-2_4 count=1 size=10.22739 levels=0.16
+LOD Plants_-2_-4 count=1 size=14.59828 levels=0.16
+LOD Plants_2_5 count=1 size=11.24922 levels=0.16
+LOD Plants_-2_5 count=1 size=5.51947 levels=0.16
+LOD Plants_2_8 count=1 size=11.49432 levels=0.16
+LOD Plants_2_-8 count=1 size=12.90082 levels=0.16
+LOD Plants_-2_-8 count=1 size=16.35914 levels=0.16
+LOD Plants_2_9 count=1 size=11.43109 levels=0.16
+LOD Plants_-2_9 count=1 size=13.2074 levels=0.16
+LOD Plants_3_0 count=1 size=16.14621 levels=0.16
+LOD Plants_-3_1 count=1 size=11.5582 levels=0.16
+LOD Plants_-3_-1 count=1 size=11.45305 levels=0.16
+LOD Plants_3_10 count=1 size=13.28241 levels=0.16
+LOD Plants_3_14 count=1 size=12.76782 levels=0.16
+LOD Plants_3_15 count=1 size=8.321762 levels=0.16
+LOD Plants_-3_17 count=1 size=13.5241 levels=0.16
+LOD Plants_-3_18 count=1 size=3.894028 levels=0.16
+LOD Plants_3_19 count=1 size=14.67896 levels=0.16
+LOD Plants_3_2 count=1 size=11.81348 levels=0.16
+LOD Plants_-3_2 count=1 size=9.514069 levels=0.16
+LOD Plants_-3_-2 count=1 size=13.00662 levels=0.16
+LOD Plants_3_3 count=1 size=10.6041 levels=0.16
+LOD Plants_3_-3 count=1 size=5.086807 levels=0.16
+LOD Plants_-3_3 count=1 size=16.04736 levels=0.16
+LOD Plants_-3_-3 count=1 size=12.37633 levels=0.16
+LOD Plants_3_4 count=1 size=13.90179 levels=0.16
+LOD Plants_-3_4 count=1 size=11.32702 levels=0.16
+LOD Plants_3_5 count=1 size=13.08415 levels=0.16
+LOD Plants_3_-5 count=1 size=10.79904 levels=0.16
+LOD Plants_-3_5 count=1 size=15.33109 levels=0.16
+LOD Plants_3_-8 count=1 size=8.375641 levels=0.16
+LOD Plants_-3_-8 count=1 size=12.85148 levels=0.16
+LOD Plants_3_9 count=1 size=12.46347 levels=0.16
+LOD Plants_-4_-1 count=1 size=8.680664 levels=0.16
+LOD Plants_4_10 count=1 size=10.53174 levels=0.16
+LOD Plants_-4_10 count=1 size=6.415344 levels=0.16
+LOD Plants_-4_12 count=1 size=14.453 levels=0.16
+LOD Plants_4_14 count=1 size=12.98596 levels=0.16
+LOD Plants_4_15 count=1 size=12.28363 levels=0.16
+LOD Plants_-4_15 count=1 size=7.776062 levels=0.16
+LOD Plants_4_16 count=1 size=13.45035 levels=0.16
+LOD Plants_4_17 count=1 size=12.66504 levels=0.16
+LOD Plants_-4_17 count=1 size=4.061768 levels=0.16
+LOD Plants_4_18 count=1 size=12.26402 levels=0.16
+LOD Plants_4_19 count=1 size=12.35489 levels=0.16
+LOD Plants_4_-2 count=1 size=14.21167 levels=0.16
+LOD Plants_-4_2 count=1 size=16.44041 levels=0.16
+LOD Plants_-4_-2 count=1 size=12.17477 levels=0.16
+LOD Plants_4_-3 count=1 size=12.15146 levels=0.16
+LOD Plants_-4_3 count=1 size=11.289 levels=0.16
+LOD Plants_-4_-3 count=1 size=13.7639 levels=0.16
+LOD Plants_4_-5 count=1 size=7.671753 levels=0.16
+LOD Plants_-4_5 count=1 size=10.19626 levels=0.16
+LOD Plants_4_-6 count=1 size=16.30359 levels=0.16
+LOD Plants_-4_-6 count=1 size=13.02518 levels=0.16
+LOD Plants_-4_8 count=1 size=3.586426 levels=0.16
+LOD Plants_-4_-8 count=1 size=8.815445 levels=0.16
+LOD Plants_-5_-1 count=1 size=4.51239 levels=0.16
+LOD Plants_5_11 count=1 size=11.34013 levels=0.16
+LOD Plants_5_12 count=1 size=12.45401 levels=0.16
+LOD Plants_-5_12 count=1 size=14.28079 levels=0.16
+LOD Plants_-5_13 count=1 size=10.22498 levels=0.16
+LOD Plants_5_15 count=1 size=15.06276 levels=0.16
+LOD Plants_5_16 count=1 size=14.92419 levels=0.16
+LOD Plants_5_18 count=1 size=11.07672 levels=0.16
+LOD Plants_5_19 count=1 size=8.97168 levels=0.16
+LOD Plants_5_2 count=1 size=7.090797 levels=0.16
+LOD Plants_5_-2 count=1 size=11.69128 levels=0.16
+LOD Plants_-5_-2 count=1 size=12.57094 levels=0.16
+LOD Plants_5_3 count=1 size=9.995422 levels=0.16
+LOD Plants_5_-3 count=1 size=10.33403 levels=0.16
+LOD Plants_-5_3 count=1 size=13.49829 levels=0.16
+LOD Plants_5_-6 count=1 size=12.74664 levels=0.16
+LOD Plants_-5_6 count=1 size=10.66577 levels=0.16
+LOD Plants_5_7 count=1 size=19.67407 levels=0.16
+LOD Plants_5_-7 count=1 size=13.08762 levels=0.16
+LOD Plants_-5_7 count=1 size=12.80255 levels=0.16
+LOD Plants_5_-8 count=1 size=14.8235 levels=0.16
+LOD Plants_-5_8 count=1 size=10.26874 levels=0.16
+LOD Plants_-5_-8 count=1 size=7.18515 levels=0.16
+LOD Plants_6_-1 count=1 size=12.81959 levels=0.16
+LOD Plants_-6_-1 count=1 size=18.11375 levels=0.16
+LOD Plants_6_11 count=1 size=12.20178 levels=0.16
+LOD Plants_-6_11 count=1 size=10.31552 levels=0.16
+LOD Plants_6_12 count=1 size=12.00977 levels=0.16
+LOD Plants_-6_12 count=1 size=12.44778 levels=0.16
+LOD Plants_-6_13 count=1 size=14.30884 levels=0.16
+LOD Plants_-6_16 count=1 size=12.03618 levels=0.16
+LOD Plants_-6_17 count=1 size=13.19699 levels=0.16
+LOD Plants_6_2 count=1 size=13.76689 levels=0.16
+LOD Plants_6_-2 count=1 size=10.09169 levels=0.16
+LOD Plants_-6_2 count=1 size=12.33519 levels=0.16
+LOD Plants_-6_-2 count=1 size=15.37097 levels=0.16
+LOD Plants_6_3 count=1 size=12.07198 levels=0.16
+LOD Plants_-6_3 count=1 size=12.1277 levels=0.16
+LOD Plants_6_4 count=1 size=13.15193 levels=0.16
+LOD Plants_-6_-5 count=1 size=8.888382 levels=0.16
+LOD Plants_6_-6 count=1 size=12.81522 levels=0.16
+LOD Plants_-6_6 count=1 size=9.918884 levels=0.16
+LOD Plants_6_7 count=1 size=11.0849 levels=0.16
+LOD Plants_6_-7 count=1 size=11.22742 levels=0.16
+LOD Plants_-6_7 count=1 size=12.7392 levels=0.16
+LOD Plants_6_8 count=1 size=12.89441 levels=0.16
+LOD Plants_-6_8 count=1 size=11.7312 levels=0.16
+LOD Plants_-6_-8 count=1 size=10.78543 levels=0.16
+LOD Plants_6_9 count=1 size=15.88196 levels=0.16
+LOD Plants_7_0 count=1 size=17.90692 levels=0.16
+LOD Plants_7_-1 count=1 size=15.47186 levels=0.16
+LOD Plants_-7_1 count=1 size=8.974976 levels=0.16
+LOD Plants_-7_-1 count=1 size=13.95062 levels=0.16
+LOD Plants_-7_11 count=1 size=16.27191 levels=0.16
+LOD Plants_-7_12 count=1 size=7.292603 levels=0.16
+LOD Plants_7_16 count=1 size=15.79816 levels=0.16
+LOD Plants_-7_16 count=1 size=14.68259 levels=0.16
+LOD Plants_7_17 count=1 size=8.390991 levels=0.16
+LOD Plants_-7_17 count=1 size=12.25964 levels=0.16
+LOD Plants_7_-2 count=1 size=13.68679 levels=0.16
+LOD Plants_-7_2 count=1 size=11.13397 levels=0.16
+LOD Plants_-7_-2 count=1 size=11.09164 levels=0.16
+LOD Plants_7_-3 count=1 size=2.937317 levels=0.16
+LOD Plants_-7_3 count=1 size=11.83841 levels=0.16
+LOD Plants_-7_-3 count=1 size=12.99281 levels=0.16
+LOD Plants_-7_-4 count=1 size=9.97081 levels=0.16
+LOD Plants_-7_-5 count=1 size=4.197769 levels=0.16
+LOD Plants_7_-6 count=1 size=13.71997 levels=0.16
+LOD Plants_7_7 count=1 size=10.94415 levels=0.16
+LOD Plants_7_-7 count=1 size=8.592987 levels=0.16
+LOD Plants_7_8 count=1 size=10.88208 levels=0.16
+LOD Plants_7_9 count=1 size=7.29837 levels=0.16
+LOD Plants_8_1 count=1 size=7.465729 levels=0.16
+LOD Plants_-8_1 count=1 size=10.11215 levels=0.16
+LOD Plants_-8_-1 count=1 size=11.64996 levels=0.16
+LOD Plants_-8_10 count=1 size=17.80383 levels=0.16
+LOD Plants_8_11 count=1 size=12.8349 levels=0.16
+LOD Plants_-8_11 count=1 size=13.82352 levels=0.16
+LOD Plants_8_12 count=1 size=15.22833 levels=0.16
+LOD Plants_-8_12 count=1 size=12.26898 levels=0.16
+LOD Plants_8_13 count=1 size=10.70056 levels=0.16
+LOD Plants_8_14 count=1 size=6.512817 levels=0.16
+LOD Plants_-8_15 count=1 size=5.781982 levels=0.16
+LOD Plants_8_16 count=1 size=14.17035 levels=0.16
+LOD Plants_-8_16 count=1 size=15.47882 levels=0.16
+LOD Plants_8_17 count=1 size=12.11243 levels=0.16
+LOD Plants_-8_17 count=1 size=13.66431 levels=0.16
+LOD Plants_8_2 count=1 size=8.160217 levels=0.16
+LOD Plants_-8_2 count=1 size=1.794159 levels=0.16
+LOD Plants_-8_-2 count=1 size=12.2525 levels=0.16
+LOD Plants_8_3 count=1 size=3.754395 levels=0.16
+LOD Plants_8_4 count=1 size=13.57553 levels=0.16
+LOD Plants_-8_-4 count=1 size=12.41241 levels=0.16
+LOD Plants_-8_-5 count=1 size=14.55426 levels=0.16
+LOD Plants_8_-6 count=1 size=10.83411 levels=0.16
+LOD Plants_8_7 count=1 size=12.1214 levels=0.16
+LOD Plants_8_-7 count=1 size=10.74854 levels=0.16
+LOD Plants_8_-8 count=1 size=10.74701 levels=0.16
+LOD Plants_-9_12 count=1 size=16.65295 levels=0.16
+LOD Plants_-9_13 count=1 size=13.62933 levels=0.16
+LOD Plants_-9_17 count=1 size=17.71075 levels=0.16
+LOD Plants_-9_4 count=1 size=12.93936 levels=0.16
+LOD Plants_-9_-4 count=1 size=13.91556 levels=0.16
+LOD Plants_-9_5 count=1 size=13.94313 levels=0.16
+LOD Plants_-9_-5 count=1 size=12.80084 levels=0.16
+LOD Plants_-9_6 count=1 size=15.37219 levels=0.16
+LOD Plants_-9_-7 count=1 size=12.27643 levels=0.16
+LOD Plants_-9_-8 count=1 size=17.28546 levels=0.16
+LOD Plants_-9_9 count=1 size=13.25848 levels=0.16
+LOD Prepared animated model count=26 size=2.063141 levels=0.015
+LOD Reduced bilateral lionfish visual count=1 size=0.44776 levels=0.022
+LOD Rocks_0_12 count=1 size=13.09399 levels=0.24,0.065
+LOD Rocks_0_13 count=1 size=20.02203 levels=0.24,0.065
+LOD Rocks_0_17 count=1 size=13.00439 levels=0.24,0.065
+LOD Rocks_0_19 count=1 size=11.71631 levels=0.24,0.065
+LOD Rocks_0_-2 count=1 size=12.76038 levels=0.24,0.065
+LOD Rocks_0_-3 count=1 size=12.44219 levels=0.24,0.065
+LOD Rocks_0_-5 count=1 size=13.91282 levels=0.24,0.065
+LOD Rocks_0_6 count=1 size=2.40094 levels=0.24,0.065
+LOD Rocks_0_-6 count=1 size=12.68215 levels=0.24,0.065
+LOD Rocks_1_-1 count=1 size=10.03672 levels=0.24,0.065
+LOD Rocks_1_11 count=1 size=15.55737 levels=0.24,0.065
+LOD Rocks_1_12 count=1 size=14.78271 levels=0.24,0.065
+LOD Rocks_-1_12 count=1 size=11.35083 levels=0.24,0.065
+LOD Rocks_-1_13 count=1 size=9.641544 levels=0.24,0.065
+LOD Rocks_-1_14 count=1 size=13.17268 levels=0.24,0.065
+LOD Rocks_1_15 count=1 size=15.37181 levels=0.24,0.065
+LOD Rocks_-1_15 count=1 size=9.356018 levels=0.24,0.065
+LOD Rocks_1_16 count=1 size=16.29707 levels=0.24,0.065
+LOD Rocks_-1_16 count=1 size=12.21167 levels=0.24,0.065
+LOD Rocks_1_17 count=1 size=11.3203 levels=0.24,0.065
+LOD Rocks_-1_17 count=1 size=13.60791 levels=0.24,0.065
+LOD Rocks_1_19 count=1 size=14.52835 levels=0.24,0.065
+LOD Rocks_1_2 count=1 size=9.571411 levels=0.24,0.065
+LOD Rocks_1_-2 count=1 size=12.26749 levels=0.24,0.065
+LOD Rocks_-1_-2 count=1 size=12.88318 levels=0.24,0.065
+LOD Rocks_1_3 count=1 size=8.240616 levels=0.24,0.065
+LOD Rocks_-1_-5 count=1 size=12.79903 levels=0.24,0.065
+LOD Rocks_-1_-6 count=1 size=12.09088 levels=0.24,0.065
+LOD Rocks_1_-7 count=1 size=15.35621 levels=0.24,0.065
+LOD Rocks_1_8 count=1 size=4.225979 levels=0.24,0.065
+LOD Rocks_1_-8 count=1 size=15.01047 levels=0.24,0.065
+LOD Rocks_2_0 count=1 size=14.07903 levels=0.24,0.065
+LOD Rocks_2_1 count=1 size=13.72419 levels=0.24,0.065
+LOD Rocks_2_-1 count=1 size=13.8061 levels=0.24,0.065
+LOD Rocks_-2_1 count=1 size=7.705048 levels=0.24,0.065
+LOD Rocks_2_10 count=1 size=11.10483 levels=0.24,0.065
+LOD Rocks_2_14 count=1 size=11.10107 levels=0.24,0.065
+LOD Rocks_2_15 count=1 size=8.34729 levels=0.24,0.065
+LOD Rocks_-2_16 count=1 size=14.56934 levels=0.24,0.065
+LOD Rocks_-2_17 count=1 size=12.35242 levels=0.24,0.065
+LOD Rocks_2_2 count=1 size=12.5716 levels=0.24,0.065
+LOD Rocks_2_-2 count=1 size=13.45273 levels=0.24,0.065
+LOD Rocks_-2_-2 count=1 size=11.99652 levels=0.24,0.065
+LOD Rocks_2_3 count=1 size=13.08168 levels=0.24,0.065
+LOD Rocks_-2_-3 count=1 size=17.21684 levels=0.24,0.065
+LOD Rocks_-2_4 count=1 size=11.39943 levels=0.24,0.065
+LOD Rocks_-2_-4 count=1 size=12.57149 levels=0.24,0.065
+LOD Rocks_2_5 count=1 size=15.65621 levels=0.24,0.065
+LOD Rocks_-2_5 count=1 size=10.86326 levels=0.24,0.065
+LOD Rocks_2_8 count=1 size=11.29602 levels=0.24,0.065
+LOD Rocks_2_-8 count=1 size=12.52332 levels=0.24,0.065
+LOD Rocks_-2_-8 count=1 size=20.61078 levels=0.24,0.065
+LOD Rocks_2_9 count=1 size=13.0433 levels=0.24,0.065
+LOD Rocks_-2_9 count=1 size=15.4342 levels=0.24,0.065
+LOD Rocks_3_0 count=1 size=15.34142 levels=0.24,0.065
+LOD Rocks_-3_1 count=1 size=11.69084 levels=0.24,0.065
+LOD Rocks_-3_-1 count=1 size=16.60951 levels=0.24,0.065
+LOD Rocks_3_10 count=1 size=11.58569 levels=0.24,0.065
+LOD Rocks_3_14 count=1 size=12.95703 levels=0.24,0.065
+LOD Rocks_3_15 count=1 size=9.091629 levels=0.24,0.065
+LOD Rocks_-3_17 count=1 size=12.55533 levels=0.24,0.065
+LOD Rocks_-3_18 count=1 size=8.27964 levels=0.24,0.065
+LOD Rocks_3_19 count=1 size=13.04149 levels=0.24,0.065
+LOD Rocks_3_2 count=1 size=12.66242 levels=0.24,0.065
+LOD Rocks_-3_2 count=1 size=10.52037 levels=0.24,0.065
+LOD Rocks_-3_-2 count=1 size=12.09058 levels=0.24,0.065
+LOD Rocks_3_3 count=1 size=12.85226 levels=0.24,0.065
+LOD Rocks_3_-3 count=1 size=6.281006 levels=0.24,0.065
+LOD Rocks_-3_3 count=1 size=14.16954 levels=0.24,0.065
+LOD Rocks_-3_-3 count=1 size=13.52039 levels=0.24,0.065
+LOD Rocks_3_4 count=1 size=14.59803 levels=0.24,0.065
+LOD Rocks_-3_4 count=1 size=12.65393 levels=0.24,0.065
+LOD Rocks_3_5 count=1 size=14.3848 levels=0.24,0.065
+LOD Rocks_3_-5 count=1 size=11.39926 levels=0.24,0.065
+LOD Rocks_-3_5 count=1 size=14.03137 levels=0.24,0.065
+LOD Rocks_3_-8 count=1 size=11.44394 levels=0.24,0.065
+LOD Rocks_-3_-8 count=1 size=11.84476 levels=0.24,0.065
+LOD Rocks_3_9 count=1 size=12.01343 levels=0.24,0.065
+LOD Rocks_-4_-1 count=1 size=12.59475 levels=0.24,0.065
+LOD Rocks_4_10 count=1 size=15.30212 levels=0.24,0.065
+LOD Rocks_-4_10 count=1 size=10.27063 levels=0.24,0.065
+LOD Rocks_-4_12 count=1 size=16.09601 levels=0.24,0.065
+LOD Rocks_4_14 count=1 size=13.05951 levels=0.24,0.065
+LOD Rocks_4_15 count=1 size=12.33051 levels=0.24,0.065
+LOD Rocks_-4_15 count=1 size=7.383972 levels=0.24,0.065
+LOD Rocks_4_16 count=1 size=12.86975 levels=0.24,0.065
+LOD Rocks_4_17 count=1 size=11.51359 levels=0.24,0.065
+LOD Rocks_-4_17 count=1 size=6.650482 levels=0.24,0.065
+LOD Rocks_4_18 count=1 size=10.55197 levels=0.24,0.065
+LOD Rocks_4_19 count=1 size=12.71982 levels=0.24,0.065
+LOD Rocks_4_-2 count=1 size=16.49988 levels=0.24,0.065
+LOD Rocks_-4_2 count=1 size=16.53302 levels=0.24,0.065
+LOD Rocks_-4_-2 count=1 size=10.99998 levels=0.24,0.065
+LOD Rocks_4_-3 count=1 size=13.79103 levels=0.24,0.065
+LOD Rocks_-4_3 count=1 size=10.69684 levels=0.24,0.065
+LOD Rocks_-4_-3 count=1 size=13.22722 levels=0.24,0.065
+LOD Rocks_4_-5 count=1 size=9.536621 levels=0.24,0.065
+LOD Rocks_-4_5 count=1 size=12.46042 levels=0.24,0.065
+LOD Rocks_4_-6 count=1 size=15.66364 levels=0.24,0.065
+LOD Rocks_-4_-6 count=1 size=16.26794 levels=0.24,0.065
+LOD Rocks_-4_8 count=1 size=6.293945 levels=0.24,0.065
+LOD Rocks_-4_-8 count=1 size=12.33252 levels=0.24,0.065
+LOD Rocks_-5_-1 count=1 size=13.09444 levels=0.24,0.065
+LOD Rocks_5_11 count=1 size=13.22597 levels=0.24,0.065
+LOD Rocks_5_12 count=1 size=13.7883 levels=0.24,0.065
+LOD Rocks_-5_12 count=1 size=14.30802 levels=0.24,0.065
+LOD Rocks_-5_13 count=1 size=10.72693 levels=0.24,0.065
+LOD Rocks_5_15 count=1 size=19.30042 levels=0.24,0.065
+LOD Rocks_5_16 count=1 size=14.02429 levels=0.24,0.065
+LOD Rocks_5_18 count=1 size=11.91711 levels=0.24,0.065
+LOD Rocks_5_19 count=1 size=11.68799 levels=0.24,0.065
+LOD Rocks_5_2 count=1 size=5.315674 levels=0.24,0.065
+LOD Rocks_5_-2 count=1 size=12.72421 levels=0.24,0.065
+LOD Rocks_-5_-2 count=1 size=13.53835 levels=0.24,0.065
+LOD Rocks_5_3 count=1 size=10.96701 levels=0.24,0.065
+LOD Rocks_5_-3 count=1 size=10.78802 levels=0.24,0.065
+LOD Rocks_-5_3 count=1 size=12.02983 levels=0.24,0.065
+LOD Rocks_5_-6 count=1 size=11.34848 levels=0.24,0.065
+LOD Rocks_-5_6 count=1 size=13.39137 levels=0.24,0.065
+LOD Rocks_5_7 count=1 size=21.07014 levels=0.24,0.065
+LOD Rocks_5_-7 count=1 size=12.03402 levels=0.24,0.065
+LOD Rocks_-5_7 count=1 size=10.91412 levels=0.24,0.065
+LOD Rocks_5_-8 count=1 size=18.82413 levels=0.24,0.065
+LOD Rocks_-5_8 count=1 size=11.48413 levels=0.24,0.065
+LOD Rocks_-5_-8 count=1 size=8.580963 levels=0.24,0.065
+LOD Rocks_6_-1 count=1 size=14.71691 levels=0.24,0.065
+LOD Rocks_-6_-1 count=1 size=17.25858 levels=0.24,0.065
+LOD Rocks_6_11 count=1 size=15.13248 levels=0.24,0.065
+LOD Rocks_-6_11 count=1 size=15.20601 levels=0.24,0.065
+LOD Rocks_6_12 count=1 size=11.36957 levels=0.24,0.065
+LOD Rocks_-6_12 count=1 size=13.21335 levels=0.24,0.065
+LOD Rocks_-6_13 count=1 size=14.03302 levels=0.24,0.065
+LOD Rocks_-6_16 count=1 size=11.77692 levels=0.24,0.065
+LOD Rocks_-6_17 count=1 size=13.35876 levels=0.24,0.065
+LOD Rocks_6_2 count=1 size=13.14087 levels=0.24,0.065
+LOD Rocks_6_-2 count=1 size=10.84662 levels=0.24,0.065
+LOD Rocks_-6_2 count=1 size=13.5195 levels=0.24,0.065
+LOD Rocks_-6_-2 count=1 size=14.3259 levels=0.24,0.065
+LOD Rocks_6_3 count=1 size=13.57129 levels=0.24,0.065
+LOD Rocks_-6_3 count=1 size=12.32858 levels=0.24,0.065
+LOD Rocks_6_4 count=1 size=15.1723 levels=0.24,0.065
+LOD Rocks_-6_-5 count=1 size=15.63745 levels=0.24,0.065
+LOD Rocks_6_-6 count=1 size=13.11696 levels=0.24,0.065
+LOD Rocks_-6_6 count=1 size=9.582855 levels=0.24,0.065
+LOD Rocks_6_7 count=1 size=10.27213 levels=0.24,0.065
+LOD Rocks_6_-7 count=1 size=10.90222 levels=0.24,0.065
+LOD Rocks_-6_7 count=1 size=12.31281 levels=0.24,0.065
+LOD Rocks_6_8 count=1 size=11.31927 levels=0.24,0.065
+LOD Rocks_-6_8 count=1 size=12.46603 levels=0.24,0.065
+LOD Rocks_-6_-8 count=1 size=11.68683 levels=0.24,0.065
+LOD Rocks_6_9 count=1 size=17.67847 levels=0.24,0.065
+LOD Rocks_7_0 count=1 size=17.07622 levels=0.24,0.065
+LOD Rocks_7_-1 count=1 size=13.75879 levels=0.24,0.065
+LOD Rocks_-7_1 count=1 size=12.906 levels=0.24,0.065
+LOD Rocks_-7_-1 count=1 size=19.48975 levels=0.24,0.065
+LOD Rocks_-7_11 count=1 size=14.43909 levels=0.24,0.065
+LOD Rocks_-7_12 count=1 size=7.851807 levels=0.24,0.065
+LOD Rocks_7_16 count=1 size=13.41492 levels=0.24,0.065
+LOD Rocks_-7_16 count=1 size=14.04535 levels=0.24,0.065
+LOD Rocks_7_17 count=1 size=12.60962 levels=0.24,0.065
+LOD Rocks_-7_17 count=1 size=12.85809 levels=0.24,0.065
+LOD Rocks_7_-2 count=1 size=12.58279 levels=0.24,0.065
+LOD Rocks_-7_2 count=1 size=12.79004 levels=0.24,0.065
+LOD Rocks_-7_-2 count=1 size=11.0144 levels=0.24,0.065
+LOD Rocks_7_-3 count=1 size=8.045349 levels=0.24,0.065
+LOD Rocks_-7_3 count=1 size=13.04811 levels=0.24,0.065
+LOD Rocks_-7_-3 count=1 size=12.79239 levels=0.24,0.065
+LOD Rocks_-7_-4 count=1 size=14.5785 levels=0.24,0.065
+LOD Rocks_-7_-5 count=1 size=8.87323 levels=0.24,0.065
+LOD Rocks_7_-6 count=1 size=16.74918 levels=0.24,0.065
+LOD Rocks_7_7 count=1 size=11.12686 levels=0.24,0.065
+LOD Rocks_7_-7 count=1 size=8.825562 levels=0.24,0.065
+LOD Rocks_7_8 count=1 size=12.45479 levels=0.24,0.065
+LOD Rocks_7_9 count=1 size=16.40866 levels=0.24,0.065
+LOD Rocks_8_1 count=1 size=8.646149 levels=0.24,0.065
+LOD Rocks_-8_1 count=1 size=10.01033 levels=0.24,0.065
+LOD Rocks_-8_-1 count=1 size=10.52838 levels=0.24,0.065
+LOD Rocks_-8_10 count=1 size=17.03278 levels=0.24,0.065
+LOD Rocks_8_11 count=1 size=13.99805 levels=0.24,0.065
+LOD Rocks_-8_11 count=1 size=12.38855 levels=0.24,0.065
+LOD Rocks_8_12 count=1 size=17.3815 levels=0.24,0.065
+LOD Rocks_-8_12 count=1 size=10.62595 levels=0.24,0.065
+LOD Rocks_8_13 count=1 size=14.02405 levels=0.24,0.065
+LOD Rocks_8_14 count=1 size=7.42688 levels=0.24,0.065
+LOD Rocks_-8_15 count=1 size=12.18457 levels=0.24,0.065
+LOD Rocks_8_16 count=1 size=14.84518 levels=0.24,0.065
+LOD Rocks_-8_16 count=1 size=13.8327 levels=0.24,0.065
+LOD Rocks_8_17 count=1 size=11.22327 levels=0.24,0.065
+LOD Rocks_-8_17 count=1 size=13.52075 levels=0.24,0.065
+LOD Rocks_8_2 count=1 size=11.63629 levels=0.24,0.065
+LOD Rocks_-8_2 count=1 size=6.689819 levels=0.24,0.065
+LOD Rocks_-8_-2 count=1 size=12.65088 levels=0.24,0.065
+LOD Rocks_8_3 count=1 size=7.762207 levels=0.24,0.065
+LOD Rocks_8_4 count=1 size=14.99313 levels=0.24,0.065
+LOD Rocks_-8_-4 count=1 size=11.42523 levels=0.24,0.065
+LOD Rocks_-8_-5 count=1 size=14.87033 levels=0.24,0.065
+LOD Rocks_8_-6 count=1 size=10.35168 levels=0.24,0.065
+LOD Rocks_8_7 count=1 size=12.12732 levels=0.24,0.065
+LOD Rocks_8_-7 count=1 size=11.28259 levels=0.24,0.065
+LOD Rocks_8_-8 count=1 size=14.99283 levels=0.24,0.065
+LOD Rocks_-9_12 count=1 size=16.53253 levels=0.24,0.065
+LOD Rocks_-9_13 count=1 size=13.39185 levels=0.24,0.065
+LOD Rocks_-9_17 count=1 size=19.39331 levels=0.24,0.065
+LOD Rocks_-9_4 count=1 size=13.64223 levels=0.24,0.065
+LOD Rocks_-9_-4 count=1 size=12.68448 levels=0.24,0.065
+LOD Rocks_-9_5 count=1 size=12.72281 levels=0.24,0.065
+LOD Rocks_-9_-5 count=1 size=12.63718 levels=0.24,0.065
+LOD Rocks_-9_6 count=1 size=18.91928 levels=0.24,0.065
+LOD Rocks_-9_-7 count=1 size=12.09793 levels=0.24,0.065
+LOD Rocks_-9_-8 count=1 size=18.63266 levels=0.24,0.065
+LOD Rocks_-9_9 count=1 size=11.58508 levels=0.24,0.065
+LOD Scanned Secale | Smithsonian count=345 size=1.00136 levels=0.12,0.045,0.008
+LOD Scanned Secale | Smithsonian | infill 0 count=1 size=1.00136 levels=0.12,0.045,0.008
+LOD Scanned Secale | Smithsonian | infill 1 count=1 size=1.00136 levels=0.12,0.045,0.008
+LOD Scanned Secale | Smithsonian | infill 10 count=1 size=1.00136 levels=0.12,0.045,0.008
+LOD Scanned Secale | Smithsonian | infill 11 count=1 size=1.00136 levels=0.12,0.045,0.008
+LOD Scanned Secale | Smithsonian | infill 2 count=1 size=1.00136 levels=0.12,0.045,0.008
+LOD Scanned Secale | Smithsonian | infill 3 count=1 size=1.00136 levels=0.12,0.045,0.008
+LOD Scanned Secale | Smithsonian | infill 4 count=1 size=1.00136 levels=0.12,0.045,0.008
+LOD Scanned Secale | Smithsonian | infill 5 count=1 size=1.00136 levels=0.12,0.045,0.008
+LOD Scanned Secale | Smithsonian | infill 6 count=1 size=1.00136 levels=0.12,0.045,0.008
+LOD Scanned Secale | Smithsonian | infill 7 count=1 size=1.00136 levels=0.12,0.045,0.008
+LOD Scanned Secale | Smithsonian | infill 8 count=1 size=1.00136 levels=0.12,0.045,0.008
+LOD Scanned Secale | Smithsonian | infill 9 count=1 size=1.00136 levels=0.12,0.045,0.008
+INFO Anglerfish count=12 missing=12 disabled=0
+INFO Blue tang count=19 missing=19 disabled=0
+INFO Box jelly count=3 missing=3 disabled=0
+INFO Clownfish count=5 missing=5 disabled=0
+INFO Comb jelly count=25 missing=0 disabled=0
+INFO Copperband butterflyfish count=1 missing=1 disabled=0
+INFO Dolphin count=3 missing=0 disabled=0
+INFO Fire coral count=1 missing=1 disabled=0
+INFO Grouper count=2 missing=0 disabled=0
+INFO Lionfish count=1 missing=1 disabled=0
+INFO Lumen count=1 missing=0 disabled=0
+INFO Lyretail anthias count=109 missing=109 disabled=0
+INFO Manta count=1 missing=1 disabled=0
+INFO Moon jelly count=25 missing=0 disabled=0
+INFO Moray count=1 missing=0 disabled=0
+INFO Octopus count=1 missing=1 disabled=0
+INFO Ray tail count=3 missing=3 disabled=0
+INFO Reef shark count=1 missing=1 disabled=0
+INFO Royal gramma count=1 missing=1 disabled=0
+INFO Sergeant major count=90 missing=90 disabled=0
+INFO Stingray count=3 missing=0 disabled=0
+INFO Turtle count=2 missing=0 disabled=0
+INFO Yellow tang count=2 missing=2 disabled=0
+ACTOR Comb jelly pos=(-3.00, -31.00, 93.00) scale=(1.00, 1.00, 1.00)
+ COMP SeaLife enabled=True
+ COMP ReefJellyMotion enabled=True
+ COMP ReefSphereBody enabled=True
+ COMP DeepWaterEncounter enabled=True
+ COMP ReefCreatureInfo enabled=True
+ COMP ReefAnimalClearance enabled=True
+ COMP ReefDangerZone enabled=True
+ COLLIDER Jelly bell collision enabled=False trigger=False size=(0.00, 0.00, 0.00)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.30, 0.32, 0.30)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.22, 0.31, 0.30)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.38, 0.54, 0.46)
+ VISUAL CombJelly_Reduced bounds=Center: (-3.00, -31.39, 93.00), Extents: (1.20, 1.37, 1.36) actual=Center: (-3.00, -31.38, 93.00), Extents: (0.21, 0.37, 0.34) material=Assets/UnderwaterArt/CombJellyComparison/Tissue.mat
+ BONES Body,LobeLeft,LobeRight,OralLeft,OralRight mesh=Assets/UnderwaterArt/CombJellyComparison/Reduced.fbx root=Body
+ CLIP Assets/UnderwaterArt/CombJellyComparison/Reduced.fbx / GentlePulse duration=4
+ACTOR Moon jelly pos=(4.21, -29.00, 162.85) scale=(1.00, 1.00, 1.00)
+ COMP SeaLife enabled=True
+ COMP ReefJellyMotion enabled=True
+ COMP ReefSphereBody enabled=True
+ COMP DeepWaterEncounter enabled=True
+ COMP ReefCreatureInfo enabled=True
+ COMP ReefAnimalClearance enabled=True
+ COMP ReefDangerZone enabled=True
+ COLLIDER Jelly bell collision enabled=False trigger=False size=(0.00, 0.00, 0.00)
+ COLLIDER Thin bell contact enabled=True trigger=True size=(0.80, 0.29, 0.80)
+ COLLIDER Tentacle contact enabled=True trigger=True size=(0.08, 0.28, 0.12)
+ COLLIDER Tentacle contact enabled=True trigger=True size=(0.07, 0.28, 0.14)
+ COLLIDER Tentacle contact enabled=True trigger=True size=(0.03, 0.19, 0.09)
+ COLLIDER Tentacle contact enabled=True trigger=True size=(0.05, 0.28, 0.16)
+ COLLIDER Tentacle contact enabled=True trigger=True size=(0.07, 0.28, 0.16)
+ COLLIDER Tentacle contact enabled=True trigger=True size=(0.01, 0.19, 0.03)
+ COLLIDER Tentacle contact enabled=True trigger=True size=(0.02, 0.28, 0.02)
+ COLLIDER Tentacle contact enabled=True trigger=True size=(0.03, 0.19, 0.02)
+ COLLIDER Tentacle contact enabled=True trigger=True size=(0.02, 0.28, 0.04)
+ COLLIDER Tentacle contact enabled=True trigger=True size=(0.02, 0.28, 0.03)
+ COLLIDER Tentacle contact enabled=True trigger=True size=(0.02, 0.19, 0.01)
+ COLLIDER Tentacle contact enabled=True trigger=True size=(0.06, 0.28, 0.05)
+ COLLIDER Tentacle contact enabled=True trigger=True size=(0.06, 0.28, 0.15)
+ COLLIDER Tentacle contact enabled=True trigger=True size=(0.01, 0.19, 0.03)
+ COLLIDER Tentacle contact enabled=True trigger=True size=(0.07, 0.28, 0.11)
+ COLLIDER Tentacle contact enabled=True trigger=True size=(0.04, 0.28, 0.15)
+ COLLIDER Tentacle contact enabled=True trigger=True size=(0.05, 0.19, 0.15)
+ COLLIDER Tentacle contact enabled=True trigger=True size=(0.10, 0.28, 0.14)
+ COLLIDER Tentacle contact enabled=True trigger=True size=(0.03, 0.28, 0.02)
+ COLLIDER Tentacle contact enabled=True trigger=True size=(0.01, 0.19, 0.03)
+ COLLIDER Tentacle contact enabled=True trigger=True size=(0.05, 0.28, 0.02)
+ COLLIDER Tentacle contact enabled=True trigger=True size=(0.02, 0.28, 0.01)
+ COLLIDER Tentacle contact enabled=True trigger=True size=(0.03, 0.19, 0.03)
+ COLLIDER Tentacle contact enabled=True trigger=True size=(0.02, 0.28, 0.03)
+ VISUAL Earlier moon jelly visual bounds=Center: (4.21, -29.39, 162.85), Extents: (0.40, 0.63, 0.40) actual=Center: (4.21, -29.39, 162.85), Extents: (0.40, 0.63, 0.40) material=Assets/UnderwaterArt/Materials/JellyTissue.mat
+ACTOR Wreck dolphin 3 pos=(-1.90, -13.51, 64.00) scale=(1.00, 1.00, 1.00)
+ COMP SeaLife enabled=True
+ COMP ReefSphereBody enabled=True
+ COMP WreckCreature enabled=True
+ COMP ReefCreatureInfo enabled=True
+ COMP ReefAnimalClearance enabled=True
+ COMP DolphinSwimController enabled=True
+ COLLIDER Animal body solid enabled=True trigger=False size=(2.05, 0.73, 2.79)
+ VISUAL Dolphin_Anatomy bounds=Center: (-1.76, -13.41, 63.81), Extents: (5.21, 3.62, 5.59) actual=Center: (-1.65, -13.23, 63.76), Extents: (1.09, 0.64, 1.52) material=Assets/UnderwaterArt/MarineRefresh/Dolphin/TT_checker_2048x2048_UV_GRID.mat,Assets/UnderwaterArt/DolphinMotion/DolphinEyes.mat
+ BONES ManeRoot,ROOT,BODY,BODY01,TALE04,TALE03,TALE02,TALE01,TALE_L,TALE_L_end,TALE_R,TALE_R_end,Head_Root,FLIPPER_L02,FLIPPER_L01,FLIPPER_L01_end,FLIPPER_R02,FLIPPER_R01,FLIPPER_R01_end,Kluv,TONGUE04,TONGUE03,TONGUE02,TONGUE01,TONGUE01.001,TONGUE01.001_end,Head,Head_end,eye L,eye L_end,eye R,eye R_end,eyelish_down L,eyelish_down L_end,eyelish_down R,eyelish_down R_end,eyelish_up L,eyelish_up L_end,eyelish_up R,eyelish_up R_end mesh=Assets/UnderwaterArt/DolphinMotion/DolphinEyes.asset root=ManeRoot
+ CLIP Assets/UnderwaterArt/MarineRefresh/Dolphin/Dolphin.fbx / Dolphin_Coordinated_Swim duration=2
+ACTOR Box jelly pos=(-6.00, -27.00, 157.00) scale=(1.00, 1.00, 1.00)
+ COMP SeaLife enabled=True
+ COMP ReefDangerZone enabled=True
+ COMP ReefJellyMotion enabled=True
+ COMP ReefAnimalClearance enabled=True
+ COLLIDER Pulsing bell surface enabled=False trigger=True size=(0.00, 0.00, 0.00)
+ COLLIDER Trailing tentacle surface enabled=False trigger=True size=(0.00, 0.00, 0.00)
+ COLLIDER Trailing tentacle surface enabled=False trigger=True size=(0.00, 0.00, 0.00)
+ COLLIDER Trailing tentacle surface enabled=False trigger=True size=(0.00, 0.00, 0.00)
+ COLLIDER Trailing tentacle surface enabled=False trigger=True size=(0.00, 0.00, 0.00)
+ COLLIDER Trailing tentacle surface enabled=False trigger=True size=(0.00, 0.00, 0.00)
+ COLLIDER Trailing tentacle surface enabled=False trigger=True size=(0.00, 0.00, 0.00)
+ COLLIDER Trailing tentacle surface enabled=False trigger=True size=(0.00, 0.00, 0.00)
+ COLLIDER Trailing tentacle surface enabled=False trigger=True size=(0.00, 0.00, 0.00)
+ COLLIDER Trailing tentacle surface enabled=False trigger=True size=(0.00, 0.00, 0.00)
+ COLLIDER Trailing tentacle surface enabled=False trigger=True size=(0.00, 0.00, 0.00)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.24, 0.22, 0.23)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.20, 0.19, 0.19)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.25, 0.21, 0.25)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.23, 0.18, 0.24)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.23, 0.19, 0.21)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.22, 0.19, 0.20)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.20, 0.18, 0.19)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.19, 0.18, 0.18)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.18, 0.16, 0.16)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.16, 0.13, 0.16)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.16, 0.14, 0.16)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.16, 0.13, 0.16)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.16, 0.13, 0.16)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.15, 0.17, 0.18)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.23, 0.21, 0.20)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.20, 0.17, 0.17)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.17, 0.17, 0.13)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.19, 0.19, 0.10)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.14, 0.14, 0.10)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.14, 0.14, 0.10)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.20, 0.20, 0.23)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.16, 0.17, 0.18)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.27, 0.24, 0.27)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.24, 0.23, 0.26)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.23, 0.20, 0.22)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.22, 0.18, 0.21)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.20, 0.17, 0.19)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.19, 0.16, 0.18)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.18, 0.16, 0.16)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.17, 0.15, 0.17)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.17, 0.16, 0.16)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.17, 0.16, 0.16)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.17, 0.16, 0.16)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.16, 0.16, 0.17)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.18, 0.18, 0.14)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.10, 0.10, 0.12)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.16, 0.17, 0.18)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.14, 0.14, 0.10)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.14, 0.14, 0.10)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.20, 0.20, 0.23)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.17, 0.17, 0.19)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.21, 0.19, 0.20)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.20, 0.17, 0.20)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.20, 0.17, 0.17)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.19, 0.17, 0.17)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.18, 0.17, 0.17)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.17, 0.17, 0.16)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.17, 0.15, 0.14)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.16, 0.13, 0.16)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.17, 0.15, 0.14)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.17, 0.16, 0.16)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.17, 0.16, 0.16)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.16, 0.16, 0.18)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.18, 0.18, 0.14)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.20, 0.17, 0.17)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.17, 0.17, 0.13)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.23, 0.21, 0.10)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.17, 0.16, 0.10)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.14, 0.14, 0.10)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.24, 0.22, 0.23)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.19, 0.19, 0.18)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.22, 0.17, 0.20)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.21, 0.15, 0.20)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.21, 0.17, 0.19)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.20, 0.19, 0.19)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.19, 0.19, 0.19)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.18, 0.18, 0.18)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.18, 0.15, 0.15)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.16, 0.13, 0.16)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.16, 0.14, 0.14)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.16, 0.13, 0.16)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.16, 0.13, 0.16)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.14, 0.16, 0.17)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.23, 0.21, 0.20)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.13, 0.13, 0.12)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.15, 0.17, 0.14)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.14, 0.14, 0.14)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.13, 0.13, 0.10)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.27, 0.22, 0.26)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.17, 0.16, 0.14)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.17, 0.16, 0.14)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.67, 0.53, 0.63)
+ COLLIDER Jelly tissue contact enabled=True trigger=True size=(0.57, 0.47, 0.53)
+ COLLIDER Jelly bell collision enabled=False trigger=False size=(0.00, 0.00, 0.00)
+ VISUAL Object_7 bounds=Center: (-5.91, -27.59, 157.00), Extents: (0.61, 0.64, 0.52) actual=Center: (-5.91, -27.58, 157.00), Extents: (0.41, 0.44, 0.31) material=Assets/UnderwaterArt/ImportedBoxJelly/Box-jelly_tentacle.mat
+ BONES GLTF_created_0_rootJoint,orig_72,B_71,B0_1_13,B0_2_1,B0_3_0,T0_01_12,T0_02_11,T0_03_10,T0_04_9,T0_05_8,T0_06_7,T0_07_6,T0_08_5,T0_09_4,T0_10_3,T0_11_2,B7_1_16,B7_2_15,B7_3_14,B6_1_30,B6_2_18,B6_3_17,T3_01_29,T3_02_28,T3_03_27,T3_04_26,T3_05_25,T3_06_24,T3_07_23,T3_08_22,T3_09_21,T3_10_20,T3_11_19,B5_1_33,B5_2_32,B5_3_31,B4_1_47,B4_2_35,B4_3_34,T2_01_46,T2_02_45,T2_03_44,T2_04_43,T2_05_42,T2_06_41,T2_07_40,T2_08_39,T2_09_38,T2_10_37,T2_11_36,B3_1_50,B3_2_49,B3_3_48,B2_1_64,B2_2_52,B2_3_51,T1_01_63,T1_02_62,T1_03_61,T1_04_60,T1_05_59,T1_06_58,T1_07_57,T1_08_56,T1_09_55,T1_10_54,T1_11_53,B1_1_67,B1_2_66,B1_3_65,O_1_70,O_2_69,O_3_68 mesh=Assets/UnderwaterArt/ImportedBoxJelly/BoxJelly.fbx root=GLTF_created_0_rootJoint
+ VISUAL Object_8 bounds=Center: (-6.19, -27.10, 157.01), Extents: (0.49, 0.51, 0.44) actual=Center: (-6.20, -27.09, 157.01), Extents: (0.31, 0.33, 0.26) material=Assets/UnderwaterArt/ImportedBoxJelly/Box-jelly_bell.mat
+ BONES GLTF_created_0_rootJoint,orig_72,B_71,B0_1_13,B0_2_1,B0_3_0,T0_01_12,T0_02_11,T0_03_10,T0_04_9,T0_05_8,T0_06_7,T0_07_6,T0_08_5,T0_09_4,T0_10_3,T0_11_2,B7_1_16,B7_2_15,B7_3_14,B6_1_30,B6_2_18,B6_3_17,T3_01_29,T3_02_28,T3_03_27,T3_04_26,T3_05_25,T3_06_24,T3_07_23,T3_08_22,T3_09_21,T3_10_20,T3_11_19,B5_1_33,B5_2_32,B5_3_31,B4_1_47,B4_2_35,B4_3_34,T2_01_46,T2_02_45,T2_03_44,T2_04_43,T2_05_42,T2_06_41,T2_07_40,T2_08_39,T2_09_38,T2_10_37,T2_11_36,B3_1_50,B3_2_49,B3_3_48,B2_1_64,B2_2_52,B2_3_51,T1_01_63,T1_02_62,T1_03_61,T1_04_60,T1_05_59,T1_06_58,T1_07_57,T1_08_56,T1_09_55,T1_10_54,T1_11_53,B1_1_67,B1_2_66,B1_3_65,O_1_70,O_2_69,O_3_68 mesh=Assets/UnderwaterArt/ImportedBoxJelly/BoxJelly.fbx root=GLTF_created_0_rootJoint
+ VISUAL Object_9 bounds=Center: (-6.21, -27.08, 157.01), Extents: (0.42, 0.45, 0.34) actual=Center: (-6.24, -27.04, 157.01), Extents: (0.21, 0.24, 0.17) material=Assets/UnderwaterArt/ImportedBoxJelly/Box-jelly_canal-oral.mat
+ BONES GLTF_created_0_rootJoint,orig_72,B_71,B0_1_13,B0_2_1,B0_3_0,T0_01_12,T0_02_11,T0_03_10,T0_04_9,T0_05_8,T0_06_7,T0_07_6,T0_08_5,T0_09_4,T0_10_3,T0_11_2,B7_1_16,B7_2_15,B7_3_14,B6_1_30,B6_2_18,B6_3_17,T3_01_29,T3_02_28,T3_03_27,T3_04_26,T3_05_25,T3_06_24,T3_07_23,T3_08_22,T3_09_21,T3_10_20,T3_11_19,B5_1_33,B5_2_32,B5_3_31,B4_1_47,B4_2_35,B4_3_34,T2_01_46,T2_02_45,T2_03_44,T2_04_43,T2_05_42,T2_06_41,T2_07_40,T2_08_39,T2_09_38,T2_10_37,T2_11_36,B3_1_50,B3_2_49,B3_3_48,B2_1_64,B2_2_52,B2_3_51,T1_01_63,T1_02_62,T1_03_61,T1_04_60,T1_05_59,T1_06_58,T1_07_57,T1_08_56,T1_09_55,T1_10_54,T1_11_53,B1_1_67,B1_2_66,B1_3_65,O_1_70,O_2_69,O_3_68 mesh=Assets/UnderwaterArt/ImportedBoxJelly/BoxJelly.fbx root=GLTF_created_0_rootJoint
+ VISUAL Object_10 bounds=Center: (-6.21, -27.10, 157.01), Extents: (0.38, 0.29, 0.42) actual=Center: (-6.21, -27.11, 157.01), Extents: (0.21, 0.13, 0.25) material=Assets/UnderwaterArt/ImportedBoxJelly/Box-jelly_eye.mat
+ BONES GLTF_created_0_rootJoint,orig_72,B_71,B0_1_13,B0_2_1,B0_3_0,T0_01_12,T0_02_11,T0_03_10,T0_04_9,T0_05_8,T0_06_7,T0_07_6,T0_08_5,T0_09_4,T0_10_3,T0_11_2,B7_1_16,B7_2_15,B7_3_14,B6_1_30,B6_2_18,B6_3_17,T3_01_29,T3_02_28,T3_03_27,T3_04_26,T3_05_25,T3_06_24,T3_07_23,T3_08_22,T3_09_21,T3_10_20,T3_11_19,B5_1_33,B5_2_32,B5_3_31,B4_1_47,B4_2_35,B4_3_34,T2_01_46,T2_02_45,T2_03_44,T2_04_43,T2_05_42,T2_06_41,T2_07_40,T2_08_39,T2_09_38,T2_10_37,T2_11_36,B3_1_50,B3_2_49,B3_3_48,B2_1_64,B2_2_52,B2_3_51,T1_01_63,T1_02_62,T1_03_61,T1_04_60,T1_05_59,T1_06_58,T1_07_57,T1_08_56,T1_09_55,T1_10_54,T1_11_53,B1_1_67,B1_2_66,B1_3_65,O_1_70,O_2_69,O_3_68 mesh=Assets/UnderwaterArt/ImportedBoxJelly/BoxJelly.fbx root=GLTF_created_0_rootJoint
+ CLIP Assets/UnderwaterArt/ImportedBoxJelly/BoxJelly.fbx / Loop-200 duration=6.666667
+ACTOR Day 3 rocky octopus pos=(-1.00, -11.43, 31.00) scale=(1.00, 1.00, 1.00)
+ COMP ReefSphereBody enabled=True
+ COMP SeaLife enabled=True
+ COMP ReefEncounter enabled=True
+ COMP OctopusGroundClearance enabled=True
+ VISUAL Octopus_Mesh bounds=Center: (-1.02, -10.71, 30.98), Extents: (2.16, 2.00, 2.58) actual=Center: (-0.96, -10.78, 30.76), Extents: (1.86, 0.87, 1.85) material=Assets/UnderwaterArt/PreparedMarine/Octopus/Octopus_Skin.mat
+ BONES C_Root_Jnt,C_Neck_jnt,C_Head_jnt,C_Head2_jnt,C_Head3_jnt,C_HeadEnd_jnt,L_Eye_jnt,L_Breathe_jnt,L_BreatheEnd_jnt,L_Flap_jnt,L_FlapEnd_jnt,R_Eye_jnt,R_Flap_jnt,R_FlapEnd_jnt,R_Breathe_jnt,R_BreatheEnd_jnt,L_LegA_jnt1,L_LegA_jnt2,L_LegA_jnt2.001,L_LegA_jnt2.002,L_LegA_jnt2.003,L_LegA_jnt2.004,L_LegA_jnt2.005,L_LegA_jnt2.007,L_LegA_jnt2.008,L_LegA_jnt2.009,L_LegA_jnt2.010,L_LegA_jnt2.011,L_LegA_jnt2.013,L_LegA_jnt2.014,L_LegA_jnt2.015,L_LegA_jnt2.016,L_LegA_jnt2.017,L_LegA_jnt2.019,L_LegA_jnt2.020,L_LegA_jnt2.021,L_LegA_jnt2.022,L_LegA_jnt2.023,L_LegA_jnt2.025,L_LegA_jnt2.026,L_LegA_jnt2.027,L_LegA_jnt2.028,L_LegA_jnt2.029,L_LegA_jnt2.031,L_LegA_jnt2.032,L_LegA_jnt2.033,L_LegA_jnt2.034,L_LegA_jnt2.035,L_LegA_jnt2.037,L_LegA_jnt2.038,L_LegA_jnt2.039,L_LegA_jnt2.040,L_LegA_jnt2.041,L_LegA_jnt2.043,L_LegA_jnt2.044,L_LegA_jnt2.045,L_LegA_jnt2.046,L_LegA_jnt2.047,L_LegB_jnt1,L_LegB_jnt2,L_LegC_jnt1,L_LegD_jnt1,R_LegA_jnt1,R_LegA_jnt2,R_LegB_jnt1,R_LegC_jnt1,R_LegD_jnt1,L_LegA_jnt2.006,L_LegA_jnt2.012,L_LegA_jnt2.018,L_LegA_jnt2.024,L_LegA_jnt2.030,L_LegA_jnt2.036,L_LegA_jnt2.042,L_LegA_jnt2.048 mesh=Assets/UnderwaterArt/PreparedMarine/Octopus/Octopus.fbx root=C_Root_Jnt
+ CLIP Assets/UnderwaterArt/PreparedMarine/Octopus/Octopus.fbx / Scene duration=12.5
+ACTOR Giant squid distant silhouette pos=(16.00, -40.75, 132.00) scale=(1.00, 1.00, 1.00)
+ COMP ReefSphereBody enabled=True
+ COMP SquidSwimmer enabled=True
+ COMP ReefCreatureInfo enabled=True
+ COMP RecurringSquid enabled=True
+ COMP ReefAnimalClearance enabled=True
+ COLLIDER Animal body solid enabled=True trigger=False size=(24.00, 7.27, 7.27)
+ VISUAL ReferenceSquidVisual bounds=Center: (11.97, -40.70, 132.00), Extents: (11.41, 2.80, 3.85) actual=Center: (12.00, -40.75, 132.00), Extents: (11.00, 2.22, 3.47) material=Assets/UnderwaterArt/BlenderSquid/SquidBody.mat,Assets/UnderwaterArt/BlenderSquid/SquidFin.mat
+ BONES Root,Mantle,FinL0,FinL1,FinL2,FinR0,FinR1,FinR2,Arm00_0,Arm00_1,Arm01_0,Arm01_1,Arm02_0,Arm02_1,Arm03_0,Arm03_1,Arm04_0,Arm04_1,Arm05_0,Arm05_1,Arm06_0,Arm06_1,Arm07_0,Arm07_1,Arm08_0,Arm08_1,Arm08_2,Arm09_0,Arm09_1,Arm09_2 mesh=Assets/UnderwaterArt/BlenderSquid/ReferenceSquid.fbx root=Root
+ CLIP Assets/UnderwaterArt/BlenderSquid/ReferenceSquid.fbx / Swim duration=2

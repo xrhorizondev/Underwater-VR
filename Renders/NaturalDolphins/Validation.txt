@@ -1,0 +1,6 @@
+180-second natural-course simulation
+Body lengths=3.37,3.37,3.37 m; reference speeds=0.94,0.94,0.94 m/s
+Travel=158.92,159.47,160.39 m; closest root spacing=5.489088 m
+Max heading rate=9.013479 deg/s; max heading acceleration=4.741058 deg/s²; max linear acceleration=0.1208174 m/s²
+Max step=0.05056139 m; longest stop=0 s; max habitat radius=8.970696 m; min forward alignment=0.9999997
+Glide samples=3837 powered samples=6963 observed grouping=Together,Regrouping

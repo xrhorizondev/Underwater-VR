@@ -1,0 +1,1 @@
+20-minute simulation completed without sustained stall. Travel=1057.561,1056.576,1064.467; longest near-zero-motion interval=0.7500001 s

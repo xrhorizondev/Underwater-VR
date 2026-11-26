@@ -1,0 +1,18 @@
+RENDER Day 4 wreck encounters/Wreck dolphin 3/Dolphin eyes pos=(-1.90, -13.50, 63.75) enabled=False active=True mesh=Assets/UnderwaterArt/DayFour/DolphinEyes.asset skin=False
+ACTOR Wreck dolphin 3 kind=Dolphin wreckEnabled=True driver=True
+RENDER Day 4 wreck encounters/Wreck dolphin 3 pos=(-1.90, -13.50, 63.75) enabled=False active=True mesh=Assets/UnderwaterArt/DayFour/DolphinBody.asset skin=False
+ACTOR Wreck dolphin 3 kind=Dolphin wreckEnabled=True driver=True
+RENDER Day 4 wreck encounters/Wreck dolphin 1 pos=(2.00, -13.50, 70.50) enabled=False active=True mesh=Assets/UnderwaterArt/DayFour/DolphinBody.asset skin=False
+ACTOR Wreck dolphin 1 kind=Dolphin wreckEnabled=True driver=True
+RENDER Day 4 wreck encounters/Wreck dolphin 2 pos=(5.90, -13.50, 63.75) enabled=False active=True mesh=Assets/UnderwaterArt/DayFour/DolphinBody.asset skin=False
+ACTOR Wreck dolphin 2 kind=Dolphin wreckEnabled=True driver=True
+RENDER Day 4 wreck encounters/Wreck dolphin 1/Dolphin eyes pos=(2.00, -13.50, 70.50) enabled=False active=True mesh=Assets/UnderwaterArt/DayFour/DolphinEyes.asset skin=False
+ACTOR Wreck dolphin 1 kind=Dolphin wreckEnabled=True driver=True
+RENDER Day 4 wreck encounters/Wreck dolphin 2/Dolphin eyes pos=(5.90, -13.50, 63.75) enabled=False active=True mesh=Assets/UnderwaterArt/DayFour/DolphinEyes.asset skin=False
+ACTOR Wreck dolphin 2 kind=Dolphin wreckEnabled=True driver=True
+RENDER Day 4 wreck encounters/Wreck dolphin 1/Prepared animated model/Dolphin/Dolphin_Anatomy pos=(1.98, -13.41, 70.50) enabled=True active=True mesh=Assets/UnderwaterArt/DolphinMotion/DolphinEyes.asset skin=True
+ACTOR Wreck dolphin 1 kind=Dolphin wreckEnabled=True driver=True
+RENDER Day 4 wreck encounters/Wreck dolphin 3/Prepared animated model/Dolphin/Dolphin_Anatomy pos=(-1.88, -13.41, 63.73) enabled=True active=True mesh=Assets/UnderwaterArt/DolphinMotion/DolphinEyes.asset skin=True
+ACTOR Wreck dolphin 3 kind=Dolphin wreckEnabled=True driver=True
+RENDER Day 4 wreck encounters/Wreck dolphin 2/Prepared animated model/Dolphin/Dolphin_Anatomy pos=(5.91, -13.41, 63.77) enabled=True active=True mesh=Assets/UnderwaterArt/DolphinMotion/DolphinEyes.asset skin=True
+ACTOR Wreck dolphin 2 kind=Dolphin wreckEnabled=True driver=True

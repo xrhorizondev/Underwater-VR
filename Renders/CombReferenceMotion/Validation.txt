@@ -1,0 +1,5 @@
+Comb jellies: 25
+Rig: 9 bones; mesh: 21,999 triangles; loop: 4.8 seconds
+Sampled poses: 2425
+Maximum tissue displacement: 0.2107889 m
+Loop seam, render/clearance bounds, root placement and fitted contact sensors passed.

@@ -1,0 +1,34 @@
+Moray in wreck stern opening local=(-2.66, -18.88, 70.08) scale=(1.00, 1.00, 1.00) components=Transform,MeshFilter,MeshRenderer,SeaLife,ReefSphereBody,WreckCreature,ReefCreatureInfo,ReefAnimalClearance
+Hinged lower jaw local=(0.00, 0.01, 0.35) scale=(1.00, 1.00, 1.00) components=Transform
+Lower jaw tissue local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshFilter,MeshRenderer
+Small curved teeth local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshFilter,MeshRenderer
+Mouth interior and eyes local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshFilter,MeshRenderer
+Animal body solid local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,CapsuleCollider
+Small curved teeth local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshFilter,MeshRenderer
+Supplied Tripo moray animated visual local=(0.00, 0.01, -0.48) scale=(2.38, 2.38, 2.38) components=Transform,YellowMorayMotion
+TripoMoray local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,Animation
+Supplied moray skin local=(0.00, 0.00, 0.00) scale=(100.00, 100.00, 100.00) components=Transform,SkinnedMeshRenderer
+TripoMorayRig local=(0.00, 0.00, 0.00) scale=(100.00, 100.00, 100.00) components=Transform
+DorsalUp local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform
+Root local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform
+Head local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform
+Jaw local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform
+Moray left eye local=(0.00, 0.00, 0.00) scale=(0.00, 0.00, 0.00) components=Transform,MeshFilter,MeshRenderer
+Moray right eye local=(0.00, 0.00, 0.00) scale=(0.00, 0.00, 0.00) components=Transform,MeshFilter,MeshRenderer
+Spine00 local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform
+Spine01 local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform
+Spine02 local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform
+Spine03 local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform
+Spine04 local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform
+Spine05 local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform
+Spine06 local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform
+Spine07 local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform
+Spine08 local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform
+Spine09 local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform
+Spine10 local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform
+Spine11 local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform
+Position=(-2.66, -18.88, 70.08) rootScale=(1.00, 1.00, 1.00) guard=Center: (0.00, 0.03, -0.47), Extents: (0.44, 0.33, 1.35)
+CLIP __preview__CurledRest length=4
+CLIP __preview__SwimStraight length=4
+CLIP SwimStraight length=4
+CLIP CurledRest length=4

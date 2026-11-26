@@ -1,0 +1,3 @@
+Actual Play mode resumed at simulated 465 seconds, just before the reproduced coral pin.
+Clearance recoveries=1; physical-centre travel=10.83 m; longest stop=1.07153 s.
+Reef collision checks passed; movement resumed through normal runtime updates.

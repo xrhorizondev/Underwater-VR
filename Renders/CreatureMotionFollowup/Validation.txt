@@ -1,0 +1,7 @@
+Lumen: 60-second follow/stop/resume test, travel=18.83656 m, max step=0.0250026 m, max turn=38.8079 deg/s, tail amplitude=0.05283897 m.
+Grouper Calm finale grouper: 180 seconds, travel=44.61296 m, max turn=16.04204 deg/s, max step=0.01495643 m, longest stop=0 s.
+Grouper Calm wreck grouper: 180 seconds, travel=44.33568 m, max turn=16.08102 deg/s, max step=0.01500144 m, longest stop=0 s.
+Comb jellies=25, fitted sensor volumes=75; no metre-sized minimum; surface warnings passed.
+Moray: 22 solid body sections; palm collision triggered weight=1, visible vertex movement=0.5553678 m, max lift=0 m.
+Species skin/eye materials=10; all three skin shaders compiled.
+Lumen rendered stroke comparison: 86100 pixels changed; bilateral fish eye views captured.

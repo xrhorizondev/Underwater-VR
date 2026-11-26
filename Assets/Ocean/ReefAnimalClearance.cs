@@ -5,9 +5,14 @@ namespace Underwater {
 [DefaultExecutionOrder(10000)]
 public sealed class ReefAnimalClearance:MonoBehaviour {
  public ReefSeabedField seabed;public Bounds animatedBody;public float clearance=.035f;
+ public Vector3[] groundSupportPoints;
  Vector3 lastPosition,lastScale;Quaternion lastRotation;bool hasSafePose;SeaLife life;
  void Awake(){life=GetComponent<SeaLife>();}
  public bool RequiredHeight(Vector3 position,Quaternion rotation,out float height){
+  if(groundSupportPoints!=null&&groundSupportPoints.Length>0){
+   height=float.NegativeInfinity;var pose=Matrix4x4.TRS(position,rotation,transform.lossyScale);
+   foreach(var point in groundSupportPoints){var world=pose.MultiplyPoint3x4(point);if(!Physics.Raycast(world+Vector3.up*2,Vector3.down,out var hit,5,ReefSphereBody.SolidMask,QueryTriggerInteraction.Ignore))return false;height=Mathf.Max(height,hit.point.y-(world.y-position.y)+clearance);}return true;
+  }
   var matrix=Matrix4x4.TRS(position,rotation,transform.lossyScale);var center=matrix.MultiplyPoint3x4(animatedBody.center);var e=animatedBody.extents;
   var x=matrix.MultiplyVector(new Vector3(e.x,0,0));var y=matrix.MultiplyVector(new Vector3(0,e.y,0));var z=matrix.MultiplyVector(new Vector3(0,0,e.z));
   var extent=new Vector3(Mathf.Abs(x.x)+Mathf.Abs(y.x)+Mathf.Abs(z.x),Mathf.Abs(x.y)+Mathf.Abs(y.y)+Mathf.Abs(z.y),Mathf.Abs(x.z)+Mathf.Abs(y.z)+Mathf.Abs(z.z));

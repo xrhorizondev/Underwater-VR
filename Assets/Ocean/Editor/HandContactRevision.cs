@@ -7,7 +7,7 @@ namespace Underwater.Editor {
 public static class HandContactRevision {
  const string Scene="Assets/Scenes/Underwater_Realistic.unity";
  public static void Apply(){
-  var scene=EditorSceneManager.OpenScene(Scene);var diver=UnityEngine.Object.FindFirstObjectByType<Diver>();diver.controllerHandRotation=Vector3.zero;diver.controllerHandPosition=new Vector3(0,-.015f,.015f);EditorUtility.SetDirty(diver);EditorSceneManager.MarkSceneDirty(scene);EditorSceneManager.SaveScene(scene);
+  var scene=EditorSceneManager.OpenScene(Scene);var diver=UnityEngine.Object.FindFirstObjectByType<Diver>();diver.controllerHandRotation=Vector3.zero;diver.controllerHandPosition=Vector3.zero;EditorUtility.SetDirty(diver);EditorSceneManager.MarkSceneDirty(scene);EditorSceneManager.SaveScene(scene);
   Validate();DiverRevision.Validate();Capture();
  }
  public static void Validate(){

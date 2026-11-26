@@ -1,0 +1,3 @@
+Calm finale grouper actualSkinDeformation=0.184734 travel=0.6068071 maxFrameStep=0.008311084
+Calm wreck grouper actualSkinDeformation=0.2043166 travel=0.7581663 maxFrameStep=0.008501862
+Distant reef shark actualSkinDeformation=2.689534 travel=2.61102 maxFrameStep=0.03301584

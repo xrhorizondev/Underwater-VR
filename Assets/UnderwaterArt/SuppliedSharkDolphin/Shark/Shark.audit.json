@@ -1,0 +1,17 @@
+{
+  "source": "D:\\GIT Project\\Underwater-VR\\ArtSource\\SuppliedSharkDolphin\\Shark_Reduced.blend",
+  "blender": "5.3.0",
+  "triangles": 365816,
+  "bones": 44,
+  "materials": [
+    "Material.004",
+    "Material.005",
+    "white-shark.001"
+  ],
+  "clips": [
+    "Shark Rig|Shark Rig|swimming_skeletal.3"
+  ],
+  "images": {},
+  "issues": [],
+  "status": "passed"
+}

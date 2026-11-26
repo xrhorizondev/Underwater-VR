@@ -1,0 +1,5 @@
+Scene uses Assets/UnderwaterArt/BlenderSquid/ReferenceSquid.fbx
+Triangles: 7446
+Bones: 30
+Clip: Swim
+Captured arm roots at four animation phases. Scene not saved.

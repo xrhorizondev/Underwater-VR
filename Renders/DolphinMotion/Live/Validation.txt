@@ -1,0 +1,4 @@
+Wreck dolphin 1 actual Update travel=6.253279 m; local skin deformation=0.4511859 m; peak blink=0.9606397; mouth angle range=1.8 deg; stroke rate=0.5601276
+Wreck dolphin 2 actual Update travel=9.115629 m; local skin deformation=0.482061 m; peak blink=0.9999726; mouth angle range=1.799999 deg; stroke rate=0.8667562
+Wreck dolphin 3 actual Update travel=8.466723 m; local skin deformation=0.4831936 m; peak blink=0.9983383; mouth angle range=1.799999 deg; stroke rate=0.8404328
+Runtime menu pause passed. Legacy playback disabled; one movement/pose owner per dolphin.

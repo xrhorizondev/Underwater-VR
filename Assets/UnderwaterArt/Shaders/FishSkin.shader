@@ -9,6 +9,7 @@ Shader "Underwater/Living Fish Skin" {
   _TailPhase("Tail phase",Float)=0
   _TailAmplitude("Tail amplitude",Float)=.055
   _TurnBend("Turn flexion",Float)=0 _Grouper("Grouper markings",Float)=0
+  _SurfaceEyes("Eyes in skin",Float)=0 _EyeParams("Eye Z Y and radii",Vector)=(.38,.04,.025,.025) _EyeIris("Species iris",Color)=(.24,.16,.055,1)
  }
  SubShader { Tags {"RenderType"="Opaque"} Cull Off
  CGPROGRAM
@@ -16,8 +17,9 @@ Shader "Underwater/Living Fish Skin" {
  #pragma target 3.0
  sampler2D _MainTex,_BumpMap;
  fixed4 _Color,_BioEmission;float _ReefLight;float _Species;float _Pattern;float _TailPhase,_TailAmplitude,_TurnBend,_Grouper;
- struct Input {float2 uv_MainTex;float2 uv_BumpMap;float3 viewDir;float3 bodyPosition;float eyePart;};
- void vert(inout appdata_full v,out Input o){UNITY_INITIALIZE_OUTPUT(Input,o);o.bodyPosition=v.vertex.xyz;o.eyePart=v.texcoord1.x;
+ #include "FishSurfaceEyes.cginc"
+ struct Input {float2 uv_MainTex;float2 uv_BumpMap;float3 viewDir;float3 bodyPosition;float eyePart;float sideFacing;};
+ void vert(inout appdata_full v,out Input o){UNITY_INITIALIZE_OUTPUT(Input,o);o.bodyPosition=v.vertex.xyz;o.eyePart=v.texcoord1.x;o.sideFacing=abs(v.normal.x);
   // Canonical mesh: head +Z, tail -Z, length 1 metre. Head and eyes remain stable.
   float tail=saturate((.28-v.vertex.z)/.78);
   float envelope=tail*tail;
@@ -35,7 +37,7 @@ Shader "Underwater/Living Fish Skin" {
   float lifted=pow(max(scaleDetail,.0001),.62);
   o.Albedo=lerp(c.rgb,lifted*_Color.rgb,.88)*1.1;
   if(scaleDetail<.012)o.Albedo=c.rgb;
-  if(_Pattern>.5){float z=IN.bodyPosition.z;float bands=_Pattern<1.5?min(abs(z-.24),min(abs(z+.02),abs(z+.33))):abs(frac(z*8+.2)-.5)*.15;float white=1-smoothstep(.022,.038,bands);float black=1-smoothstep(.04,.052,bands);float3 marking=lerp(_Color.rgb,float3(.009,.012,.014),black);marking=lerp(marking,float3(.8,.82,.77),white);float detail=dot(c.rgb,float3(.2126,.7152,.0722));o.Albedo=marking*lerp(.3,1.1,saturate(detail*2));if(detail<.035)o.Albedo=c.rgb*.7;}
+  if(_Pattern>.5){float z=IN.bodyPosition.z;float bands=_Pattern<1.5?min(abs(z-.24),min(abs(z+.02),abs(z+.33))):abs(frac(z*8+.2)-.5)*.15;float white=1-smoothstep(.022,.038,bands);float black=1-smoothstep(.04,.052,bands);float3 marking=lerp(_Color.rgb,float3(.009,.012,.014),black);marking=lerp(marking,float3(.8,.82,.77),white);float detail=dot(c.rgb,float3(.2126,.7152,.0722));o.Albedo=marking*lerp(.3,1.1,saturate(detail*2));}
   if(_Species>.5){
    float z=IN.bodyPosition.z,y=IN.bodyPosition.y;float3 pigment;
    if(_Species<1.5){pigment=lerp(float3(.78,.46,.006),float3(1,.74,.035),saturate(-y*2+.45));}
@@ -45,12 +47,13 @@ Shader "Underwater/Living Fish Skin" {
    else if(_Species<5.5){pigment=lerp(float3(.94,.24,.045),float3(.66,.025,.19),smoothstep(.02,.24,y));pigment=lerp(pigment,float3(.94,.53,.19),(1-smoothstep(-.16,0,y)));}
    else {pigment=lerp(float3(.62,.72,.65),float3(.8,.58,.04),smoothstep(.03,.2,y));float stripes=1-smoothstep(.14,.25,abs(frac((z+.5)*5)-.5));pigment=lerp(pigment,float3(.018,.025,.035),stripes*smoothstep(-.36,-.29,z));}
    o.Albedo=pigment*(.38+lifted*.9);
-   if(z>.2&&scaleDetail<.022)o.Albedo=c.rgb*.8;
+
   }
   o.Normal=UnpackScaleNormal(tex2D(_BumpMap,IN.uv_BumpMap),.45);
   if(_Grouper>.5){float spots=sin(IN.bodyPosition.z*93+sin(IN.bodyPosition.y*83))*sin(IN.bodyPosition.y*91+IN.bodyPosition.z*29);float mask=smoothstep(.5,.85,spots);o.Albedo*=lerp(1,.36,mask);}
   o.Metallic=.035;o.Smoothness=.3;
   if(IN.eyePart>.5){o.Albedo=IN.eyePart<1.5?float3(.18,.12,.045):float3(.003,.005,.007);o.Normal=float3(0,0,1);o.Smoothness=.82;o.Metallic=0;}
+  float4 eye=ReefSurfaceEye(IN.bodyPosition,IN.sideFacing);o.Albedo=lerp(o.Albedo,eye.rgb,eye.a);o.Normal=lerp(o.Normal,float3(0,0,1),eye.a);o.Smoothness=lerp(o.Smoothness,.72,eye.a);
   // Art-directed bounced water light keeps coloration legible on the shaded side.
   o.Emission=o.Albedo*float3(.3,.34,.38)*_ReefLight+_BioEmission.rgb*(IN.eyePart>.5?0:.3+lifted*.7);
   o.Occlusion=1;o.Alpha=1;

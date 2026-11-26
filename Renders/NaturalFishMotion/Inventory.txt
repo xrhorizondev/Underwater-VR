@@ -1,0 +1,361 @@
+Anglerfish | Anglerfish | owners=FishBodyMotion,ReefSphereBody,FishTouchBody,ReefCruiser,DeepWaterEncounter,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin,Underwater/Living Fish Skin,Underwater/Visible Lure,Underwater/Lure Halo
+Anglerfish | Anglerfish | owners=FishBodyMotion,ReefSphereBody,FishTouchBody,ReefCruiser,DeepWaterEncounter,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin,Underwater/Living Fish Skin,Underwater/Visible Lure,Underwater/Lure Halo
+Anglerfish | Anglerfish | owners=FishBodyMotion,ReefSphereBody,FishTouchBody,ReefCruiser,DeepWaterEncounter,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin,Underwater/Living Fish Skin,Underwater/Visible Lure,Underwater/Lure Halo
+Anglerfish | Anglerfish | owners=FishBodyMotion,ReefSphereBody,FishTouchBody,ReefCruiser,DeepWaterEncounter,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin,Underwater/Living Fish Skin,Underwater/Visible Lure,Underwater/Lure Halo
+Anglerfish | Anglerfish | owners=FishBodyMotion,ReefSphereBody,FishTouchBody,ReefCruiser,DeepWaterEncounter,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin,Underwater/Living Fish Skin,Underwater/Visible Lure,Underwater/Lure Halo
+Anglerfish | Anglerfish | owners=FishBodyMotion,ReefSphereBody,FishTouchBody,ReefCruiser,DeepWaterEncounter,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin,Underwater/Living Fish Skin,Underwater/Visible Lure,Underwater/Lure Halo
+Anglerfish | Anglerfish | owners=FishBodyMotion,ReefSphereBody,FishTouchBody,ReefCruiser,DeepWaterEncounter,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin,Underwater/Living Fish Skin,Underwater/Visible Lure,Underwater/Lure Halo
+Anglerfish | Anglerfish | owners=FishBodyMotion,ReefSphereBody,FishTouchBody,ReefCruiser,DeepWaterEncounter,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin,Underwater/Living Fish Skin,Underwater/Visible Lure,Underwater/Lure Halo
+Anglerfish | Anglerfish | owners=FishBodyMotion,ReefSphereBody,FishTouchBody,ReefCruiser,DeepWaterEncounter,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin,Underwater/Living Fish Skin,Underwater/Visible Lure,Underwater/Lure Halo
+Anglerfish | Anglerfish | owners=FishBodyMotion,ReefSphereBody,FishTouchBody,ReefCruiser,DeepWaterEncounter,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin,Underwater/Living Fish Skin,Underwater/Visible Lure,Underwater/Lure Halo
+Anglerfish | Anglerfish | owners=FishBodyMotion,ReefSphereBody,FishTouchBody,ReefCruiser,DeepWaterEncounter,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin,Underwater/Living Fish Skin,Underwater/Visible Lure,Underwater/Lure Halo
+Anglerfish | Anglerfish | owners=FishBodyMotion,ReefSphereBody,FishTouchBody,ReefCruiser,DeepWaterEncounter,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin,Underwater/Living Fish Skin,Underwater/Visible Lure,Underwater/Lure Halo
+Blue tang | Blue tang | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Blue tang | Blue tang | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Blue tang | Blue tang | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Blue tang | Blue tang | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Blue tang | Blue tang | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Blue tang | Blue tang | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Blue tang | Blue tang | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Blue tang | Blue tang | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Blue tang | Blue tang | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Blue tang | Blue tang | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Blue tang | Blue tang | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Blue tang | Blue tang | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Blue tang | Blue tang | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Blue tang | Blue tang | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Blue tang | Blue tang | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Blue tang | Blue tang | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Blue tang | Blue tang | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Blue tang | Blue tang | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Blue tang | Blue tang | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Box jelly | Box jelly | owners=SeaLife,ReefDangerZone,ReefJellyMotion,ReefAnimalClearance | anim=Loop-200 6.666667 | visual=Underwater/Imported Box Jelly,Underwater/Imported Box Jelly,Underwater/Imported Box Jelly,Underwater/Imported Box Jelly
+Box jelly | Box jelly | owners=SeaLife,ReefDangerZone,ReefJellyMotion,ReefAnimalClearance | anim=Loop-200 6.666667 | visual=Underwater/Imported Box Jelly,Underwater/Imported Box Jelly,Underwater/Imported Box Jelly,Underwater/Imported Box Jelly
+Box jelly | Box jelly | owners=SeaLife,ReefDangerZone,ReefJellyMotion,ReefAnimalClearance | anim=Loop-200 6.666667 | visual=Underwater/Imported Box Jelly,Underwater/Imported Box Jelly,Underwater/Imported Box Jelly,Underwater/Imported Box Jelly
+Butterflyfish | ReefFish school fish 5 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Butterflyfish | ReefFish school fish 2 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Butterflyfish | ReefFish school fish 4 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Butterflyfish | ReefFish supplied reef visitor 2 | owners=SeaLife,ReefSphereBody,ReefCruiser,FishBodyMotion,ReefCreatureInfo,FishTouchBody,ReefFishDetail | anim=shader/procedural | visual=Underwater/Instanced Marine
+Butterflyfish | ReefFish school fish 4 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Butterflyfish | ReefFish supplied reef visitor 1 | owners=SeaLife,ReefSphereBody,ReefCruiser,FishBodyMotion,ReefCreatureInfo,FishTouchBody,ReefFishDetail | anim=shader/procedural | visual=Underwater/Instanced Marine
+Butterflyfish | ReefFish school fish 1 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Butterflyfish | ReefFish school fish 6 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Butterflyfish | ReefFish school fish 3 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Butterflyfish | ReefFish school fish 6 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Butterflyfish | ReefFish school fish 2 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Clownfish | Clownfish school fish 5 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Clownfish | Clownfish school fish 1 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Clownfish | Clownfish | owners=FishAgent,SeaLife,ReefSphereBody,FishTouchBody,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Clownfish | Clownfish | owners=FishAgent,SeaLife,ReefSphereBody,FishTouchBody,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Clownfish | Clownfish | owners=FishAgent,SeaLife,ReefSphereBody,FishTouchBody,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Clownfish | Clownfish | owners=FishAgent,SeaLife,ReefSphereBody,FishTouchBody,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Clownfish | Clownfish school fish 3 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Clownfish | Clownfish | owners=FishAgent,SeaLife,ReefSphereBody,FishTouchBody,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Comb jelly | Comb jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=CombJelly_Drift 4 | visual=Underwater/Comb Jelly Glass
+Copperband butterflyfish | Copperband butterflyfish | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Dolphin | Wreck dolphin 1 | owners=SeaLife,ReefSphereBody,WreckCreature,ReefCreatureInfo,ReefAnimalClearance | anim=Dolphin_Coordinated_Swim 2 | visual=Underwater/Imported Marine Skin
+Dolphin | Wreck dolphin 3 | owners=SeaLife,ReefSphereBody,WreckCreature,ReefCreatureInfo,ReefAnimalClearance | anim=Dolphin_Coordinated_Swim 2 | visual=Underwater/Imported Marine Skin
+Dolphin | Wreck dolphin 2 | owners=SeaLife,ReefSphereBody,WreckCreature,ReefCreatureInfo,ReefAnimalClearance | anim=Dolphin_Coordinated_Swim 2 | visual=Underwater/Imported Marine Skin
+Flame angelfish | FlameAngel school fish 2 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Flame angelfish | FlameAngel school fish 2 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Flame angelfish | FlameAngel school fish 6 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Flame angelfish | FlameAngel supplied reef visitor 2 | owners=SeaLife,ReefSphereBody,ReefCruiser,FishBodyMotion,ReefCreatureInfo,FishTouchBody,ReefFishDetail | anim=shader/procedural | visual=Underwater/Instanced Marine
+Flame angelfish | FlameAngel supplied reef visitor 1 | owners=SeaLife,ReefSphereBody,ReefCruiser,FishBodyMotion,ReefCreatureInfo,FishTouchBody,ReefFishDetail | anim=shader/procedural | visual=Underwater/Instanced Marine
+Flame angelfish | FlameAngel school fish 6 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Flame angelfish | FlameAngel school fish 4 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Flame angelfish | FlameAngel school fish 4 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Grouper | Calm wreck grouper | owners=SeaLife,ReefSphereBody,WreckCreature,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Grouper | Calm finale grouper | owners=ReefSphereBody,SeaLife,FishBodyMotion,ReefCruiser,ReefCreatureInfo,ReefAnimalClearance,GrouperStroke | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lionfish | Lionfish | owners=SeaLife,ReefSphereBody,ReefDangerZone,FishTouchBody,ReefEncounter,ReefAnimalClearance,LionfishTravelAnimation | anim=CoordinatedSwim 3 | visual=Underwater/Quest Reef
+Lumen | Lumen | owners=FishBodyMotion,SeaLife,ReefSphereBody,FishTouchBody,ReefFishFollower,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Instanced Marine
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Lyretail anthias | Lyretail anthias | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Manta | Manta ray gliding over the reef | owners=MarineSwimmer,SeaLife,ReefSphereBody,FishTouchBody,ReefAnimalClearance | anim=Scene 24 | visual=Standard
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moon jelly | Moon jelly | owners=SeaLife,ReefJellyMotion,ReefSphereBody,DeepWaterEncounter,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Translucent Jelly Tissue
+Moray | Moray in wreck stern opening | owners=SeaLife,ReefSphereBody,WreckCreature,ReefCreatureInfo,ReefAnimalClearance | anim=Idle 4 | visual=Underwater/Tripo Moray PBR,Standard,Standard
+Octopus | Day 3 rocky octopus | owners=ReefSphereBody,SeaLife,ReefEncounter,OctopusGroundClearance | anim=Scene 12.5 | visual=Underwater/Octopus Skin
+Reef shark | Distant reef shark | owners=ReefSphereBody,SeaLife,OpenWaterShark,ReefAnimalClearance | anim=Shark progressive whole body swim 3 | visual=Underwater/Imported Marine Skin
+Royal gramma | Royal gramma | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Seabass | Seabass school fish 5 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Seabass | Seabass school fish 1 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Seabass | Seabass school fish 5 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Seabass | Seabass school fish 3 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Seabass | Seabass school fish 2 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Seabass | Seabass school fish 6 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Seabass | Seabass school fish 1 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Seabass | Seabass school fish 3 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Seabass | Seabass school fish 5 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Seabass | Seabass school fish 4 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Seabass | Seabass school fish 3 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Seabass | Seabass school fish 1 | owners=ReefSphereBody,ReefAnimalClearance,FishAgent,ReefFishDetail,SeaLife,FishTouchBody | anim=shader/procedural | visual=Underwater/Instanced Marine
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Sergeant major | Sergeant major | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Stingray | Resting stingray | owners=SeaLife,ReefSphereBody,StingraySwimmer,FishTouchBody,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Rigged Ray Skin
+Stingray | Resting stingray | owners=SeaLife,ReefSphereBody,StingraySwimmer,FishTouchBody,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Rigged Ray Skin
+Stingray | Resting stingray | owners=SeaLife,ReefSphereBody,StingraySwimmer,FishTouchBody,ReefCreatureInfo,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Rigged Ray Skin
+Turtle | Loggerhead sea turtle | owners=TurtleSwimmer,SeaLife,ReefSphereBody,FishTouchBody,ReefCreatureInfo,ReefAnimalClearance | anim=Scene 3.5 | visual=Standard,Underwater/Prepared Turtle Eyes
+Turtle | Loggerhead sea turtle | owners=TurtleSwimmer,SeaLife,ReefSphereBody,FishTouchBody,ReefCreatureInfo,ReefAnimalClearance | anim=Scene 3.5 | visual=Standard,Underwater/Prepared Turtle Eyes
+Yellow tang | Yellow tang | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+Yellow tang | Yellow tang | owners=FishAgent,ReefSphereBody,FishTouchBody,SeaLife,ReefAnimalClearance | anim=shader/procedural | visual=Underwater/Living Fish Skin
+SCHOOL | Reef detail school | The Wreck fish=3
+SCHOOL | Supplied school | Sunlit Reef fish=3
+SCHOOL | School | 24 reef fish fish=24
+SCHOOL | Supplied school | Wreck & Rays fish=3
+SCHOOL | Clownfish coral territory fish=5
+SCHOOL | Reef detail school | Rocky Ledge fish=3
+SCHOOL | School | 7 reef fish fish=7
+SCHOOL | Supplied school | The Wreck fish=3
+SCHOOL | School | 24 reef fish fish=24
+SCHOOL | Reef detail school | Sunlit Reef fish=3
+SCHOOL | Reef detail school | Open Water Drift fish=3
+SCHOOL | Supplied school | Open Water Drift fish=3
+SCHOOL | School | 24 reef fish fish=24
+SCHOOL | Reef detail school | Wreck & Rays fish=3
+SCHOOL | School | 36 reef fish fish=36
+SCHOOL | School | 18 reef fish fish=18
+SCHOOL | School | 65 reef fish fish=65
+SCHOOL | School | 24 reef fish fish=24
+SCHOOL | Supplied school | Rocky Ledge fish=3

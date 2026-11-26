@@ -20,6 +20,9 @@ namespace Underwater {
             glove.controllerFit.SetParent(glove.transform,false);
             visual.SetParent(glove.controllerFit,false);
             visual.localRotation=Quaternion.Euler(0,0,left ? 90 : -90);
+            // Center the authored palm midpoint on the tracked controller grip.
+            visual.localScale=Vector3.one*1.06f;
+            visual.localPosition=visual.localRotation*new Vector3(0,0,.015f*1.06f);
             glove.SetControllerFit(Vector3.zero,Vector3.zero,left);
             glove.Load(visual,left);
             return glove;

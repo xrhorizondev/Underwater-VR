@@ -4,7 +4,7 @@ namespace Underwater {
 public sealed class ReefFishFollower:MonoBehaviour {
  ReefSphereBody body;SeaLife life;
  Vector3 home,focus,heading,previousViewer,viewerVelocity,travelForward,travelVelocity;
- float clock,idleTime,frontBlend,orbitYaw;bool ready,hasViewer;
+ float clock,idleTime,frontBlend,orbitYaw,yawRate,pitchRate;bool ready,hasViewer;
  readonly ReefRayNavigation navigation=new ReefRayNavigation();
  public void Initialize(){if(ready)return;ready=true;body=GetComponent<ReefSphereBody>();life=GetComponent<SeaLife>();home=focus=transform.position;heading=transform.forward;travelForward=Vector3.forward;}
  void Update(){var d=Diver.Instance;if(d&&(d.MenuOpen||d.Zone<3&&!ReefSimulationRange.Active(transform))){hasViewer=false;viewerVelocity=Vector3.zero;return;}Step(Mathf.Min(Time.deltaTime,.05f),d&&d.Zone>=3&&d.Head?(Vector3?)d.Head.position:null,d&&d.Head?d.Head.forward:Vector3.forward);}
@@ -40,12 +40,20 @@ public sealed class ReefFishFollower:MonoBehaviour {
   desired=navigation.Direction(transform,body,desired,speed,dt,true);
   if(!navigation.Avoiding)desired.y=Mathf.Clamp(desired.y,-.3f,.3f);
   travelVelocity=Vector3.MoveTowards(travelVelocity,desired.normalized*speed,.7f*dt);
-  float faceViewer=diver.HasValue?frontBlend*(1-Mathf.SmoothStep(.25f,1.0f,distance)):0;
+  float faceViewer=diver.HasValue?frontBlend*(1-Mathf.SmoothStep(0,1,Mathf.InverseLerp(.25f,1.0f,distance))):0;
   var swimming=travelVelocity.sqrMagnitude>.0025f?travelVelocity.normalized:heading;
   var look=Vector3.Lerp(swimming,(anchor-transform.position).normalized,faceViewer);
-  if(look.sqrMagnitude>.0001f)heading=Vector3.RotateTowards(heading,look.normalized,40*Mathf.Deg2Rad*dt,0).normalized;
+  if(look.sqrMagnitude>.0001f){
+   float error=Vector3.SignedAngle(Vector3.ProjectOnPlane(heading,Vector3.up),Vector3.ProjectOnPlane(look,Vector3.up),Vector3.up);
+   yawRate=Mathf.MoveTowards(yawRate,Mathf.Clamp(error*1.8f,-38,38),65*dt);
+   var flat=Quaternion.AngleAxis(yawRate*dt,Vector3.up)*Vector3.ProjectOnPlane(heading,Vector3.up).normalized;
+   float pitch=Mathf.Asin(Mathf.Clamp(heading.y,-1,1))*Mathf.Rad2Deg;float targetPitch=Mathf.Asin(Mathf.Clamp(look.normalized.y,-.3f,.3f))*Mathf.Rad2Deg;
+   pitch=Mathf.SmoothDampAngle(pitch,targetPitch,ref pitchRate,.7f,20,dt);heading=(flat*Mathf.Cos(pitch*Mathf.Deg2Rad)+Vector3.up*Mathf.Sin(pitch*Mathf.Deg2Rad)).normalized;
+  }
   transform.rotation=Quaternion.LookRotation(heading,Vector3.up);
-  if(body)navigation.RecordMovement(body.MoveSliding(travelVelocity*dt).magnitude,travelVelocity.magnitude*dt,dt);
+  // Cruise nose-first; near the diver, allow a small amount of fin-driven station keeping.
+  var movement=Vector3.Lerp(heading*travelVelocity.magnitude,travelVelocity,Mathf.Clamp01(1-distance/.65f));
+  if(body)navigation.RecordMovement(body.Move(movement*dt).magnitude,movement.magnitude*dt,dt);
  }
 }
 }

@@ -5,7 +5,7 @@ public sealed class WreckCreature:MonoBehaviour {
  public Species species;public Transform jaw;public Vector3 habitatCenter;public float phase;
  WreckCreature[] pod;ReefSphereBody body;ReefCreatureInfo info;Collider touch;Renderer skin;MaterialPropertyBlock block;Vector3 home,homeForward,loopCenter;float clock,reacted=-100,cooldown;bool ready;
  readonly ReefRayNavigation navigation=new ReefRayNavigation();
- DolphinSwimController coordinatedDolphin;ReefAnimalClearance clearance;ReefImportedAnimation swimStroke;float swimSpeed=.7f,dolphinBank;
+ DolphinSwimController coordinatedDolphin;GrouperSwimController smoothGrouper;ReefAnimalClearance clearance;ReefImportedAnimation swimStroke;float swimSpeed=.7f,dolphinBank;
  float grouperStroke,grouperSpeed=.17f;public float ActualSpeed{get;private set;}public float StrokePhase=>grouperStroke;
  public float JawAngle{get;private set;}public bool Reacting=>clock-reacted<4;
  public void Initialize(){if(ready)return;ready=true;body=GetComponent<ReefSphereBody>();clearance=GetComponent<ReefAnimalClearance>();info=GetComponent<ReefCreatureInfo>();skin=GetComponent<Renderer>();touch=transform.Find("Animal body solid")?.GetComponent<Collider>();block=new MaterialPropertyBlock();home=transform.position;homeForward=transform.forward;loopCenter=habitatCenter;if(species==Species.Dolphin)pod=FindObjectsByType<WreckCreature>(FindObjectsSortMode.None);}
@@ -13,6 +13,7 @@ public sealed class WreckCreature:MonoBehaviour {
  void Update(){var diver=Diver.Instance;if(diver&&diver.MenuOpen||!ReefSimulationRange.Active(transform))return;Initialize();Vector3? head=diver&&diver.Head?diver.Head.position:(Vector3?)null;Vector3? palm=diver?(HandDistance(diver.LeftPalm)<HandDistance(diver.RightPalm)?diver.LeftPalm:diver.RightPalm):(Vector3?)null;Step(Mathf.Min(Time.deltaTime,.05f),head,palm);}
  public void React(){Initialize();if(clock<cooldown)return;reacted=clock;cooldown=clock+9;if(info)info.Reveal();}
  public void Step(float dt,Vector3? head=null,Vector3? hand=null){Initialize();clock+=dt;if(species==Species.Dolphin){if(!coordinatedDolphin)coordinatedDolphin=GetComponent<DolphinSwimController>();if(coordinatedDolphin&&coordinatedDolphin.enabled){coordinatedDolphin.Step(dt,head,hand);ActualSpeed=coordinatedDolphin.ActualSpeed;return;}}
+  if(species==Species.Grouper){if(!smoothGrouper)smoothGrouper=GetComponent<GrouperSwimController>();if(smoothGrouper&&smoothGrouper.enabled){smoothGrouper.Step(dt,head,hand);ActualSpeed=smoothGrouper.ActualSpeed;return;}}
   if(hand.HasValue&&HandDistance(hand.Value)<.16f||species==Species.Moray&&head.HasValue&&Vector3.Distance(head.Value,home)<1.5f)React();
   float age=clock-reacted;
   if(species==Species.Moray){JawAngle=age<1.3f?38:7+Mathf.Sin(clock*1.8f)*3;if(jaw)jaw.localRotation=Quaternion.Slerp(jaw.localRotation,Quaternion.Euler(JawAngle,0,0),1-Mathf.Exp(-dt*7));float retreat=Mathf.SmoothStep(0,1,Mathf.Clamp01((age-.2f)/1))*(1-Mathf.SmoothStep(0,1,Mathf.Clamp01((age-3)/4)))*.65f;Vector3 delta=Vector3.ClampMagnitude(home-homeForward*retreat-transform.position,.55f*dt);if(body)body.MoveSliding(delta);return;}

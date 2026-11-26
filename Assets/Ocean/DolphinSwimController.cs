@@ -6,7 +6,7 @@ namespace Underwater {
 public sealed class DolphinSwimController:MonoBehaviour {
  public enum SwimMode {Together,Independent,Regrouping}
  public bool compactPatrol;public Vector3 compactCenter;public Vector2 compactRadii=new Vector2(4.5f,4);public float compactSpeed=.58f,compactStartAngle;float compactPhase;
- public int podIndex;public Animation animationPlayer;public SkinnedMeshRenderer skin;public DolphinSwimController[] pod;
+ public int podIndex;public Animation animationPlayer;public SkinnedMeshRenderer skin;public DolphinSwimController[] pod;public ReefImportedAnimation suppliedSwim;
  public float referenceSpeed=.95f;public float minimumSeparation=3.9f;public float bodyLength=3.4f;public float recoveryDelay=.75f;public int ClearanceRecoveries{get;private set;}public bool RecoveryActive=>recoveryTime>0;public float RequiredTurnLift{get;private set;}public bool RotationBlocked{get;private set;}
  public SwimMode Mode{get;private set;}public float ActualSpeed{get;private set;}public float Clock{get;private set;}
  public float StrokePhase{get;private set;}public float StrokeRate{get;private set;}public float Effort{get;private set;}public float TurnRate{get;private set;}
@@ -24,30 +24,34 @@ public sealed class DolphinSwimController:MonoBehaviour {
   var offset=transform.position-focus;var ahead=offset+course*(length*2.4f);
   float rx=Mathf.Max(10,length*3.8f),rz=Mathf.Max(9,length*3.3f);
   float edge=Mathf.Sqrt(ahead.x*ahead.x/(rx*rx)+ahead.z*ahead.z/(rz*rz));
-  float returnWeight=Mathf.SmoothStep(0,1,Mathf.InverseLerp(.4f,1.05f,edge));
+  float returnWeight=Mathf.SmoothStep(0,1,Mathf.InverseLerp(.70f,1.05f,edge));
   var inward=new Vector3(-ahead.x/(rx*rx),0,-ahead.z/(rz*rz)).normalized;
   var desired=Vector3.Lerp(course,inward,returnWeight*.86f);if(desired.sqrMagnitude<.01f)desired=transform.forward;desired.Normalize();
   Vector3 alignment=Vector3.zero,center=Vector3.zero,separation=Vector3.zero;int neighbours=0;float nearest=float.MaxValue;
   if(pod!=null)foreach(var other in pod)if(other&&other!=this&&other.enabled&&other.gameObject.activeInHierarchy){
    var away=transform.position-other.transform.position;float distance=away.magnitude;nearest=Mathf.Min(nearest,distance);
-   if(distance<length*5){float weight=1-Mathf.SmoothStep(length*2,length*5,distance);alignment+=other.transform.forward*weight;center+=other.transform.position;neighbours++;}
-   float safe=Mathf.Max(minimumSeparation,body.radius+other.GetComponent<ReefSphereBody>().radius+.18f);
+   if(distance<length*5){float weight=1-Mathf.SmoothStep(0,1,Mathf.InverseLerp(length*2,length*5,distance));alignment+=other.transform.forward*weight;center+=other.transform.position;neighbours++;}
+   float safe=Mathf.Max(minimumSeparation+length*.5f,body.radius+other.GetComponent<ReefSphereBody>().radius+.18f);
    // Anticipate convergence instead of sliding sideways at a separation boundary.
-   var future=away+(transform.forward*speed-other.transform.forward*other.ActualSpeed)*Mathf.Min(3,length/referenceSpeed);
-   float urgency=1-Mathf.SmoothStep(safe,safe+length*.8f,Mathf.Min(distance,future.magnitude));
+   var future=away+(transform.forward*speed-other.transform.forward*other.ActualSpeed)*Mathf.Min(6,length*1.6f/referenceSpeed);
+   float urgency=1-Mathf.SmoothStep(0,1,Mathf.InverseLerp(safe,safe+length*.8f,Mathf.Min(distance,future.magnitude)));
    if(distance>.01f&&urgency>0)separation+=away/distance*urgency;
   }
   float affinity=.15f+.22f*Mathf.PerlinNoise(seed+19,Clock*.012f);FormationWeight=neighbours>0?affinity:0;
   Mode=neighbours==0?SwimMode.Independent:nearest>length*2.7f?SwimMode.Regrouping:alignment.sqrMagnitude>.01f&&Vector3.Dot(transform.forward,alignment.normalized)>.35f?SwimMode.Together:SwimMode.Independent;
-  if(neighbours>0){var to=center/neighbours-transform.position;var cohesion=to.magnitude>length*2?Vector3.ProjectOnPlane(to,Vector3.up).normalized*.22f:Vector3.zero;desired=(desired+alignment.normalized*affinity+cohesion*affinity+separation*1.4f).normalized;}
-  if(viewer.HasValue){var away=transform.position-viewer.Value;float reach=length*.9f;float avoidance=1-Mathf.SmoothStep(reach*.55f,reach,away.magnitude);if(away.sqrMagnitude>.001f)desired=(desired+Vector3.ProjectOnPlane(away,Vector3.up).normalized*avoidance*.85f).normalized;}
+  if(neighbours>0){var to=center/neighbours-transform.position;var cohesion=to.magnitude>length*2?Vector3.ProjectOnPlane(to,Vector3.up).normalized*.22f:Vector3.zero;desired=(desired+alignment.normalized*affinity+cohesion*affinity+separation*2.4f).normalized;}
+  if(viewer.HasValue){var away=transform.position-viewer.Value;float reach=length*.9f;float avoidance=1-Mathf.SmoothStep(0,1,Mathf.InverseLerp(reach*.55f,reach,away.magnitude));if(away.sqrMagnitude>.001f)desired=(desired+Vector3.ProjectOnPlane(away,Vector3.up).normalized*avoidance*.85f).normalized;}
+  float boundaryReturn=Mathf.SmoothStep(0,1,Mathf.InverseLerp(1,1.5f,edge));
+  desired=Vector3.Lerp(desired,inward,boundaryReturn*.95f);
   if(desired.sqrMagnitude<.01f)desired=transform.forward;
   // Look ahead several body lengths; filter the avoidance course into curvature.
   var navigated=navigation.Direction(transform,body,desired,Mathf.Max(speed,length*.46f),dt);
   float urgencyNear=0;
-  if(Physics.SphereCast(body.WorldCenter,body.radius,transform.forward,out var danger,length*2.7f,ReefSphereBody.SolidMask,QueryTriggerInteraction.Ignore))urgencyNear=1-Mathf.SmoothStep(length*.35f,length*2.2f,danger.distance);
+  if(Physics.SphereCast(body.WorldCenter,body.radius,transform.forward,out var danger,length*2.7f,ReefSphereBody.SolidMask,QueryTriggerInteraction.Ignore))urgencyNear=1-Mathf.SmoothStep(0,1,Mathf.InverseLerp(length*.35f,length*2.2f,danger.distance));
+  urgencyNear=Mathf.Max(urgencyNear,Mathf.Clamp01(separation.magnitude*.7f));
+  urgencyNear=Mathf.Max(urgencyNear,boundaryReturn*.65f);
   var flat=Vector3.ProjectOnPlane(navigated,Vector3.up).normalized;if(flat.sqrMagnitude<.01f)flat=course;
-  float desiredDepth=focus.y+(Mathf.PerlinNoise(seed+8,Clock*.018f)-.5f)*length*.45f;
+  float desiredDepth=focus.y+(Mathf.PerlinNoise(seed+8,Clock*.018f)-.5f)*length*.9f;
   float vertical=Mathf.Clamp((desiredDepth-transform.position.y)*.06f,-.09f,.09f);
   var look=transform.position+flat*(length*2.6f);if(ground.RequiredHeight(look,transform.rotation,out float floorAhead))vertical=Mathf.Max(vertical,Mathf.Clamp((floorAhead+length*.24f-transform.position.y)/(length*2.1f),0,.24f));
   vertical=Mathf.Clamp(vertical+navigated.y*.25f,-.18f,.25f);
@@ -73,6 +77,8 @@ public sealed class DolphinSwimController:MonoBehaviour {
   if(ground.RequiredHeight(transform.position,rotation,out float height)&&height>transform.position.y+.00005f){RequiredTurnLift=height-transform.position.y;body.Move(Vector3.up*Mathf.Min(height-transform.position.y+.002f,referenceSpeed*.16f*dt));}
   else {var previousRotation=transform.rotation;transform.rotation=rotation;if(!body.Clear(transform.position)){transform.rotation=previousRotation;RotationBlocked=true;}}
   var movement=transform.forward*speed*dt;
+  // Slow forward travel before a close crossing; keep steering smoothly while yielding.
+  if(pod!=null)foreach(var other in pod)if(other&&other!=this&&other.enabled){var away=transform.position-other.transform.position;float gap=away.magnitude;float safe=minimumSeparation*.82f;if(Vector3.Dot(movement,away)<0&&gap<safe+1.2f)movement*=Mathf.SmoothStep(0,1,Mathf.InverseLerp(safe,safe+1.2f,gap));}
   if(ground.RequiredHeight(transform.position+movement,transform.rotation,out float h)&&h>transform.position.y+movement.y+.008f)movement=Vector3.up*Mathf.Min(h-transform.position.y+.01f,referenceSpeed*.16f*dt);
   // A blocked animal slows and steers; it does not skate along a wall.
   if(recoveryTime>0)RecoverClearance(dt);else body.Move(movement);ActualSpeed=(body.WorldCenter-before).magnitude/dt;TurnRate=Vector3.SignedAngle(previousForward,transform.forward,Vector3.up)/dt;
@@ -109,6 +115,7 @@ public sealed class DolphinSwimController:MonoBehaviour {
   body.Move(recoveryDirection*Mathf.Min(referenceSpeed*.2f,.2f)*dt);
  }
  public void StepVisual(float dt,float actualSpeed,float turnRate,Vector3? viewer=null){
+ if(suppliedSwim){suppliedSwim.MatchTravel(actualSpeed,compactPatrol?compactSpeed:referenceSpeed);return;}
  Initialize();finClock+=dt;float travel=Mathf.Clamp01(actualSpeed/referenceSpeed);finTravel=Mathf.MoveTowards(finTravel,travel,dt*.65f);
  // Keep a low-amplitude travelling wave during a glide, rather than freezing a bent tail.
  float moving=travel*Mathf.Lerp(.55f,1,drive);Effort=Mathf.MoveTowards(Effort,moving,dt*.8f);float rate=actualSpeed<.015f?0:Mathf.Clamp(.22f+actualSpeed/Mathf.Max(1,bodyLength*1.1f),.22f,.9f)*Mathf.Lerp(.72f,1,drive);StrokeRate=Mathf.MoveTowards(StrokeRate,rate,dt*.4f);StrokePhase+=dt*StrokeRate*Mathf.PI*2;

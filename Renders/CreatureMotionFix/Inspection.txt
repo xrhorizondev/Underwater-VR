@@ -1,0 +1,30 @@
+ACTOR Grouper Calm finale grouper pose=(2.00, -7.00, 225.00) scale=(1.35, 1.35, 1.35)
+  RENDER  enabled=True active=True materials=Assets/UnderwaterArt/RealismPass/Natural mottled grouper.mat [Underwater/Living Fish Skin]
+    MESH Assets/UnderwaterArt/RealismPass/Eyes_c767d352a862.asset vertices=2452 triangles=4264 bounds=Center: (0.00, 0.00, 0.00), Extents: (0.17, 0.26, 0.60) geometry=Center: (0.00, 0.00, 0.00), Extents: (0.17, 0.26, 0.60) tags=0:2188,1:132,2:132
+ACTOR Grouper Calm wreck grouper pose=(-1.80, -16.60, 63.00) scale=(1.35, 1.35, 1.35)
+  RENDER  enabled=True active=True materials=Assets/UnderwaterArt/RealismPass/Natural mottled grouper.mat [Underwater/Living Fish Skin]
+    MESH Assets/UnderwaterArt/RealismPass/Eyes_c767d352a862.asset vertices=2452 triangles=4264 bounds=Center: (0.00, 0.00, 0.00), Extents: (0.17, 0.26, 0.60) geometry=Center: (0.00, 0.00, 0.00), Extents: (0.17, 0.26, 0.60) tags=0:2188,1:132,2:132
+ACTOR Stingray Resting stingray pose=(-2.00, -8.30, 224.00) scale=(0.70, 0.70, 0.70)
+  RENDER  enabled=True active=True materials=Assets/UnderwaterArt/RealismPass/Detailed natural stingray.mat [Underwater/Rigged Ray Skin]
+    MESH Assets/UnderwaterArt/RealismPass/AnatomicalStingray.asset vertices=5823 triangles=10952 bounds=Center: (0.00, 0.06, -0.61), Extents: (1.04, 0.40, 1.32) geometry=Center: (0.00, 0.06, -0.61), Extents: (0.96, 0.10, 1.25) tags=0:5227,1:234,2:182,4:180
+ACTOR Stingray Resting stingray pose=(4.00, -8.30, 232.00) scale=(0.70, 0.70, 0.70)
+  RENDER  enabled=True active=True materials=Assets/UnderwaterArt/RealismPass/Detailed natural stingray.mat [Underwater/Rigged Ray Skin]
+    MESH Assets/UnderwaterArt/RealismPass/AnatomicalStingray.asset vertices=5823 triangles=10952 bounds=Center: (0.00, 0.06, -0.61), Extents: (1.04, 0.40, 1.32) geometry=Center: (0.00, 0.06, -0.61), Extents: (0.96, 0.10, 1.25) tags=0:5227,1:234,2:182,4:180
+ACTOR Stingray Resting stingray pose=(1.00, -8.30, 228.00) scale=(0.70, 0.70, 0.70)
+  RENDER  enabled=True active=True materials=Assets/UnderwaterArt/RealismPass/Detailed natural stingray.mat [Underwater/Rigged Ray Skin]
+    MESH Assets/UnderwaterArt/RealismPass/AnatomicalStingray.asset vertices=5823 triangles=10952 bounds=Center: (0.00, 0.06, -0.61), Extents: (1.04, 0.40, 1.32) geometry=Center: (0.00, 0.06, -0.61), Extents: (0.96, 0.10, 1.25) tags=0:5227,1:234,2:182,4:180
+ACTOR Reef shark Distant reef shark pose=(19.00, -11.00, 194.00) scale=(2.33, 2.33, 2.33)
+  RENDER  enabled=False active=True materials=Assets/UnderwaterArt/DaySix/ReefShark.mat [Underwater/Reef Shark Skin]
+    MESH Assets/UnderwaterArt/DaySix/ReefShark.asset vertices=4625 triangles=8696 bounds=Center: (0.00, 0.19, -0.20), Extents: (1.12, 0.82, 1.95) geometry=Center: (0.00, 0.19, -0.20), Extents: (0.92, 0.62, 1.75) tags=
+  RENDER Prepared animated model/Shark/GreatWhite_Anatomy enabled=True active=True materials=Assets/UnderwaterArt/MarineRefresh/Shark/mat_0-megalodon_jpg.mat [Underwater/Imported Marine Skin]
+    MESH Assets/UnderwaterArt/MarineRefresh/Shark/Shark.fbx vertices=2411 triangles=3690 bounds=Center: (0.00, 0.00, 0.00), Extents: (0.01, 0.02, 0.01) geometry=Center: (0.00, 0.00, 0.00), Extents: (0.01, 0.02, 0.01) tags=0:937,1:1474
+  BONE Prepared animated model/Shark local=(0.00, 0.00, 0.00) actor=(0.02, 0.29, -0.16) rotation=(0.00, 0.00, 0.00)
+  BONE Prepared animated model/Shark/GreatWhite_Anatomy local=(0.00, 0.00, 0.00) actor=(0.02, 0.29, -0.16) rotation=(270.02, 0.00, 0.00)
+  BONE Prepared animated model/Shark/GreatWhite_Rig local=(0.00, 0.00, 0.00) actor=(0.02, 0.29, -0.16) rotation=(270.02, 0.00, 0.00)
+  BONE Prepared animated model/Shark/GreatWhite_Rig/Root local=(0.00, 0.00, 0.00) actor=(0.02, 0.29, -0.16) rotation=(89.98, 0.00, 0.00)
+  BONE Prepared animated model/Shark/GreatWhite_Rig/Root/Body local=(0.00, 0.00, 0.01) actor=(0.02, 0.29, 0.41) rotation=(270.02, 0.00, 0.00)
+  BONE Prepared animated model/Shark/GreatWhite_Rig/Root/Body/Pectoral_-1 local=(0.00, 0.00, 0.00) actor=(0.19, 0.24, 0.29) rotation=(350.69, 8.41, 290.56)
+  BONE Prepared animated model/Shark/GreatWhite_Rig/Root/Body/Pectoral_1 local=(0.00, 0.00, 0.00) actor=(-0.15, 0.24, 0.29) rotation=(350.69, 352.40, 69.44)
+  BONE Prepared animated model/Shark/GreatWhite_Rig/Root/Body/TailBase local=(0.00, 0.01, 0.00) actor=(0.02, 0.29, -0.16) rotation=(0.00, 0.00, 356.37)
+  BONE Prepared animated model/Shark/GreatWhite_Rig/Root/Body/TailBase/TailMid local=(0.00, 0.01, 0.00) actor=(0.06, 0.29, -0.73) rotation=(0.00, 0.00, 352.46)
+  BONE Prepared animated model/Shark/GreatWhite_Rig/Root/Body/TailBase/TailMid/TailTip local=(0.00, 0.01, 0.00) actor=(0.17, 0.29, -1.29) rotation=(0.00, 0.00, 351.85)

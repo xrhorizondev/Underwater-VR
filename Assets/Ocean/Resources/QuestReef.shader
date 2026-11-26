@@ -1,5 +1,5 @@
 Shader "Underwater/Quest Reef" {
- Properties {_Cull("Culling",Float)=0 _BumpMap("Surface normal",2D)="bump"{} _BumpScale("Normal strength",Float)=1 _Color("Tint",Color)=(1,1,1,1) _MainTex("Color",2D)="white"{} _WorldMapping("World Mapping",Float)=0 _WorldScale("Scale",Float)=1 _Sway("Sway",Float)=0 _TextureSaturation("Saturation",Float)=1}
+ Properties {_Cull("Culling",Float)=0 _BumpMap("Surface normal",2D)="bump"{} _BumpScale("Normal strength",Float)=1 _Color("Tint",Color)=(1,1,1,1) _MainTex("Color",2D)="white"{} _WorldMapping("World Mapping",Float)=0 _WorldScale("Scale",Float)=1 _CausticStrength("Caustic strength",Float)=.65 _Sway("Sway",Float)=0 _TextureSaturation("Saturation",Float)=1}
  SubShader {Tags {"RenderType"="Opaque"} Cull [_Cull]
  Pass {Tags {"LightMode"="ForwardBase"} CGPROGRAM
  #pragma vertex vert
@@ -9,8 +9,8 @@ Shader "Underwater/Quest Reef" {
  #pragma multi_compile_fog
  #include "UnityCG.cginc"
  #include "Lighting.cginc"
- sampler2D _MainTex,_ReefCaustics,_BumpMap;half _BumpScale;half4 _Color;float _ReefTime,_WorldMapping,_WorldScale,_Sway,_TextureSaturation,_ReefLight;
- struct Output {float4 pos:SV_POSITION;float4 uv:TEXCOORD0;half3 light:TEXCOORD1;half3 tangentLight:TEXCOORD3;
+ sampler2D _MainTex,_ReefCaustics,_BumpMap;half _BumpScale;half4 _Color;float _ReefTime,_WorldMapping,_WorldScale,_Sway,_TextureSaturation,_ReefLight,_CausticStrength;
+ struct Output {float4 pos:SV_POSITION;float4 uv:TEXCOORD0;half4 light:TEXCOORD1;half3 tangentLight:TEXCOORD3;
  #if defined(REEF_WORLD_MAPPING)
  float3 worldTex:TEXCOORD4;half3 weights:TEXCOORD5;
  #endif
@@ -25,7 +25,7 @@ Shader "Underwater/Quest Reef" {
  #endif
  half3 tangent=UnityObjectToWorldDir(v.tangent.xyz);half3 sun=_WorldSpaceLightPos0.xyz;o.tangentLight=half3(dot(sun,tangent),dot(sun,cross(n,tangent))*v.tangent.w,dot(sun,n));
  o.uv.zw=world.xz*.23+world.y*.08+_ReefTime*float2(.048,.032);
- o.light=(max(half3(.08,.12,.16),ShadeSH9(half4(n,1)))+_LightColor0.rgb*saturate(dot(n,_WorldSpaceLightPos0.xyz)))*v.color.rgb;
+ o.light=half4((max(half3(.08,.12,.16),ShadeSH9(half4(n,1)))+_LightColor0.rgb*saturate(dot(n,_WorldSpaceLightPos0.xyz)))*v.color.rgb,1/(1+distance(world,_WorldSpaceCameraPos)*.06));
  UNITY_TRANSFER_FOG(o,o.pos);return o;}
  fixed4 frag(Output i):SV_Target{
  UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(i);
@@ -34,9 +34,9 @@ Shader "Underwater/Quest Reef" {
  #else
  half3 tex=tex2D(_MainTex,i.uv.xy).rgb;
  #endif
- half3 mapped=UnpackNormal(tex2D(_BumpMap,i.uv.xy));i.light*=clamp(1+dot(mapped.xy,i.tangentLight.xy)*_BumpScale,.65,1.35);tex=lerp(dot(tex,half3(.21,.72,.07)),tex,_TextureSaturation);
+ half3 mapped=UnpackNormal(tex2D(_BumpMap,i.uv.xy));i.light.rgb*=clamp(1+dot(mapped.xy,i.tangentLight.xy)*_BumpScale*i.light.w,.65,1.35);tex=lerp(dot(tex,half3(.21,.72,.07)),tex,_TextureSaturation);
  half caustic=tex2D(_ReefCaustics,i.uv.zw).r;
- fixed4 col=fixed4(tex*_Color.rgb*(i.light+caustic*_ReefLight*half3(.25,.34,.4)),1);UNITY_APPLY_FOG(i.fogCoord,col);return col;}
+ fixed4 col=fixed4(tex*_Color.rgb*(i.light.rgb+caustic*_ReefLight*_CausticStrength*i.light.w*half3(.20,.27,.32)),1);UNITY_APPLY_FOG(i.fogCoord,col);return col;}
  ENDCG}
  }
 }

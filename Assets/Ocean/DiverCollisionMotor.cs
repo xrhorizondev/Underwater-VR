@@ -3,6 +3,8 @@ namespace Underwater {
 [RequireComponent(typeof(CharacterController))]
 public class DiverCollisionMotor:MonoBehaviour {
  public const int DiverSolidMask=ReefSphereBody.SolidMask|(1<<9);
+ void OnControllerColliderHit(ControllerColliderHit hit){NotifyCreatureContact(hit.collider,hit.point);}
+ static void NotifyCreatureContact(Collider surface,Vector3 point){if(!surface||Diver.Instance&&Diver.Instance.MenuOpen)return;surface.GetComponentInParent<CurledMorayEncounter>()?.RequestTouch(point);}
  public float maximumHeadHeight=6.5f; public ReefDiveBounds diveBounds; CharacterController controller;Transform head;Vector3 previousLocal;
  public void Initialize(){controller=GetComponent<CharacterController>();head=transform.Find("Head");controller.radius=.28f;controller.skinWidth=.025f;controller.stepOffset=0;controller.minMoveDistance=0;controller.slopeLimit=90;Fit();previousLocal=head.localPosition;}
  void Fit(){float height=Mathf.Clamp(head.localPosition.y+.18f,.65f,2.4f);controller.height=height;controller.center=new Vector3(head.localPosition.x,height*.5f,head.localPosition.z);}
@@ -13,7 +15,7 @@ public class DiverCollisionMotor:MonoBehaviour {
   Vector3 start=transform.position;controller.Move(transform.TransformVector(tracking));Vector3 permitted=transform.position-start;
   controller.enabled=false;transform.position=start+permitted-transform.TransformVector(tracking);
   float vertical=head.localPosition.y-previousLocal.y;
-  if(Mathf.Abs(vertical)>.00001f){Vector3 direction=Vector3.up*Mathf.Sign(vertical);Vector3 from=head.position-Vector3.up*vertical;if(Physics.SphereCast(from,.2f,direction,out var hit,Mathf.Abs(vertical)+.025f,DiverSolidMask,QueryTriggerInteraction.Ignore))transform.position-=direction*(Mathf.Abs(vertical)-Mathf.Max(0,hit.distance-.025f));}
+  if(Mathf.Abs(vertical)>.00001f){Vector3 direction=Vector3.up*Mathf.Sign(vertical);Vector3 from=head.position-Vector3.up*vertical;if(Physics.SphereCast(from,.2f,direction,out var hit,Mathf.Abs(vertical)+.025f,DiverSolidMask,QueryTriggerInteraction.Ignore)){transform.position-=direction*(Mathf.Abs(vertical)-Mathf.Max(0,hit.distance-.025f));NotifyCreatureContact(hit.collider,hit.point);}}
   Fit();controller.enabled=true;
   controller.Move(Vector3.zero);previousLocal=head.localPosition;ConstrainWater();
  }

@@ -20,11 +20,11 @@ public sealed class ReefDangerZone : MonoBehaviour {
   return Mathf.Max(0,distance-handRadius);
  }
  public Signals Step(float distance,float now,bool allowConsequences){
-  if(!owner||!owner.danger||distance>proximityDistance+.06f){ResetEpisode();return default;}
+  if(!owner||(!owner.danger&&!owner.kind.ToLowerInvariant().Contains("jelly"))||distance>proximityDistance+.06f){ResetEpisode();return default;}
   var result=new Signals{glow=owner.proximityEnabled&&distance<=proximityDistance,caution=owner.cautionEnabled&&distance<=cautionDistance};
   if(result.caution&&cautionEntered<0)cautionEntered=now;
   result.warn=result.caution&&!warned;
-  if(owner.consequence&&owner.kind!="Moon jelly"&&allowConsequences&&!contactLatched&&distance<=contactDistance&&
+  if(owner.danger&&owner.consequence&&owner.kind!="Moon jelly"&&allowConsequences&&!contactLatched&&distance<=contactDistance&&
    (!owner.cautionEnabled||warned&&now-cautionEntered>=warningLeadTime)){
    result.contact=true;contactLatched=true;
   }
@@ -34,7 +34,7 @@ public sealed class ReefDangerZone : MonoBehaviour {
  public void ResetEpisode(){warned=false;contactLatched=false;cautionEntered=-1;}
  void Update(){
   var diver=Diver.Instance;
-  if(!owner||!owner.isActiveAndEnabled||!diver||diver.MenuOpen||(diver.transform.position-transform.position).sqrMagnitude>36){ResetEpisode();Show(default);return;}
+  if(!owner||!owner.isActiveAndEnabled||!diver||diver.MenuOpen||!diver.Head||(diver.Head.position-transform.position).sqrMagnitude>144){ResetEpisode();Show(default);return;}
   float left=Mathf.Min(SurfaceDistance(diver.LeftPalm),SurfaceDistance(diver.LeftFingertip,.012f)),right=Mathf.Min(SurfaceDistance(diver.RightPalm),SurfaceDistance(diver.RightFingertip,.012f));
   var signals=Step(Mathf.Min(left,right),Time.time,diver.consequences);
   Show(signals);

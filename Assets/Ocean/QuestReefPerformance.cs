@@ -3,18 +3,21 @@ using UnityEngine.Rendering;
 namespace Underwater {
 // Installed in Android build scenes only. Colliders always remain active.
 public class QuestReefPerformance:MonoBehaviour {
+ public const float EyeResolution=1f;
+ public const int Samples=4;
  Camera view;
  void Awake(){
-  UnityEngine.XR.XRSettings.eyeTextureResolutionScale=.78f;QualitySettings.antiAliasing=2;QualitySettings.shadows=ShadowQuality.Disable;QualitySettings.shadowResolution=ShadowResolution.Low;QualitySettings.shadowDistance=16;QualitySettings.shadowCascades=0;QualitySettings.pixelLightCount=1;QualitySettings.lodBias=.65f;QualitySettings.maximumLODLevel=0;QualitySettings.vSyncCount=0;QualitySettings.realtimeReflectionProbes=false;
+  UnityEngine.XR.XRSettings.eyeTextureResolutionScale=EyeResolution;QualitySettings.antiAliasing=Samples;QualitySettings.shadows=ShadowQuality.Disable;QualitySettings.shadowResolution=ShadowResolution.Low;QualitySettings.shadowDistance=16;QualitySettings.shadowCascades=0;QualitySettings.pixelLightCount=1;QualitySettings.lodBias=1.15f;QualitySettings.maximumLODLevel=0;QualitySettings.vSyncCount=0;QualitySettings.realtimeReflectionProbes=false;
+  QualitySettings.globalTextureMipmapLimit=0;QualitySettings.anisotropicFiltering=AnisotropicFiltering.ForceEnable;
   QualitySettings.streamingMipmapsActive=true;QualitySettings.streamingMipmapsMemoryBudget=256;
-  view=Camera.main;if(view){view.allowHDR=false;view.allowMSAA=true;view.farClipPlane=60;var optics=view.GetComponent<ReefOptics>();if(optics)optics.enabled=false;view.depthTextureMode=DepthTextureMode.None;}
+  view=Camera.main;if(view){view.allowHDR=false;view.allowMSAA=true;view.farClipPlane=160;var optics=view.GetComponent<ReefOptics>();if(optics)optics.enabled=false;view.depthTextureMode=DepthTextureMode.None;}
   // Mobile material conversion is performed by QuestReefBuild, before the APK
   // is written. Do not scan thousands of renderers or swap shaders on entry.
   // Unity culls against the stereo camera frustum and far plane, including the first frame after a teleport.
   bool measureTravel=ShouldMeasureHabitatTravel();
   bool measureFrames=measureTravel||ConsumeFrameTestRequest();
   if(measureFrames&&!GetComponent<ReefFrameMetrics>())gameObject.AddComponent<ReefFrameMetrics>();
-  if(measureFrames)Debug.Log("REEF_DIAGNOSTICS travelRequested="+measureTravel);
+  if(measureFrames){Debug.Log("REEF_DIAGNOSTICS travelRequested="+measureTravel);Debug.Log("REEF_VISUAL_QUALITY eyeScale="+UnityEngine.XR.XRSettings.eyeTextureResolutionScale+" MSAA="+QualitySettings.antiAliasing+" mipLimit="+QualitySettings.globalTextureMipmapLimit+" anisotropic="+QualitySettings.anisotropicFiltering);}
   if(measureTravel)StartCoroutine(MeasureHabitatTravel());
  }
  static bool ConsumeFrameTestRequest(){

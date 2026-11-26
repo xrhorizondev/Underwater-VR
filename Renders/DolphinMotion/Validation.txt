@@ -1,0 +1,4 @@
+120-second three-dolphin simulation: travel=81.46, 108.53, 101.46 m; min separation=3.862056 m; max frame step=0.05600638 m; max turn=28.00232 deg/sec; min forward alignment=0.2394776; min seabed clearance=0.1528111 m; modes=Together,Independent,Regrouping
+Actual-speed stroke sync: slow=0.24 fast=0.8 stopped tail phase delta=0
+Full-body/tail/fin/eye/eyelid/jaw rig exercised; max vertex deformation=0.4012117 m; local bone lengths/scales unchanged.
+Blink geometry max closure displacement=0.02663803 m; both eye shapes present.

@@ -1,0 +1,16 @@
+Natural fish motion update — 2026-11-24
+
+Main scene: Assets/Scenes/Underwater_Realistic.unity
+Swim phase/amplitude follows actual collision-resolved travel; idle motion remains gentle.
+Smooth acceleration, turn easing, small bank angles and persistent obstacle escape headings.
+Gradual seabed clearance replaces anglerfish/dolphin vertical jumps.
+Dolphin pitch limited after separation steering; finale grouper has one stroke writer.
+Original models and gameplay interaction ownership preserved.
+
+Validation on exact merged scene: Unity exit 0.
+257 fish / 19 schools simulated for 60 seconds: zero penetrations, zero unintended backward travel; longest stationary period 0.433 seconds.
+31 featured fish / reef visitors each simulated for 60 seconds, including reaction paths and movement-linked clip response.
+Imported clip endpoint checks passed; lionfish gameplay and reef collision suites passed.
+120-second dolphin/shark review: dolphin minimum pod gap 4.36466 m; vertical dolphin flukes and lateral shark tail confirmed numerically.
+15 Unity phase renders saved for dolphin, shark, manta, turtle and lionfish; representative poses visually inspected.
+No device FPS or headset comfort measurement was performed.

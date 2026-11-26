@@ -7,9 +7,9 @@ public class Diver:MonoBehaviour {
  ReefContactFeedback contactFeedback;float nextCaution,nextContact;
  public bool MenuOpen=>menu;
  public bool GrabRequested {get;private set;}
- public Vector3 controllerHandPosition=new Vector3(0,-.015f,.015f);
+ public Vector3 controllerHandPosition=Vector3.zero;
  public Vector3 controllerHandRotation=Vector3.zero;
- public bool showDiverBody=true,showMaskRim=false;
+ public bool showDiverBody=false,showMaskRim=false;
  public Vector3 LeftPalm=>leftGlove?leftGlove.PalmPosition:transform.position;
  public Vector3 RightPalm=>rightGlove?rightGlove.PalmPosition:transform.position;
  public Vector3 LeftFingertip=>leftGlove?leftGlove.FingertipPosition:LeftPalm;
@@ -17,9 +17,9 @@ public class Diver:MonoBehaviour {
  public bool VoicePlaying=>voice&&voice.isPlaying;
  public bool ShowCreatureFacts=true;bool previousFactToggle;public bool currentAssist=true,consequences=true;Transform left,right;Vector3 velocity,previousLeft,previousRight;float idle,captionUntil;string caption="";int menuZone;float nextMenuStep;bool previousBack,previousMenuSelect;bool menu=true,previousMenu,previousTeleport,xrStarted;float yaw,pitch;AudioSource voice;Camera cam;TextMesh headsetCaption;
  void Start(){lifeCache=FindObjectsByType<SeaLife>(FindObjectsSortMode.None);atmosphereCache=FindFirstObjectByType<ReefAtmosphere>();Instance=this;Head=transform.Find("Head");motor=GetComponent<DiverCollisionMotor>();if(!motor)motor=gameObject.AddComponent<DiverCollisionMotor>();motor.Initialize();cam=Head.GetComponent<Camera>();voice=Head.gameObject.AddComponent<AudioSource>();voice.spatialBlend=0;
- if(PlayerPrefs.GetInt("DiveHandFitVersion",0)!=3){controllerHandPosition=new Vector3(0,-.015f,.015f);controllerHandRotation=Vector3.zero;}else controllerHandPosition=new Vector3(PlayerPrefs.GetFloat("DiveHandX",controllerHandPosition.x),PlayerPrefs.GetFloat("DiveHandY",controllerHandPosition.y),PlayerPrefs.GetFloat("DiveHandZ",controllerHandPosition.z));if(PlayerPrefs.GetInt("DiveHandFitVersion",0)==3)controllerHandRotation=new Vector3(PlayerPrefs.GetFloat("DiveHandPitch",controllerHandRotation.x),PlayerPrefs.GetFloat("DiveHandYaw",controllerHandRotation.y),controllerHandRotation.z);
+ if(PlayerPrefs.GetInt("DiveHandFitVersion",0)!=4){controllerHandPosition=Vector3.zero;controllerHandRotation=Vector3.zero;}else controllerHandPosition=new Vector3(PlayerPrefs.GetFloat("DiveHandX",controllerHandPosition.x),PlayerPrefs.GetFloat("DiveHandY",controllerHandPosition.y),PlayerPrefs.GetFloat("DiveHandZ",controllerHandPosition.z));if(PlayerPrefs.GetInt("DiveHandFitVersion",0)==4)controllerHandRotation=new Vector3(PlayerPrefs.GetFloat("DiveHandPitch",controllerHandRotation.x),PlayerPrefs.GetFloat("DiveHandYaw",controllerHandRotation.y),controllerHandRotation.z);
  leftGlove=ScubaGlove.Create(transform,true);rightGlove=ScubaGlove.Create(transform,false);left=leftGlove.transform;right=rightGlove.transform;leftGlove.SetControllerFit(controllerHandPosition,controllerHandRotation,true);rightGlove.SetControllerFit(controllerHandPosition,controllerHandRotation,false);
- var outfit=gameObject.AddComponent<DiverOutfit>();outfit.Initialize(Head,leftGlove,rightGlove);outfit.showBody=showDiverBody;outfit.showMask=showMaskRim;
+ // The player rig renders only tracked hands; no torso, straps or mask.
  var text=new GameObject("Diver caution caption");text.transform.SetParent(Head,false);text.transform.localPosition=new(0,-.2f,1);headsetCaption=text.AddComponent<TextMesh>();headsetCaption.anchor=TextAnchor.MiddleCenter;headsetCaption.alignment=TextAlignment.Center;headsetCaption.characterSize=.012f;headsetCaption.fontSize=48;
  contactFeedback=Head.gameObject.AddComponent<ReefContactFeedback>();CreateAmbience();gameObject.AddComponent<ReefSoundscape>();if(!GetComponent<DiverImmersion>())gameObject.AddComponent<DiverImmersion>();if(!GetComponent<DiverBubbles>())gameObject.AddComponent<DiverBubbles>();if(System.Array.IndexOf(System.Environment.GetCommandLineArgs(),"--smoke")>=0)StartCoroutine(Smoke()); }
  System.Collections.IEnumerator Smoke(){Application.runInBackground=true;menu=false;yield return new WaitForSeconds(2);Debug.Log("SMOKE: habitats=8 creatures="+FindObjectsByType<SeaLife>(FindObjectsSortMode.None).Length+" teleports="+FindObjectsByType<TeleportShell>(FindObjectsSortMode.None).Length);var rt=new RenderTexture(1280,720,24,RenderTextureFormat.ARGB32,RenderTextureReadWrite.sRGB);cam.targetTexture=rt;cam.Render();RenderTexture.active=rt;var tex=new Texture2D(1280,720,TextureFormat.RGB24,false);tex.ReadPixels(new Rect(0,0,1280,720),0,0);tex.Apply();System.IO.File.WriteAllBytes(System.IO.Path.Combine(Application.dataPath,"../RuntimePreview.png"),tex.EncodeToPNG());cam.targetTexture=null;RenderTexture.active=null;Destroy(rt);Destroy(tex);yield return new WaitForSeconds(1);Application.Quit();}
@@ -58,7 +58,7 @@ public class Diver:MonoBehaviour {
  leftGlove.SetContactFish(rightGrab.fish);rightGlove.SetContactFish(leftGrab.fish);
 
  }
- void SetMenu(bool open){if(!open){PlayerPrefs.SetInt("DiveHandFitVersion",3);PlayerPrefs.SetFloat("DiveHandX",controllerHandPosition.x);PlayerPrefs.SetFloat("DiveHandY",controllerHandPosition.y);PlayerPrefs.SetFloat("DiveHandZ",controllerHandPosition.z);PlayerPrefs.SetFloat("DiveHandPitch",controllerHandRotation.x);PlayerPrefs.SetFloat("DiveHandYaw",controllerHandRotation.y);PlayerPrefs.Save();}menu=open;velocity=Vector3.zero;ReleaseGrab();GetComponent<ReefSoundscape>()?.Cue(false);}
+ void SetMenu(bool open){if(!open){PlayerPrefs.SetInt("DiveHandFitVersion",4);PlayerPrefs.SetFloat("DiveHandX",controllerHandPosition.x);PlayerPrefs.SetFloat("DiveHandY",controllerHandPosition.y);PlayerPrefs.SetFloat("DiveHandZ",controllerHandPosition.z);PlayerPrefs.SetFloat("DiveHandPitch",controllerHandRotation.x);PlayerPrefs.SetFloat("DiveHandYaw",controllerHandRotation.y);PlayerPrefs.Save();}menu=open;velocity=Vector3.zero;ReleaseGrab();GetComponent<ReefSoundscape>()?.Cue(false);}
  bool NearScoopTarget(){foreach(var f in lifeCache){if(!f||!f.grabbable||f.danger||f.observationOnly)continue;if(Mathf.Min((f.transform.position-LeftPalm).sqrMagnitude,(f.transform.position-RightPalm).sqrMagnitude)<.65f*.65f)return true;}return false;}
  void AdjustHandFit(InputDevice l,InputDevice r){
   r.TryGetFeatureValue(CommonUsages.primary2DAxis,out Vector2 move);l.TryGetFeatureValue(CommonUsages.primary2DAxis,out Vector2 angle);

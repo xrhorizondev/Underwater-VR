@@ -12,9 +12,10 @@ public static class OctopusGroundValidation {
  public static void Run(){
   var scene=EditorSceneManager.OpenScene(Scene);var actor=Actor();var start=actor.transform.position;var skin=actor.transform.Find("Prepared animated model").GetComponentInChildren<SkinnedMeshRenderer>();var animation=skin.GetComponentInParent<Animation>();
   var ground=actor.GetComponent<OctopusGroundClearance>();if(!ground)ground=actor.gameObject.AddComponent<OctopusGroundClearance>();
+  ground.clearance=.005f;
   var cells=new Dictionary<Vector2Int,float>();
   for(int phase=0;phase<=300;phase++){animation.clip.SampleAnimation(animation.gameObject,animation.clip.length*phase/300);foreach(var p in OctopusRepairValidation.Points(skin)){var q=p-start;var cell=new Vector2Int(Mathf.FloorToInt(q.x/ground.footCell),Mathf.FloorToInt(q.z/ground.footCell));if(!cells.TryGetValue(cell,out float y)||q.y<y)cells[cell]=q.y;}}
-  ground.supports=cells.Select(p=>new Vector3(p.Key.x*ground.footCell,p.Value-.025f,p.Key.y*ground.footCell)).ToArray();
+  ground.supports=cells.Select(p=>new Vector3(p.Key.x*ground.footCell,p.Value-.005f,p.Key.y*ground.footCell)).ToArray();
   ground.terrainOrigin=new Vector2(start.x-10,start.z-10);ground.terrainWidth=ground.terrainDepth=Mathf.CeilToInt(20/ground.terrainCell);ground.terrainHeights=Enumerable.Repeat(float.NegativeInfinity,ground.terrainWidth*ground.terrainDepth).ToArray();
   var floors=UnityEngine.Object.FindObjectsByType<MeshCollider>(FindObjectsSortMode.None).Where(c=>c.sharedMesh&&c.sharedMesh.name.IndexOf("seabed",StringComparison.OrdinalIgnoreCase)>=0).ToArray();if(floors.Length==0)throw new Exception("Saved seabed colliders not found");
   foreach(var floor in floors){var mesh=floor.sharedMesh;var vertices=mesh.vertices.Select(p=>floor.transform.TransformPoint(p)).ToArray();var triangles=mesh.triangles;
@@ -22,7 +23,7 @@ public static class OctopusGroundValidation {
     int x0=Mathf.FloorToInt((Mathf.Min(a.x,Mathf.Min(b.x,c.x))-ground.terrainOrigin.x)/ground.terrainCell),x1=Mathf.FloorToInt((Mathf.Max(a.x,Mathf.Max(b.x,c.x))-ground.terrainOrigin.x)/ground.terrainCell);
     int z0=Mathf.FloorToInt((Mathf.Min(a.z,Mathf.Min(b.z,c.z))-ground.terrainOrigin.y)/ground.terrainCell),z1=Mathf.FloorToInt((Mathf.Max(a.z,Mathf.Max(b.z,c.z))-ground.terrainOrigin.y)/ground.terrainCell);
     if(x1<0||z1<0||x0>=ground.terrainWidth||z0>=ground.terrainDepth)continue;
-    float y=Mathf.Max(a.y,Mathf.Max(b.y,c.y));for(int z=Mathf.Max(0,z0);z<=Mathf.Min(ground.terrainDepth-1,z1);z++)for(int x=Mathf.Max(0,x0);x<=Mathf.Min(ground.terrainWidth-1,x1);x++){int index=x+z*ground.terrainWidth;ground.terrainHeights[index]=Mathf.Max(ground.terrainHeights[index],y);}
+    for(int z=Mathf.Max(0,z0);z<=Mathf.Min(ground.terrainDepth-1,z1);z++)for(int x=Mathf.Max(0,x0);x<=Mathf.Min(ground.terrainWidth-1,x1);x++){int index=x+z*ground.terrainWidth;float y=CellTop(a,b,c,ground.terrainOrigin.x+x*ground.terrainCell,ground.terrainOrigin.y+z*ground.terrainCell,ground.terrainCell);ground.terrainHeights[index]=Mathf.Max(ground.terrainHeights[index],y);}
    }
   }
   if(ground.terrainHeights.Any(y=>float.IsInfinity(y)||float.IsNaN(y)))throw new Exception("Seabed patch has holes");
@@ -31,6 +32,22 @@ public static class OctopusGroundValidation {
   animation.clip.SampleAnimation(animation.gameObject,0);EditorUtility.SetDirty(ground);EditorSceneManager.MarkSceneDirty(scene);EditorSceneManager.SaveScene(scene);
   Debug.Log("OCTOPUS_GROUND_BAKED supportCells="+ground.supports.Length+" terrainCells="+ground.terrainHeights.Length+" initialLift="+(height-start.y)+" raisedPosition="+position);
   Validate();OctopusRepairValidation.Capture();
+ }
+ // Only heights inside this cell can support the animal; a distant uphill
+ // triangle corner must not lift the octopus above the visible sand.
+ static float CellTop(Vector3 a,Vector3 b,Vector3 c,float x,float z,float size){
+  var polygon=new List<Vector3>{a,b,c};
+  for(int edge=0;edge<4;edge++){
+   var input=polygon;polygon=new List<Vector3>();if(input.Count==0)break;
+   float limit=edge==0?x:edge==1?x+size:edge==2?z:z+size;
+   Func<Vector3,float> distance=p=>((edge<2?p.x:p.z)-limit)*(edge==0||edge==2?1:-1);
+   var previous=input[input.Count-1];float pd=distance(previous);
+   foreach(var current in input){float cd=distance(current);
+    if((pd>=0)!=(cd>=0))polygon.Add(Vector3.Lerp(previous,current,pd/(pd-cd)));
+    if(cd>=0)polygon.Add(current);previous=current;pd=cd;
+   }
+  }
+  return polygon.Count==0?float.NegativeInfinity:polygon.Max(p=>p.y);
  }
  public static void Validate(){
   EditorSceneManager.OpenScene(Scene);var actor=Actor();var ground=actor.GetComponent<OctopusGroundClearance>();var skin=actor.transform.Find("Prepared animated model").GetComponentInChildren<SkinnedMeshRenderer>();var animation=skin.GetComponentInParent<Animation>();var home=actor.transform.position;float minGap=float.PositiveInfinity;int samples=0;
@@ -43,7 +60,7 @@ public static class OctopusGroundValidation {
   for(int heading=0;heading<8;heading++){
    EditorSceneManager.OpenScene(Scene);actor=Actor();ground=actor.GetComponent<OctopusGroundClearance>();home=actor.transform.position;var encounter=actor.GetComponent<ReefEncounter>();encounter.Initialize();var body=actor.GetComponent<ReefSphereBody>();var direction=Quaternion.Euler(0,heading*45,0)*Vector3.forward;
    // Includes collision sliding, repeated escape triggers and the return home.
-   for(int i=0;i<3600;i++){var before=actor.transform.position;encounter.Step(1f/60,before-direction,i<1800?.1f:10);var after=actor.transform.position;maxSpeed=Mathf.Max(maxSpeed,Mathf.Abs(after.y-before.y)*60);maxTravel=Mathf.Max(maxTravel,Vector3.Distance(home,after));if(after.y<ground.RequiredHeight(after)-.0001f)throw new Exception("Crawl/escape outran ground clearance heading="+heading);if(!body.Clear(after))throw new Exception("Octopus body entered solid geometry");}
+   for(int i=0;i<3600;i++){var before=actor.transform.position;encounter.Step(1f/60,before-direction,i<1800?.01f:10);var after=actor.transform.position;maxSpeed=Mathf.Max(maxSpeed,Mathf.Abs(after.y-before.y)*60);maxTravel=Mathf.Max(maxTravel,Vector3.Distance(home,after));if(after.y<ground.RequiredHeight(after)-.0001f)throw new Exception("Crawl/escape outran ground clearance heading="+heading);if(!body.Clear(after))throw new Exception("Octopus body entered solid geometry");}
   }
   if(maxTravel<.25f)throw new Exception("Grounded octopus cannot travel");
   if(maxSpeed>.66f)throw new Exception("Grounding correction snapped vertically");

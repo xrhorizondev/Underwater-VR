@@ -1,0 +1,2 @@
+Wreck dolphin 2 stalled after 468.2 s, pos=(16.34, -13.14, 65.05) forward=(0.00, 0.00, -1.00) clear=True speed=0.00213623 turnLift=0 rotationBlocked=False recoveries=0 yaw=8.419701
+Nearby solid Living coral | 3 gap=0.005533695

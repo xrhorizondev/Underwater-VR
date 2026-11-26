@@ -8,6 +8,7 @@ public sealed class CreatureProximityAudio:MonoBehaviour {
  void Start(){fish=Resources.Load<AudioClip>("ReefFishSounds");dolphin=Resources.Load<AudioClip>("DolphinNearby");
   foreach(var life in FindObjectsByType<SeaLife>(FindObjectsSortMode.None))if(life.GetComponent<FishAgent>()||life.GetComponent<FishBodyMotion>()||life.GetComponent<WreckCreature>()||life.GetComponent<MarineSwimmer>()||life.GetComponent<StingraySwimmer>())animals.Add(life.transform);
   foreach(var fishAgent in FindObjectsByType<FishAgent>(FindObjectsSortMode.None))if(!animals.Contains(fishAgent.transform))animals.Add(fishAgent.transform);
+  animals.RemoveAll(t=>t.GetComponent<FeaturedCreatureAudio>());
   for(int i=0;i<voices.Length;i++){var go=new GameObject("Nearby animal voice "+i);go.transform.SetParent(transform,false);var a=go.AddComponent<AudioSource>();a.playOnAwake=false;a.loop=true;a.spatialBlend=1;a.dopplerLevel=0;a.minDistance=.6f;a.maxDistance=6;a.rolloffMode=AudioRolloffMode.Linear;a.priority=150;voices[i]=a;}
  }
  void Update(){var d=Diver.Instance;if(!d||!d.Head)return;refresh-=Time.deltaTime;

@@ -1,0 +1,8 @@
+Actual Update fin angles: left=7.234725 right=5.185227 deg.
+Wreck dolphin 1 actual Update travel=12.63093 m; local skin deformation=0.3373015 m; peak blink=0.9999598; mouth angle range=1.8 deg; stroke rate=0
+Actual Update fin angles: left=5.293273 right=6.007357 deg.
+Wreck dolphin 2 actual Update travel=13.25491 m; local skin deformation=0.3338027 m; peak blink=0.9998515; mouth angle range=1.8 deg; stroke rate=0
+Actual Update fin angles: left=6.03376 right=7.26368 deg.
+Wreck dolphin 3 actual Update travel=13.54583 m; local skin deformation=0.3376916 m; peak blink=0.9998658; mouth angle range=1.799957 deg; stroke rate=0.06765199
+Moving with quiet tail frames=40; powered frames=102.
+Runtime menu pause passed. Legacy playback disabled; one movement/pose owner per dolphin.

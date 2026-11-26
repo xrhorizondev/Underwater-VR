@@ -1,0 +1,3 @@
+Wreck dolphin 1 independent gliding fin motion: left=0.08552997 m, right=0.08500219 m; tail phase/effort held fixed for geometry check.
+Wreck dolphin 3 independent gliding fin motion: left=0.07486722 m, right=0.06103933 m; tail phase/effort held fixed for geometry check.
+Wreck dolphin 2 independent gliding fin motion: left=0.0844045 m, right=0.0764112 m; tail phase/effort held fixed for geometry check.

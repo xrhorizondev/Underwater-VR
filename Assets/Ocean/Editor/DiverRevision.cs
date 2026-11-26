@@ -35,7 +35,7 @@ public static class DiverRevision {
    if(!agent)life.stationary=true;
    EditorUtility.SetDirty(life);count++;
   }
-  var diver=UnityEngine.Object.FindFirstObjectByType<Diver>();diver.showDiverBody=true;diver.showMaskRim=false;diver.controllerHandPosition=new Vector3(0,-.015f,.015f);diver.controllerHandRotation=Vector3.zero;EditorUtility.SetDirty(diver);
+  var diver=UnityEngine.Object.FindFirstObjectByType<Diver>();diver.showDiverBody=false;diver.showMaskRim=false;diver.controllerHandPosition=Vector3.zero;diver.controllerHandRotation=Vector3.zero;EditorUtility.SetDirty(diver);
   EditorSceneManager.MarkSceneDirty(scene);EditorSceneManager.SaveScene(scene);AssetDatabase.SaveAssets();
   Debug.Log("DIVER_REVISION_APPLIED scoopableSmallFish="+count+" squidActors=1 sharkHabitat=7");
   Validate();

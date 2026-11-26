@@ -1,0 +1,42 @@
+Repaired source quality=Ultra mipLimit=0 AA=4 anisotropic=ForceEnable
+TEXTURE Assets/UnderwaterArt/Textures/coral_ground_02_diff_2k.jpg mip=True filter=Trilinear aniso=4 bias=0 stream=True Android=1024/ASTC_6x6
+TEXTURE Assets/UnderwaterArt/Textures/coral_ground_02_nor_gl_2k.jpg mip=True filter=Trilinear aniso=4 bias=0 stream=True Android=1024/ASTC_6x6
+TEXTURE Assets/UnderwaterArt/Textures/coral_ground_02_ao_2k.jpg mip=True filter=Trilinear aniso=4 bias=0 stream=True Android=1024/ASTC_6x6
+TEXTURE Assets/UnderwaterArt/Scans/Secale_scan.png mip=True filter=Trilinear aniso=4 bias=0 stream=False Android=1024/ASTC_4x4
+TEXTURE Assets/UnderwaterArt/Textures/LivingCoral_normal.png mip=True filter=Trilinear aniso=4 bias=0 stream=False Android=1024/ASTC_4x4
+TEXTURE Assets/UnderwaterArt/Textures/LivingCoral_albedo.png mip=True filter=Trilinear aniso=4 bias=0 stream=False Android=2048/ASTC_4x4
+TEXTURE Assets/UnderwaterArt/Textures/coast_sand_02_diff_2k.jpg mip=True filter=Trilinear aniso=4 bias=0 stream=True Android=1024/ASTC_6x6
+TEXTURE Assets/UnderwaterArt/Textures/coast_sand_02_nor_gl_2k.jpg mip=True filter=Trilinear aniso=4 bias=0 stream=True Android=1024/ASTC_6x6
+TEXTURE Assets/UnderwaterArt/Textures/coast_sand_02_ao_2k.jpg mip=True filter=Trilinear aniso=4 bias=0 stream=True Android=1024/ASTC_6x6
+TEXTURE Assets/UnderwaterArt/Textures/BrainCoral_albedo.png mip=True filter=Trilinear aniso=4 bias=0 stream=False Android=2048/ASTC_4x4
+TEXTURE Assets/UnderwaterArt/Textures/BrainCoral_normal.png mip=True filter=Trilinear aniso=4 bias=0 stream=False Android=2048/ASTC_4x4
+TEXTURE Assets/UnderwaterArt/Textures/FishScan_albedo.png mip=True filter=Trilinear aniso=4 bias=0 stream=True Android=2048/ASTC_6x6
+TEXTURE Assets/UnderwaterArt/Textures/FishScan_normal.png mip=True filter=Trilinear aniso=4 bias=0 stream=True Android=2048/ASTC_6x6
+TEXTURE Assets/UnderwaterArt/Textures/coast_rocks_01_diff_2k.jpg mip=True filter=Trilinear aniso=4 bias=0 stream=True Android=1024/ASTC_6x6
+TEXTURE Assets/UnderwaterArt/Textures/coast_rocks_01_nor_gl_2k.jpg mip=True filter=Trilinear aniso=4 bias=0 stream=True Android=1024/ASTC_6x6
+TEXTURE Assets/UnderwaterArt/Textures/coast_rocks_01_arm_2k.jpg mip=True filter=Trilinear aniso=4 bias=0 stream=True Android=1024/ASTC_6x6
+TEXTURE Assets/UnderwaterArt/SuppliedReview/Anchor/Albedo.png mip=True filter=Trilinear aniso=4 bias=0 stream=False Android=2048/AutomaticCompressed
+TEXTURE Assets/UnderwaterArt/HabitatExpansion/Ship/Albedo.png mip=True filter=Trilinear aniso=4 bias=0 stream=True Android=1024/ASTC_6x6
+DUPLICATE_FACES ANCHOR count=2
+Repaired source SUMMARY renderers=3625 LODs=1065 multipleOwners=0 overlappingInstances=0 duplicateFaces=2
+Repaired Quest quality=Ultra mipLimit=0 AA=4 anisotropic=ForceEnable
+TEXTURE Assets/UnderwaterArt/Textures/coral_ground_02_diff_2k.jpg mip=True filter=Trilinear aniso=4 bias=0 stream=True Android=1024/ASTC_6x6
+TEXTURE Assets/UnderwaterArt/Textures/coral_ground_02_nor_gl_2k.jpg mip=True filter=Trilinear aniso=4 bias=0 stream=True Android=1024/ASTC_6x6
+TEXTURE Assets/UnderwaterArt/Textures/coral_ground_02_ao_2k.jpg mip=True filter=Trilinear aniso=4 bias=0 stream=True Android=1024/ASTC_6x6
+TEXTURE Assets/UnderwaterArt/Scans/Secale_scan.png mip=True filter=Trilinear aniso=4 bias=0 stream=False Android=1024/ASTC_4x4
+TEXTURE Assets/UnderwaterArt/Textures/LivingCoral_normal.png mip=True filter=Trilinear aniso=4 bias=0 stream=False Android=1024/ASTC_4x4
+TEXTURE Assets/UnderwaterArt/Textures/LivingCoral_albedo.png mip=True filter=Trilinear aniso=4 bias=0 stream=False Android=2048/ASTC_4x4
+TEXTURE Assets/UnderwaterArt/Textures/coast_sand_02_diff_2k.jpg mip=True filter=Trilinear aniso=4 bias=0 stream=True Android=1024/ASTC_6x6
+TEXTURE Assets/UnderwaterArt/Textures/coast_sand_02_nor_gl_2k.jpg mip=True filter=Trilinear aniso=4 bias=0 stream=True Android=1024/ASTC_6x6
+TEXTURE Assets/UnderwaterArt/Textures/coast_sand_02_ao_2k.jpg mip=True filter=Trilinear aniso=4 bias=0 stream=True Android=1024/ASTC_6x6
+TEXTURE Assets/UnderwaterArt/Textures/BrainCoral_albedo.png mip=True filter=Trilinear aniso=4 bias=0 stream=False Android=2048/ASTC_4x4
+TEXTURE Assets/UnderwaterArt/Textures/BrainCoral_normal.png mip=True filter=Trilinear aniso=4 bias=0 stream=False Android=2048/ASTC_4x4
+TEXTURE Assets/UnderwaterArt/Textures/FishScan_albedo.png mip=True filter=Trilinear aniso=4 bias=0 stream=True Android=2048/ASTC_6x6
+TEXTURE Assets/UnderwaterArt/Textures/FishScan_normal.png mip=True filter=Trilinear aniso=4 bias=0 stream=True Android=2048/ASTC_6x6
+TEXTURE Assets/UnderwaterArt/Textures/coast_rocks_01_diff_2k.jpg mip=True filter=Trilinear aniso=4 bias=0 stream=True Android=1024/ASTC_6x6
+TEXTURE Assets/UnderwaterArt/Textures/coast_rocks_01_nor_gl_2k.jpg mip=True filter=Trilinear aniso=4 bias=0 stream=True Android=1024/ASTC_6x6
+TEXTURE Assets/UnderwaterArt/Textures/coast_rocks_01_arm_2k.jpg mip=True filter=Trilinear aniso=4 bias=0 stream=True Android=1024/ASTC_6x6
+TEXTURE Assets/UnderwaterArt/SuppliedReview/Anchor/Albedo.png mip=True filter=Trilinear aniso=4 bias=0 stream=False Android=2048/AutomaticCompressed
+TEXTURE Assets/UnderwaterArt/HabitatExpansion/Ship/Albedo.png mip=True filter=Trilinear aniso=4 bias=0 stream=True Android=1024/ASTC_6x6
+DUPLICATE_FACES ANCHOR count=2
+Repaired Quest SUMMARY renderers=4133 LODs=2202 multipleOwners=0 overlappingInstances=0 duplicateFaces=2

@@ -1,0 +1,122 @@
+[
+  {
+    "kind": "Shark",
+    "animatedReductionError": [
+      {
+        "worstVertex": 119782,
+        "frame": 1,
+        "maxSurfaceError": 0.0009620580240152776,
+        "meanSurfaceError": 2.559645526620325e-06
+      },
+      {
+        "worstVertex": 119782,
+        "frame": 9,
+        "maxSurfaceError": 0.0009731147438287735,
+        "meanSurfaceError": 3.1005895663872983e-06
+      },
+      {
+        "worstVertex": 49005,
+        "frame": 17,
+        "maxSurfaceError": 0.0013542937813326716,
+        "meanSurfaceError": 3.613535153938554e-06
+      },
+      {
+        "worstVertex": 49005,
+        "frame": 25,
+        "maxSurfaceError": 0.0011973708169534802,
+        "meanSurfaceError": 3.100014162308466e-06
+      },
+      {
+        "worstVertex": 119743,
+        "frame": 33,
+        "maxSurfaceError": 0.0014347753021866083,
+        "meanSurfaceError": 3.6046468950638093e-06
+      },
+      {
+        "worstVertex": 119743,
+        "frame": 41,
+        "maxSurfaceError": 0.001223710016347468,
+        "meanSurfaceError": 3.3368189180911274e-06
+      },
+      {
+        "worstVertex": 119782,
+        "frame": 49,
+        "maxSurfaceError": 0.0009620325290597975,
+        "meanSurfaceError": 2.551443269079059e-06
+      },
+      {
+        "worstVertex": 119782,
+        "frame": 577,
+        "maxSurfaceError": 0.0009629521518945694,
+        "meanSurfaceError": 2.5719347033203776e-06
+      }
+    ],
+    "roundtrip": {
+      "rigs": 1,
+      "meshes": 4,
+      "actions": 1,
+      "vertices": 183002,
+      "unweightedVertices": 0
+    }
+  },
+  {
+    "kind": "Dolphin",
+    "animatedReductionError": [
+      {
+        "worstVertex": 3789,
+        "frame": 2,
+        "maxSurfaceError": 0.003373753512278199,
+        "meanSurfaceError": 3.466823411776899e-05
+      },
+      {
+        "worstVertex": 2012,
+        "frame": 9,
+        "maxSurfaceError": 0.001818841672502458,
+        "meanSurfaceError": 3.389995826358252e-05
+      },
+      {
+        "worstVertex": 378,
+        "frame": 17,
+        "maxSurfaceError": 0.0031295197550207376,
+        "meanSurfaceError": 3.63096639769111e-05
+      },
+      {
+        "worstVertex": 1726,
+        "frame": 25,
+        "maxSurfaceError": 0.0016330697108060122,
+        "meanSurfaceError": 3.210070929041534e-05
+      },
+      {
+        "worstVertex": 1726,
+        "frame": 33,
+        "maxSurfaceError": 0.0032559470273554325,
+        "meanSurfaceError": 3.4292642260515804e-05
+      },
+      {
+        "worstVertex": 2012,
+        "frame": 41,
+        "maxSurfaceError": 0.0016920935595408082,
+        "meanSurfaceError": 3.302840064525107e-05
+      },
+      {
+        "worstVertex": 2441,
+        "frame": 49,
+        "maxSurfaceError": 0.0027419617399573326,
+        "meanSurfaceError": 3.487550369493042e-05
+      },
+      {
+        "worstVertex": 3789,
+        "frame": 58,
+        "maxSurfaceError": 0.003322530770674348,
+        "meanSurfaceError": 3.449002828398183e-05
+      }
+    ],
+    "roundtrip": {
+      "rigs": 1,
+      "meshes": 5,
+      "actions": 1,
+      "vertices": 16192,
+      "unweightedVertices": 0
+    }
+  }
+]

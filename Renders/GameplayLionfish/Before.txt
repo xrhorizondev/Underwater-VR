@@ -1,0 +1,49 @@
+Lionfish local=(1.00, -8.00, 30.00) scale=(1.10, 1.10, 1.10) components=Transform,MeshFilter,MeshRenderer,FishBodyMotion,SeaLife,ReefSphereBody,ReefDangerZone,FishTouchBody,ReefEncounter,ReefAnimalClearance
+Venomous fin ray local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshFilter,MeshRenderer
+Venomous fin ray local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshFilter,MeshRenderer
+Venomous fin ray local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshFilter,MeshRenderer
+Venomous fin ray local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshFilter,MeshRenderer
+Venomous fin ray local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshFilter,MeshRenderer
+Venomous fin ray local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshFilter,MeshRenderer
+Venomous fin ray local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshFilter,MeshRenderer
+Venomous fin ray local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshFilter,MeshRenderer
+Venomous fin ray local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshFilter,MeshRenderer
+Venomous fin ray local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshFilter,MeshRenderer
+Venomous fin ray local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshFilter,MeshRenderer
+Venomous fin ray local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshFilter,MeshRenderer
+Venomous fin ray local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshFilter,MeshRenderer
+Fish touch volume local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,CapsuleCollider
+Animal body solid local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,CapsuleCollider
+Day 2 hazard surfaces local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform
+Spine surface local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshCollider
+Soft proximity outline local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,LineRenderer
+Spine surface local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshCollider
+Soft proximity outline local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,LineRenderer
+Spine surface local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshCollider
+Soft proximity outline local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,LineRenderer
+Spine surface local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshCollider
+Soft proximity outline local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,LineRenderer
+Spine surface local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshCollider
+Soft proximity outline local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,LineRenderer
+Spine surface local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshCollider
+Soft proximity outline local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,LineRenderer
+Spine surface local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshCollider
+Soft proximity outline local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,LineRenderer
+Spine surface local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshCollider
+Soft proximity outline local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,LineRenderer
+Spine surface local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshCollider
+Soft proximity outline local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,LineRenderer
+Spine surface local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshCollider
+Soft proximity outline local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,LineRenderer
+Spine surface local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshCollider
+Soft proximity outline local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,LineRenderer
+Spine surface local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshCollider
+Soft proximity outline local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,LineRenderer
+Spine surface local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,MeshCollider
+Soft proximity outline local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,LineRenderer
+Caution indicator local=(0.00, 0.71, 0.09) scale=(0.91, 0.91, 0.91) components=Transform
+Warning stroke local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,LineRenderer
+Warning stroke local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) components=Transform,LineRenderer
+Actor (1.00, -8.00, 30.00) rotation=(0.00, 0.00, 0.00)
+Sphere radius=1.03557 offset=(0.00, 0.00, 0.00)
+Hazard surfaces=Spine surface,Spine surface,Spine surface,Spine surface,Spine surface,Spine surface,Spine surface,Spine surface,Spine surface,Spine surface,Spine surface,Spine surface,Spine surface indicator=Caution indicator

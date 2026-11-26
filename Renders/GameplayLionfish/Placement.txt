@@ -1,0 +1,1 @@
+Original=(1.00, -8.00, 30.00) integrated=(1.00, -8.00, 30.00) length=1.15 envelope=Center: (0.00, 0.00, 0.00), Extents: (0.23, 0.37, 0.55) radius=0.6541403

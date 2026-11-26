@@ -1,0 +1,20 @@
+{
+    "status": "failed",
+    "profile": "quest",
+    "displayName": "Meta Quest APK",
+    "unityVersion": "6000.4.5f1",
+    "buildTarget": "Android",
+    "artifact": "D:\\GIT Project\\Underwater-VR\\Temp\\CreatureReplacement\\ProfileReport\\quest.apk",
+    "validationMode": "standard",
+    "scenes": [
+        "Assets/Scenes/Underwater_Realistic.unity"
+    ],
+    "diagnostics": [
+        {
+            "severity": "ERROR",
+            "code": "ACTIVE_TARGET_MISMATCH",
+            "message": "Active target is StandaloneWindows64; profile requires Android. Rerun with an explicitly approved target switch or select it in Unity."
+        }
+    ],
+    "buildResult": "blocked-by-validation"
+}

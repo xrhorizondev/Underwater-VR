@@ -1,0 +1,72 @@
+Schooling fish=257 schools=19 seconds=60 maxTurn=72.27722 maxStep=0.02472405 longestStationary=0.4333333 penetrations=0 backwards=0 minTravel=5.250424
+Anglerfish | Anglerfish seconds=60 travel=10.0516 maxTurn=12.03153 longestStationary=0
+Anglerfish | Anglerfish seconds=60 travel=10.01464 maxTurn=12.06076 longestStationary=0
+Dolphin | Wreck dolphin 1 seconds=60 travel=44.66019 maxTurn=20.01159 longestStationary=0
+  playback rest=0.1200007 swim=1.000019
+Anglerfish | Anglerfish seconds=60 travel=9.778364 maxTurn=25.01061 longestStationary=0
+Anglerfish | Anglerfish seconds=60 travel=10.09059 maxTurn=25.01061 longestStationary=0
+Manta | Manta ray gliding over the reef seconds=60 travel=25.1999 maxTurn=24.00458 longestStationary=0
+  playback rest=0.1296005 swim=0.7199835
+Flame angelfish | FlameAngel supplied reef visitor 1 seconds=60 travel=8.935587 maxTurn=25.01765 longestStationary=0
+Anglerfish | Anglerfish seconds=60 travel=10.03153 maxTurn=11.70509 longestStationary=0
+Grouper | Calm wreck grouper seconds=60 travel=9.700015 maxTurn=28.01311 longestStationary=0
+Stingray | Resting stingray seconds=60 travel=18.30386 maxTurn=28.00682 longestStationary=0.6666668
+Stingray | Resting stingray seconds=60 travel=19.19992 maxTurn=28.00682 longestStationary=0
+Anglerfish | Anglerfish seconds=60 travel=10.3558 maxTurn=25.02468 longestStationary=0
+Reef shark | Distant reef shark seconds=60 travel=35.99987 maxTurn=18.01071 longestStationary=0
+  playback rest=0.1200006 swim=0.9997399
+Butterflyfish | ReefFish supplied reef visitor 1 seconds=60 travel=8.899442 maxTurn=14.54914 longestStationary=0
+Anglerfish | Anglerfish seconds=60 travel=10.05235 maxTurn=25.01061 longestStationary=0
+Dolphin | Wreck dolphin 3 seconds=60 travel=44.70009 maxTurn=20.01159 longestStationary=0
+  playback rest=0.1200007 swim=1.000028
+Turtle | Loggerhead sea turtle seconds=60 travel=11.43074 maxTurn=12.06076 longestStationary=0
+  playback rest=0.1296005 swim=0.720023
+Lumen | Lumen seconds=60 travel=14.93192 maxTurn=40.00625 longestStationary=3.399998
+Anglerfish | Anglerfish seconds=60 travel=10.05427 maxTurn=12.10449 longestStationary=0
+Turtle | Loggerhead sea turtle seconds=60 travel=11.43049 maxTurn=12.07536 longestStationary=0
+  playback rest=0.1296005 swim=0.719985
+Stingray | Resting stingray seconds=60 travel=19.20019 maxTurn=28.00682 longestStationary=0
+Anglerfish | Anglerfish seconds=60 travel=10.03786 maxTurn=11.79501 longestStationary=0
+Moray | Moray in wreck stern opening seconds=60 travel=1.300006 maxTurn=0 longestStationary=42.96635
+Anglerfish | Anglerfish seconds=60 travel=9.995402 maxTurn=25.01765 longestStationary=0
+Anglerfish | Anglerfish seconds=60 travel=10.09114 maxTurn=25.01061 longestStationary=0
+Dolphin | Wreck dolphin 2 seconds=60 travel=44.67116 maxTurn=20.01159 longestStationary=0
+  playback rest=0.1200007 swim=1.000001
+Butterflyfish | ReefFish supplied reef visitor 2 seconds=60 travel=8.910739 maxTurn=14.47634 longestStationary=0
+Flame angelfish | FlameAngel supplied reef visitor 2 seconds=60 travel=8.93708 maxTurn=15.65687 longestStationary=0
+Lionfish | Lionfish seconds=60 travel=11.9604 maxTurn=55.0033 longestStationary=0
+Grouper | Calm finale grouper seconds=60 travel=9.455587 maxTurn=14.53704 longestStationary=0
+Anglerfish | Anglerfish seconds=60 travel=10.02987 maxTurn=12.26348 longestStationary=0
+Clip=Scene duration=3.5 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0
+Clip=Scene duration=3.5 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0
+Clip=Swim duration=2 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0
+Clip=Dolphin_Coordinated_Swim duration=2 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0
+Clip=Dolphin_Coordinated_Swim duration=2 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0
+Clip=Shark progressive whole body swim duration=3 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0
+Clip=Scene duration=24 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0
+Clip=Dolphin_Coordinated_Swim duration=2 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0
+Clip=CombJelly_Drift duration=4 loopPosition=0 loopDegrees=0

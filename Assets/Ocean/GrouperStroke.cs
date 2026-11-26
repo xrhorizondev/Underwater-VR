@@ -11,7 +11,7 @@ public sealed class GrouperStroke:MonoBehaviour {
   var d=Diver.Instance;if(d&&d.MenuOpen||!ReefSimulationRange.Active(transform)){previous=transform.position;return;}
   Step(Mathf.Max(Time.deltaTime,.001f));
  }
- public void Step(float dt){Initialize();dt=Mathf.Clamp(dt,.001f,.05f);var delta=transform.position-previous;float speed=delta.sqrMagnitude>4?0:delta.magnitude/dt;previous=transform.position;effort=Mathf.Lerp(effort,Mathf.Clamp01(speed/.17f),1-Mathf.Exp(-dt*4));turn=Mathf.Lerp(turn,Mathf.Clamp(Vector3.SignedAngle(previousForward,transform.forward,Vector3.up)/dt,-35,35),1-Mathf.Exp(-dt*3));previousForward=transform.forward;phase+=dt*Mathf.PI*2*Mathf.Lerp(.18f,.8f,effort);
+ public void Step(float dt){Initialize();dt=Mathf.Clamp(dt,.001f,.05f);var delta=transform.position-previous;float speed=delta.sqrMagnitude>4?0:delta.magnitude/dt;previous=transform.position;effort=Mathf.Lerp(effort,Mathf.Clamp01(speed/.3f),1-Mathf.Exp(-dt*4));turn=Mathf.Lerp(turn,Mathf.Clamp(Vector3.SignedAngle(previousForward,transform.forward,Vector3.up)/dt,-35,35),1-Mathf.Exp(-dt*3));previousForward=transform.forward;phase+=dt*Mathf.PI*2*Mathf.Lerp(.25f,.75f,effort);
   if(spine.Length>0){ApplyPose(phase,effort,turn);return;}
   if(skin){skin.GetPropertyBlock(block);block.SetFloat("_TailPhase",phase);block.SetFloat("_TailAmplitude",Mathf.Lerp(.008f,.03f,effort));skin.SetPropertyBlock(block);}
  }

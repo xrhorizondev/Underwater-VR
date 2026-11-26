@@ -1,0 +1,4 @@
+61 phases per imported animation: all vertices within render bounds.
+Quest grass cutoff <= 0.016; fish full detail >= 3.5 m; moving animals bypass baked occlusion.
+Both hand grip pivots/directions passed. Six seconds of near/far jelly motion matched. Changed shaders compiled.
+Both hand grip pivots/directions passed. Six seconds of near/far jelly motion matched. Changed shaders compiled. Reference jelly motion stayed within bounds for six seconds.

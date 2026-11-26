@@ -5,7 +5,7 @@ public class SeaLife:MonoBehaviour {
  public bool proximityEnabled=true,cautionEnabled=true; public AudioClip cautionVoice,reactionVoice;
  bool wasGlowing,hasEncounter;ReefDangerZone dangerZone;public bool IsHeld=>hand;
  ReefSphereBody body;FishAgent swimmer;Vector3 origin,scale,heldContact;Quaternion heldRotation; float reacted=-100,heldUntil,heldAt;Transform hand;Renderer[] renderers;Material[] materials;Color[] colors;
- void Start(){hasEncounter=GetComponent<ReefEncounter>()||GetComponent<ReefCruiser>()||GetComponent<ReefFishFollower>();dangerZone=GetComponent<ReefDangerZone>();body=GetComponent<ReefSphereBody>();swimmer=GetComponent<FishAgent>();origin=transform.position;scale=transform.localScale;renderers=GetComponentsInChildren<Renderer>();materials=new Material[renderers.Length];colors=new Color[renderers.Length];for(int i=0;i<renderers.Length;i++){materials[i]=(danger&&!dangerZone)?renderers[i].material:renderers[i].sharedMaterial;colors[i]=materials[i]&&materials[i].HasProperty("_Color")?materials[i].color:Color.white;}}
+ void Start(){hasEncounter=kind.ToLowerInvariant().Contains("jelly")||GetComponent<ReefEncounter>()||GetComponent<ReefCruiser>()||GetComponent<ReefFishFollower>();dangerZone=GetComponent<ReefDangerZone>();body=GetComponent<ReefSphereBody>();swimmer=GetComponent<FishAgent>();origin=transform.position;scale=transform.localScale;renderers=GetComponentsInChildren<Renderer>();materials=new Material[renderers.Length];colors=new Color[renderers.Length];for(int i=0;i<renderers.Length;i++){materials[i]=(danger&&!dangerZone)?renderers[i].material:renderers[i].sharedMaterial;colors[i]=materials[i]&&materials[i].HasProperty("_Color")?materials[i].color:Color.white;}}
  void Update(){if(Application.platform==RuntimePlatform.Android&&!hand&&Diver.Instance&&(transform.position-Diver.Instance.transform.position).sqrMagnitude>48*48)return;if(hand){StepHeld(Mathf.Min(Time.deltaTime,.05f),Time.time);return;}if(swimmer&&!danger)return;
  if(!hasEncounter&&!swimmer&&!stationary&&kind!="Coral"&&kind!="Fire coral"&&kind!="Ray tail"){
  var target=origin+new Vector3(Mathf.Sin(Time.time*.16f+origin.z)*1.4f,Mathf.Sin(Time.time*.5f+origin.x)*.2f,Mathf.Cos(Time.time*.16f+origin.z)*.7f);
@@ -21,9 +21,9 @@ public class SeaLife:MonoBehaviour {
  if(consequence&&d<.3f&&Time.time-reacted>.5f){Diver.Instance.Hurt(reactionVoice);reacted=Time.time;}}
  else if(d<.55f&&Time.time-reacted>3)React();
  }
- public string Warning(){if(kind=="Lionfish")return "Whoa. Don't touch those spines.";if(kind=="Ray tail")return "Careful. Watch the tail.";if(kind=="Moon jelly")return "Careful. Give it some space.";if(kind=="Fire coral")return "Careful. Don't touch that coral.";return "Don't touch that one.";}
+ public string Warning(){if(kind=="Lionfish")return "Whoa. Don't touch those spines.";if(kind=="Ray tail")return "Careful. Watch the tail.";if(kind=="Moon jelly")return "Careful. Give it some space.";if(kind=="Comb jelly")return "Give the jelly some space. Watch without touching.";if(kind=="Box jelly")return "Careful. Keep clear of the stinging tentacles.";if(kind=="Fire coral")return "Careful. Don't touch that coral.";return "Don't touch that one.";}
  public void DangerReaction(){if(kind=="Lionfish")reacted=Time.time;}
- public void React(){reacted=Time.time;if(kind=="Turtle")GetComponent<ReefCreatureInfo>()?.Reveal();}
+ public void React(){reacted=Time.time;GetComponent<ReefCreatureInfo>()?.Reveal();}
  public Vector3 HeldContactPosition=>transform.TransformPoint(heldContact);
  public void Grab(Transform h){
   if(!grabbable||danger||observationOnly||!h||hand)return;

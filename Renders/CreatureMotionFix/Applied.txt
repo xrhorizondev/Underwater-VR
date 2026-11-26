@@ -1,0 +1,4 @@
+Removed redundant fitted eye pairs from 242 photographic fish.
+Two groupers: original mesh/UVs, seven-bone body and paired fin rig.
+Three rays: recessed eyes replace protruding spheres.
+Shark: smooth progressive lateral stroke and steering flex.
