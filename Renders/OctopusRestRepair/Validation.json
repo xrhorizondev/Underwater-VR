@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "unityExitCode": 0,
+  "animatedVertexChecks": 41936180,
+  "escapeHeadings": 8,
+  "secondsPerHeading": 60,
+  "minimumSandClearanceMeters": 0.01513195,
+  "originalModelAndAnimation": "preserved",
+  "sandMaximumRiseMeters": 0.3253975
+}

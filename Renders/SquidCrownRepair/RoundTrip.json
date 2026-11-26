@@ -1,0 +1,13 @@
+{
+  "opaqueOpenEdges": 0,
+  "shaftSections": {
+    "-2.2": 10,
+    "-2.6": 10
+  },
+  "sampledFrames": 49,
+  "loopSeam": 0.0,
+  "maxWeightError": 4.470348358154297e-08,
+  "maxDeformation": 0.9453558484544163,
+  "maxEdgeStretch": 1.3414186539105384,
+  "status": "passed"
+}

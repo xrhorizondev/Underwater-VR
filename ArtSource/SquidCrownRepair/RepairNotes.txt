@@ -1,0 +1,40 @@
+ORIGINAL SQUID - EXPOSED UNDERSIDE ROOT CORRECTION
+
+Reproduced the cut-looking underside root in the live Unity scene, not just in
+an exported mesh. Live audit confirmed the active renderer already used the
+updated FBX; this was not a different model or duplicate renderer.
+
+The previous narrow head/arm junction left a lower shaft's base visibly exposed.
+Added a closed ellipsoid arm-crown collar and Boolean-unioned it into the existing
+head/arms. The final cuff extends farther below the head and wraps the lowest
+roots. Root weights remain body-rigid through the collar, with a smooth falloff
+farther down the shafts. Ten separate arms, existing eye/fin/siphon geometry,
+materials, bone hierarchy and Swim animation are retained. The head is visibly
+fuller around the attachment area as a result of the covering geometry.
+
+Final: 7,950 triangles, 30 bones, 2 materials. FBX round trip has zero opaque open
+edges and 10 separate shaft contours at both inspected stations. All 49 animation
+frames passed normalized weights, finite deformation and identical loop endpoints;
+maximum edge stretch 1.342. Unity 6000.4.5f1 exit 0: original prefab and main-scene
+squid passed animation and culling bounds checks. Inspected exact underside and
+opposite underside views at 0%, 25%, 50% and 75% of the clip.
+
+A first collar revision still exposed one lower root in the live-editor capture;
+that revision was widened underneath and retested before final delivery.
+Reloaded the main scene in the user's open Unity editor and captured its actual
+GPU-rendered squid from both underside angles after import. Live audit confirms
+7,950 triangles. The previous cut-looking lower base is covered in those final
+views. No claim is made about Quest hardware performance or stereo testing.
+
+Updated Assets/UnderwaterArt/BlenderSquid/ReferenceSquid.fbx (same GUID), original
+GiantSquid.prefab, main scene squid bounds, and Squid_Old_Repaired_Review.unity.
+Existing unrelated scene edits, gameplay travel, colliders and placement preserved.
+Editable source: ReferenceSquid.blend in this directory.
+Regenerate: Tools/Blender/repair_squid_crown.py.
+Validate: Tools/Blender/validate_squid_crown.py; isolated Unity entry point
+Underwater.Editor.SquidCrownReview.Run. Live read-only check menu:
+Underwater/Audit selected squid attachment.
+
+Evidence: Renders/SquidCrownRepair/LiveBefore and LiveAfter (actual open editor),
+After/ExactUnderside_0/25/50/75.png and OppositeUnderside_0/25/50/75.png
+(sampled animation poses), After/UnityValidation.txt, and RoundTrip.json.

@@ -1,0 +1,3 @@
+Weathered supplied anchor - The Wreck grounded chain components=20
+Weathered supplied anchor - Wreck & Rays grounded chain components=20
+Squid patrol radius from=3 to=3

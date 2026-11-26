@@ -1,0 +1,31 @@
+Shark seconds=120 travel=124.6831 minSpeed=0.9212425 maxStep=0.01889908 maxTurn=20.03789 stalledFrames=0
+TurtleSwimmer Loggerhead sea turtle seconds=60 travel=11.42731 maxStep=0.003500344 maxTurn=12.22031 stoppedFrames=0
+TurtleSwimmer Loggerhead sea turtle seconds=60 travel=11.42726 maxStep=0.003505876 maxTurn=12.22031 stoppedFrames=0
+StingraySwimmer Resting stingray seconds=60 travel=19.19304 maxStep=0.005340869 maxTurn=28.03801 stoppedFrames=0
+StingraySwimmer Resting stingray seconds=60 travel=17.98058 maxStep=0.005340954 maxTurn=28.03801 stoppedFrames=13
+StingraySwimmer Resting stingray seconds=60 travel=19.19524 maxStep=0.005340959 maxTurn=28.01288 stoppedFrames=0
+MarineSwimmer Manta ray gliding over the reef seconds=60 travel=25.1929 maxStep=0.007000283 maxTurn=24.03376 stoppedFrames=0
+SquidSwimmer Giant squid distant silhouette seconds=60 travel=16.79786 maxStep=0.00750035 maxTurn=1.678587 stoppedFrames=0
+ReefCruiser Anglerfish seconds=60 travel=10.05015 maxStep=0.003005215 maxTurn=12.04614 stoppedFrames=0
+ReefCruiser Anglerfish seconds=60 travel=9.458012 maxStep=0.01630098 maxTurn=25.06671 stoppedFrames=0
+ReefCruiser Anglerfish seconds=60 travel=9.748858 maxStep=0.01000214 maxTurn=25.12285 stoppedFrames=6
+ReefCruiser Anglerfish seconds=60 travel=9.967561 maxStep=0.003003449 maxTurn=25.01044 stoppedFrames=0
+ReefCruiser Anglerfish seconds=60 travel=9.56248 maxStep=0.008536195 maxTurn=25.06671 stoppedFrames=0
+ReefCruiser Anglerfish seconds=60 travel=9.888494 maxStep=0.01150992 maxTurn=25.06671 stoppedFrames=1
+ReefCruiser Anglerfish seconds=60 travel=10.02847 maxStep=0.003003169 maxTurn=12.27781 stoppedFrames=0
+ReefCruiser Anglerfish seconds=60 travel=10.03015 maxStep=0.00300311 maxTurn=11.75012 stoppedFrames=0
+ReefCruiser Anglerfish seconds=60 travel=10.0368 maxStep=0.00300534 maxTurn=11.80991 stoppedFrames=0
+ReefCruiser Anglerfish seconds=60 travel=9.75569 maxStep=0.01457168 maxTurn=25.0948 stoppedFrames=0
+ReefCruiser Anglerfish seconds=60 travel=10.0133 maxStep=0.003003369 maxTurn=12.10447 stoppedFrames=0
+ReefCruiser Anglerfish seconds=60 travel=10.05306 maxStep=0.003003029 maxTurn=12.16253 stoppedFrames=0
+GrouperSwimController Calm finale grouper seconds=60 travel=15.17933 maxStep=0.004962536 maxTurn=16.05665 stoppedFrames=0
+GrouperSwimController Calm wreck grouper seconds=60 travel=14.96679 maxStep=0.004997253 maxTurn=16.05665 stoppedFrames=0
+DolphinSwimController Wreck dolphin 2 seconds=60 travel=61.45148 maxStep=0.01834225 maxTurn=24.41181 stoppedFrames=0
+DolphinSwimController Wreck dolphin 1 seconds=60 travel=23.32895 maxStep=0.01742282 maxTurn=16.14415 stoppedFrames=0
+DolphinSwimController Wreck dolphin 3 seconds=60 travel=62.44273 maxStep=0.01865743 maxTurn=23.44024 stoppedFrames=0
+WreckCreature Wreck dolphin 3 seconds=60 travel=58.51179 maxStep=0.01875333 maxTurn=28.01288 stoppedFrames=3
+WreckCreature Calm wreck grouper seconds=60 travel=14.96679 maxStep=0.004997253 maxTurn=16.05665 stoppedFrames=0
+WreckCreature Wreck dolphin 2 seconds=60 travel=57.59112 maxStep=0.01833428 maxTurn=28.18835 stoppedFrames=46
+WreckCreature Wreck dolphin 1 seconds=60 travel=58.24574 maxStep=0.01809704 maxTurn=15.96866 stoppedFrames=0
+CurledMorayEncounter Moray in wreck stern opening seconds=60 travel=0 maxStep=0 maxTurn=0 stoppedFrames=3599
+School fish, octopus crawl/escape and diver collision validations passed.

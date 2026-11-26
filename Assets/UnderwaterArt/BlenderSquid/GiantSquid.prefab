@@ -94,23 +94,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3427007264838513865, guid: d4ff7e9c01459804fbc62b9aecd78b2b, type: 3}
       propertyPath: m_AABB.m_Center.y
-      value: 0.008541506
+      value: 0.008515064
       objectReference: {fileID: 0}
     - target: {fileID: -3427007264838513865, guid: d4ff7e9c01459804fbc62b9aecd78b2b, type: 3}
       propertyPath: m_AABB.m_Center.z
-      value: -0.0006084796
+      value: -0.000581502
       objectReference: {fileID: 0}
     - target: {fileID: -3427007264838513865, guid: d4ff7e9c01459804fbc62b9aecd78b2b, type: 3}
       propertyPath: m_AABB.m_Extent.x
-      value: 0.015174622
+      value: 0.014674628
       objectReference: {fileID: 0}
     - target: {fileID: -3427007264838513865, guid: d4ff7e9c01459804fbc62b9aecd78b2b, type: 3}
       propertyPath: m_AABB.m_Extent.y
-      value: 0.044961657
+      value: 0.04448808
       objectReference: {fileID: 0}
     - target: {fileID: -3427007264838513865, guid: d4ff7e9c01459804fbc62b9aecd78b2b, type: 3}
       propertyPath: m_AABB.m_Extent.z
-      value: 0.011047849
+      value: 0.010984239
       objectReference: {fileID: 0}
     - target: {fileID: -3427007264838513865, guid: d4ff7e9c01459804fbc62b9aecd78b2b, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -168,3 +168,8 @@ MonoBehaviour:
   tailWarning: {fileID: 0}
   tailBone: {fileID: 0}
   speed: 1
+  minimumTravelRate: 0.55
+  cycleOffset: 0
+  distanceClock: 0
+  travelActor: {fileID: 0}
+  referenceTravelSpeed: 0.4

@@ -6,7 +6,7 @@ namespace Underwater.Editor {
 public static class FishMotionValidation {
  public static void Run(){
   var schools=UnityEngine.Object.FindObjectsByType<FishSchool>(FindObjectsSortMode.None);
-  if(schools.Length!=9)throw new Exception("Expected nine shoals, found "+schools.Length);
+  if(schools.Length<9)throw new Exception("Expected at least nine shoals, found "+schools.Length);
   foreach(var s in schools)s.Initialize();
   float maxPitch=0,maxStep=0,maxTurn=0;int count=0;
   foreach(var school in schools){
@@ -17,7 +17,9 @@ public static class FishMotionValidation {
     school.Simulate(1f/30);
     for(int i=0;i<positions.Length;i++){
      var f=school.fish[i];var body=f.GetComponent<ReefSphereBody>();if(!body||!body.Clear(f.transform.position))throw new Exception("Fish overlaps reef: "+f.name);float step=Vector3.Distance(positions[i],f.transform.position);float pitch=Mathf.Abs(Mathf.Asin(f.transform.forward.y)*Mathf.Rad2Deg);float turn=Vector3.Angle(forward[i],f.transform.forward)*30;
-     if(float.IsNaN(step)||step>.065f||pitch>11||turn>56)throw new Exception("Unstable fish motion: step="+step+", pitch="+pitch+", turn="+turn);
+     // Escape permits 25-degree pitch and 70-degree yaw per second. Pitch
+     // eases back after escape ends; combined yaw/pitch needs a small margin.
+     if(float.IsNaN(step)||step>.065f||pitch>26||turn>(f.Escaping?74:56))throw new Exception("Unstable fish motion: step="+step+", pitch="+pitch+", turn="+turn);
      maxStep=Mathf.Max(maxStep,step);maxPitch=Mathf.Max(maxPitch,pitch);maxTurn=Mathf.Max(maxTurn,turn);
     }
    }

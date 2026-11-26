@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "unityExitCode": 0,
+  "sharkSeconds": 120,
+  "sharkStalledFrames": 0,
+  "sharkMaxStepMeters": 0.01889908,
+  "squidSeconds": 60,
+  "squidStalledFrames": 0,
+  "schools": 14,
+  "schoolFish": 227,
+  "octopusVertexSamples": 41936180,
+  "octopusEscapeHeadings": 8,
+  "diverCollision": "passed",
+  "headsetPerformance": "not measured"
+}

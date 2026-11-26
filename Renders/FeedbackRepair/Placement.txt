@@ -1,0 +1,4 @@
+Weathered supplied anchor - The Wreck moved=1.63104 contactGap=-0.01 lowerSurfaceSpread=0.0837523
+Weathered supplied anchor - Wreck & Rays moved=2.06156 contactGap=-0.01 lowerSurfaceSpread=0.07021885
+Octopus moved=2.040291 refined support cells=0.08m
+LOD groups=1040 first detail retained to >=12m, final mesh retained to >=90m at 90 degree FOV

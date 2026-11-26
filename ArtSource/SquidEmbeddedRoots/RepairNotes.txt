@@ -1,0 +1,28 @@
+EMBEDDED ROOT CORRECTION - RECORDING 2026-11-26 153911
+
+Inspected the supplied recording; the requested change is deeper tentacle
+attachments on the old squid. Starting from the previously validated connected
+mesh, pulled the proximal surface 0.22m towards the head at its strongest point
+and contracted it radially by up to 20%, easing to unchanged distal geometry.
+Moved all ten first-joint pivots 0.42m deeper and radially inward. Each pivot is
+inside the head ellipsoid (fraction below 0.35); see EmbeddedPivots.json.
+Extended the body-rigid cuff and shifted bending farther out. All distal mesh
+geometry, eyes, fins, materials and existing Swim clip are retained.
+
+Final asset: Assets/UnderwaterArt/BlenderSquid/ReferenceSquid.fbx, same GUID.
+Updated original prefab, main-scene animation bounds, and the existing
+Assets/Scenes/Squid_Old_Repaired_Review.unity review scene.
+7,858 triangles, 30 bones. Exported FBX has zero opaque open edges and ten
+independent shaft contours. Checked 49 animation frames: normalized skin weights,
+identical loop endpoints, maximum edge stretch 1.342. Unity exit 0; prefab and
+main-scene squid animation bounds passed all 49 phases. Close-up captures use
+actual CPU-deformed animation poses, including underside attachments.
+No gameplay navigation, authored placement, colliders or settings changes.
+No Quest hardware test was performed.
+
+Authoring source: ReferenceSquid.blend here.
+Repeat correction: Tools/Blender/inset_old_squid_roots.py, starting from the
+validated ArtSource/SquidOldRootRepair/ReferenceSquid.blend.
+Validation: Tools/Blender/validate_squid_embedded_roots.py and
+Underwater.Editor.SquidEmbeddedRootReview.Run in an isolated Unity copy.
+Evidence: Renders/SquidEmbeddedRoots/RoundTrip.json, UnityValidation.txt and PNGs.

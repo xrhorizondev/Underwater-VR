@@ -1,0 +1,3 @@
+SquidDetail: triangles=59998, bones=34, materials=1, clip=Swim, seconds=3, maximum deformation=0.1048118, loop seam=0, sampled frames=49
+SquidQuest: triangles=7800, bones=34, materials=1, clip=Swim, seconds=3, maximum deformation=0.1047799, loop seam=0, sampled frames=49
+Separate review scene saved. Main underwater scene untouched. No Quest hardware performance test.

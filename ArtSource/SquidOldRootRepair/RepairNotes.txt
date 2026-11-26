@@ -1,0 +1,33 @@
+ORIGINAL SQUID ROOT / TENTACLE REPAIR
+
+Repaired Assets/UnderwaterArt/BlenderSquid/ReferenceSquid.fbx in place, retaining
+its GUID, mesh/rig names, 30-bone hierarchy, Swim clip, materials and both eyes.
+The new Tripo animal is not used for this repair.
+
+Removed the fused shaft surface causing the stretched triangular web. The two
+long feeding tentacles now start between neighbouring arm attachments instead
+of reusing their axes. Removed entire old arm components, including Root-only
+cap rings, so no detached discs or open stubs remain. Rebuilt a continuous head
+and arm surface with stable Root weights around the head and smooth limb blends.
+Applied a continuous texture wrap to avoid atlas interpolation artifacts.
+Mantle, fin skirt, eyes and siphon retain the original geometry/materials.
+
+7,858 triangles, 30 bones, 2 materials, existing two-second Swim loop.
+FBX round trip: 0 opaque open edges; 10 separate shaft contours at two stations;
+49 animation frames, normalized weights, 0 loop seam, max edge stretch 1.342.
+Unity 6000.4.5f1 exit code 0: prefab and main-scene squid checked at 49 phases;
+animated culling bounds contain every sampled vertex. Main scene edits are only
+six squid-renderer bounds values. Existing scene work was preserved.
+No navigation, collider, placement, build-list or project-setting changes.
+
+Check Assets/Scenes/Squid_Old_Repaired_Review.unity, or the existing gameplay squid.
+Renders/SquidOldRootRepair includes actual sampled animation close-ups, whole-body
+views, RoundTrip.json and UnityValidation.txt. Unity validation ran in the isolated
+FeedbackValidation copy before copying back intended assets. No Quest build or
+hardware performance/stereo test was performed.
+
+Editable source: ReferenceSquid.blend in this directory.
+Before_ReferenceSquid.fbx / Before_GiantSquid.prefab preserve the previous assets.
+Regenerate with Tools/Blender/repair_old_squid_roots.py and validate with
+Tools/Blender/validate_old_squid_roots.py; Unity editor entry point is
+Underwater.Editor.SquidOldRootReview.Run (use an isolated copy if editor is open).

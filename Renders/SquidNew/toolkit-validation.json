@@ -1,0 +1,83 @@
+{
+  "status": "passed",
+  "toolkit": "D:\\GIT Project\\Underwater-VR\\.utmp\\BuildToolkit",
+  "checks": [
+    {
+      "name": "AGENTS.md",
+      "exists": true,
+      "path": "D:\\GIT Project\\Underwater-VR\\.utmp\\BuildToolkit\\AGENTS.md"
+    },
+    {
+      "name": "Unity editor script",
+      "exists": true,
+      "path": "D:\\GIT Project\\Underwater-VR\\.utmp\\BuildToolkit\\Scripts\\Unity\\CodexBuildAutomation.cs"
+    },
+    {
+      "name": "install.ps1",
+      "exists": true,
+      "path": "D:\\GIT Project\\Underwater-VR\\.utmp\\BuildToolkit\\Scripts\\PowerShell\\install.ps1"
+    },
+    {
+      "name": "build.ps1",
+      "exists": true,
+      "path": "D:\\GIT Project\\Underwater-VR\\.utmp\\BuildToolkit\\Scripts\\PowerShell\\build.ps1"
+    },
+    {
+      "name": "filter-log.ps1",
+      "exists": true,
+      "path": "D:\\GIT Project\\Underwater-VR\\.utmp\\BuildToolkit\\Scripts\\PowerShell\\filter-log.ps1"
+    },
+    {
+      "name": "validate-artifact.ps1",
+      "exists": true,
+      "path": "D:\\GIT Project\\Underwater-VR\\.utmp\\BuildToolkit\\Scripts\\PowerShell\\validate-artifact.ps1"
+    },
+    {
+      "name": "validate-install.ps1",
+      "exists": true,
+      "path": "D:\\GIT Project\\Underwater-VR\\.utmp\\BuildToolkit\\Scripts\\PowerShell\\validate-install.ps1"
+    },
+    {
+      "name": "profile:android",
+      "valid": true,
+      "path": "D:\\GIT Project\\Underwater-VR\\.utmp\\BuildToolkit\\Profiles\\android.json"
+    },
+    {
+      "name": "profile:desktop",
+      "valid": true,
+      "path": "D:\\GIT Project\\Underwater-VR\\.utmp\\BuildToolkit\\Profiles\\desktop.json"
+    },
+    {
+      "name": "profile:other",
+      "valid": true,
+      "path": "D:\\GIT Project\\Underwater-VR\\.utmp\\BuildToolkit\\Profiles\\other.json"
+    },
+    {
+      "name": "profile:pcvr",
+      "valid": true,
+      "path": "D:\\GIT Project\\Underwater-VR\\.utmp\\BuildToolkit\\Profiles\\pcvr.json"
+    },
+    {
+      "name": "profile:quest",
+      "valid": true,
+      "path": "D:\\GIT Project\\Underwater-VR\\.utmp\\BuildToolkit\\Profiles\\quest.json"
+    },
+    {
+      "name": "Unity editor",
+      "valid": true,
+      "path": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.4.5f1\\Editor\\Unity.exe"
+    },
+    {
+      "name": "project editor script",
+      "exists": true,
+      "path": "D:\\GIT Project\\Underwater-VR\\Assets\\Editor\\CodexBuildAutomation\\CodexBuildAutomation.cs"
+    },
+    {
+      "name": "project profiles",
+      "exists": true,
+      "path": "D:\\GIT Project\\Underwater-VR\\CodexBuild\\Profiles"
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}

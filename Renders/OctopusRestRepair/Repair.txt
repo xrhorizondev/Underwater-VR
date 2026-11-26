@@ -1,0 +1,1 @@
+Preserved original octopus skeleton and animation. Fitted local sand below complete animation footprint. Meshes=1 maximum sand rise=0.3253975m.

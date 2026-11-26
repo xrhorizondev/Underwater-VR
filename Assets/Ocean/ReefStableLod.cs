@@ -6,6 +6,15 @@ public sealed class ReefStableLod:MonoBehaviour {
  public const float Hysteresis=.12f;
  static Camera sharedCamera;static int projectionFrame=-1;static float verticalScale;static Vector3 previousView;static int travelFrame=-1;
  LODGroup group;LOD[] levels;int current=-2;float next;Transform viewer;Camera cameraView;
+ public static void ExtendViewingRange(LODGroup group){
+  var levels=group.GetLODs();var scale=group.transform.lossyScale;
+  float size=group.size*Mathf.Max(Mathf.Abs(scale.x),Mathf.Abs(scale.y),Mathf.Abs(scale.z));
+  for(int i=0;i<levels.Length;i++){
+   float cap=i==levels.Length-1?size/180f:size/(i==0?24f:48f);
+   levels[i].screenRelativeTransitionHeight=Mathf.Min(levels[i].screenRelativeTransitionHeight,cap);
+  }
+  group.SetLODs(levels);
+ }
  void Start(){group=GetComponent<LODGroup>();levels=group.GetLODs();if(!sharedCamera)sharedCamera=Camera.main;cameraView=sharedCamera;if(cameraView)viewer=cameraView.transform;next=Time.unscaledTime+(Mathf.Abs(GetHashCode())%120)*.001f;}
  public int Choose(float height){if(levels==null){group=GetComponent<LODGroup>();levels=group.GetLODs();}int chosen=-1;for(int i=0;i<levels.Length;i++)if(height>=levels[i].screenRelativeTransitionHeight){chosen=i;break;}if(current==-2)return current=chosen;int previousRank=current<0?levels.Length:current,rank=chosen<0?levels.Length:chosen;if(rank>previousRank&&height>=levels[previousRank].screenRelativeTransitionHeight*(1-Hysteresis))return current;if(rank<previousRank&&height<levels[rank].screenRelativeTransitionHeight*(1+Hysteresis))return current;return current=chosen;}
  void Update(){

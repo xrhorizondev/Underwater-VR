@@ -1,0 +1,6 @@
+LIVE SCENE Assets/Scenes/Underwater_Realistic.unity playing=False
+ACTOR Giant squid distant silhouette (16.00, -39.50, 132.00)
+RENDERER ReferenceSquidVisual enabled=True active=True type=SkinnedMeshRenderer mesh=ReferenceSquidVisual path=Assets/UnderwaterArt/BlenderSquid/ReferenceSquid.fbx triangles=7858 materials=SquidBody,SquidFin
+VERTICES 4558 bounds=Center: (0.00, 0.00, 0.00), Extents: (0.01, 0.04, 0.01) id=81624
+BONES 30 root=Root
+SELECTED Approved Blender squid

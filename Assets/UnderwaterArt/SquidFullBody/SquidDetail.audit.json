@@ -1,0 +1,20 @@
+{
+  "source": "D:\\GIT Project\\Underwater-VR\\ArtSource\\SquidFullBody\\SquidDetail.blend",
+  "blender": "5.3.0",
+  "triangles": 59998,
+  "bones": 34,
+  "materials": [
+    "SquidSkin"
+  ],
+  "clips": [
+    "Swim"
+  ],
+  "images": {
+    "Color_fa5f9eb1-7c78-40c7-aafb-7952c52852f3": [
+      1024,
+      1024
+    ]
+  },
+  "issues": [],
+  "status": "passed"
+}

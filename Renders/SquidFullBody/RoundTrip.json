@@ -1,0 +1,20 @@
+[
+  {
+    "asset": "SquidDetail",
+    "samples": 73,
+    "seam": 0.0,
+    "max_deformation": 0.14046336861415637,
+    "max_weight_error": 4.470348358154297e-08,
+    "bones": 34,
+    "status": "passed"
+  },
+  {
+    "asset": "SquidQuest",
+    "samples": 73,
+    "seam": 0.0,
+    "max_deformation": 0.14084642346766277,
+    "max_weight_error": 4.470348358154297e-08,
+    "bones": 34,
+    "status": "passed"
+  }
+]
