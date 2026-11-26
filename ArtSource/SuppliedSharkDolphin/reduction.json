@@ -1,0 +1,24 @@
+[
+  {
+    "kind": "Shark",
+    "before": 421880,
+    "after": 365816,
+    "reductionPercent": 13.289086944154738,
+    "clip": "Shark Rig|Shark Rig|swimming_skeletal.3",
+    "frames": [
+      1.0,
+      577.0
+    ]
+  },
+  {
+    "kind": "Dolphin",
+    "before": 31820,
+    "after": 30652,
+    "reductionPercent": 3.6706473915776194,
+    "clip": "Armature.001|Scene",
+    "frames": [
+      2.0,
+      58.0
+    ]
+  }
+]

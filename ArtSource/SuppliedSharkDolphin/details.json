@@ -1,0 +1,196 @@
+[
+  {
+    "kind": "Shark",
+    "objects": [
+      {
+        "name": "Shark Rig",
+        "type": "ARMATURE",
+        "parent": null,
+        "mods": [],
+        "mats": [],
+        "action": "Shark Rig|Shark Rig|bite_skeletal.3"
+      },
+      {
+        "name": "white-shark_eyes.002",
+        "type": "MESH",
+        "parent": "Shark Rig",
+        "mods": [
+          [
+            "ARMATURE",
+            "Shark Rig"
+          ]
+        ],
+        "mats": [
+          "Material.003"
+        ],
+        "action": null
+      },
+      {
+        "name": "white-shark_eyes.003",
+        "type": "MESH",
+        "parent": "Shark Rig",
+        "mods": [
+          [
+            "ARMATURE",
+            "Shark Rig"
+          ]
+        ],
+        "mats": [
+          "Material.004",
+          "Material.005"
+        ],
+        "action": null
+      },
+      {
+        "name": "white-shark_body",
+        "type": "MESH",
+        "parent": "Shark Rig",
+        "mods": [
+          [
+            "ARMATURE",
+            "Shark Rig"
+          ]
+        ],
+        "mats": [
+          "white-shark.001"
+        ],
+        "action": null
+      },
+      {
+        "name": "white-shark_tooth-bottom.001",
+        "type": "MESH",
+        "parent": "Shark Rig",
+        "mods": [
+          [
+            "ARMATURE",
+            "Shark Rig"
+          ]
+        ],
+        "mats": [
+          "white-shark.001"
+        ],
+        "action": null
+      },
+      {
+        "name": "white-shark_tooth-top.001",
+        "type": "MESH",
+        "parent": "Shark Rig",
+        "mods": [
+          [
+            "ARMATURE",
+            "Shark Rig"
+          ]
+        ],
+        "mats": [
+          "white-shark.001"
+        ],
+        "action": null
+      },
+      {
+        "name": "Low-Poly-white-shark_body",
+        "type": "MESH",
+        "parent": "Shark Rig",
+        "mods": [
+          [
+            "ARMATURE",
+            "Shark Rig"
+          ]
+        ],
+        "mats": [
+          "white-shark.001"
+        ],
+        "action": null
+      }
+    ]
+  },
+  {
+    "kind": "Dolphin",
+    "objects": [
+      {
+        "name": "Armature.001",
+        "type": "ARMATURE",
+        "parent": null,
+        "mods": [],
+        "mats": [],
+        "action": "Armature.001|Scene"
+      },
+      {
+        "name": "Plane.005",
+        "type": "MESH",
+        "parent": "Armature.001",
+        "mods": [
+          [
+            "ARMATURE",
+            "Armature.001"
+          ]
+        ],
+        "mats": [
+          "TT_checker_2048x2048_UV_GRID"
+        ],
+        "action": null
+      },
+      {
+        "name": "untitled1_2.002",
+        "type": "MESH",
+        "parent": "Armature.001",
+        "mods": [
+          [
+            "ARMATURE",
+            "Armature.001"
+          ]
+        ],
+        "mats": [
+          "TT_checker_2048x2048_UV_GRID"
+        ],
+        "action": null
+      },
+      {
+        "name": "untitled1.002",
+        "type": "MESH",
+        "parent": "Armature.001",
+        "mods": [
+          [
+            "ARMATURE",
+            "Armature.001"
+          ]
+        ],
+        "mats": [
+          "TT_checker_2048x2048_UV_GRID"
+        ],
+        "action": null
+      },
+      {
+        "name": "untitled1_1.003",
+        "type": "MESH",
+        "parent": "Armature.001",
+        "mods": [
+          [
+            "ARMATURE",
+            "Armature.001"
+          ]
+        ],
+        "mats": [
+          "TT_checker_2048x2048_UV_GRID",
+          "TT_checker_2048x2048_UV_GRID.001"
+        ],
+        "action": null
+      },
+      {
+        "name": "untitled1_1.001",
+        "type": "MESH",
+        "parent": "Armature.001",
+        "mods": [
+          [
+            "ARMATURE",
+            "Armature.001"
+          ]
+        ],
+        "mats": [
+          "TT_checker_2048x2048_UV_GRID",
+          "TT_checker_2048x2048_UV_GRID.001"
+        ],
+        "action": null
+      }
+    ]
+  }
+]

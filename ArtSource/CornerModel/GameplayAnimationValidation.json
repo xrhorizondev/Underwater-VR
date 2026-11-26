@@ -1,0 +1,11 @@
+{
+  "triangles": 20022,
+  "vertices": 15078,
+  "bones": 9,
+  "max_edge_ratio": 1.2925989764712749,
+  "min_edge_ratio": 0.7412787215895578,
+  "loop_error": 0.0,
+  "phases_checked": 25,
+  "body_tail_wave": "progressive lateral bend with small vertical component",
+  "geometry_unchanged": true
+}
