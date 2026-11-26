@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "completedAtIST": "2026-11-26T16:50:36+05:30",
+  "unity": "6000.4.5f1",
+  "unityExitCode": 0,
+  "profile": "quest",
+  "buildTarget": "Android",
+  "backend": "IL2CPP",
+  "architecture": "arm64-v8a",
+  "scene": "Assets/Scenes/Underwater_Realistic.unity",
+  "package": "com.XRHorizon.UnderwaterExplorationVR",
+  "versionName": "1.0",
+  "versionCode": 1,
+  "minimumSdk": 32,
+  "targetSdk": 36,
+  "apk": "D:\\GIT Project\\Underwater-VR\\Builds\\Quest\\SquidReferenceSwim-20261126\\quest.apk",
+  "bytes": 288470060,
+  "sha256": "326223CDBE6D812426E797585D59EB9B12E0944920DDF9E0586FCD04ADF48BFC",
+  "signatureVerification": "passed - APK Signature Scheme v2",
+  "arm64Libraries": [
+    "libunity.so",
+    "libil2cpp.so",
+    "libUnityOpenXR.so"
+  ],
+  "sourceSquidSha256": "42AB755AF1F29DA8A456EF7B2815EBA79AF768098932819435104D4D7947389C",
+  "sourceSceneSha256": "53F7347487705FDBE405129156DF23159D9B5E8722379EEC5DB360F2150DFA73",
+  "sourceMatchesBuildCopy": true,
+  "animation": "Swim - 4 seconds, 97 validated frames",
+  "squidTriangles": 7950,
+  "headsetTestPerformed": false,
+  "notes": [
+    "Built in the isolated project; source settings and open editor were preserved.",
+    "Toolkit signature-discovery warning resolved by verifying with the bundled Android SDK apksigner jar.",
+    "Direct ZIP audit verified ARM64 Unity, IL2CPP and OpenXR libraries."
+  ],
+  "trackingSheet": {
+    "row": 179,
+    "url": "https://docs.google.com/spreadsheets/d/13K8_A4_KlGAM97r2iX4JiPvMy0MPW0Qlb7FvtaP1rGY/edit",
+    "tab": "Joe Jomy"
+  }
+}

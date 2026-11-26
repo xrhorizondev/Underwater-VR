@@ -1,0 +1,4 @@
+GiantSquid: triangles=7950, bones=30, clip=Swim, samples=97, seam=0, deformation=0.4140639, cullingBounds=passed
+Giant squid distant silhouette: triangles=7950, bones=30, clip=Swim, samples=97, seam=0, deformation=0.4140663, cullingBounds=passed
+GiantSquid: triangles=7950, bones=30, clip=Swim, samples=97, seam=0, deformation=0.4140639, cullingBounds=passed
+Original gameplay squid updated; navigation, colliders, authored placement and materials preserved. Separate old-model repair scene saved.

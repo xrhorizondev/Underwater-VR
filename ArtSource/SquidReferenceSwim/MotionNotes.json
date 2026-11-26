@@ -1,0 +1,12 @@
+{
+  "reference": "https://www.youtube.com/shorts/caNhgitUqy4",
+  "observed": "Undulating lateral fins, mantle contraction, compact arms with small trailing motion",
+  "durationSeconds": 4,
+  "frames": 97,
+  "fps": 24,
+  "finWavesPerLoop": 3,
+  "mantlePulsesPerLoop": 2,
+  "rootMotion": false,
+  "geometryChanged": false,
+  "restRigChanged": false
+}

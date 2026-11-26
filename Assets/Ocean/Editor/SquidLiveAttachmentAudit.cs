@@ -13,7 +13,7 @@ namespace Underwater.Editor {
  public static void Run(){
   Directory.CreateDirectory(Output);var sb=new StringBuilder();sb.AppendLine("LIVE SCENE "+UnityEditor.SceneManagement.EditorSceneManager.GetActiveScene().path+" playing="+EditorApplication.isPlaying);
   var actors=UnityEngine.Object.FindObjectsByType<SquidSwimmer>(FindObjectsSortMode.None);
-  foreach(var a in actors){sb.AppendLine("ACTOR "+a.name+" "+a.transform.position);
+  foreach(var a in actors){sb.AppendLine("ACTOR "+a.name+" "+a.transform.position);var playback=a.GetComponentInChildren<Animation>();if(playback&&playback.clip)sb.AppendLine("CLIP "+playback.clip.name+" seconds="+playback.clip.length);
    foreach(var r in a.GetComponentsInChildren<Renderer>(true)){
     var sk=r as SkinnedMeshRenderer;var mf=r.GetComponent<MeshFilter>();var mesh=sk?sk.sharedMesh:mf?mf.sharedMesh:null;
     sb.AppendLine("RENDERER "+r.name+" enabled="+r.enabled+" active="+r.gameObject.activeInHierarchy+" type="+r.GetType().Name+" mesh="+(mesh?mesh.name:"null")+" path="+(mesh?AssetDatabase.GetAssetPath(mesh):"null")+" triangles="+(mesh?mesh.triangles.Length/3:0)+" materials="+string.Join(",",r.sharedMaterials.Select(m=>m?m.name:"null")));
@@ -34,5 +34,6 @@ namespace Underwater.Editor {
 }
 }
 #endif
+
 
 
