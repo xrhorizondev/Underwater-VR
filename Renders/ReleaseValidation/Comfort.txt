@@ -1,0 +1,4 @@
+Coral groups using native crossfade LOD=440; total authored coral triangles=8675342 (all scene, not simultaneously visible).
+Six headset starting headings face reef +Z; room-scale eye position preserved.
+Hand bypass: min palm clearance=0.6033927 left/right samples=631/431 widest half-width=6.10791 regroup mean spread=0.7871478
+Manta 120s: travel=42.11491 max vertical speed=0.05116939 max turn=16.27452

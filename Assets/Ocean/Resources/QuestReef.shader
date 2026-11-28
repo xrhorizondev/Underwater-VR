@@ -7,6 +7,7 @@ Shader "Underwater/Quest Reef" {
  #pragma multi_compile_instancing
  #pragma multi_compile_local _ REEF_WORLD_MAPPING
  #pragma multi_compile_fog
+ #pragma multi_compile _ LOD_FADE_CROSSFADE
  #include "UnityCG.cginc"
  #include "Lighting.cginc"
  sampler2D _MainTex,_ReefCaustics,_BumpMap;half _BumpScale;half4 _Color;float _ReefTime,_WorldMapping,_WorldScale,_Sway,_TextureSaturation,_ReefLight,_CausticStrength;
@@ -14,8 +15,8 @@ Shader "Underwater/Quest Reef" {
  #if defined(REEF_WORLD_MAPPING)
  float3 worldTex:TEXCOORD4;half3 weights:TEXCOORD5;
  #endif
- UNITY_FOG_COORDS(2) UNITY_VERTEX_OUTPUT_STEREO};
- Output vert(appdata_full v){Output o;UNITY_SETUP_INSTANCE_ID(v);UNITY_INITIALIZE_OUTPUT(Output,o);UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
+ UNITY_FOG_COORDS(2) UNITY_VERTEX_INPUT_INSTANCE_ID UNITY_VERTEX_OUTPUT_STEREO};
+ Output vert(appdata_full v){Output o;UNITY_SETUP_INSTANCE_ID(v);UNITY_INITIALIZE_OUTPUT(Output,o);UNITY_TRANSFER_INSTANCE_ID(v,o);UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
  float3 world=mul(unity_ObjectToWorld,v.vertex).xyz;
  v.vertex.x+=sin(_ReefTime+world.x+world.z*.7)*_Sway*saturate(v.vertex.y);
  o.pos=UnityObjectToClipPos(v.vertex);half3 n=UnityObjectToWorldNormal(v.normal);
@@ -28,7 +29,9 @@ Shader "Underwater/Quest Reef" {
  o.light=half4((max(half3(.08,.12,.16),ShadeSH9(half4(n,1)))+_LightColor0.rgb*saturate(dot(n,_WorldSpaceLightPos0.xyz)))*v.color.rgb,1/(1+distance(world,_WorldSpaceCameraPos)*.06));
  UNITY_TRANSFER_FOG(o,o.pos);return o;}
  fixed4 frag(Output i):SV_Target{
+ UNITY_SETUP_INSTANCE_ID(i);
  UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(i);
+ UNITY_APPLY_DITHER_CROSSFADE(i.pos.xy);
  #if defined(REEF_WORLD_MAPPING)
  half3 tex=tex2D(_MainTex,i.worldTex.yz).rgb*i.weights.x+tex2D(_MainTex,i.worldTex.xz).rgb*i.weights.y+tex2D(_MainTex,i.worldTex.xy).rgb*i.weights.z;
  #else

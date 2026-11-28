@@ -10,7 +10,8 @@ public class FishAgent : MonoBehaviour {
  public bool IsGrabbable=>interaction&&interaction.grabbable;
  ReefSphereBody body; SeaLife interaction;Renderer skin; MaterialPropertyBlock properties;
  readonly ReefRayNavigation escapeNavigation=new ReefRayNavigation();float stalled,escapeTime;
- float currentSpeed, visualSpeed, bank, obstacleTimer; Vector3 avoidance;
+ readonly ReefSwimHeading course=new ReefSwimHeading();
+ float currentSpeed, visualSpeed, bank, obstacleTimer; Vector3 avoidance,escapeVelocity;bool wasEscaping;
  public float VisualSpeed=>visualSpeed;
  public bool Escaping=>escapeTime>0;
  public void Initialize(int index) {
@@ -21,8 +22,8 @@ public class FishAgent : MonoBehaviour {
   skin=GetComponentInChildren<Renderer>();properties=new MaterialPropertyBlock();
   UpdateSkin(0);
  }
- public void Step(float dt,float time,Vector3 steering) {
-  if(dt<=0)return;if(interaction&&interaction.IsHeld){Velocity=Vector3.zero;visualSpeed=Mathf.Lerp(visualSpeed,0,1-Mathf.Exp(-dt*8));TailPhase+=dt*4;UpdateSkin(0);return;}
+ public void Step(float dt,float time,Vector3 steering,float speedScale=1) {
+  if(dt<=0)return;if(interaction&&interaction.IsHeld){course.Reset();Velocity=Vector3.zero;visualSpeed=Mathf.Lerp(visualSpeed,0,1-Mathf.Exp(-dt*8));TailPhase+=dt*4;UpdateSkin(0);return;}
   obstacleTimer-=dt;
   if(obstacleTimer<=0){
    obstacleTimer=.16f+(variation%1)*.06f;avoidance=Vector3.zero;
@@ -36,13 +37,15 @@ public class FishAgent : MonoBehaviour {
   if(desired.sqrMagnitude<.001f)desired=transform.forward;
   if(stalled>.4f)escapeTime=3;escapeTime-=dt;if(escapeTime>0)desired=escapeNavigation.Direction(transform,body,desired.normalized,currentSpeed,dt,true);
   desired.Normalize();if(escapeTime<=0)desired.y=Mathf.Clamp(desired.y,-.18f,.18f);desired.Normalize();
-  float turnLimit=escapeTime>0?70:45,pitchLimit=escapeTime>0?25:10;Vector3 flat=Vector3.ProjectOnPlane(transform.forward,Vector3.up).normalized;Vector3 targetFlat=Vector3.ProjectOnPlane(desired,Vector3.up).normalized;float yawStep=Mathf.Clamp(Vector3.SignedAngle(flat,targetFlat,Vector3.up),-turnLimit*dt,turnLimit*dt);flat=Quaternion.AngleAxis(yawStep,Vector3.up)*flat;float pitch=Mathf.MoveTowards(Mathf.Asin(Mathf.Clamp(transform.forward.y,-1,1)),Mathf.Clamp(Mathf.Asin(desired.y),-Mathf.Deg2Rad*pitchLimit,Mathf.Deg2Rad*pitchLimit),Mathf.Deg2Rad*(escapeTime>0?18:12)*dt);Vector3 forward=flat*Mathf.Cos(pitch)+Vector3.up*Mathf.Sin(pitch);
+  Vector3 forward=course.Step(transform.forward,desired,dt,escapeTime>0?60:26,escapeTime>0?22:10,escapeTime>0?12:7,escapeTime>0?60:28);
   float turn=Vector3.SignedAngle(transform.forward,forward,Vector3.up)/Mathf.Max(dt,.001f);
   bank=Mathf.Lerp(bank,Mathf.Clamp(-turn*.13f,-8,8),1-Mathf.Exp(-dt*3));
-  transform.rotation=Quaternion.LookRotation(forward,Vector3.up)*Quaternion.AngleAxis(bank,Vector3.forward);
-  float turnEase=Mathf.Lerp(.7f,1,Mathf.Clamp01(Vector3.Dot(forward,desired)));float targetSpeed=cruiseSpeed*(.9f+.12f*Mathf.Sin(time*.55f+variation))*turnEase;
+  ReefSwimHeading.TryRotate(transform,body,Quaternion.LookRotation(forward,Vector3.up)*Quaternion.AngleAxis(bank,Vector3.forward));forward=transform.forward;
+  float turnEase=Mathf.Lerp(.7f,1,Mathf.Clamp01(Vector3.Dot(forward,desired)));float targetSpeed=cruiseSpeed*(.9f+.12f*Mathf.Sin(time*.55f+variation))*turnEase*Mathf.Clamp01(speedScale);
   currentSpeed=Mathf.MoveTowards(currentSpeed,targetSpeed,cruiseSpeed*.55f*dt);
-  float escapeEase=escapeTime>0?Mathf.Lerp(.18f,1,Mathf.Clamp01(Vector3.Dot(forward,desired))):1;SteeringDirection=desired;Velocity=body?body.MoveSliding((escapeTime>0?desired:forward)*currentSpeed*escapeEase*dt)/Mathf.Max(dt,.0001f):Vector3.zero;
+  float escapeEase=escapeTime>0?Mathf.Lerp(.18f,1,Mathf.Clamp01(Vector3.Dot(forward,desired))):1;var motion=forward*currentSpeed;
+  if(escapeTime>0){if(!wasEscaping)escapeVelocity=Velocity;escapeVelocity=Vector3.MoveTowards(escapeVelocity,desired*currentSpeed*escapeEase,.45f*dt);motion=escapeVelocity;}wasEscaping=escapeTime>0;
+  SteeringDirection=desired;Velocity=body?body.MoveSliding(motion*dt)/Mathf.Max(dt,.0001f):Vector3.zero;
   stalled=Velocity.magnitude<currentSpeed*.08f?stalled+dt:0;escapeNavigation.RecordMovement(Velocity.magnitude*dt,currentSpeed*dt,dt);
   // Independent, speed-coupled tail beats: no synchronized whole-body wobble.
   visualSpeed=Mathf.Lerp(visualSpeed,Velocity.magnitude,1-Mathf.Exp(-dt*6));TailPhase+=dt*Mathf.PI*2*Mathf.Lerp(.22f,3.6f,Mathf.Clamp01(visualSpeed/Mathf.Max(bodyLength*3,.1f)));

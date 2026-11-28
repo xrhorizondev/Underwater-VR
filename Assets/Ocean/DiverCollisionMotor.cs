@@ -21,6 +21,12 @@ public class DiverCollisionMotor:MonoBehaviour {
  }
  void ConstrainWater(){float excess=head.position.y-maximumHeadHeight;if(excess<=0)return;controller.enabled=false;transform.position-=Vector3.up*excess;controller.enabled=true;}
  public Vector3 Move(Vector3 delta){if(!controller)Initialize();Physics.SyncTransforms();delta.y=Mathf.Min(delta.y,Mathf.Max(0,maximumHeadHeight-head.position.y));Vector3 start=transform.position;controller.Move(delta);ConstrainWater();return transform.position-start;}
+ public bool FaceHeading(Vector3 forward){
+  if(!controller)Initialize();var current=Vector3.ProjectOnPlane(head.forward,Vector3.up);var desired=Vector3.ProjectOnPlane(forward,Vector3.up);
+  if(current.sqrMagnitude<.01f||desired.sqrMagnitude<.01f)return false;
+  var rotation=Quaternion.AngleAxis(Vector3.SignedAngle(current,desired,Vector3.up),Vector3.up)*transform.rotation;
+  var eye=head.position;controller.enabled=false;transform.SetPositionAndRotation(eye-rotation*head.localPosition,rotation);Fit();controller.enabled=true;previousLocal=head.localPosition;Physics.SyncTransforms();return true;
+ }
  public bool TryTeleport(Vector3 feet){
   if(!controller)Initialize();Physics.SyncTransforms();Fit();
   Vector3 offset=transform.TransformVector(new Vector3(head.localPosition.x,0,head.localPosition.z));

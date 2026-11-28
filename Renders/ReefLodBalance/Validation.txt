@@ -1,0 +1,3 @@
+Coral shaders: Underwater/Reef Surface
+Coral groups=440; near detail retained at least 6m from bounds; native spatial dither crossfades only near transitions, no per-frame forced coral selection.
+64 habitat views conservative triangle estimate (includes both meshes while fading): full-detail sum=116769938 balanced sum=18429484 reduction=84.2% peak full=7122095 peak balanced=1162452

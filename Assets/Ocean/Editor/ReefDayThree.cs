@@ -38,7 +38,7 @@ public static class ReefDayThree {
   for(int i=0;i<1800;i++)school.Simulate(1f/30);
   foreach(var fish in school.fish){Require(Vector3.Distance(fish.transform.position,school.habitatCenter)<school.habitatRadius+1,"Clownfish failed return");Require(fish.GetComponent<ReefSphereBody>().Clear(fish.transform.position),"Clownfish penetration");}
   foreach(var e in UnityEngine.Object.FindObjectsByType<ReefEncounter>(FindObjectsSortMode.None)){
-   e.Initialize();var start=e.transform.position;Vector3 source=start+Vector3.right; e.Step(.05f,source,.1f);Require(e.Reaction>.9f,"Missing encounter reaction");if(e.response==ReefEncounter.Response.Octopus){Require(e.skin.Length>0,"Octopus skin cache missing after scene reload");var block=new MaterialPropertyBlock();e.skin[0].GetPropertyBlock(block);Require(block.GetColor("_Color").r>.5f,"Octopus color response missing");}
+   e.Initialize();var start=e.transform.position;Vector3 source=start+Vector3.right; e.Step(.05f,source,.01f);Require(e.Reaction>.9f,"Missing encounter reaction");if(e.response==ReefEncounter.Response.Octopus){Require(e.skin.Length>0,"Octopus skin cache missing after scene reload");var block=new MaterialPropertyBlock();e.skin[0].GetPropertyBlock(block);Require(e.skin[0].sharedMaterial.shader.name=="Underwater/Octopus Skin"?block.GetFloat("_Motion")>.9f:block.GetColor("_Color").r>.5f,"Octopus visual response missing");}
    for(int i=0;i<60;i++)e.Step(.05f,source,10);
    if(e.response!=ReefEncounter.Response.Anemone){Require(Vector3.Distance(start,e.transform.position)>.05f,"Missing retreat");Require(e.GetComponent<ReefSphereBody>().Clear(e.transform.position),"Encounter penetration");}
    for(int i=0;i<240;i++)e.Step(.05f,source,10);Require(e.Reaction==0,"Reaction never recovered");

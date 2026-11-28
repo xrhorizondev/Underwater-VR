@@ -32,6 +32,12 @@ public static class ReefDayOne {
   box.size=size;box.isTrigger=false;
  }
  static Vector3 Landing(TeleportShell shell){var point=shell.transform.position;point.y=shell.GetComponent<Collider>().bounds.max.y+.15f;return point;}
+ public static void RepairShells(){
+  var scene=EditorSceneManager.OpenScene(ScenePath);
+  RepairShellClearance(UnityEngine.Object.FindFirstObjectByType<DiverCollisionMotor>());
+  EditorSceneManager.MarkSceneDirty(scene);EditorSceneManager.SaveScene(scene);
+  Validate();
+ }
  static void RepairShellClearance(DiverCollisionMotor motor){
   motor.Initialize();Vector3 saved=motor.transform.position;int repaired=0;Physics.SyncTransforms();
   foreach(var shell in UnityEngine.Object.FindObjectsByType<TeleportShell>(FindObjectsSortMode.None)){

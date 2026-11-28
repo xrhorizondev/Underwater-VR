@@ -49,7 +49,7 @@ public static class DiverRevision {
   var shark=UnityEngine.Object.FindFirstObjectByType<OpenWaterShark>();if(Mathf.Abs(shark.transform.position.z-OceanWorld.Centers[6].z)>10||shark.transform.position.x<15)throw new Exception("Shark outside reference habitat");
   float maxTurn=0,maxAcceleration=0,lastSpeed=0,travel=0;
   for(int i=0;i<5400;i++){var p=shark.transform.position;var forward=shark.transform.forward;shark.Step(1f/30,OceanWorld.Centers[6],Vector3.zero,true);float step=Vector3.Distance(p,shark.transform.position);travel+=step;maxTurn=Mathf.Max(maxTurn,Vector3.Angle(forward,shark.transform.forward)*30);if(i>0)maxAcceleration=Mathf.Max(maxAcceleration,Mathf.Abs(step*30-lastSpeed)*30);lastSpeed=step*30;if(step>1.21f/30||!shark.GetComponent<ReefSphereBody>().Clear(shark.transform.position))throw new Exception("Shark jumped or intersected reef");}
-  if(travel<70||maxTurn>18.2f)throw new Exception("Shark patrol stalled or snapped");
+  if(travel<70||maxTurn>18.2f)throw new Exception("Shark patrol stalled or snapped: travel="+travel+" maxTurn="+maxTurn+" position="+shark.transform.position);
   Debug.Log("SHARK_SMOOTH_PATROL_VALIDATED seconds=180 travel="+travel+" maxYaw="+maxTurn+" maxAcceleration="+maxAcceleration);
   ValidateHands();QuestReefBuild.GrabCheck();ReefDaySix.Validate();PreparedMarineIntegration.Validate();
   Debug.Log("DIVER_REVISION_VALIDATED singleRecurringSquid=true twoHandScoop=true sharkHabitat=7 fullRegressions=true");

@@ -1,0 +1,2 @@
+Pass 1 squid seconds=360 travel=103.8898 maxStep=0.01500075 fullBodyClear=true visibleAt160mActive=true animatedBones=true
+Pass 2 squid seconds=360 travel=103.8642 maxStep=0.006250945 fullBodyClear=true visibleAt160mActive=true animatedBones=true

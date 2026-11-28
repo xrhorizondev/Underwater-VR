@@ -1,0 +1,1 @@
+Injected rock produced PATROL_HIT warning, red marker and image. Expected test hit count=1

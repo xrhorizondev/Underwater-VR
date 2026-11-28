@@ -20,11 +20,12 @@ public static class HandContactRevision {
    glove.transform.localRotation=Quaternion.Euler(-90,0,0);
    if(Vector3.Dot(glove.FingertipPosition-glove.Wrist.position,Vector3.forward)<.02f)throw new Exception("Open hand does not extend forward from upright controller grip");
    if(Vector3.Dot(glove.GripAnchor.up,left?Vector3.right:Vector3.left)<.99f)throw new Exception("Mirrored palm basis incorrect");
-   foreach(var source in candidates.GroupBy(f=>f.kind).Select(g=>g.First()))foreach(var side in new[]{Vector3.left,Vector3.right,Vector3.down,Vector3.up}){
+   foreach(var source in candidates.GroupBy(f=>f.kind).Select(g=>g.First()))foreach(var side in new[]{Vector3.left,Vector3.right,Vector3.down,Vector3.up})foreach(float along in new[]{-.35f,0,.35f}){
     var fish=UnityEngine.Object.Instantiate(source.gameObject,rig.transform.position,Quaternion.Euler(7,35,0));var clearance=fish.GetComponent<ReefAnimalClearance>();if(clearance)UnityEngine.Object.DestroyImmediate(clearance);var touch=fish.GetComponent<FishTouchBody>();touch.touchCollider.enabled=true;Physics.SyncTransforms();
-    var hand=new GameObject("Body contact hand").transform;var bounds=touch.bodyBounds;var local=bounds.center+Vector3.Scale(side,bounds.extents+Vector3.one*.08f);hand.position=fish.transform.TransformPoint(local);hand.position=touch.GrabSurface(hand.position);hand.rotation=Quaternion.Euler(20,-15,32);
+    var hand=new GameObject("Body contact hand").transform;var bounds=touch.bodyBounds;var local=bounds.center+Vector3.Scale(side,bounds.extents+Vector3.one*.08f)+Vector3.forward*bounds.extents.z*along;hand.position=fish.transform.TransformPoint(local);hand.position=touch.GrabSurface(hand.position);hand.rotation=Quaternion.Euler(20,-15,32);
     try{
      var before=fish.transform.position;var initial=fish.transform.rotation;var life=fish.GetComponent<SeaLife>();life.Grab(hand);
+     if(Vector3.Distance(life.HeldContactPosition,touch.PalmSupport(hand.up))>.0001f)throw new Exception("Catch did not preserve the original palm support");
      if(!life.IsHeld||Vector3.Distance(before,fish.transform.position)>.00001f||Quaternion.Angle(initial,fish.transform.rotation)>.001f)throw new Exception("Catch snapped the fish");
      for(int i=0;i<20;i++)life.StepHeld(1f/72,Time.time+i/72f);
      if(Quaternion.Angle(initial,fish.transform.rotation)>1.5f||Vector3.Distance(life.HeldContactPosition,hand.position)>.012f)throw new Exception("Side/belly catch changed fish pose or lost surface contact");

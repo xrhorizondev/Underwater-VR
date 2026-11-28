@@ -45,10 +45,10 @@ public sealed class ReefFishFollower:MonoBehaviour {
   var look=Vector3.Lerp(swimming,(anchor-transform.position).normalized,faceViewer);
   if(look.sqrMagnitude>.0001f){
    float error=Vector3.SignedAngle(Vector3.ProjectOnPlane(heading,Vector3.up),Vector3.ProjectOnPlane(look,Vector3.up),Vector3.up);
-   yawRate=Mathf.MoveTowards(yawRate,Mathf.Clamp(error*1.8f,-38,38),65*dt);
+   yawRate=Mathf.MoveTowards(yawRate,Mathf.Clamp(error*1.2f,-32,32),45*dt);
    var flat=Quaternion.AngleAxis(yawRate*dt,Vector3.up)*Vector3.ProjectOnPlane(heading,Vector3.up).normalized;
    float pitch=Mathf.Asin(Mathf.Clamp(heading.y,-1,1))*Mathf.Rad2Deg;float targetPitch=Mathf.Asin(Mathf.Clamp(look.normalized.y,-.3f,.3f))*Mathf.Rad2Deg;
-   pitch=Mathf.SmoothDampAngle(pitch,targetPitch,ref pitchRate,.7f,20,dt);heading=(flat*Mathf.Cos(pitch*Mathf.Deg2Rad)+Vector3.up*Mathf.Sin(pitch*Mathf.Deg2Rad)).normalized;
+   pitch=Mathf.SmoothDampAngle(pitch,targetPitch,ref pitchRate,.7f,12,dt);heading=(flat*Mathf.Cos(pitch*Mathf.Deg2Rad)+Vector3.up*Mathf.Sin(pitch*Mathf.Deg2Rad)).normalized;
   }
   transform.rotation=Quaternion.LookRotation(heading,Vector3.up);
   // Cruise nose-first; near the diver, allow a small amount of fin-driven station keeping.

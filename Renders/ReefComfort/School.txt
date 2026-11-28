@@ -1,0 +1,3 @@
+Coral groups retaining authored visible detail=440; total authored coral triangles=8675342 (all scene, not simultaneously visible). Camera frustum/far plane still cull geometry.
+Six headset starting headings face reef +Z; room-scale eye position preserved.
+Hand bypass: min palm clearance=0.7791113 left/right samples=464/448 widest half-width=5.511841 regroup mean spread=1.031191

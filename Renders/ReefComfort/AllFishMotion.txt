@@ -1,0 +1,51 @@
+Schooling fish=227 schools=14 seconds=60 maxTurn=61.13353 maxStep=0.02471691 longestStationary=1 penetrations=0 backwards=0 minTravel=3.319879
+Turtle | Loggerhead sea turtle seconds=60 travel=11.43059 maxTurn=10.01894 longestStationary=0
+  playback rest=0.1296005 swim=0.7201726
+Anglerfish | Anglerfish seconds=60 travel=9.631545 maxTurn=20.01159 longestStationary=0
+Lionfish | Lionfish seconds=60 travel=11.73977 maxTurn=30.4819 longestStationary=0
+Anglerfish | Anglerfish seconds=60 travel=10.03616 maxTurn=11.78007 longestStationary=0
+Dolphin | Wreck dolphin 2 seconds=60 travel=61.65634 maxTurn=24.45521 longestStationary=0
+  playback rest=0.2500006 swim=0.9999688
+  playback rest=0.1200012 swim=0.9999512
+Turtle | Loggerhead sea turtle seconds=60 travel=11.43049 maxTurn=10.01894 longestStationary=0
+  playback rest=0.1296005 swim=0.7200268
+Grouper | Calm finale grouper seconds=60 travel=9.444734 maxTurn=14.40316 longestStationary=0
+Anglerfish | Anglerfish seconds=60 travel=9.786868 maxTurn=20.77158 longestStationary=0
+Anglerfish | Anglerfish seconds=60 travel=9.568919 maxTurn=20.77158 longestStationary=0
+Grouper | Calm wreck grouper seconds=60 travel=14.68471 maxTurn=16.01276 longestStationary=0
+Anglerfish | Anglerfish seconds=60 travel=9.395175 maxTurn=20.77158 longestStationary=0
+Anglerfish | Anglerfish seconds=60 travel=10.04937 maxTurn=12.00222 longestStationary=0
+Manta | Manta ray gliding over the reef seconds=60 travel=25.19991 maxTurn=16.00176 longestStationary=0
+  playback rest=0.1296005 swim=0.7199891
+Stingray | Resting stingray seconds=60 travel=17.7938 maxTurn=22.48947 longestStationary=0.866667
+Moray | Moray in wreck stern opening seconds=60 travel=1.332113 maxTurn=0 longestStationary=42.96635
+Stingray | Resting stingray seconds=60 travel=19.20099 maxTurn=22.45813 longestStationary=0
+Anglerfish | Anglerfish seconds=60 travel=9.482969 maxTurn=20.1519 longestStationary=0
+Reef shark | Distant reef shark seconds=60 travel=61.97676 maxTurn=20.01159 longestStationary=0
+  playback rest=0.2500006 swim=1.000091
+  playback rest=0.1820003 swim=0.5200488
+Lumen | Lumen seconds=60 travel=22.70642 maxTurn=42.62366 longestStationary=3.766665
+Anglerfish | Anglerfish seconds=60 travel=10.02944 maxTurn=11.70509 longestStationary=0
+Anglerfish | Anglerfish seconds=60 travel=10.05236 maxTurn=12.10449 longestStationary=0
+Anglerfish | Anglerfish seconds=60 travel=10.01291 maxTurn=12.04615 longestStationary=0
+Anglerfish | Anglerfish seconds=60 travel=9.91847 maxTurn=20.20427 longestStationary=0
+Dolphin | Wreck dolphin 1 seconds=60 travel=59.58301 maxTurn=17.56519 longestStationary=0
+  playback rest=0.2500006 swim=0.9999753
+  playback rest=0.1200011 swim=0.999986
+Stingray | Resting stingray seconds=60 travel=19.20056 maxTurn=22.04659 longestStationary=0
+Dolphin | Wreck dolphin 3 seconds=60 travel=62.06026 maxTurn=16.50024 longestStationary=0
+  playback rest=0.2500006 swim=0.9999604
+  playback rest=0.1200011 swim=0.9999887
+Anglerfish | Anglerfish seconds=60 travel=10.028 maxTurn=12.24911 longestStationary=0
+Clip=Scene duration=2.24 loopPosition=0 loopDegrees=0
+Clip=Scene duration=2.24 loopPosition=0 loopDegrees=0
+Clip=Scene duration=24 loopPosition=0 loopDegrees=0
+Clip=Scene duration=3.5 loopPosition=0 loopDegrees=0
+Clip=Dolphin_Coordinated_Swim duration=2 loopPosition=0 loopDegrees=0
+Clip=Scene duration=2.24 loopPosition=0 loopDegrees=0
+Clip=Dolphin_Coordinated_Swim duration=2 loopPosition=0 loopDegrees=0
+Clip=Dolphin_Coordinated_Swim duration=2 loopPosition=0 loopDegrees=0
+Clip=Shark relaxed progressive swim duration=2.1 loopPosition=0 loopDegrees=0
+Clip=Swim duration=4 loopPosition=0 loopDegrees=0
+Clip=Scene duration=3.5 loopPosition=0 loopDegrees=0
+Clip=Manta swim with fixed curled face fins duration=24 loopPosition=0 loopDegrees=0

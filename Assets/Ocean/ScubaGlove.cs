@@ -15,16 +15,18 @@ namespace Underwater {
         public static ScubaGlove Create(Transform rig, bool left) {
             var glove = new GameObject(left ? "Left glove" : "Right glove").AddComponent<ScubaGlove>();
             glove.transform.SetParent(rig,false);
-            var visual = new GameObject("Neoprene hand").transform;
+            var visual = new GameObject("Swimmer hand").transform;
             glove.controllerFit=new GameObject("Controller hand fit").transform;
             glove.controllerFit.SetParent(glove.transform,false);
             visual.SetParent(glove.controllerFit,false);
             visual.localRotation=Quaternion.Euler(0,0,left ? 90 : -90);
             // Center the authored palm midpoint on the tracked controller grip.
             visual.localScale=Vector3.one*1.06f;
-            visual.localPosition=visual.localRotation*new Vector3(0,0,.015f*1.06f);
             glove.SetControllerFit(Vector3.zero,Vector3.zero,left);
             glove.Load(visual,left);
+            // Scale about the palm, rather than the mesh origin. The mesh
+            // bounds include the asymmetric thumb, so cancel its lateral bias.
+            visual.localPosition=-(visual.localRotation*Vector3.Scale(new Vector3(glove.palmCenter.x,0,-.015f),visual.localScale));
             return glove;
         }
 
@@ -65,6 +67,13 @@ namespace Underwater {
             for(int i=0;i<indices.Length;i++) indices[i]=reader.ReadInt32();
             restVertices=vertices;triggerDelta=trigger;gripDelta=grip;fittedVertices=new Vector3[count];
             var labels=Resources.Load<TextAsset>(left?"GloveLeftContact":"GloveRightContact").bytes;
+            // Contact labels describe the original bare hand. The prepared
+            // resource appends a separate neoprene sleeve after these vertices.
+            // Keep the authored hand and its poses, without rendering the cuff.
+            int handVertexCount=System.BitConverter.ToInt32(labels,0);
+            var handIndices=new System.Collections.Generic.List<int>(indices.Length);
+            for(int i=0;i<indices.Length;i+=3)if(indices[i]<handVertexCount&&indices[i+1]<handVertexCount&&indices[i+2]<handVertexCount){handIndices.Add(indices[i]);handIndices.Add(indices[i+1]);handIndices.Add(indices[i+2]);}
+            indices=handIndices.ToArray();
             var groups=new System.Collections.Generic.List<int>[5];for(int i=0;i<5;i++)groups[i]=new System.Collections.Generic.List<int>();
             for(int i=0;i<System.BitConverter.ToInt32(labels,0);i++)if(labels[i+4]>0)groups[labels[i+4]-1].Add(i);
             fingerVertices=new int[5][];for(int i=0;i<5;i++)fingerVertices[i]=groups[i].ToArray();
@@ -85,6 +94,7 @@ namespace Underwater {
             skin.sharedMesh=mesh;skin.localBounds=new Bounds(Vector3.zero,Vector3.one*.45f);
             material=new Material(Resources.Load<Shader>("NeopreneGlove"));
             skin.sharedMaterial=material;skin.shadowCastingMode=ShadowCastingMode.Off;
+            skin.allowOcclusionWhenDynamic=false;skin.updateWhenOffscreen=true;
         }
 
         public void Animate(float trigger,float grip,float dt,SeaLife heldFish=null) {
@@ -115,11 +125,8 @@ namespace Underwater {
             if(touch&&fish!=ownFish){float reach=Vector3.Scale(touch.GripRadii,touch.transform.lossyScale).magnitude+.3f;if((GripAnchor.position-touch.transform.TransformPoint(touch.GripCenter)).sqrMagnitude>reach*reach)touch=null;}
             if(!touch){if(fittedMesh){mesh.vertices=restVertices;mesh.RecalculateNormals();mesh.RecalculateBounds();skin.localBounds=new Bounds(Vector3.zero,Vector3.one*.45f);fittedMesh=false;}skin.SetBlendShapeWeight(0,triggerPose*100);skin.SetBlendShapeWeight(1,gripPose*100);skin.SetBlendShapeWeight(2,holdPose*100);return;}
             bool holding=fish==ownFish;
-            // The free hand stops visually at the held fish; its tracked root
-            // and the diver's locomotion/collision rig remain untouched.
-            if(!holding&&touch.InsideGrip(GripAnchor.position,.025f)){
-                var safe=touch.ProjectGripSurface(GripAnchor.position,.03f);controllerFit.position+=safe-GripAnchor.position;
-            }
+            // Never translate the visible wrist away from the tracked grip.
+            // Surface fitting below handles contact without changing hand fit.
             var toFish=touch.transform.worldToLocalMatrix*palmSpace.localToWorldMatrix;var toHand=toFish.inverse;
             var center=touch.GripCenter;var scale=touch.transform.lossyScale;var r=touch.GripRadii+new Vector3(.003f/Mathf.Abs(scale.x),.003f/Mathf.Abs(scale.y),.003f/Mathf.Abs(scale.z));
             System.Array.Copy(restVertices,fittedVertices,restVertices.Length);

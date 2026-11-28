@@ -1,0 +1,3 @@
+Swimmer hand shader rendered from both sides. Both hand meshes contain open, trigger, grip and hold poses within their visibility bounds; dynamic occlusion disabled; offscreen skin updates enabled.
+Background rock islands=106; protected animal, shell, reef arch and rig poses=357 unchanged.
+Collision, grab latch and eight habitat destinations validated. Physical Quest visibility and performance require a headset check.

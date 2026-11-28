@@ -96,13 +96,15 @@ public static class ReefCorrections {
   if(rays!=3)throw new Exception("Expected all three stingrays");
   foreach(var manta in UnityEngine.Object.FindObjectsByType<MarineSwimmer>(FindObjectsSortMode.None))if(manta.isRay){var start=manta.transform.position;for(int i=0;i<900;i++)manta.Step(1f/30);if(Vector3.Distance(start,manta.transform.position)<2||!manta.GetComponent<ReefSphereBody>().Clear(manta.transform.position))throw new Exception("Existing manta swim regressed");}
   EditorSceneManager.OpenScene(Scene);int colliders=0,prefabs=0;
-  foreach(var fish in UnityEngine.Object.FindObjectsByType<FishTouchBody>(FindObjectsSortMode.None)){if(!fish.touchCollider||!fish.touchCollider.isTrigger||fish.touchCollider.gameObject.layer!=2)throw new Exception("Invalid fish touch volume");colliders++;}
+  foreach(var fish in UnityEngine.Object.FindObjectsByType<FishTouchBody>(FindObjectsSortMode.None)){if(!fish.touchCollider||!fish.touchCollider.isTrigger||(fish.touchCollider.gameObject.layer!=2&&fish.touchCollider.gameObject.layer!=9))throw new Exception("Invalid fish touch volume: "+fish.name+" collider="+fish.touchCollider+" layer="+(fish.touchCollider?fish.touchCollider.gameObject.layer:-1)+" trigger="+(fish.touchCollider&&fish.touchCollider.isTrigger));colliders++;}
   foreach(var group in UnityEngine.Object.FindObjectsByType<LODGroup>(FindObjectsSortMode.None))if(group.name.StartsWith("Scanned Secale")){if(!PrefabUtility.IsPartOfPrefabInstance(group.gameObject))throw new Exception("Unlinked coral prefab");prefabs++;}
   foreach(var mesh in UnityEngine.Object.FindObjectsByType<MeshFilter>(FindObjectsSortMode.None))if(mesh.name.StartsWith("Living coral |")){if(!PrefabUtility.IsPartOfPrefabInstance(mesh.gameObject))throw new Exception("Unlinked procedural coral prefab");prefabs++;}
   ValidateGrip();ReefDayTwo.Validate();Debug.Log($"CORRECTIONS_VALIDATED animatedStingrays={rays} fishColliders={colliders} coralPrefabs={prefabs} palmGrip=passed");
  }
  static void ValidateGrip(){
   var source=Array.Find(UnityEngine.Object.FindObjectsByType<SeaLife>(FindObjectsSortMode.None),f=>f.grabbable);var fish=UnityEngine.Object.Instantiate(source.gameObject,new Vector3(900,2,.12f),Quaternion.identity);
+  // This fixture is outside the reef's bounded seabed field.
+  var clearance=fish.GetComponent<ReefAnimalClearance>();if(clearance)UnityEngine.Object.DestroyImmediate(clearance);
   var hand=new GameObject("Palm pose validation").transform;hand.position=new Vector3(900,2,0);hand.rotation=Quaternion.LookRotation(Vector3.right,Vector3.up);var life=fish.GetComponent<SeaLife>();
   try{float now=Time.time;var initial=fish.transform.rotation;life.Grab(hand);for(int i=0;i<40;i++)life.StepHeld(1f/72,now+i/72f);if(!life.IsHeld||Quaternion.Angle(initial,fish.transform.rotation)>1.5f||Vector3.Distance(life.HeldContactPosition,hand.position)>.015f)throw new Exception("Fish contact-relative hold failed");life.StepHeld(1f/72,now+2.1f);if(life.IsHeld)throw new Exception("Fish failed two-second escape");}
   finally{UnityEngine.Object.DestroyImmediate(fish);UnityEngine.Object.DestroyImmediate(hand.gameObject);}

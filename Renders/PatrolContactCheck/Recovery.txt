@@ -1,0 +1,5 @@
+Wreck dolphin 3: blocked 2s safely; animation continued; obstruction removed; resumed 5s travel=4.74967 without jumps.
+Wreck dolphin 2: blocked 2s safely; animation continued; obstruction removed; resumed 5s travel=4.750497 without jumps.
+Wreck dolphin 1: blocked 2s safely; animation continued; obstruction removed; resumed 5s travel=4.749847 without jumps.
+Distant reef shark: blocked 2s safely; animation continued; obstruction removed; resumed 5s travel=5.25037 without jumps.
+Manta ray gliding over the reef: blocked 2s safely; animation continued; obstruction removed; resumed 5s travel=2.100114 without jumps.

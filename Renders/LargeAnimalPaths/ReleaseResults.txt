@@ -1,0 +1,10 @@
+PASS Hand contact
+PASS Catch follow
+PASS Grab latch
+PASS Travel clearance
+PASS Collision and performance cadence
+PASS All animal movement
+PASS Diver and shark
+PASS Warning surfaces
+PASS Facing, hand bypass and manta
+PASS LOD and shaders

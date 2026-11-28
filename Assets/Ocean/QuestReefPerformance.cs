@@ -3,10 +3,26 @@ using UnityEngine.Rendering;
 namespace Underwater {
 // Installed in Android build scenes only. Colliders always remain active.
 public class QuestReefPerformance:MonoBehaviour {
- public const float EyeResolution=1f;
+ public const float EyeResolution=.85f;
  public const int Samples=4;
  Camera view;
+ System.Collections.IEnumerator Start(){
+#if UNITY_ANDROID && !UNITY_EDITOR
+  for(int attempt=0;attempt<20;attempt++){
+   if(UnityEngine.XR.OpenXR.OpenXRRuntime.IsExtensionEnabled("XR_EXT_performance_settings")){
+    bool cpu=UnityEngine.XR.OpenXR.Features.Extensions.PerformanceSettings.XrPerformanceSettingsFeature.SetPerformanceLevelHint(UnityEngine.XR.OpenXR.Features.Extensions.PerformanceSettings.PerformanceDomain.Cpu,UnityEngine.XR.OpenXR.Features.Extensions.PerformanceSettings.PerformanceLevelHint.SustainedHigh);
+    bool gpu=UnityEngine.XR.OpenXR.Features.Extensions.PerformanceSettings.XrPerformanceSettingsFeature.SetPerformanceLevelHint(UnityEngine.XR.OpenXR.Features.Extensions.PerformanceSettings.PerformanceDomain.Gpu,UnityEngine.XR.OpenXR.Features.Extensions.PerformanceSettings.PerformanceLevelHint.SustainedHigh);
+    if(cpu&&gpu){Debug.Log("REEF_PERFORMANCE_HINTS cpu=true gpu=true level=SustainedHigh");yield break;}
+   }
+   yield return new WaitForSecondsRealtime(.25f);
+  }
+  Debug.LogWarning("Quest sustained-performance hints unavailable on this runtime.");
+#endif
+  yield break;
+ }
  void Awake(){
+  // Match the baseline Quest display cadence; stereo FOV stays runtime-owned.
+  Application.targetFrameRate=72;
   UnityEngine.XR.XRSettings.eyeTextureResolutionScale=EyeResolution;QualitySettings.antiAliasing=Samples;QualitySettings.shadows=ShadowQuality.Disable;QualitySettings.shadowResolution=ShadowResolution.Low;QualitySettings.shadowDistance=16;QualitySettings.shadowCascades=0;QualitySettings.pixelLightCount=1;QualitySettings.lodBias=1.15f;QualitySettings.maximumLODLevel=0;QualitySettings.vSyncCount=0;QualitySettings.realtimeReflectionProbes=false;
   QualitySettings.globalTextureMipmapLimit=0;QualitySettings.anisotropicFiltering=AnisotropicFiltering.ForceEnable;
   QualitySettings.streamingMipmapsActive=true;QualitySettings.streamingMipmapsMemoryBudget=256;

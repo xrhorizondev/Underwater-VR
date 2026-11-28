@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.XR.OpenXR;
 using UnityEngine.XR.OpenXR.Features.MetaQuestSupport;
 namespace Underwater.Editor {
-[BuildCallbackVersion(17)]
+[BuildCallbackVersion(20)]
 public class QuestReefBuild : IProcessSceneWithReport {
  public int callbackOrder=>100;
  public void OnProcessScene(Scene scene,BuildReport report){if(report!=null&&report.summary.platform==BuildTarget.Android)OptimizeScene();}

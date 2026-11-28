@@ -18,7 +18,8 @@ Shader "Underwater/Reef Surface" {
  SubShader {
   Tags {"RenderType"="Opaque"} LOD 300 Cull Off
   CGPROGRAM
-  #pragma surface surf Standard fullforwardshadows vertex:vert addshadow
+  #pragma surface surf Standard fullforwardshadows vertex:vert addshadow dithercrossfade
+  #pragma multi_compile _ LOD_FADE_CROSSFADE
   #pragma target 3.0
   sampler2D _MainTex,_BumpMap,_OcclusionMap,_ReefCaustics;
   fixed4 _Color,_EmissionColor;

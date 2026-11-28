@@ -11,12 +11,14 @@ public sealed class ReefFrameMetrics : MonoBehaviour {
  Transform head;Quaternion previous;float windowStart;int frames,turnFrames,slowTurns,overBudget;
  float worst,cpuWorst,gpuWorst,xrGpuRawWorst,refreshRate=72;bool firstFocusedFrame;
  XRDisplaySubsystem display;ProfilerRecorder mainThread;
+ ProfilerRecorder triangles,batches;long peakTriangles,peakBatches;
  void Start(){
   if(Camera.main)head=Camera.main.transform;previous=head?head.rotation:Quaternion.identity;windowStart=Time.realtimeSinceStartup;
   var displays=new System.Collections.Generic.List<XRDisplaySubsystem>();SubsystemManager.GetSubsystems(displays);
   foreach(var candidate in displays)if(candidate.running){display=candidate;break;}
   if(display!=null&&display.TryGetDisplayRefreshRate(out float hz)&&hz>0)refreshRate=hz;
   mainThread=ProfilerRecorder.StartNew(ProfilerCategory.Internal,"Main Thread",1);
+  triangles=ProfilerRecorder.StartNew(ProfilerCategory.Render,"Triangles Count",1);batches=ProfilerRecorder.StartNew(ProfilerCategory.Render,"Draw Calls Count",1);
  }
  void LateUpdate(){
   if(!Application.isFocused)return;
@@ -37,13 +39,15 @@ public sealed class ReefFrameMetrics : MonoBehaviour {
   // matching VrApi milliseconds despite the API documenting seconds.
   if(display!=null&&display.TryGetAppGPUTimeLastFrame(out float gpuRaw))xrGpuRawWorst=Mathf.Max(xrGpuRawWorst,gpuRaw);
   if(mainThread.Valid)cpuWorst=Mathf.Max(cpuWorst,mainThread.LastValue/1000000f);
+  if(triangles.Valid)peakTriangles=System.Math.Max(peakTriangles,triangles.LastValue);if(batches.Valid)peakBatches=System.Math.Max(peakBatches,batches.LastValue);
   if(Time.realtimeSinceStartup-windowStart<5)return;
   int target=Mathf.CeilToInt(frames*.95f),sum=0,p95=250;
   for(int i=0;i<histogram.Length;i++){sum+=histogram[i];if(sum>=target){p95=i;break;}}
   Debug.Log($"REEF_FRAMES time={Time.realtimeSinceStartup:F1} zone={(Diver.Instance?Diver.Instance.Zone:-1)} frames={frames} p95MsCeil={p95} worstMs={worst:F1} refreshHz={refreshRate:F1} intervalOverBudget={overBudget} turnFrames={turnFrames} turnMissedIntervals={slowTurns} mainThreadWorstMs={cpuWorst:F1} gpuWorstMs={gpuWorst:F1} xrGpuRawWorst={xrGpuRawWorst:F3} mainThreadTimingAvailable={cpuWorst>0} gpuTimingAvailable={gpuWorst>0}");
+  ReefStableLod.RefreshFadePreference();Debug.Log($"REEF_DRAW triangles={peakTriangles} drawCalls={peakBatches} fadingCorals={ReefStableLod.FadingCorals} crossFadeEnabled={ReefStableLod.CrossFadeEnabled} countersAvailable={triangles.Valid&&batches.Valid}");peakTriangles=peakBatches=0;
   System.Array.Clear(histogram,0,histogram.Length);frames=turnFrames=slowTurns=overBudget=0;worst=cpuWorst=gpuWorst=xrGpuRawWorst=0;windowStart=Time.realtimeSinceStartup;
  }
  void OnApplicationFocus(bool focused){if(!focused)return;System.Array.Clear(histogram,0,histogram.Length);frames=turnFrames=slowTurns=overBudget=0;worst=cpuWorst=gpuWorst=xrGpuRawWorst=0;windowStart=Time.realtimeSinceStartup;if(head)previous=head.rotation;}
- void OnDestroy(){mainThread.Dispose();}
+ void OnDestroy(){mainThread.Dispose();triangles.Dispose();batches.Dispose();}
 }
 }

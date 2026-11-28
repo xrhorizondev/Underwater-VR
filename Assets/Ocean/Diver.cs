@@ -7,6 +7,7 @@ public class Diver:MonoBehaviour {
  ReefContactFeedback contactFeedback;float nextCaution,nextContact;
  public bool MenuOpen=>menu;
  public bool GrabRequested {get;private set;}
+ bool headingAligned;readonly System.Collections.Generic.List<XRInputSubsystem> trackingSystems=new System.Collections.Generic.List<XRInputSubsystem>();
  public Vector3 controllerHandPosition=Vector3.zero;
  public Vector3 controllerHandRotation=Vector3.zero;
  public bool showDiverBody=false,showMaskRim=false;
@@ -25,7 +26,7 @@ public class Diver:MonoBehaviour {
  System.Collections.IEnumerator Smoke(){Application.runInBackground=true;menu=false;yield return new WaitForSeconds(2);Debug.Log("SMOKE: habitats=8 creatures="+FindObjectsByType<SeaLife>(FindObjectsSortMode.None).Length+" teleports="+FindObjectsByType<TeleportShell>(FindObjectsSortMode.None).Length);var rt=new RenderTexture(1280,720,24,RenderTextureFormat.ARGB32,RenderTextureReadWrite.sRGB);cam.targetTexture=rt;cam.Render();RenderTexture.active=rt;var tex=new Texture2D(1280,720,TextureFormat.RGB24,false);tex.ReadPixels(new Rect(0,0,1280,720),0,0);tex.Apply();System.IO.File.WriteAllBytes(System.IO.Path.Combine(Application.dataPath,"../RuntimePreview.png"),tex.EncodeToPNG());cam.targetTexture=null;RenderTexture.active=null;Destroy(rt);Destroy(tex);yield return new WaitForSeconds(1);Application.Quit();}
  void Update(){
  var l=InputDevices.GetDeviceAtXRNode(XRNode.LeftHand);var r=InputDevices.GetDeviceAtXRNode(XRNode.RightHand);var h=InputDevices.GetDeviceAtXRNode(XRNode.Head);bool xr=h.isValid;
- if(xr){if(!xrStarted){xrStarted=true;menu=false;}if(h.TryGetFeatureValue(CommonUsages.devicePosition,out Vector3 hp))Head.localPosition=hp;if(h.TryGetFeatureValue(CommonUsages.deviceRotation,out Quaternion hr))Head.localRotation=hr;Track(l,left);Track(r,right);}
+ if(xr){if(!xrStarted){xrStarted=true;menu=false;}if(h.TryGetFeatureValue(CommonUsages.devicePosition,out Vector3 hp))Head.localPosition=hp;if(h.TryGetFeatureValue(CommonUsages.deviceRotation,out Quaternion hr)){Head.localRotation=hr;AlignStartingHeading(h);}Track(l,left);Track(r,right);}
  else{if(Input.GetMouseButton(1)&&!menu){yaw+=Input.GetAxis("Mouse X")*2;pitch=Mathf.Clamp(pitch-Input.GetAxis("Mouse Y")*2,-80,80);Head.localRotation=Quaternion.Euler(pitch,yaw,0);}left.position=Head.TransformPoint(new(-.24f,-.22f,.5f));right.position=Head.TransformPoint(new(.24f,-.22f,.5f));}
  AnimateGlove(leftGlove,l,xr);AnimateGlove(rightGlove,r,xr);
  motor.TrackHead();Vector2 stick=Vector2.zero;l.TryGetFeatureValue(CommonUsages.primary2DAxis,out stick);Vector3 input=Head.forward*(stick.y+Input.GetAxisRaw("Vertical"))+Head.right*(stick.x+Input.GetAxisRaw("Horizontal"));
@@ -82,14 +83,19 @@ public class Diver:MonoBehaviour {
  }
  void ReleaseHand(GrabState state){if(state.fish)state.fish.Release();state.fish=null;state.down=false;state.spent=false;}
  void ReleaseGrab(){ReleaseHand(leftGrab);ReleaseHand(rightGrab);}
- void OnEnable(){Application.onBeforeRender+=RefreshTrackedHands;}
+ void OnEnable(){Application.onBeforeRender+=RefreshTrackedHands;SubsystemManager.GetSubsystems(trackingSystems);foreach(var system in trackingSystems)system.trackingOriginUpdated+=TrackingOriginUpdated;}
+ void TrackingOriginUpdated(XRInputSubsystem system){headingAligned=false;}
+ void AlignStartingHeading(InputDevice device){if(!headingAligned&&(!device.TryGetFeatureValue(CommonUsages.isTracked,out bool tracked)||tracked))headingAligned=motor.FaceHeading(Vector3.forward);}
  void RefreshTrackedHands(){
   if(!Head||!left||!right)return;var h=InputDevices.GetDeviceAtXRNode(XRNode.Head);if(!h.isValid)return;
-  if(h.TryGetFeatureValue(CommonUsages.devicePosition,out Vector3 p))Head.localPosition=p;if(h.TryGetFeatureValue(CommonUsages.deviceRotation,out Quaternion q))Head.localRotation=q;
+  if(h.TryGetFeatureValue(CommonUsages.devicePosition,out Vector3 p))Head.localPosition=p;if(h.TryGetFeatureValue(CommonUsages.deviceRotation,out Quaternion q)){Head.localRotation=q;AlignStartingHeading(h);}
   Track(InputDevices.GetDeviceAtXRNode(XRNode.LeftHand),left);Track(InputDevices.GetDeviceAtXRNode(XRNode.RightHand),right);motor.TrackHead();
   float dt=Mathf.Min(Time.unscaledDeltaTime,.05f);if(leftGrab.fish)leftGrab.fish.StepHeld(dt,Time.time);if(rightGrab.fish)rightGrab.fish.StepHeld(dt,Time.time);
+  // Contact vertices are in hand space: refresh after the final tracked pose,
+  // not just LateUpdate, otherwise fast turns leave fingers one pose behind.
+  leftGlove.ResolveContact();rightGlove.ResolveContact();
  }
- void OnDisable(){Application.onBeforeRender-=RefreshTrackedHands;ReleaseGrab();} void Track(InputDevice d,Transform t){bool tracked=d.isValid&&(!d.TryGetFeatureValue(CommonUsages.isTracked,out bool isTracked)||isTracked);t.gameObject.SetActive(tracked);if(!tracked)return;if(d.TryGetFeatureValue(CommonUsages.devicePosition,out Vector3 p))t.localPosition=p;if(d.TryGetFeatureValue(CommonUsages.deviceRotation,out Quaternion q))t.localRotation=q;}
+ void OnDisable(){Application.onBeforeRender-=RefreshTrackedHands;foreach(var system in trackingSystems)system.trackingOriginUpdated-=TrackingOriginUpdated;trackingSystems.Clear();ReleaseGrab();} void Track(InputDevice d,Transform t){bool tracked=d.isValid&&(!d.TryGetFeatureValue(CommonUsages.isTracked,out bool isTracked)||isTracked);t.gameObject.SetActive(tracked);if(!tracked)return;if(d.TryGetFeatureValue(CommonUsages.devicePosition,out Vector3 p))t.localPosition=p;if(d.TryGetFeatureValue(CommonUsages.deviceRotation,out Quaternion q))t.localRotation=q;}
  public float DistanceToHands(Vector3 p)=>Mathf.Min(Vector3.Distance(LeftPalm,p),Vector3.Distance(RightPalm,p));
  public void Say(string text,AudioClip clip){caption=text;captionUntil=Time.time+3;if(clip)voice.PlayOneShot(clip);}
  public bool TryCaution(string text,AudioClip clip){if(menu||Time.time<nextCaution)return false;nextCaution=Time.time+Mathf.Max(3,clip?clip.length:0);Say(text,clip);return true;}

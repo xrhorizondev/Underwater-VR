@@ -1,0 +1,12 @@
+Pass 1 Manta ray gliding over the reef seconds=360 travel=151.2033 maxTurn=3.800064 longestStop=0 rockMargin>=0.7m range=200m
+Pass 1 Wreck dolphin 2 seconds=360 travel=342.0066 maxTurn=6.555097 longestStop=0 rockMargin>=0.7m range=200m
+Pass 1 Wreck dolphin 1 seconds=360 travel=342.0092 maxTurn=6.555097 longestStop=0 rockMargin>=0.7m range=200m
+Pass 1 Distant reef shark seconds=360 travel=378.0052 maxTurn=7.244233 longestStop=0 rockMargin>=0.7m range=200m
+Pass 1 Wreck dolphin 3 seconds=360 travel=342.0112 maxTurn=6.555097 longestStop=0 rockMargin>=0.7m range=200m
+Pass 1: complete school/featured movement and collision audit passed.
+Pass 2 Wreck dolphin 1 seconds=360 travel=341.9695 maxTurn=6.680694 longestStop=0 rockMargin>=0.7m range=200m
+Pass 2 Manta ray gliding over the reef seconds=360 travel=151.1985 maxTurn=4.028609 longestStop=0 rockMargin>=0.7m range=200m
+Pass 2 Wreck dolphin 3 seconds=360 travel=341.9664 maxTurn=6.680694 longestStop=0 rockMargin>=0.7m range=200m
+Pass 2 Wreck dolphin 2 seconds=360 travel=341.9663 maxTurn=6.680694 longestStop=0 rockMargin>=0.7m range=200m
+Pass 2 Distant reef shark seconds=360 travel=378.0428 maxTurn=7.40103 longestStop=0 rockMargin>=0.7m range=200m
+Pass 2: complete school/featured movement and collision audit passed.
